@@ -185,7 +185,7 @@ font:
   headings:
     external: true
     family:
-    size:24
+    size: 24
 
   # Font settings for posts
   # Fallback to `global` font settings.
