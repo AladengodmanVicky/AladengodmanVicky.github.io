@@ -4,13 +4,17 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 阿拉灯神丁Vicky&AI
+title: 阿拉灯神丁Vicky侃AI
 subtitle:
 description: AI-PM视角 | 智见未来 | 分享AI干货 | 产品哲学 | 个人感悟
 author: 阿拉灯神丁Vicky
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
+
+# 开启打赏
+reward_comment: 放个二维码，万一有帅哥美女想赞赏呢，哈哈！
+wechatpay: https://i.postimg.cc/XYzD2pSX/Wechat-IMG650.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
@@ -122,7 +126,7 @@ menu:
   archives: /archives/
   tags: /tags/
   about: /about/
-  sitemap: /sitemap.xml
+  #sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
@@ -213,8 +217,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+  知乎: https://www.zhihu.com/people/AladengodmanVicky/activities
+  简书: https://www.jianshu.com/u/d35797a7d500
 
 
 # Social Links Icons
@@ -226,14 +232,14 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  #GitHub: github
+  #Twitter: twitter
+  #Weibo: weibo
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-# avatar:
+avatar: https://i.postimg.cc/5NJYD3qF/image.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -631,7 +637,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
