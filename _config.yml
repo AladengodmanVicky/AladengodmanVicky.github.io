@@ -91,7 +91,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2018 - 2019
 
 # icon between year and author @Footer
 authoricon: heart
@@ -185,6 +185,7 @@ font:
   headings:
     external: true
     family:
+    size:24
 
   # Font settings for posts
   # Fallback to `global` font settings.
@@ -311,8 +312,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 300
 
 # Post meta display settings
 post_meta:
