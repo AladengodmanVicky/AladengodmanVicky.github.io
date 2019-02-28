@@ -1,9 +1,8 @@
 ---
+layout: post
 title: 知识图谱发展的难点与构建行业知识图谱的重要性
-date: 2018-12-10 15:45:20
-categories:
-- knowledgegraph
-tags: [知识图谱，行业应用]
+date: 2018-12-10 11:29:08 +0800
+categories: knowledgegraph
 ---
 
 
