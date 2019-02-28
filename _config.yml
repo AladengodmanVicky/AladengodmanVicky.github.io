@@ -13,7 +13,7 @@ language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # 开启打赏
-reward_comment: 放个二维码，万一有帅哥美女想赞赏呢，哈哈！
+reward_comment: 放个赞赏码，万一有帅哥美女想给点赏钱呢，哈哈！
 wechatpay: https://i.postimg.cc/XYzD2pSX/Wechat-IMG650.png
 
 # URL
