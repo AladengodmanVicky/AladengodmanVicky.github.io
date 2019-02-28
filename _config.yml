@@ -178,27 +178,27 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Monda
+    family: Microsoft YaHei
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Roboto Slab
+    family:
 
   # Font settings for posts
   # Fallback to `global` font settings.
   posts:
     external: true
     family:
-    size: 16
+    size: 18
 
   # Font settings for Logo
   # Fallback to `global` font settings.
   # The `size` option use `px` as unit
   logo:
     external: true
-    family: Lobster Two
+    family: 
     size: 24
 
   # Font settings for <code> and code blocks.
