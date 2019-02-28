@@ -1,8 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-28T23:57:24+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>AI-PM视角 | 智见未来 | 分享AI干货 | 产品哲学 | 个人感悟</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">Welcome to Bobin!</title><link href="http://localhost:4000/test/2019/02/27/my-first-post/" rel="alternate" type="text/html" title="Welcome to Bobin!" /><published>2019-02-27T00:00:00+08:00</published><updated>2019-02-27T00:00:00+08:00</updated><id>http://localhost:4000/test/2019/02/27/my-first-post</id><content type="html" xml:base="http://localhost:4000/test/2019/02/27/my-first-post/">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T01:01:04+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>AI-PM视角 | 智见未来 | 分享AI干货 | 产品哲学 | 个人感悟</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">Welcome to Bobin!</title><link href="http://localhost:4000/test/2019/02/27/my-first-post/" rel="alternate" type="text/html" title="Welcome to Bobin!" /><published>2019-02-27T00:00:00+08:00</published><updated>2019-02-27T00:00:00+08:00</updated><id>http://localhost:4000/test/2019/02/27/my-first-post</id><content type="html" xml:base="http://localhost:4000/test/2019/02/27/my-first-post/">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog post.&lt;/p&gt;
 
-&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><summary type="html">Welcome</summary></entry><entry><title type="html">知识图谱发展的难点与构建行业知识图谱的重要性</title><link href="http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map/" rel="alternate" type="text/html" title="知识图谱发展的难点与构建行业知识图谱的重要性" /><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><id>http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map</id><content type="html" xml:base="http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map/">&lt;blockquote&gt;
+&lt;p&gt;I hope you like it!&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><summary type="html">Welcome</summary></entry><entry><title type="html">《走在自己的时区里》</title><link href="http://localhost:4000/lifes/2018/12/10/Walking-in-your-own-time-zone/" rel="alternate" type="text/html" title="《走在自己的时区里》" /><published>2018-12-10T11:29:08+08:00</published><updated>2018-12-10T11:29:08+08:00</updated><id>http://localhost:4000/lifes/2018/12/10/Walking-in-your-own-time-zone</id><content type="html" xml:base="http://localhost:4000/lifes/2018/12/10/Walking-in-your-own-time-zone/">&lt;p&gt;&lt;img src=&quot;https://i.postimg.cc/XqwcvgQn/bg-01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;在时间上纽约走在加州前面三个小时&quot;&gt;在时间上，纽约走在加州前面三个小时，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New York is 3 hours ahead of California,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;但加州并没有变慢&quot;&gt;但加州并没有变慢。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;but it does not make California slow.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;有人22岁就毕业了&quot;&gt;有人22岁就毕业了，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Someone graduated at the age of 22,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;但等了五年才找到好工作&quot;&gt;但等了五年才找到好工作！&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;but waited 5 years before securing a good job!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;有人25岁就当上了ceo&quot;&gt;有人25岁就当上了CEO，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Someone became a CEO at 25,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;却在50岁去世了&quot;&gt;却在50岁去世了。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and died at 50.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;也有人直到50岁才当上ceo&quot;&gt;也有人直到50岁才当上CEO，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While another became a CEO at 50,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;最后活到90岁&quot;&gt;最后活到90岁。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and lived to 90 years.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;有人依然单身&quot;&gt;有人依然单身，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Someone is still single,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;而别人却早已结婚&quot;&gt;而别人却早已结婚。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;while someone else got married.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;奥巴马55岁退任总统&quot;&gt;奥巴马55岁退任总统，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Obama retires at 55,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;而川普却是70岁才开始当&quot;&gt;而川普却是70岁才开始当。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;but Trump starts at 70.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;世上每个人都有自己的发展时区&quot;&gt;世上每个人都有自己的发展时区。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Absolutely everyone in this world works based on their Time Zone.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;身边有些人看似走在你前面&quot;&gt;身边有些人看似走在你前面，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;People around you might seem to go ahead of you,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;也有人看似走在你后面&quot;&gt;也有人看似走在你后面。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;some might seem to be behind you.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;但其实每个人在自己的时区有自己的步程&quot;&gt;但其实每个人在自己的时区有自己的步程。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But everyone is running their own RACE, in their own TIME.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;不用嫉妒或嘲笑他们&quot;&gt;不用嫉妒或嘲笑他们。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Don’t envy them or mock them.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;他们都在自己的时区你在你的&quot;&gt;他们都在自己的时区，你在你的！&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;They are in their TIME ZONE, and you are in yours!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;所以别放松&quot;&gt;所以，别放松。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, Never Give up&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;你没有落后&quot;&gt;你没有落后，&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You’re not LATE.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;你没有领先&quot;&gt;你没有领先。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You’re not EARLY.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;在命运为你安排的属于你自己的时区里一切都非常准时&quot;&gt;在命运为你安排的属于你自己的时区里，一切都非常准时。&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You are very much ON TIME, and in your TIME ZONE Destiny set up for you.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;好别忘了危机与奋斗&quot;&gt;好，别忘了危机与奋斗&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Keep fighting and stay alert, no matter how good;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;难别忘了梦想与坚持&quot;&gt;难，别忘了梦想与坚持&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Keep dreaming and carry on, no matter how hard;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;忙别忘了读书与锻炼&quot;&gt;忙，别忘了读书与锻炼&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Keep reading and excersing, no matter how busy;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h5 id=&quot;人生就是一场长跑&quot;&gt;人生，就是一场长跑&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Life is a long run。&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Lifes" /><category term="哲学" /><category term="吾日三省吾身" /><summary type="html"></summary></entry><entry><title type="html">知识图谱发展的难点与构建行业知识图谱的重要性</title><link href="http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map/" rel="alternate" type="text/html" title="知识图谱发展的难点与构建行业知识图谱的重要性" /><published>2018-12-10T00:00:00+08:00</published><updated>2018-12-10T00:00:00+08:00</updated><id>http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map</id><content type="html" xml:base="http://localhost:4000/works/2018/12/10/Development-Knowledge-Industry-Knowledge-Map/">&lt;blockquote&gt;
   &lt;p&gt;知识图谱又称为科学知识图谱，在图书情报界称为知识域可视化，或知识领域映射地图，用来显示知识发展进程与结构关系的一系列各种不同的图形，用可视化技术描述知识资源及载体，挖掘、分析、构建、绘制和显示知识及他们互相之间的关系。&lt;/p&gt;
 &lt;/blockquote&gt;
 
