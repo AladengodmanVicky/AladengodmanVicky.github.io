@@ -8,7 +8,7 @@ categories: knowledgegraph
 
 > 知识图谱又称为科学知识图谱，在图书情报界称为知识域可视化，或知识领域映射地图，用来显示知识发展进程与结构关系的一系列各种不同的图形，用可视化技术描述知识资源及载体，挖掘、分析、构建、绘制和显示知识及他们互相之间的关系。
 
-![](https://i.postimg.cc/QtcRF54v/kg-01.jpg)
+![Caption](https://i.postimg.cc/QtcRF54v/kg-01.jpg)
 
 ## 概述
 
