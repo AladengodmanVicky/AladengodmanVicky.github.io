@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Bobin!"
+categories: Test
 ---
 
 # Welcome
