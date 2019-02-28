@@ -80,7 +80,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: https://aladengodmanvicky.github.io/assets/favicon.ico?v=5.1.1
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
