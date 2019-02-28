@@ -2,14 +2,14 @@
 title: 知识图谱发展的难点与构建行业知识图谱的重要性
 date: 2018-12-10 15:45:20
 categories:
-- KnowledgeGraph
+- knowledgegraph
 tags: [知识图谱，行业应用]
 ---
 
 
 > 知识图谱又称为科学知识图谱，在图书情报界称为知识域可视化，或知识领域映射地图，用来显示知识发展进程与结构关系的一系列各种不同的图形，用可视化技术描述知识资源及载体，挖掘、分析、构建、绘制和显示知识及他们互相之间的关系。
 
-![Caption](https://i.postimg.cc/QtcRF54v/kg-01.jpg)
+![](https://i.postimg.cc/QtcRF54v/kg-01.jpg)
 
 ## 概述
 
