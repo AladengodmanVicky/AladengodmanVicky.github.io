@@ -381,16 +381,16 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics:
 
 # Duoshuo ShortName
 #duoshuo_shortname:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: 阿拉灯神丁Vicky
-  count: true
+  count: false
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
@@ -443,12 +443,13 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true
+  clientID: 5b2a2486ac80b2c5256e
+  clientSecret: e14e40378b56481a8a1e2421ddb0cca931f7c3c0
+  repo: AladengodmanVicky.github.io
+  owner: AladengodmanVicky
+  admin: AladengodmanVicky
+  distractionFreeMode: true
 
 # Baidu Share
 # Available value:

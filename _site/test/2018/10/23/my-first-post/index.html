@@ -519,23 +519,6 @@
 </div>
 
 
-
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-    id: '<%= page.date %>',
-    owner: 'AladengodmanVicky',
-    repo: 'AladengodmanVicky.github.io',
-    oauth: {
-        client_id: '5b2a2486ac80b2c5256e',
-        client_secret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
-
           </div>
           
 
@@ -912,6 +895,25 @@ gitment.render('gitmentContainer');
 
 
 
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/test/2018/10/23/my-first-post/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
 
 
 
