@@ -800,6 +800,7 @@
 
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/src/md5.min.js"></script>
 <script type="text/javascript">
       var gitalk = new Gitalk({
         clientID: '5b2a2486ac80b2c5256e',
@@ -807,7 +808,7 @@
         repo: 'AladengodmanVicky.github.io',
         owner: 'AladengodmanVicky',
         admin: ['AladengodmanVicky'],
-        id: '/category/',
+        id: md5(location.pathname),
         labels: ['gitalk'],
         perPage: 50,
         distractionFreeMode: true
