@@ -4,11 +4,11 @@ title: 医疗知识图谱问答系统探究（一）
 date: 2019-03-14 22:34:00 +0800
 categories: Works
 tags: [知识图谱,问答系统,医疗诊断,项目实战]
+excerpt: 从无到有搭建一个以疾病为中心的一定规模医药领域知识图谱，以该知识图谱完成自动问答与分析服务。该项目立足医药领域，以垂直型医药网站为数据来源，以疾病为核心，构建起一个包含7类规模为4.4万的知识实体，11类规模约30万实体关系的知识图谱。
 ---
 
-> 从无到有搭建一个以疾病为中心的一定规模医药领域知识图谱，以该知识图谱完成自动问答与分析服务。该项目立足医药领域，以垂直型医药网站为数据来源，以疾病为核心，构建起一个包含7类规模为4.4万的知识实体，11类规模约30万实体关系的知识图谱。
-
 ![Caption](http://www.bobinsun.cn/assets/images/logo-top.jpg)
+
 ### **1、项目背景**
 
 为通过项目实战增加对知识图谱的认识，几乎找了所有网上的开源项目及视频实战教程。
@@ -233,6 +233,9 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 ![Caption](http://www.bobinsun.cn/assets/images/logo-bottom.png)
 
 > **版权声明**
-> 作者：阿拉灯神丁Vicky
-> 文章链接 ：http://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/
-> 转载请注明出处并附文章链接;
+
+> 作者:阿拉灯神丁Vicky
+
+> 文章链接:http://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/
+
+> 转载须知:转载请注明出处并附文章链接;
