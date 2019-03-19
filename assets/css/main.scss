@@ -48,7 +48,6 @@ $jekyll-config-map : {{ config_map }};
 @import "_schemes/{{ site.scheme | default: Muse }}/index";
 
 
-
 // Custom Layer
 // --------------------------------------------------
 @import "_custom/custom";

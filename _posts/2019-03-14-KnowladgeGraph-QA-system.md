@@ -7,7 +7,7 @@ tags: [知识图谱,问答系统,医疗诊断,项目实战]
 excerpt: 从无到有搭建一个以疾病为中心的一定规模医药领域知识图谱，以该知识图谱完成自动问答与分析服务。该项目立足医药领域，以垂直型医药网站为数据来源，以疾病为核心，构建起一个包含7类规模为4.4万的知识实体，11类规模约30万实体关系的知识图谱。
 ---
 
-![Caption](http://www.bobinsun.cn/assets/images/logo-top.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/logo-top.jpg)
 
 ### **1、项目背景**
 
@@ -47,8 +47,8 @@ python build_medicalgraph.py，导入的数据较多，估计需要几个小时�
 
 python build_medicalgraph.py导入数据之前，需要在该文件main函数中加入：
 
-![Caption](http://www.bobinsun.cn/assets/images/001.jpg)
-![Caption](http://www.bobinsun.cn/assets/images/002.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/001.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/002.jpg)
 
 
 **启动问答**：python chat_graph.py
@@ -62,11 +62,11 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 
 ### **2.3 Neo4j数据库展示**
 
-![Caption](http://www.bobinsun.cn/assets/images/003.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/003.jpg)
 
 ### **2.4 问答系统运行效果**
 
-![Caption](http://www.bobinsun.cn/assets/images/004.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/004.jpg)
 
 ## **3、项目介绍**
 该项目的数据来自垂直类医疗网站寻医问药，使用爬虫脚本data_spider.py，以结构化数据为主，构建了以疾病为中心的医疗知识图谱，实体规模4.4万，实体关系规模30万。schema的设计根据所采集的结构化数据生成，对网页的结构化数据进行xpath解析。
@@ -75,7 +75,7 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 
 项目的不足之处在于疾病的引发原因、预防等以大段文字返回，这块可引入事件抽取，可将原因结构化表示出来。
 
-![Caption](http://www.bobinsun.cn/assets/images/005.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/005.jpg)
 
 
 ### **3.1 项目目录**
@@ -166,29 +166,29 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 
 ### **3.5 问答项目实现原理**
 
-![Caption](http://www.bobinsun.cn/assets/images/006.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/006.jpg)
 
 本项目的问答系统完全基于规则匹配实现，通过关键词匹配，对问句进行分类，医疗问题本身属于封闭域类场景，对领域问题进行穷举并分类，然后使用cypher的match去匹配查找neo4j，根据返回数据组装问句回答，最后返回结果。
 
 > **问句中的关键词匹配：**
 
-![Caption](http://www.bobinsun.cn/assets/images/007.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/007.jpg)
 
 > **根据匹配到的关键词分类问句**
 
-![Caption](http://www.bobinsun.cn/assets/images/008.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/008.jpg)
 
 > **问句解析**
 
-![Caption](http://www.bobinsun.cn/assets/images/009.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/009.jpg)
 
 > **查找相关数据**
 
-![Caption](http://www.bobinsun.cn/assets/images/010.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/010.jpg)
 
 > **根据返回的数据组装回答**
 
-![Caption](http://www.bobinsun.cn/assets/images/011.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/011.jpg)
 
 ### **3.6 问答系统支持的问答类型**
 
@@ -222,7 +222,7 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 
 > 例如，本项目中采用了婉转的方式回答不知道：
 
-![Caption](http://www.bobinsun.cn/assets/images/012.jpg)
+![Caption](https://www.bobinsun.cn/assets/images/012.jpg)
 
 基于知识图谱的问答系统的主要特征是知识图谱，系统依赖一个或多个领域的实体，并基于图谱进行推理或演绎，深度回答用户的问题，基于知识图谱的问答系统更擅长回答知识性问题，与基于模板的聊天机器人有所不同的是它更直接、直观的给用户答案。对于不能回答、或不知道的问题，一般直接返回失败，而不是转移话题避免尴尬。
 
@@ -230,12 +230,9 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 
 从知识图谱的角度分析，大多数知识图谱规模不足，主要原因还是数据来源以及技术上知识的抽取与推理困难。
 
-![Caption](http://www.bobinsun.cn/assets/images/logo-bottom.png)
+![Caption](https://www.bobinsun.cn/assets/images/logo-bottom.png)
 
 > **版权声明**
-
 > 作者:阿拉灯神丁Vicky
-
-> 文章链接:http://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/
-
+> 文章链接:https://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/
 > 转载须知:转载请注明出处并附文章链接;
