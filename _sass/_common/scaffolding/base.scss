@@ -21,8 +21,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.8;
   font-family: $font-family-headings;
+  color:black;
 }
 
 h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
@@ -42,14 +43,18 @@ h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
 p { margin: 0 0 25px 0; }
 
 a {
-  color: $link-color;
+  color:#C0392B ;
+  font-weight:bold;
   text-decoration: none;
-  border-bottom: 1px solid $grey-dark;
+  border-bottom: 2px solid $grey-dark;
   word-wrap: break-word;
+ ｝
 
   &:hover {
-    color: $link-hover-color;
+    color: #C0392B;
     border-bottom-color: $link-decoration-hover-color;
+     font-weight:bold;
+     
   }
 }
 
@@ -65,6 +70,15 @@ img {
   height: auto;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+.img_container{
+  text-align: center;
+}
 
 hr {
   margin: 40px 0;
