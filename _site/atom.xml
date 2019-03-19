@@ -1,4 +1,500 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-04T00:24:54+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>AI-PM视角 | 智见未来 | 分享AI干货 | 产品哲学 | 个人感悟</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">还是有必要聊聊，To B 与 To C产品的区别</title><link href="http://localhost:4000/works/2019/03/03/ToB-and-ToC/" rel="alternate" type="text/html" title="还是有必要聊聊，To B 与 To C产品的区别" /><published>2019-03-03T23:34:00+08:00</published><updated>2019-03-03T23:34:00+08:00</updated><id>http://localhost:4000/works/2019/03/03/ToB-and-ToC</id><content type="html" xml:base="http://localhost:4000/works/2019/03/03/ToB-and-ToC/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-19T13:04:15+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>AI-PM视角 | 智见未来 | 分享AI干货 | 产品哲学 | 个人感悟</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">医疗知识图谱问答系统探究（一）</title><link href="http://localhost:4000/works/2019/03/14/KnowladgeGraph-QA-system/" rel="alternate" type="text/html" title="医疗知识图谱问答系统探究（一）" /><published>2019-03-14T22:34:00+08:00</published><updated>2019-03-14T22:34:00+08:00</updated><id>http://localhost:4000/works/2019/03/14/KnowladgeGraph-QA-system</id><content type="html" xml:base="http://localhost:4000/works/2019/03/14/KnowladgeGraph-QA-system/">&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/logo-top.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1项目背景&quot;&gt;&lt;strong&gt;1、项目背景&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;为通过项目实战增加对知识图谱的认识，几乎找了所有网上的开源项目及视频实战教程。&lt;/p&gt;
+
+&lt;p&gt;果然，功夫不负有心人，找到了中科院软件所刘焕勇老师在github上的开源项目，基于知识图谱的医药领域问答项目QABasedOnMedicaKnowledgeGraph。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;项目地址：https://github.com/liuhuanyong/QASystemOnMedicalKG&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;用了两个晚上搭建了两套，Mac版与Windows版，哈哈，运行成功！！！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;从无到有搭建一个以疾病为中心的一定规模医药领域知识图谱，以该知识图谱完成自动问答与分析服务。该项目立足医药领域，以垂直型医药网站为数据来源，以疾病为核心，构建起一个包含7类规模为4.4万的知识实体，11类规模约30万实体关系的知识图谱。 本项目将包括以下两部分的内容：&lt;/p&gt;
+
+&lt;p&gt;基于垂直网站数据的医药知识图谱构建
+基于医药知识图谱的自动问答&lt;/p&gt;
+
+&lt;h3 id=&quot;2项目环境&quot;&gt;&lt;strong&gt;2、项目环境&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;21-windows系统&quot;&gt;&lt;strong&gt;2.1 windows系统&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;搭建中间有很多坑，且行且注意。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;配置要求：&lt;/strong&gt;要求配置neo4j数据库及相应的python依赖包。neo4j数据库用户名密码记住，并修改相应文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;安装neo4j，neo4j 依赖java jdk 1.8版本以上：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;jdk安装方法可参考：windows系统下安装JDK8，下载地址：[https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-windows-x64.exe][1]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;安装neo4j可参考博文：windows安装neo4j，下载地址：[https://go.neo4j.com/download-thanks.html?edition=community&amp;amp;release=3.4.1&amp;amp;flavour=winzip][2]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;安装python可参考：Windows环境下安装python2.7&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;根据neo4j 安装时的端口、账户、密码配置设置设置项目配置文件：answer_search.py &amp;amp;  build_medicalgraph.py (github下载项目时根据个人需要也可使用git)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;数据导入：&lt;/strong&gt;
+python build_medicalgraph.py，导入的数据较多，估计需要几个小时。&lt;/p&gt;
+
+&lt;p&gt;python build_medicalgraph.py导入数据之前，需要在该文件main函数中加入：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/001.jpg&quot; alt=&quot;Caption&quot; /&gt;
+&lt;img src=&quot;http://www.bobinsun.cn/assets/images/002.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;启动问答&lt;/strong&gt;：python chat_graph.py&lt;/p&gt;
+
+&lt;h3 id=&quot;22-mac系统&quot;&gt;&lt;strong&gt;2.2 Mac系统&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项目运行步骤与windows基本一样。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;问题解答：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;安装过程中如遇问题可联系Wechat: dandan-sbb。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;23-neo4j数据库展示&quot;&gt;&lt;strong&gt;2.3 Neo4j数据库展示&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/003.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;24-问答系统运行效果&quot;&gt;&lt;strong&gt;2.4 问答系统运行效果&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/004.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3项目介绍&quot;&gt;&lt;strong&gt;3、项目介绍&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;该项目的数据来自垂直类医疗网站寻医问药，使用爬虫脚本data_spider.py，以结构化数据为主，构建了以疾病为中心的医疗知识图谱，实体规模4.4万，实体关系规模30万。schema的设计根据所采集的结构化数据生成，对网页的结构化数据进行xpath解析。&lt;/p&gt;
+
+&lt;p&gt;项目的数据存储采用Neo4j图数据库，问答系统采用了规则匹配方式完成，数据操作采用neo4j声明的cypher。&lt;/p&gt;
+
+&lt;p&gt;项目的不足之处在于疾病的引发原因、预防等以大段文字返回，这块可引入事件抽取，可将原因结构化表示出来。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/005.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;31-项目目录&quot;&gt;&lt;strong&gt;3.1 项目目录&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;README&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__pycache__&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;编译结果保存目录&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cpython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;36.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_classifier&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cpython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;36.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cpython&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;36.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;answer_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build_medicalgraph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;知识图谱数据入库脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chatbot_graph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;问答程序脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;medicaln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;本项目的全部数据，通过&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build_medicalgraph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;导&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;neo4j&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;check&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;诊断检查项目实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deny&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;否定词库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;department&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;医疗科目实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;disease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;疾病实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;drug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;药品实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;food&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;食物实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;producer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;在售药品库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symptom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;txt&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;疾病症状实体库&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;document&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chat1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;系统运行问答截图&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;01&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chat2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;系统运行问答截图&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;01&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kg_route&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;知识图谱构建框架&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qa_route&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;问答系统框架图&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;README&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;中的所用图片&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chat1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chat2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;graph_summary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kg_route&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qa_route&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prepare_data&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;数据库操作脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data_spider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;网络资讯采集脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;│&lt;/span&gt;   &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_cut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;基于词典的最大向前&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;向后脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_classifier&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;问句类型分类脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_classifier&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;    
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;py&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;问句解析脚本&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;question_parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyc&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;32-知识图谱的实体类型&quot;&gt;&lt;strong&gt;3.2 知识图谱的实体类型&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;实体类型&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中文含义&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;实体数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Check&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;诊断检查项目&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3,353&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;支气管造影;关节镜检查&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Department&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;医疗科目&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;54&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;整形美容科;烧伤科&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8,807&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;血栓闭塞性脉管炎;胸降主动脉动脉瘤&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Drug&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;药品&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3,828&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;京万红痔疮膏;布林佐胺滴眼液&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Food&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;食物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4,870&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;番茄冲菜牛肉丸汤;竹笋炖羊肉&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Producer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;在售药品&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;17,201&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;通药制药青霉素V钾片;青阳醋酸地塞米松片&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Symptom&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病症状&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5,998&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;乳腺组织肥厚;脑实质深部出血&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Total&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;总计&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;44,111&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;约4.4万实体量级&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;33-知识图谱的实体关系类型&quot;&gt;&lt;strong&gt;3.3 知识图谱的实体关系类型&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;实体关系类型&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中文含义&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;关系数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;belongs_to&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;属于&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;8,844&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;妇科,属于,妇产科&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;common_drug&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病常用药品&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;14,649&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;阳强,常用,甲磺酸酚妥拉明分散片&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;do_eat&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病宜吃食物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;22,238&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;胸椎骨折,宜吃,黑鱼&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;drugs_of&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;药品在售药品&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;17,315&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;青霉素V钾片,在售,通药制药青霉素V钾片&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;need_check&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病所需检查&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;39,422&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;单侧肺气肿,所需检查,支气管造影&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;no_eat&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病忌吃食物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;22,247&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;唇病,忌吃,杏仁&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;recommand_drug&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病推荐药品&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59,467&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;混合痔,推荐用药,京万红痔疮膏&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;recommand_eat&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病推荐食谱&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;40,221&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;鞘膜积液,推荐食谱,番茄冲菜牛肉丸汤&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;has_symptom&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病症状&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5,998&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;早期乳腺癌,疾病症状,乳腺组织肥厚&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;acompany_with&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病并发疾病&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12,029&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;下肢交通静脉瓣膜关闭不全,并发疾病,血栓闭塞性脉管炎&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Total&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;总计&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;294,149&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;约30万关系量级&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;34-知识图谱的属性类型&quot;&gt;&lt;strong&gt;3.4 知识图谱的属性类型&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;属性类型&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中文含义&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;name&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病名称&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;喘息样支气管炎&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;desc&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病简介&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;又称哮喘性支气管炎…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cause&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病病因&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;常见的有合胞病毒等…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;prevent&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;预防措施&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;注意家族与患儿自身过敏史…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cure_lasttime&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治疗周期&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;6-12个月&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cure_way&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治疗方式&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;“药物治疗”,”支持性治疗”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cured_prob&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治愈概率&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;95%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;easy_get&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病易感人群&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;无特定的人群&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;35-问答项目实现原理&quot;&gt;&lt;strong&gt;3.5 问答项目实现原理&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/006.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本项目的问答系统完全基于规则匹配实现，通过关键词匹配，对问句进行分类，医疗问题本身属于封闭域类场景，对领域问题进行穷举并分类，然后使用cypher的match去匹配查找neo4j，根据返回数据组装问句回答，最后返回结果。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;问句中的关键词匹配：&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/007.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;根据匹配到的关键词分类问句&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/008.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;问句解析&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/009.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;查找相关数据&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/010.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;根据返回的数据组装回答&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/011.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;36-问答系统支持的问答类型&quot;&gt;&lt;strong&gt;3.6 问答系统支持的问答类型&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;问句类型&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;中文含义&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;问句举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_symptom&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病症状&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;乳腺癌的症状有哪些？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;symptom_disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;已知症状找可能疾病&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;最近老流鼻涕怎么办？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_cause&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病病因&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;为什么有的人会失眠？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_acompany&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病的并发症&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;失眠有哪些并发症？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_not_food&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病需要忌口的食物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;失眠的人不要吃啥？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_do_food&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病建议吃什么食物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;耳鸣了吃点啥？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;food_not_disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;什么病最好不要吃某事物&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;哪些人最好不好吃蜂蜜？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;food_do_disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;食物对什么病有好处&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;鹅肉有什么好处？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_drug&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;啥病要吃啥药&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;肝病要吃啥药？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;drug_disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;药品能治啥病&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;板蓝根颗粒能治啥病？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_check&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病需要做什么检查&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;脑膜炎怎么才能查出来？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;check_disease&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;　检查能查什么病&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;全血细胞计数能查出啥来？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_prevent&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;预防措施&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;怎样才能预防肾虚？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_lasttime&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治疗周期&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;感冒要多久才能好？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_cureway&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治疗方式&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;高血压要怎么治？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_cureprob&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;治愈概率&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;白血病能治好吗？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_easyget&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病易感人群&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;什么人容易得高血压？&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;disease_desc&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;疾病描述&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;糖尿病&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;4项目总结&quot;&gt;&lt;strong&gt;4、项目总结&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;基于规则的问答系统没有复杂的算法，一般采用模板匹配的方式寻找匹配度最高的答案，回答结果依赖于问句类型、模板语料库的覆盖全面性，面对已知的问题，可以给出合适的答案，对于模板匹配不到的问题或问句类型，经常遇到的有三种回答方式：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;给出一个无厘头的答案；&lt;/li&gt;
+  &lt;li&gt;婉转的回答不知道，提示用户换种方式去问；&lt;/li&gt;
+  &lt;li&gt;转移话题，回避问题；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;例如，本项目中采用了婉转的方式回答不知道：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/012.jpg&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;基于知识图谱的问答系统的主要特征是知识图谱，系统依赖一个或多个领域的实体，并基于图谱进行推理或演绎，深度回答用户的问题，基于知识图谱的问答系统更擅长回答知识性问题，与基于模板的聊天机器人有所不同的是它更直接、直观的给用户答案。对于不能回答、或不知道的问题，一般直接返回失败，而不是转移话题避免尴尬。&lt;/p&gt;
+
+&lt;p&gt;整个问答系统的优劣依赖于知识图谱中知识的数量与质量。也算是利弊共存吧！知识图谱图谱具有良好的可扩展性，扩展了知识图谱也就是扩展了问答系统的知识库。如果问句在射程范围内，可轻松回答，但如果不幸脱靶，则体验大打折扣。&lt;/p&gt;
+
+&lt;p&gt;从知识图谱的角度分析，大多数知识图谱规模不足，主要原因还是数据来源以及技术上知识的抽取与推理困难。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.bobinsun.cn/assets/images/logo-bottom.png&quot; alt=&quot;Caption&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;版权声明&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;作者:阿拉灯神丁Vicky&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;文章链接:http://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;转载须知:转载请注明出处并附文章链接;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="知识图谱" /><category term="问答系统" /><category term="医疗诊断" /><category term="项目实战" /><summary type="html">从无到有搭建一个以疾病为中心的一定规模医药领域知识图谱，以该知识图谱完成自动问答与分析服务。该项目立足医药领域，以垂直型医药网站为数据来源，以疾病为核心，构建起一个包含7类规模为4.4万的知识实体，11类规模约30万实体关系的知识图谱。</summary></entry><entry><title type="html">还是有必要聊聊，To B 与 To C产品的区别</title><link href="http://localhost:4000/works/2019/03/03/ToB-and-ToC/" rel="alternate" type="text/html" title="还是有必要聊聊，To B 与 To C产品的区别" /><published>2019-03-03T23:34:00+08:00</published><updated>2019-03-03T23:34:00+08:00</updated><id>http://localhost:4000/works/2019/03/03/ToB-and-ToC</id><content type="html" xml:base="http://localhost:4000/works/2019/03/03/ToB-and-ToC/">&lt;blockquote&gt;
   &lt;p&gt;昨天，在与北京知识图谱@吴刚老师的聊天中，被问到：“ To B 与 To C产品的区别的在哪? ”。&lt;/p&gt;
 &lt;/blockquote&gt;
 

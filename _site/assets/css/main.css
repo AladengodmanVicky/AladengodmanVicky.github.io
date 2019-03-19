@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
@@ -131,7 +132,7 @@ body { position: relative; font-family: "Microsoft YaHei", "PingFang SC", "Micro
 @media (min-width: 768px) and (max-width: 991px) { body { padding-right: 0 !important; } }
 @media (min-width: 1600px) { body { font-size: 16px; } }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: bold; line-height: 1.5; font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: bold; line-height: 1.8; font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; color: black; }
 
 h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
 
@@ -155,12 +156,16 @@ h6 { font-size: 14px; }
 @media (max-width: 767px) { h6 { font-size: 10px; } }
 p { margin: 0 0 25px 0; }
 
-a { color: #555; text-decoration: none; border-bottom: 1px solid #999; word-wrap: break-word; }
-a:hover { color: #222; border-bottom-color: #222; }
+a { color: #C0392B; font-weight: bold; text-decoration: none; border-bottom: 2px solid #999; word-wrap: break-word; }
+｝ a:hover { color: #C0392B; border-bottom-color: #222; font-weight: bold; }
 
 blockquote { margin: 0; padding: 0; }
 
 img { display: block; margin: auto; max-width: 100%; height: auto; }
+
+.center-image { margin: 0 auto; display: block; }
+
+.img_container { text-align: center; }
 
 hr { margin: 40px 0; height: 3px; border: none; background-color: #ddd; background-image: repeating-linear-gradient(-45deg, white, white 4px, transparent 4px, transparent 8px); }
 
@@ -378,9 +383,9 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .brand { position: relative; display: inline-block; padding: 0 40px; color: #222; background: #222; border-bottom: none; }
 .brand:hover { color: #222; }
 
-.logo { display: inline-block; margin-right: 5px; line-height: 36px; vertical-align: top; }
+.logo { display: inline-block; margin-right: 5px; line-height: 40px; vertical-align: top; }
 
-.site-title { display: inline-block; vertical-align: top; line-height: 36px; font-size: 24px; font-weight: normal; font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.site-title { display: inline-block; vertical-align: top; line-height: 40px; font-size: 24px; font-weight: normal; font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; }
 
 .site-subtitle { margin-top: 10px; font-size: 13px; color: #999; }
 
@@ -399,20 +404,26 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .menu .menu-item { display: inline-block; margin: 0 10px; list-style: none; }
 @media screen and (max-width: 767px) { .menu .menu-item { margin-top: 10px; } }
-.menu .menu-item a { display: block; font-size: 13px; line-height: inherit; border-bottom: 1px solid transparent; transition-property: border-color; transition-duration: 0.2s; transition-timing-function: ease-in-out; transition-delay: 0s; }
+.menu .menu-item a { display: block; font-size: 14px; font-family: Jaldi; line-height: inherit; border-bottom: 2px solid transparent; transition-property: border-color; transition-duration: 0.2s; transition-timing-function: ease-in-out; transition-delay: 0s; }
 .menu .menu-item a:hover { border-bottom-color: #222; }
 .menu .menu-item .fa { margin-right: 5px; }
 
 .use-motion .menu-item { opacity: 0; }
 
-.post-body { font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; }
+.post-body { font-family: "Microsoft YaHei", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 16px; }
 @media (max-width: 767px) { .post-body { word-break: break-word; } }
+
+blockquote { color: #8B8970; border-left: 3px solid #AE0000; }
 
 .post-body .fancybox img { display: block !important; margin: 0 auto; cursor: pointer; cursor: zoom-in; cursor: -webkit-zoom-in; }
 
 .post-body img.emoji { border: 0 !important; display: inline; vertical-align: sub; }
 
-.post-body .image-caption, .post-body .figure .caption { margin: 10px auto 15px; text-align: center; font-size: 14px; color: #999; font-weight: bold; line-height: 1; }
+.post-body .image-caption, .post-body .figure .caption { margin: 10px auto 15px; text-align: center; font-size: 14px; color: #999; line-height: 1; }
+
+img[src*='#center'] { display: block; margin: auto; }
+
+.center-image { margin: auto !important; width: auto; text-align: center !important; display: block; }
 
 .post-sticky-flag { display: inline-block; font-size: 16px; -ms-transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); transform: rotate(30deg); }
 
@@ -543,8 +554,8 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 @keyframes roll { from { -webkit-transform: rotateZ(30deg); -moz-transform: rotateZ(30deg); -ms-transform: rotateZ(30deg); -o-transform: rotateZ(30deg); transform: rotateZ(30deg); }
   to { -webkit-transform: rotateZ(-30deg); -moz-transform: rotateZ(-30deg); -ms-transform: rotateZ(-30deg); -o-transform: rotateZ(-30deg); transform: rotateZ(-30deg); } }
 .sidebar { position: fixed; right: 0; top: 0; bottom: 0; width: 0; z-index: 1040; box-shadow: inset 0 2px 6px black; background: #222; -webkit-transform: translateZ(0); }
-.sidebar a { color: #999; border-bottom-color: #555; }
-.sidebar a:hover { color: #eee; }
+.sidebar a { color: #98F5FF; border-bottom-color: #98F5FF; }
+.sidebar a:hover { color: #FFF68F; }
 @media (min-width: 768px) and (max-width: 991px) { .sidebar { display: none !important; } }
 @media (max-width: 767px) { .sidebar { display: none !important; } }
 
@@ -559,9 +570,9 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .site-author-image { display: block; margin: 0 auto; padding: 2px; max-width: 96px; height: auto; border: 2px solid #333; }
 
-.site-author-name { margin: 5px 0 0; text-align: center; color: #f5f5f5; font-weight: normal; }
+.site-author-name { margin: 5px 0 0; text-align: center; color: #FFF68F; font-weight: bold; font-size: 20px; }
 
-.site-description { margin-top: 5px; text-align: center; font-size: 14px; color: #999; }
+.site-description { margin-top: 5px; text-align: center; font-size: 14px; color: #FFF68F; }
 
 .site-state { overflow: hidden; line-height: 1.4; white-space: nowrap; text-align: center; }
 
@@ -581,8 +592,8 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .links-of-author { margin-top: 20px; }
 
-.links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #555; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #ff70ff; }
+.links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #222222; font-size: 13px; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #ff00c2; }
 
 .links-of-blogroll { font-size: 13px; }
 
@@ -820,7 +831,7 @@ hr { margin: 20px 0; height: 2px; }
 .site-meta .brand { padding: 2px 1px; background: none; }
 @media (max-width: 767px) { .site-meta .brand { display: block; } }
 .site-meta .logo { display: none; }
-.site-meta .site-title { font-size: 22px; font-weight: bolder; }
+.site-meta .site-title { font-size: 18px; font-weight: bolder; }
 @media (max-width: 767px) { .site-meta .site-title { line-height: 34px; } }
 
 .logo-line-before, .logo-line-after { display: block; overflow: hidden; margin: 0 auto; width: 75%; }
