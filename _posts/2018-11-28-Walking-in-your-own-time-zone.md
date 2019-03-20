@@ -7,8 +7,6 @@ tags: [Lifes,吾日三省吾身]
 ---
 
 
-![](https://i.postimg.cc/XqwcvgQn/bg-01.jpg)
-
 > ##### 在时间上，纽约走在加州前面三个小时，
 
 New York is 3 hours ahead of California,
