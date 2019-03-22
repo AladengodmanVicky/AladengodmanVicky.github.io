@@ -21,7 +21,7 @@
 <lastmod>2019-03-14T22:34:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:5000/category/</loc>
+<loc>http://localhost:5000/tag/</loc>
 </url>
 <url>
 <loc>http://localhost:5000/archives/</loc>
@@ -33,13 +33,16 @@
 <loc>http://localhost:5000/categories/</loc>
 </url>
 <url>
+<loc>http://localhost:5000/category/</loc>
+</url>
+<url>
 <loc>http://localhost:5000/tags/</loc>
 </url>
 <url>
-<loc>http://localhost:5000/tag/</loc>
+<loc>http://localhost:5000/about/</loc>
 </url>
 <url>
-<loc>http://localhost:5000/about/</loc>
+<loc>http://localhost:5000/wechat/</loc>
 </url>
 <url>
 <loc>http://localhost:5000/README.en/</loc>
