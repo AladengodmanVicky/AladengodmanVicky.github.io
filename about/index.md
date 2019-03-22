@@ -5,12 +5,8 @@ type: about
 ---
 
 ---
-
 > ### About Me
-
 ---
-
-<div align="right"><img align="right" width="180" height="180" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
 
 > 你好，我是**阿拉灯神丁Vicky**&nbsp;&nbsp;(AladengodmanVicky)  
 > 要做一个&nbsp;**脚踏实地，仰望星空**&nbsp;的**产品经理**  
@@ -23,9 +19,13 @@ type: about
 * **笃行**：用学习得来的知识和思想指导实践; 
 
 ---
+> ### 欢迎关注微信公众号
+---
 
+<div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
+
+---
 > ### 别处账号
-
 ---
 
 * 知乎：[@阿拉灯神丁Vicky](https://www.zhihu.com/people/AladengodmanVicky/activities)
