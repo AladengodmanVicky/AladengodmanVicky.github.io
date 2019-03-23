@@ -15,7 +15,7 @@ port: 5000
 
 # 开启打赏
 reward_comment: 放个赞赏码，万一有帅哥美女想给点赏钱呢，哈哈！
-wechatpay: https://i.postimg.cc/XYzD2pSX/Wechat-IMG650.png
+wechatpay: https://www.bobinsun.cn/assets/images/Wechat-pay.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'

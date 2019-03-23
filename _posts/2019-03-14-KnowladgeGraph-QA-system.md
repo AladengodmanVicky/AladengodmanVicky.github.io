@@ -231,8 +231,3 @@ mac本身自带python、java jdk环境，可直接安装neo4j图数据库，项�
 从知识图谱的角度分析，大多数知识图谱规模不足，主要原因还是数据来源以及技术上知识的抽取与推理困难。
 
 ![Caption](https://www.bobinsun.cn/assets/images/logo-bottom.png)
-
-> **版权声明**
-> 作者:阿拉灯神丁Vicky
-> 文章链接:https://www.bobinsun.cn/works/2019/03/14/KnowladgeGraph-QA-system/
-> 转载须知:转载请注明出处并附文章链接;
