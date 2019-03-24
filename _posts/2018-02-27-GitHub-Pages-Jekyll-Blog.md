@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 基于GitHub Pages 与 Jekyll搭建个人博客
+title: 用GitHub Pages与Jekyll搭建博客
 date: '2018-10-23 12:34:45 +0800'
 categories: Blog
 published: true
