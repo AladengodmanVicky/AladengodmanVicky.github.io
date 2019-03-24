@@ -15,7 +15,7 @@ tags:
 
 > ### 下面对本博客所用的各个工具进行介绍
 
-<div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
+<div align="right"><img width="267" height="157" src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
 - **服务器托管**：[GitHub Pages](https://pages.github.com/)
 - **博客生成工具**：[Jekyll](https://jekyllrb.com/)
 - **Jekyll Schemes**: Mist
