@@ -22,7 +22,7 @@ tags:
 - **分享功能**：[Baidu Share](http://share.baidu.com/)
 - **自定义域名**： [我是在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)，也可购买自己的服务器
 
-<div align="center" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
+<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo" target="_blank"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></a>
 
 ### 免费CDN加速
 
