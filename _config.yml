@@ -621,6 +621,7 @@ exturl: false
 # Motion
 use_motion: true
 
+# 点击图片放大的效果
 # Fancybox
 fancybox: false
 
