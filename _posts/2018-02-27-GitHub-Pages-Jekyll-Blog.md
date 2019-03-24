@@ -13,7 +13,7 @@ tags:
 ### 你好，欢迎来到[阿拉灯神丁Vicky](https://www.bobinsun.cn/)的个人博客
 
 
-> #### 本博客所用工具进行介绍
+> #### 本博客所用工具介绍
 
 - **服务器托管**：[GitHub Pages](https://pages.github.com/)
 - **博客生成工具**：[Jekyll](https://jekyllrb.com/)
