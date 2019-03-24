@@ -758,3 +758,6 @@ version: 5.1.1
 target-blank:
     css_class: ext-link
     add_css_classes: css-class-one css-class-two
+    noopener: false
+    noreferrer: false
+    rel: nofollow
