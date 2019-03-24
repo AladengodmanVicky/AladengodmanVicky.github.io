@@ -1,18 +1,21 @@
 ---
 layout: post
-title: Welcome to Bobin!
+title: 基于GitHub Pages 与 Jekyll搭建个人博客
 date: '2018-10-23 12:34:45 +0800'
 categories: Test
 published: true
 ---
 
-# Welcome
+# 你好，欢迎来到**阿拉灯神丁Vicky**的个人博客
 
-**Hello world**, this is my first Jekyll blog post.
 
-I hope you like it!
+### 下面对本博客所用的各个工具进行介绍
 
-### Github Pages使用Jekyll 搭建个人博客
+- **服务器托管**：[GitHub Pages](https://pages.github.com/)
+- **博客生成工具**：[Jekyll](https://jekyllrb.com/)
+- **Jekyll Schemes**: scheme: Mist
+
+
 
 > 授权[Prose.io](https://prose.io)去管理博客
 
