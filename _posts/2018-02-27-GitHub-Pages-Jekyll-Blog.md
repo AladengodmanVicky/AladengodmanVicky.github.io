@@ -15,15 +15,15 @@ tags:
 
 > #### 下面对本博客所用的各个工具进行介绍
 
-<div align="right"><img width="267" height="157" src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
 - **服务器托管**：[GitHub Pages](https://pages.github.com/)
 - **博客生成工具**：[Jekyll](https://jekyllrb.com/)
 - **Jekyll Schemes**: Mist
 - **评论功能**：[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
 - **分享功能**：[Baidu Share](http://share.baidu.com/)
-- **自定义域名**： [我是在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)，也可购买自己的服务器
+- **自定义域名**： [在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)，也可[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
 
-<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo" target="_blank"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></a>
+
+<div align="left" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo"><img width="267" height="157" src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
 
 > #### 免费CDN加速
 
