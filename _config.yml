@@ -75,6 +75,7 @@ plugins:
  - jemoji
  - jekyll-sitemap
  - jekyll-feed
+ - jekyll-target-blank
 
 # ---------------------------------------------------------------
 # Site Information Settings
