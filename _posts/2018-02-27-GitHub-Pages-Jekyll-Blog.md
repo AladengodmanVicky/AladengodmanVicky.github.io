@@ -27,7 +27,7 @@ tags:
 
 > #### 免费CDN加速
 
-使用[Cloudflare](https://dash.cloudflare.com/login)免费对博客进行加速
+使用[Cloudflare](https://dash.cloudflare.com/login)免费对博客进行加速，并且可加SSL,使用https协议。O(∩_∩)O哈哈~
 
 如需使用可参考文章：[Github Pages 免费使用 SSL 以及 CDN 加速](https://leamtrop.com/2018/01/28/github-pages-cloudflare/#more)
 
