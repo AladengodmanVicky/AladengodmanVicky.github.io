@@ -76,7 +76,7 @@ plugins:
  - jekyll-sitemap
  - jekyll-feed
  - jekyll-target-blank
- # 超链接跳转为在新页面打开
+# 超链接跳转为在新页面打开
 
 # ---------------------------------------------------------------
 # Site Information Settings
