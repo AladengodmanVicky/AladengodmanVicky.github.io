@@ -1,8 +1,11 @@
 ---
-title: 欢迎加入本站讨论组(基于Google,不知阁下是否可翻墙)
+title: 欢迎加入本站讨论组
 layout: page
 type: about
 ---
+
+---
+#### (本讨论组基于Google,不知阁下是否可翻墙)
 ---
 <iframe id="forum_embed"
   src="javascript:void(0)"
