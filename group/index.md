@@ -5,7 +5,7 @@ type: about
 ---
 
 ---
-#### (本讨论组基于Google,不知阁下是否可翻墙)
+> ##### (本讨论组基于Google,不知阁下是否可翻墙)
 ---
 <iframe id="forum_embed"
   src="javascript:void(0)"
