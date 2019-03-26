@@ -5,7 +5,7 @@
   src="javascript:void(0)"
   scrolling="no"
   frameborder="0"
-  width="750"
+  width="730"
   height="700">
 </iframe>
 <script type="text/javascript">
