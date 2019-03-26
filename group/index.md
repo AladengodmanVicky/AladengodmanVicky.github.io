@@ -1,5 +1,5 @@
 ---
-title: 欢迎加入本站讨论组
+title: 欢迎加入本站讨论组(基于Google,不知阁下是否可翻墙)
 layout: page
 type: about
 ---
