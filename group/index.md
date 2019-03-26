@@ -1,11 +1,11 @@
-
+### 本站讨论群组
 ---
 
 <iframe id="forum_embed"
   src="javascript:void(0)"
   scrolling="no"
   frameborder="0"
-  width="900"
+  width="750"
   height="700">
 </iframe>
 <script type="text/javascript">
