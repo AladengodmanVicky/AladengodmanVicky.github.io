@@ -3,7 +3,7 @@ title: 欢迎加入本站讨论组
 layout: page
 type: about
 ---
-
+---
 <iframe id="forum_embed"
   src="javascript:void(0)"
   scrolling="no"
