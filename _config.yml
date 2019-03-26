@@ -94,6 +94,9 @@ keywords: "Jekyll, NexT"
 # Set rss to specific value if you have burned your feed already.
 rss: true
 
+# SNS settings
+email: "bobindandan@gmail.com"
+
 # Specify the date when the site was setup
 since: 2018
 
