@@ -1,7 +1,8 @@
 ---
-title: 欢迎关注微信公众号
+title: 欢迎扫码订阅微信公众号
 layout: page
 type: about
+published: true
 ---
 
 
