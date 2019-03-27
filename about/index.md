@@ -2,6 +2,7 @@
 title: About Me
 layout: page
 type: about
+published: true
 ---
 
 
@@ -28,7 +29,7 @@ type: about
 * 人人都是产品经理：[@阿拉灯神丁](http://www.woshipm.com/u/681134)
 
 
-> ### 欢迎关注微信公众号
+> ### 订阅本站微信公众号
 ---
 
 <div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
