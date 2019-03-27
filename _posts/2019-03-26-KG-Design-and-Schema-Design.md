@@ -11,6 +11,7 @@ tags:
 excerpt: >-
   1、知识图谱所说的关系是底层存储时以关系的形式存储，还是上层以关系的形式展示/应用，到底什么样的图产品可以称之为知识图谱？
   2、知识图谱的Schema如何设计，设计要点在哪，以及流程是什么样的？
+title: 知识图谱产品设计与Schema定义(KG-PM系列)
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
