@@ -2,10 +2,11 @@
 title: 欢迎加入本站讨论组
 layout: page
 type: about
+published: true
 ---
 
 ---
-> ##### (本讨论组基于Google,不知阁下是否可翻墙)
+> ##### (本讨论组基于Google,不知阁下是否可翻墙)，[**点击加入群组**](https://groups.google.com/forum/?hl=zh-CN#!forum/bobinsun/join)
 ---
 <iframe id="forum_embed"
   src="javascript:void(0)"
