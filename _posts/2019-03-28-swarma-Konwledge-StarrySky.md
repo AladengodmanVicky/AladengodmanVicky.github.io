@@ -27,7 +27,7 @@ title: 对集智学园新版官网『知识星空』的一些思考
 > 先来看一下演示视频：
 
 <video id="video" weight="700" height="450" controls="" preload="none" poster="https://www.bobinsun.cn/assets/images/knowledge-starrysky-03.png">
-      <source id="mp4" src="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+      <source id="mp4" src="http://qiniu.swarma.org/newUser.mp4" type="video/mp4">
 </video>
 
 
