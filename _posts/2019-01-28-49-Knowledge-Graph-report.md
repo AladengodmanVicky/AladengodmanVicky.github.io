@@ -11,6 +11,7 @@ tags:
 excerpt: |-
   以下49份知识图谱行业报告是本人在学习中收集整理，分享出来，以飨大家。
   注-：如有内容涉及您的权益，请联系我，立即删除。
+title: 49份知识图谱行业大会报告整理
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
