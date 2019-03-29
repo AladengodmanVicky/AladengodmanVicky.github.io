@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-03-29 08:34:00 +0800'
 categories: Blog
@@ -9,6 +9,7 @@ tags:
   - 图片居中
   - 视频适配
 excerpt: 本篇文章不涉及Markdown的基本用法，主要总结本人在使用Markdown写博客时所用到的Markdown奇技淫巧，如有需要，拿走不谢。
+title: Markdown用法之-奇技淫巧
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
