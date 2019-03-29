@@ -132,9 +132,7 @@ Tips:  如有内容涉及您的权益，请联系我，立即删除。
 
 **需要的请前往下载页面:**
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/aminer-01.jpg"/></div>
-
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/aminer-02.jpg"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/aminer-report-01.png"/></div>
  
   
   
