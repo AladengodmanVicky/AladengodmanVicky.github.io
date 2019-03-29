@@ -23,7 +23,7 @@ title: 对集智学园新版官网『知识星空』的一些思考
 集智学园采用知识图谱的方式对原官网进行了一次升级，**官方介绍：使用一种全新的高维方式来展示网站课程。**之前看过明略的官网，动画效果与之类似，不知道此官网是不是从明略官网得到的灵感，并进行了升级。
 
 > 先来看一下演示视频：
-<video id="video" width="700" height="420" controls="" preload="none" poster="https://www.bobinsun.cn/assets/images/knowledge-starrysky-03.png">
+<video id="video" controls="controls" width="100%" height="auto">
       <source id="mp4" src="http://qiniu.swarma.org/newUser.mp4" type="video/mp4">
 </video>
 
