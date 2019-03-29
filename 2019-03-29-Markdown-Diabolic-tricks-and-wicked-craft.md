@@ -35,7 +35,8 @@ excerpt: >-
 ```
 
 > 效果展示
-<div align="center"><img width="200" height="auto" src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
+
+<div align="center"><img width="300" height="auto" src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
 ---
 
@@ -57,3 +58,7 @@ width：播放器宽度
 
 height：播放器的高度
 ```
+
+> 效果展示
+
+<video src="http://qiniu.swarma.org/newUser.mp4" controls="controls" width="100%" height="auto"/>
