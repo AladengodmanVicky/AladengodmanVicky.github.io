@@ -23,11 +23,19 @@ excerpt: >-
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 ```
 
+> 效果展示
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
+
+
 #### 自定义图片大小与位置
 
 ```
-<div align="center"><img width=" " height=" " src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
+<div align="center"><img width="200" height="auto" src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 ```
+
+> 效果展示
+<div align="center"><img width="200" height="auto" src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
 ---
 
