@@ -92,4 +92,10 @@ height：播放器的高度
 
 > 效果展示
 
-/play trombone /play crickets /play rimshot /play live /play drama /play bueller /play horn
+/play trombone
+/play crickets
+/play rimshot
+/play live
+/play drama
+/play bueller
+/play horn
