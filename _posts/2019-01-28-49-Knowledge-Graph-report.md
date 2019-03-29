@@ -12,6 +12,9 @@ excerpt: |-
   以下49份知识图谱行业报告是本人在学习中收集整理，分享出来，以飨大家。
   注-：如有内容涉及您的权益，请联系我，立即删除。
 ---
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
+
+---
 
 > 以下49份知识图谱行业报告是本人在学习中收集整理，分享出来，以飨大家。
 
@@ -73,10 +76,15 @@ Tips:  如有内容涉及您的权益，请联系我，立即删除。
 
 > 备份下载地址: https://pan.baidu.com/s/1i6nkXNVoEENn-B06Tf5ssA
 
+---
 
 [再来分享清华大学AMiner的各种AI报告链接](https://www.aminer.cn/research_report/articlelist)：https://www.aminer.cn/research_report/articlelist
 
+**需要的请前往下载页面:**
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/aminer-01.jpg"/></div>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/aminer-02.jpg"/></div>
  
   
   
