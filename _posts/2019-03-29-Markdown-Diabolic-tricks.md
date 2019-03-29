@@ -83,19 +83,3 @@ height：播放器的高度
 > 效果展示
 
 :bowtie: :money_with_wings: :anguished: :family: :ox: :mega: :bath: :soccer: :watermelon: :bike: :us: :cn: :one: :u5408: :u6709: :do_not_litter: :sos: :x:
-
-#### 不止图片，还有声音
-
-`资源截图：`
-
-<div align="center"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/emoji-sounds.png"/></div>
-
-> 效果展示
-
-/play trombone
-/play crickets
-/play rimshot
-/play live
-/play drama
-/play bueller
-/play horn
