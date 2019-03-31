@@ -4,6 +4,8 @@ layout: page
 type: about
 published: true
 ---
+---
+> ### 博客由来
 
 > 为什么要写博客？为记录想法，记录成长、记录人生。因此这只是一个以记录为主的空间，是一个网志。
 
@@ -17,7 +19,7 @@ published: true
 
 ---
 
-> **`我的联系方式`**
+> ### 我的联系方式
 
 `Wechat` : `dandan-sbb`
 
