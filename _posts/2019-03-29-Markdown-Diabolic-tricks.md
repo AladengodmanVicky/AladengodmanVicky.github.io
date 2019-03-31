@@ -83,3 +83,14 @@ height：播放器的高度
 > 效果展示
 
 :bowtie: :money_with_wings: :anguished: :family: :ox: :mega: :bath: :soccer: :watermelon: :bike: :us: :cn: :one: :u5408: :u6709: :do_not_litter: :sos: :x:
+
+## 设置字体颜色与大小
+
+#### 改变颜色
+
+```
+<font color="#191970">我要变成这个颜色#191970</font>
+```
+
+- <font color="#191970">我要变成这个颜色#191970</font>
+
