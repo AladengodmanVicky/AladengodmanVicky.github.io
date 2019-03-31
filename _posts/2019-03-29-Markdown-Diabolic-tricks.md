@@ -84,6 +84,8 @@ height：播放器的高度
 
 :bowtie: :money_with_wings: :anguished: :family: :ox: :mega: :bath: :soccer: :watermelon: :bike: :us: :cn: :one: :u5408: :u6709: :do_not_litter: :sos: :x:
 
+---
+
 ## 设置文字属性
 
 #### 改变字体颜色
@@ -142,4 +144,7 @@ height：播放器的高度
 - <table><tr><td bgcolor="#008B8B">我要变成#008B8B背景色</td></tr></table>
 - <table><tr><td bgcolor="#A9A9A9">我要变成#A9A9A9背景色</td></tr></table>
 - <table><tr><td bgcolor="#8FBC8F">我要变成#8FBC8F背景色</td></tr></table>
+
+---
+
 
