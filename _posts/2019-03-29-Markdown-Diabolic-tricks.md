@@ -106,7 +106,7 @@ height：播放器的高度
 <font size="4">我要变成4号字</font>
 <font size="5">我要变成5号字</font>
 <font size="6">我要变成6号字</font>
-<font size="7">我要变成6号字</font>
+<font size="7">我要变成7号字</font>
 ```
 > 效果展示
 - <font size="1">我要变成1号字</font>
