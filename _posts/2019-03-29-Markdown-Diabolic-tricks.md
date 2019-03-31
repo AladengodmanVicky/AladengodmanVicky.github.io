@@ -89,8 +89,12 @@ height：播放器的高度
 #### 改变颜色
 
 ```
-<font color="#191970">我要变成这个颜色#191970</font>
+<font color="#FF4500">我要变成这个颜色#FF4500</font>
 ```
 
-- <font color="#191970">我要变成这个颜色#191970</font>
+- <font color="#FF45000">我要变成这个颜色#FF4500</font>,**附**：《[十六进制颜色对照表](http://www.w3school.com.cn/cssref/css_colornames.asp)》
 
+```
+<font size="1">我要变成1号字</font>
+```
+- <font size="1">我要变成1号字</font>
