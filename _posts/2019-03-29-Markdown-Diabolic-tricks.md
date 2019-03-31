@@ -84,9 +84,9 @@ height：播放器的高度
 
 :bowtie: :money_with_wings: :anguished: :family: :ox: :mega: :bath: :soccer: :watermelon: :bike: :us: :cn: :one: :u5408: :u6709: :do_not_litter: :sos: :x:
 
-## 设置文字颜色与大小
+## 设置文字属性
 
-#### 改变颜色
+#### 改变字体颜色
 
 ```
 <font color="#FF4500">我要变成这个颜色#FF4500</font>
@@ -96,6 +96,7 @@ height：播放器的高度
 - <font color="#FF45000">我要变成这个颜色#FF4500</font>
 
 - **附**：《[十六进制颜色对照表](http://www.w3school.com.cn/cssref/css_colornames.asp)》
+
 
 #### 改变文字大小
 
@@ -108,7 +109,9 @@ height：播放器的高度
 <font size="6">我要变成6号字</font>
 <font size="7">我要变成7号字</font>
 ```
+
 > 效果展示
+
 - <font size="1">我要变成1号字</font>
 - <font size="2">我要变成2号字</font>
 - <font size="3">我要变成3号字</font>
@@ -116,3 +119,14 @@ height：播放器的高度
 - <font size="5">我要变成5号字</font>
 - <font size="6">我要变成6号字</font>
 - <font size="7">我要变成6号字</font>
+
+#### 改变文字背景颜色
+
+```
+<font bgcolor="1">我要变成背景色</font>
+<font bgcolor="2">我要变成背景色</font>
+<font bgcolor="3">我要变成背景色</font>
+<font bgcolor="4">我要变成背景色</font>
+<font bgcolor="5">我要变成背景色</font>
+<font bgcolor="6">我要变成背景色</font>
+<font bgcolor="7">我要变成背景色</font>
