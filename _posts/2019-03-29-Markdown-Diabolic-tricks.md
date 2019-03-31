@@ -122,11 +122,24 @@ height：播放器的高度
 
 #### 改变文字背景颜色
 
+> 示例代码
+
 ```
-<font bgcolor="1">我要变成背景色</font>
-<font bgcolor="2">我要变成背景色</font>
-<font bgcolor="3">我要变成背景色</font>
-<font bgcolor="4">我要变成背景色</font>
-<font bgcolor="5">我要变成背景色</font>
-<font bgcolor="6">我要变成背景色</font>
-<font bgcolor="7">我要变成背景色</font>
+<font bgcolor="#7FFF00">我要变成#7FFF00背景色</font>
+<font bgcolor="#D2691E">我要变成#D2691E背景色</font>
+<font bgcolor="#6495ED">我要变成#6495ED背景色</font>
+<font bgcolor="#FFF8DC">我要变成#FFF8DC背景色</font>
+<font bgcolor="#008B8B">我要变成#008B8B背景色</font>
+<font bgcolor="#A9A9A9">我要变成#A9A9A9背景色</font>
+<font bgcolor="#8FBC8F">我要变成#8FBC8F背景色</font>
+```
+> 效果展示
+
+- <font bgcolor="#7FFF00">我要变成#7FFF00背景色</font>
+- <font bgcolor="#D2691E">我要变成#D2691E背景色</font>
+- <font bgcolor="#6495ED">我要变成#6495ED背景色</font>
+- <font bgcolor="#FFF8DC">我要变成#FFF8DC背景色</font>
+- <font bgcolor="#008B8B">我要变成#008B8B背景色</font>
+- <font bgcolor="#A9A9A9">我要变成#A9A9A9背景色</font>
+- <font bgcolor="#8FBC8F">我要变成#8FBC8F背景色</font>
+
