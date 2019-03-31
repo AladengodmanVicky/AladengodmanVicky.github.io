@@ -56,5 +56,10 @@ published: true
 <div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
 
 
+> ### 本站浏览地图
+---
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=727&t=tt&d=FrEpkx0CqRomrvIppR72_R_4nzbDRTIaAAxJKdKno0k'></script>
+
 > ### building... 敬请期待
 ---
