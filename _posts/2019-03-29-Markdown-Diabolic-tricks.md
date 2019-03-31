@@ -135,11 +135,11 @@ height：播放器的高度
 ```
 > 效果展示
 
-- <td bgcolor="#7FFF00">我要变成#7FFF00背景色</td>
-- <td bgcolor="#D2691E">我要变成#D2691E背景色</td>
-- <td bgcolor="#6495ED">我要变成#6495ED背景色</td>
-- <td bgcolor="#FFF8DC">我要变成#FFF8DC背景色</td>
-- <td bgcolor="#008B8B">我要变成#008B8B背景色</td>
-- <td bgcolor="#A9A9A9">我要变成#A9A9A9背景色</td>
-- <td bgcolor="#8FBC8F">我要变成#8FBC8F背景色</td>
+- <table><tr><td bgcolor="#7FFF00">我要变成#7FFF00背景色</td></tr></table>
+- <table><tr><td bgcolor="#D2691E">我要变成#D2691E背景色</td></tr></table>
+- <table><tr><td bgcolor="#6495ED">我要变成#6495ED背景色</td></tr></table>
+- <table><tr><td bgcolor="#FFF8DC">我要变成#FFF8DC背景色</td></tr></table>
+- <table><tr><td bgcolor="#008B8B">我要变成#008B8B背景色</td></tr></table>
+- <table><tr><td bgcolor="#A9A9A9">我要变成#A9A9A9背景色</td></tr></table>
+- <table><tr><td bgcolor="#8FBC8F">我要变成#8FBC8F背景色</td></tr></table>
 
