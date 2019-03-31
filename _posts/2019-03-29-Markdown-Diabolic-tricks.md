@@ -93,7 +93,9 @@ height：播放器的高度
 ```
 > 效果展示
 
-- <font color="#FF45000">我要变成这个颜色#FF4500</font>,**附**：《[十六进制颜色对照表](http://www.w3school.com.cn/cssref/css_colornames.asp)》
+- <font color="#FF45000">我要变成这个颜色#FF4500</font>
+
+- **附**：《[十六进制颜色对照表](http://www.w3school.com.cn/cssref/css_colornames.asp)》
 
 #### 改变文字大小
 
