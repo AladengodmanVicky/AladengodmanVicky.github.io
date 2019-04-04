@@ -72,7 +72,7 @@ height：播放器的高度
 
 #### Emoji资源库
 
-- [EMOJI CHEAT SHEET](https://www.webfx.com/tools/emoji-cheat-sheet/):https://www.webfx.com/tools/emoji-cheat-sheet/
+- **EMOJI CHEAT SHEET** ：https://www.webfx.com/tools/emoji-cheat-sheet/
 
 - **GitHub Emoji** ： https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
@@ -83,6 +83,8 @@ height：播放器的高度
 <div align="center"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/emoji-02.png"/></div>
 
 > 效果展示
+
+:smile: :blush: :sparkling_heart: :cupid: :speech_balloon: :mag_right: :bathtub: :soccer: :gem: :one: :two: 
 
 :bowtie: :money_with_wings: :anguished: :family: :ox: :mega: :bath: :soccer: :watermelon: :bike: :us: :cn: :one: :u5408: :u6709: :do_not_litter: :sos: :x:
 
