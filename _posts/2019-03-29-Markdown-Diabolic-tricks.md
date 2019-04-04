@@ -72,7 +72,9 @@ height：播放器的高度
 
 #### Emoji资源库
 
-`资源链接`:[EMOJI CHEAT SHEET](https://www.webfx.com/tools/emoji-cheat-sheet/):https://www.webfx.com/tools/emoji-cheat-sheet/
+- [EMOJI CHEAT SHEET](https://www.webfx.com/tools/emoji-cheat-sheet/):https://www.webfx.com/tools/emoji-cheat-sheet/
+
+- **GitHub Emoji** ： https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 `资源截图：`
 
@@ -146,5 +148,3 @@ height：播放器的高度
 - <table><tr><td bgcolor="#8FBC8F">我要变成#8FBC8F背景色</td></tr></table>
 
 ---
-
-
