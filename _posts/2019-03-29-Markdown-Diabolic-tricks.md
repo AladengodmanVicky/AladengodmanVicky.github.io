@@ -72,9 +72,7 @@ height：播放器的高度
 
 #### Emoji资源库
 
-- **EMOJI CHEAT SHEET** ：https://www.webfx.com/tools/emoji-cheat-sheet/
-
-- **GitHub Emoji** ： https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+- **emoji-cheat-sheet**:https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 `资源截图：`
 
