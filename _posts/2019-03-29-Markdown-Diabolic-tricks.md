@@ -165,7 +165,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 >效果展示
 
-#### 基于知识图谱的问答系统关键技术
+#### 《基于知识图谱的问答系统关键技术》
 
 <object data="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">
