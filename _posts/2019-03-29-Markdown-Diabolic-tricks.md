@@ -153,7 +153,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 ---
 
-## 博客中插入PDF阅读器插件
+## Jekyll博客中插入PDF预览插件
 
 ```
 <object data="http://example.com/yourpdf.pdf" type="application/pdf" width="100%" height="700px">
