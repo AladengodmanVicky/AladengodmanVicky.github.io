@@ -159,7 +159,6 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 <object data="http://example.com/yourpdf.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://example.com/yourpdf.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://example.com/yourpdf.pdf">Download PDF</a>.</p>
-    </embed>
 </object>
 ```
 
