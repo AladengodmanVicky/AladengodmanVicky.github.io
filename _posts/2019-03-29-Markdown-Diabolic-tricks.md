@@ -169,8 +169,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 <object data="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">Download PDF</a>.</p>
-    </embed>
+        <p>您的浏览器不支持<b>PDFs</b>. 请下载该<b>PDF</b>后查看 : <a href="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">点击下载PDF</a>.</p>
 </object>
 
 ---
