@@ -156,7 +156,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 ## 博客中插入PDF阅读器插件
 
 ```
-<object data="http://example.com/yourpdf.pdf" type="application/pdf" width="95%" height="700px">
+<object data="http://example.com/yourpdf.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="http://example.com/yourpdf.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://example.com/yourpdf.pdf">Download PDF</a>.</p>
     </embed>
@@ -167,7 +167,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 #### 基于知识图谱的问答系统关键技术
 
-<object data="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf" type="application/pdf" width="auto" height="700px">
+<object data="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf">Download PDF</a>.</p>
     </embed>
