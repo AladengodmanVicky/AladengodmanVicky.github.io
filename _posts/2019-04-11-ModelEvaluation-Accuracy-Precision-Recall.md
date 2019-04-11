@@ -28,7 +28,23 @@ publised: false
 
 **准确率**的伪公式：
 
+```
+准确率（Accuracy） = Number of correct predictions / Total number pf predictions = 正确预测数 / 预测总数
+```
 
+在二元分类中，可根据正类别与负类别按如下方式计算：
+
+注：下方公式中，TP = 真正例 ， TN = 真负例 ， FP = 假正例 ， FN = 假负例。
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/Accuracy-01.png"/></div>
+
+试举例计算模型的准确率，假设某模型将100个肿瘤分为**恶性**（正类别）或**良性**（负类别）:
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy-example-01.png"/></div>
+
+根据上述例子我们来计算**准确率**：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/Accuracy-02.png"/></div>
 
 ---
 
@@ -44,6 +60,4 @@ publised: false
 
 ---
 
-## 
-
-
+##
