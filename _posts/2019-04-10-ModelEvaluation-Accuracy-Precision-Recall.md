@@ -61,16 +61,40 @@ publised: false
 
 还有，当我们使用**分类不平衡的数据集**（如：正类别标签与负类别标签数量存在明显差异）时，淡淡一项准确率并不能反映情况。
 
+> 为了更好的评估分类不平衡的数据集问题，下面引入精确率（Precision）和召回率（Recall）
 
 ---
 
 ## 精确率
 
+精确率为解决`在被识别为正类别的样本中，为正类别的比例`。精确率的公式定义如下：
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_01.png"/></div>
+
+`Tips: 如果模型预测结果中没有假正例，则模型的精确率为1。`
+
+那我们来接着上面肿瘤预测的样本结果来计算其精确率，好，接着看预测样本分布图：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_02.png"/></div>
+
+其精确率的计算结果为：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_eg_01.png"/></div>
+
+可以看到该肿瘤预测模型的精确率为0.5，换句话说就是，该模型在预测恶性肿瘤方面的正确率是50%。
 
 ---
 
 ## 召回率
+
+召回率为解决`在所有正类别样本中，被正确识别为正类别的比例`。召回率的公式定义如下：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_01.png"/></div>
+
+`Tips: 如果模型的预测结果没有假负例，则模型的召回率为1.0`。
+
+
+
 
 
 
