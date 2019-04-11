@@ -21,6 +21,8 @@ publised: false
 
 自然语言处理(ML)、机器学习(NLP)、信息检索(IR)等AI领域，评估(evaluation)是一项非常重要的工作，其模型或算法的评价指标往往有如下几点：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)。
 
+简单整理，以供参考。
+
 ---
 
 ## 准确率（Accuracy）
