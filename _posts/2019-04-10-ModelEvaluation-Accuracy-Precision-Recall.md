@@ -93,8 +93,15 @@ publised: false
 
 `Tips: 如果模型的预测结果没有假负例，则模型的召回率为1.0`。
 
+同样使用上述肿瘤预测的样本结果来计算其精确率，看预测样本分布图：
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_eg_01.png"/></div>
 
+召回率的计算结果如下：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_02.png"/></div>
+
+由以上结果可以看出，该模型的召回率为0.11，那么，就可以说，该模型的能够正确识别出所有恶性肿瘤的百分比是11%。
 
 
 
