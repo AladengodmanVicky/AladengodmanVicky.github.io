@@ -82,7 +82,7 @@ publised: false
 
 其精确率的计算结果为：
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision02.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_02.png"/></div>
 
 可以看到该肿瘤预测模型的精确率为0.5，换句话说就是，该模型在预测恶性肿瘤方面的正确率是50%。
 
