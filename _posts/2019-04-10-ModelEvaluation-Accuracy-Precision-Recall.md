@@ -109,11 +109,7 @@ publised: false
 
 好，带着这个问题，我们来看一个综合评价指标(F1-Measure)
 
-## 综合评价指标（F1-Measure）
-
-
-
-
 ---
 
-##
+## 综合评价指标（F1-Measure）
+
