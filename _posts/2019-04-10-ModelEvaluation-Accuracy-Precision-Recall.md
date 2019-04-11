@@ -113,3 +113,27 @@ publised: false
 
 ## 综合评价指标（F1-Measure）
 
+> F-Measure是一种统计量，又称F-Score,也是精确率（Presicion）和召回率（Recall）的加权调和平均，常用于评价分类模型的好坏。			-来自百度百科
+
+F-Measure数学公式为：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_01.png"/></div>
+
+**如上式中，P为Precision， R为Recall，a为权重因子。**
+
+当a = 1时，F值变为最常见的F1了，代表精确率和召回率的权重一样，是最常见的一种评价指标，因此，F1的数学公式为：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_02.png"/></div>
+
+根据前面的出的精确率和召回率，便可得出其F1值：
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_03.png"/></div>
+
+> F1 综合了精确率和召回率的结果，当F1较高时，则说明模型或算法的效果比较理想。
+
+
+
+
+
+
+
