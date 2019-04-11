@@ -36,15 +36,15 @@ publised: false
 
 注：下方公式中，TP = 真正例 ， TN = 真负例 ， FP = 假正例 ， FN = 假负例。
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/Accuracy-01.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/master/assets/images/Accuracy-01.png"/></div>
 
 试举例计算模型的准确率，假设某模型将100个肿瘤分为**恶性**（正类别）或**良性**（负类别）:
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy-example-01.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/master/assets/images/accuracy-example-01.png"/></div>
 
 根据上述例子的数据我们来计算该模型的**准确率**：
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/Accuracy-02.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn//master/assets/images/Accuracy-02.png"/></div>
 
 乍一看，该模型的准去确率为**0.91**，也就是**91%**，（100个样本中有91个预测正确），**这是不是可以表示我们的肿瘤分类器在识别恶性肿瘤方面酒标的非常出色呢？**
 
