@@ -62,7 +62,7 @@ publised: false
 
 换句话说，该模型与那些没有预测恶性肿瘤和良性肿瘤的模型差不多。
 
-还有，当我们使用**分类不平衡的数据集**（如：正类别标签与负类别标签数量存在明显差异）时，淡淡一项准确率并不能反映情况。
+还有，当我们使用**分类不平衡的数据集**（如：正类别标签与负类别标签数量存在明显差异）时，就一项准确率并不能反映情况。
 
 > 为了更好的评估分类不平衡的数据集问题，下面引入精确率（Precision）和召回率（Recall）
 
@@ -78,11 +78,11 @@ publised: false
 
 那我们来接着上面肿瘤预测的样本结果来计算其精确率，好，接着看预测样本分布图：
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_02.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_eg_01.png"/></div>
 
 其精确率的计算结果为：
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_eg_01.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision02.png"/></div>
 
 可以看到该肿瘤预测模型的精确率为0.5，换句话说就是，该模型在预测恶性肿瘤方面的正确率是50%。
 
