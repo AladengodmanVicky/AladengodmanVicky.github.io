@@ -43,6 +43,13 @@ title: 算法与模型评估：准确率(Accuracy)，精确率(Precision)，召�
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy_01.png"/></div>
 
+**名词解释一下：**
+
+* 真正例（TP）:正例样本被标记为正例。
+* 假正例（FP）:假例样本被标记为正例。
+* 真反例（TN）:假例样本被标记为假例。
+* 假反例（FN）:正例样本被标记为反例。
+
 试举例计算模型的准确率，假设某模型将100个肿瘤分为**恶性**（正类别）或**良性**（负类别）:
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy_eg_01.png"/></div>
