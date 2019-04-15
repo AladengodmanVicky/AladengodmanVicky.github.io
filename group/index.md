@@ -1,24 +1,31 @@
 ---
-title: 欢迎加入本站讨论组
+title: 百宝箱
 layout: page
 type: about
 published: true
 ---
 
+### 工具
+
+* [在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
+* [postimages免费图床](https://postimages.org/)
+
 ---
-> ##### (本讨论组基于Google,不知阁下是否可翻墙)，[**点击加入群组**](https://groups.google.com/forum/?hl=zh-CN#!forum/bobinsun/join)
+
+### 快捷键
+* [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
+* [Mac 多点触控手势](https://support.apple.com/zh-cn/HT204895)
+
 ---
-<iframe id="forum_embed"
-  src="javascript:void(0)"
-  scrolling="no"
-  frameborder="0"
-  width="730"
-  height="700">
-</iframe>
-<script type="text/javascript">
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/bobinsun'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
-</script>
+
+### 资源
+* [pixabay可商用免费图片库](https://pixabay.com/)
+
+---
+
+### 博客
+
+* [少林修女的日记](https://www.douban.com/people/guyi/notes)
+* [吕立青的博客](https://blog.jimmylv.info/)
+* [美团技术团队](https://tech.meituan.com/)
 ---
