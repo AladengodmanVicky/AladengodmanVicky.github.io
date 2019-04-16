@@ -630,7 +630,7 @@ use_motion: true
 
 # 点击图片放大的效果
 # Fancybox
-fancybox: false
+fancybox: true
 
 # Progress bar in the top during page loading.
 pace: false
