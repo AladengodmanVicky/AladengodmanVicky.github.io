@@ -24,7 +24,7 @@ tags:
 
 当然，也可**通过此链接**[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
+<div align="left"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
 
 
 > #### 免费CDN加速
