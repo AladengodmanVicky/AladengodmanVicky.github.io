@@ -20,9 +20,12 @@ tags:
 - **Jekyll Schemes**: Mist
 - **评论功能**：[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
 - **分享功能**：[Baidu Share](http://share.baidu.com/)
-- **自定义域名**： [在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)，也可[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
+- **自定义域名**： [在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)。
 
-[![阿里云](https://www.bobinsun.cn/assets/images/aliyun-ads.jpg)](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
+当然，也可**通过此链接**[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/aliyun-ads.jpg"/></div>
+
 
 > #### 免费CDN加速
 
