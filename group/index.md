@@ -4,6 +4,8 @@ layout: page
 type: about
 published: true
 ---
+> 以下内容版权©️归原作者，罗列以供个人学习使用，如有侵权请联系，立删。
+
 
 ### 工具
 
@@ -35,6 +37,7 @@ published: true
 
 * [Semocean-和自己赛跑的人](http://www.semocean.com/)
 * [推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments)
+* [推荐系统实践](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/blob/master/assets/pdf/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%20.pdf)
 
 ---
 **持续更新中...**
