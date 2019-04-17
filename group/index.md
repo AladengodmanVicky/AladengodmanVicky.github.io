@@ -36,4 +36,5 @@ published: true
 * [Semocean-和自己赛跑的人](http://www.semocean.com/)
 * [推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments)
 
+---
 **持续更新中...**
