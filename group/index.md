@@ -39,7 +39,8 @@ published: true
 ### 推荐系统
 
 * [Semocean-和自己赛跑的人](http://www.semocean.com/)
-* [推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments)
+* [IBM推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments)
+* [IBM推荐系统](https://www.ibm.com/developerworks/cn/opensource/os-recommender1/index.html)
 * [推荐系统实践](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/blob/master/assets/pdf/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%20.pdf)
 
 ---
