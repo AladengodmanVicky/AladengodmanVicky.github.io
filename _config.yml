@@ -399,9 +399,9 @@ baidu_analytics:
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: 阿拉灯神丁Vicky
-  count: false
+  count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
