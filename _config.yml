@@ -399,7 +399,7 @@ baidu_analytics:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: a-la-deng-shen-ding-vickykan-ai
   count: true
   # hide comments (visitors need to click to load the comments)
