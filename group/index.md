@@ -45,4 +45,10 @@ published: true
 * [推荐系统实践](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/blob/master/assets/pdf/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%20.pdf)
 
 ---
+
+### 算法
+
+* [TF-IDF及其算法](http://www.cnblogs.com/biyeymyhjob/archive/2012/07/17/2595249.html)
+
+---
 **持续更新中...**
