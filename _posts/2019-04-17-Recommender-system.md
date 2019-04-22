@@ -5,7 +5,7 @@ date: '2019-04-17 08:34:00 +0800'
 categories: AI
 tags:
   - 推荐系统
-excerpt: 推荐系统
+excerpt: 推荐系统火热，是互联网、大数据、人工智能发展的必然趋势。其可应用于各个细分领域。如：新闻微博、电商、外卖团购、视频音乐、搜索查询、社交人脉、证券股票等等。
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
