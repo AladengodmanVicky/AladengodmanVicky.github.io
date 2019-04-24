@@ -35,6 +35,8 @@ published: true
 * [吕立青的博客](https://blog.jimmylv.info/)
 * [美团技术团队](https://tech.meituan.com/)
 * [微软亚洲研究院博客](https://www.msra.cn/zh-cn/news?wd&content-type=all&tag=%25e5%25a4%25a7%25e6%2595%25b0%25e6%258d%25ae)
+* [大虾说AI](http://www.ramywu.com/)
+* [ishanshan`s Blog](https://ishanshan.im/)
 
 ---
 
