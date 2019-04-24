@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-04-17 08:34:00 +0800'
 categories: AI
