@@ -184,10 +184,15 @@ TF-IDF算法可参考《[TF-IDF及其算法](http://www.cnblogs.com/biyeymyhjob/
 
 ## 参考资料
 
-[1]. [如何将知识图谱特征学习应用到推荐系统？](https://www.msra.cn/zh-cn/news/features/embedding-knowledge-graph-in-recommendation-system-ii) 
+[1]. [如何将知识图谱特征学习应用到推荐系统？](https://www.msra.cn/zh-cn/news/features/embedding-knowledge-graph-in-recommendation-system-ii)
+
 [2]. [推荐算法不够精准？让知识图谱来解决](https://www.msra.cn/zh-cn/news/features/embedding-knowledge-graph-in-recommendation-system-i) 
+
 [3]. [个性化推荐系统，必须关注的五大研究热点](https://www.msra.cn/zh-cn/news/executivebylines/tech-bylines-personalized-recommendation-system) 
+
 [4]. [知识图谱的推荐系统综述](http://html.rhhz.net/tis/html/201805001.htm#b41) 
+
 [5]. [知识图谱在推荐系统的落地](http://www.woshipm.com/pmd/1640689.html) 
+
 [6]. [RippleNet: Propagating User Preferences on the Knowledge
 Graph for Recommender Systems](https://arxiv.org/pdf/1803.03467.pdf) 
