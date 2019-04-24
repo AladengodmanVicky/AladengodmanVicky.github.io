@@ -13,6 +13,7 @@ published: true
 
 * [在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
 * [postimages免费图床](https://postimages.org/)
+* [草料二维码](https://cli.im/)
 
 ---
 
