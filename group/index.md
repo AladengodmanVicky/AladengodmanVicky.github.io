@@ -14,6 +14,7 @@ published: true
 * [在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
 * [postimages免费图床](https://postimages.org/)
 * [草料二维码](https://cli.im/)
+* [创客贴](https://www.chuangkit.com/templatecenter)
 * [embed.ly URL卡片式嵌入生成器](https://embed.ly/code)
 
 ---
