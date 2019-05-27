@@ -40,6 +40,7 @@ published: true
 * [大虾说AI](http://www.ramywu.com/)
 * [ishanshan`s Blog](https://ishanshan.im/)
 * [Google AI blog - The latest news from Google AI](https://ai.googleblog.com/)
+* [AI研习社](https://ai.yanxishe.com/)
 
 ---
 
