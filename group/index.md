@@ -42,6 +42,7 @@ published: true
 * [Google AI blog - The latest news from Google AI](https://ai.googleblog.com/)
 * [AI研习社](https://ai.yanxishe.com/)
 * [我爱自然语言处理](http://www.52nlp.cn/)
+* [神经网络与深度学习](https://nndl.github.io/)-[邱锡鹏](https://xpqiu.github.io/)
 
 ---
 
