@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-05-29 08:34:00 +0800'
 categories: AI
@@ -8,6 +8,7 @@ tags:
   - 知识图谱
   - 产品技术先行
 excerpt: 最近，由于某些原因，特别关注了医疗知识图谱方面的发展&应用情况，有了些浅薄认识，故码此文，以供参考。
+title: 「医疗知识图谱」到「综合性医疗大脑」
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
