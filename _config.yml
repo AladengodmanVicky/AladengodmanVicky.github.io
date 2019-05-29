@@ -399,7 +399,7 @@ baidu_analytics:
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: a-la-deng-shen-ding-vickykan-ai
   count: true
   # hide comments (visitors need to click to load the comments)
@@ -454,7 +454,7 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
+  enable: true
   clientID: 5b2a2486ac80b2c5256e
   clientSecret: e14e40378b56481a8a1e2421ddb0cca931f7c3c0
   repo: AladengodmanVicky.github.io
