@@ -37,7 +37,7 @@ title: 知识图谱在金融领域的分析与应用
 
 本文重点来讲在金融领域的应用。金融行业的优势在于基础设施好、信息化较早且成熟，数据标准化程度高；业务由数据驱动，应用范围较广；市场规模大，金融机构在数据业务的付费意愿高，付费能力强。
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-04"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-04.png"/></div>
 
 **下面将对金融领域的4大业务线服务流程及细分环节、场景拆解，具体如下：**
 
