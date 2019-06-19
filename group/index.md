@@ -43,7 +43,7 @@ published: true
 * [AI研习社](https://ai.yanxishe.com/)
 * [我爱自然语言处理](http://www.52nlp.cn/)
 * [神经网络与深度学习](https://nndl.github.io/)-[邱锡鹏](https://xpqiu.github.io/)
-* [西瓜大丸子汤的博客](https://baojiebaojie.wordpress.com/)
+* [语义噪声-西瓜大丸子汤的博客](https://baojiebaojie.wordpress.com/)
 
 ---
 
