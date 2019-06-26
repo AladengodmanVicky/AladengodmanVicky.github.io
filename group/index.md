@@ -62,12 +62,21 @@ published: true
 * [TF-IDF及其算法](http://www.cnblogs.com/biyeymyhjob/archive/2012/07/17/2595249.html)
 
 
+---
+
 ### 内容资讯
 
 * [InfoQ全球性在线新闻/社区网站](https://www.infoq.cn/)
 * [湾区日报：关注创业与技术，每天推送5篇优质英文文章](https://wanqu.co/)
 * [Harvard Business Review](https://hbr.org/)
 * [Hecker News - 全球技术创业者的集中地带](https://news.ycombinator.com/)
+
+
+---
+
+### 心理学与认知科学
+
+* [Mind Hacks](https://mindhacks.com/)
 
 ---
 **建设中...**
