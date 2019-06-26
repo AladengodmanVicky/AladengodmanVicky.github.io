@@ -44,6 +44,7 @@ published: true
 * [我爱自然语言处理](http://www.52nlp.cn/)
 * [神经网络与深度学习](https://nndl.github.io/)-[邱锡鹏](https://xpqiu.github.io/)
 * [语义噪声-西瓜大丸子汤的博客](https://baojiebaojie.wordpress.com/)
+* [幻风阁-朱坤](http://www.ikent.me/blog/)
 
 ---
 
