@@ -79,4 +79,12 @@ published: true
 * [Mind Hacks - 心灵黑客](https://mindhacks.com/)
 
 ---
+
+### AI前沿资源
+
+* [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
+* []()
+
+
+
 **建设中...**
