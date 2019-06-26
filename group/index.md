@@ -76,7 +76,7 @@ published: true
 
 ### 心理学与认知科学
 
-* [Mind Hacks](https://mindhacks.com/)
+* [Mind Hacks - 心灵黑客](https://mindhacks.com/)
 
 ---
 **建设中...**
