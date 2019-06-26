@@ -9,6 +9,8 @@ published: true
 
 - 为什么要写博客？为记录想法，记录成长、记录人生。因此这只是一个以记录为主的空间，是一个网志。
 
+**写作还有另一种用途：安放自己的灵魂。**（哈哈😄灵魂是什么鬼👻）
+
 - 有那么多免费写博客的地方，比如：简书、知乎、CSDN等等。为什么还要搭建这个博客? 因为那些是公共平台，这是私人空间，一个属于个人独立、安静、思考、写作的空间. 
 
 - 这个空间，要简约、要大方、要优雅、要有格调. 
@@ -48,7 +50,6 @@ published: true
 - 知乎：[@阿拉灯神丁Vicky](https://www.zhihu.com/people/AladengodmanVicky/activities)
 - 简书：[@阿拉灯神丁Vicky](https://www.jianshu.com/u/d35797a7d500)
 - CSDN：[@阿拉灯神丁Vicky](https://blog.csdn.net/weixin_36105362)
-- 人人都是产品经理：[@阿拉灯神丁](http://www.woshipm.com/u/681134)
 
 > ### 订阅公众号
 ---
