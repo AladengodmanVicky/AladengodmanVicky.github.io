@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-07-02 18:34:00 +0800'
 categories: AI
@@ -8,6 +8,7 @@ tags:
   - 无监督学习
   - 算法总结
 excerpt: 无监督学习方法的模型、策略、算法总结。
+title: 无监督学习方法的特点
 ---
 ## 无监督学习方法的模型、策略、算法
 
