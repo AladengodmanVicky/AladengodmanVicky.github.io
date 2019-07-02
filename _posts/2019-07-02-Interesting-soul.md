@@ -11,7 +11,7 @@ excerpt: 有趣灵魂的女朋友之 · 「借钱风波」
 title: 借钱风波
 ---
 
-## 借钱风波·有趣灵魂的女朋友
+## 借钱风波·拥有「有趣灵魂的女朋友」
 
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/girlfriend.jpeg"/></div>
