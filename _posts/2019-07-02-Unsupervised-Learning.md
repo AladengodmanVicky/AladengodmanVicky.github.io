@@ -28,5 +28,13 @@ title: 无监督学习方法的特点
  话题分析 | LDA | LDA模型 | 后验概率估计 | 吉布斯抽样，变分推理
  图分析 | PageRank | 有向图上的马尔可夫链 | 平稳分布求解 | 幂法
  
- >                                                  ---摘自《统计学习方法》·李航
+ ## 术语注释
  
+ * **PCA** : 主成分分析（Principal Components Analysis）
+ * **LSA** ：潜在语义分析（Latent Semantic Analysis）
+ * **NMF** ：非矩阵分解（Non-negative Matrix Factorization）
+ * **PLSA** : 概率潜在语义分析（Probabilistic Latent Semantic Analysis）
+ * **SVD** : 奇异值分解（Singular Value Decomposition）
+ * **LDA** : 潜在狄利克雷分配（Latent Dirichlet Allocation）
+ 
+ >                                                  ---摘自《统计学习方法》·李航
