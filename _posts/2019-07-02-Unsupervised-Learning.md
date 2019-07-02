@@ -28,7 +28,7 @@ title: 无监督学习方法的特点
  图分析 | PageRank | 有向图上的马尔可夫链 | 平稳分布求解 | 幂法
  
  
- ## 术语注释
+## 术语注释
  
  * **PCA** : 主成分分析（Principal Components Analysis）
  * **LSA** ：潜在语义分析（Latent Semantic Analysis）
