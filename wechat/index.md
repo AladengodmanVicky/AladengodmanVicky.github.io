@@ -12,7 +12,7 @@ published: true
 
 ---
 
-# <div align="center">知识图谱</div>
+# 知识图谱
 
 ## 文章
 
