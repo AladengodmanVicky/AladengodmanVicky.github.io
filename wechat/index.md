@@ -16,6 +16,7 @@ published: true
 ### 文章
 
 * [阿里巴巴电商认知图谱揭秘](https://www.secrss.com/articles/9743)
+* [下一代 AI 系统基石：知识图谱将何去何从？](https://www.infoq.cn/article/DCf3GUp_alTIMuyxYWl3)
 
 
 ### 行业报告
