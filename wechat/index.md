@@ -19,6 +19,10 @@ published: true
 * [阿里巴巴电商认知图谱揭秘](https://www.secrss.com/articles/9743)
 * [下一代 AI 系统基石：知识图谱将何去何从？](https://www.infoq.cn/article/DCf3GUp_alTIMuyxYWl3)
 * [腾讯互娱刘伟：知识图谱让AI更有学识](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651009590&idx=4&sn=e684d70e85b17d4bbb3e48f990014a0d&chksm=bdbeca658ac943737373d9a697bd0296c29b8c20b21638b3b58063c36d846bf4e66635efc79c&scene=27#wechat_redirect)
+* [大众点评搜索基于知识图谱的深度学习排序实践](https://tech.meituan.com/2019/01/17/dianping-search-deeplearning.html)
+* [WSDM Cup 2019自然语言推理任务获奖解题思路](https://tech.meituan.com/2019/02/21/wsdm-cup-meituan-nlp-practice.html)
+* [美团大脑：知识图谱的建模方法及其应用](https://tech.meituan.com/2018/11/01/meituan-ai-nlp.html)
+* [美团餐饮娱乐知识图谱——美团大脑揭秘](https://tech.meituan.com/2018/11/22/meituan-brain-nlp-01.html)
 
 
 ### 行业报告
