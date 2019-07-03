@@ -14,6 +14,10 @@ published: true
 
 # <p align="center">知识图谱</p>
 
+<p align="center">
+# 知识图谱
+</p>
+
 ### 文章
 
 * [阿里巴巴电商认知图谱揭秘](https://www.secrss.com/articles/9743)
