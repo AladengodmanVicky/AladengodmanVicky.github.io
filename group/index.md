@@ -73,6 +73,11 @@ published: true
 * [Harvard Business Review](https://hbr.org/)
 * [Hecker News - 全球技术创业者的集中地带](https://news.ycombinator.com/)
 
+---
+
+### AI前沿资源
+
+* [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
 
 ---
 
@@ -82,11 +87,10 @@ published: true
 
 ---
 
-### AI前沿资源
+### 写作
 
-* [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
-* []()
-
+* [文学 - 中国社会科学网](http://www.cssn.cn/wx/)
 
 
-**建设中...**
+
+building...
