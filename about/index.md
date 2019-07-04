@@ -4,6 +4,12 @@ layout: page
 type: about
 published: true
 ---
+> ### 好吧，我承认，这是个广告图。
+---
+
+<div align="center"><img width="800" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
+
+
 > ### 博客由来
 ---
 
@@ -51,11 +57,6 @@ published: true
 - 简书：[@阿拉灯神丁Vicky](https://www.jianshu.com/u/d35797a7d500)
 - CSDN：[@阿拉灯神丁Vicky](https://blog.csdn.net/weixin_36105362)
 
-> ### 订阅公众号
----
 
-<div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
+building... 
 
-
-> ### building... 敬请期待
----
