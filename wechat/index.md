@@ -10,10 +10,6 @@ published: true
 <div align="center"><img width="800" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
 
-> # 知识图谱
-
----
-
 > ### 文章
 
 ---
