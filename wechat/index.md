@@ -35,9 +35,9 @@ published: true
 * [2019中国人工智能医疗白皮书.pdf](https://www.bobinsun.cn/assets/pdf/2019%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8C%BB%E7%96%97%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf)
 
 
-> ### 开源分词工具
+> ### 开源自然语言处理工具
 
 ---
 
 * [Stanford CoreNLP – Natural language software -「集成NLP工具包，含中文包」](https://stanfordnlp.github.io/CoreNLP/#about)
-
+* [jieba - “结巴”中文分词：做最好的 Python 中文分词组件](https://github.com/fxsjy/jieba)
