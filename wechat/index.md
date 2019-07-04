@@ -1,14 +1,13 @@
 ---
-title: 欢迎扫码订阅微信公众号
+title: 知识图谱
 layout: page
 type: about
 published: true
 ---
-
-
+> ### 好吧，我承认，这是个广告图。欢迎你订阅。
 ---
 
-<div align="center"><img width="150" height="150" src="https://www.bobinsun.cn/assets/images/WeChat-logo.jpg"/></div>
+<div align="center"><img width="800" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
 
 > # 知识图谱
