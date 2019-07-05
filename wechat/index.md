@@ -42,3 +42,10 @@ published: true
 * [THULAC：一个高效的中文词法分析工具包](https://github.com/thunlp/THULAC)
 * [FudanNLP-fnlp - 中文NLP工具包，提供诸如分词、词性标注、文本分类、依存句法分析等功能。](https://github.com/FudanNLP/fnlp)
 * [LTP - 哈工大开源的一套中文语言处理系统](https://github.com/HIT-SCIR/ltp)
+
+
+> ### 电子书
+
+---
+
+* [阿里机器智能 - 语音与信号处理技术精选专辑](https://alitech-private.oss-cn-beijing.aliyuncs.com/1559298230163/yuyinjisu.pdf?Expires=1562301801&OSSAccessKeyId=LTAIqKGWQyF6Vd3W&Signature=/2j/DcFUeb6jwYVMicCdAmaFpCQ%3D)
