@@ -1,5 +1,5 @@
 ---
-title: KG&NLP
+title: KG & NLP
 layout: page
 type: about
 published: true
