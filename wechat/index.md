@@ -1,5 +1,5 @@
 ---
-title: 知识图谱
+title: KG&NLP
 layout: page
 type: about
 published: true
