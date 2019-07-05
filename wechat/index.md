@@ -22,6 +22,7 @@ published: true
 * [美团大脑：知识图谱的建模方法及其应用](https://tech.meituan.com/2018/11/01/meituan-ai-nlp.html)
 * [美团餐饮娱乐知识图谱——美团大脑揭秘](https://tech.meituan.com/2018/11/22/meituan-brain-nlp-01.html)
 * [知识图谱数据构建的“硬骨头”，阿里工程师如何拿下？](https://zhuanlan.zhihu.com/p/34535849)
+* [阿里小蜜这一年，经历了哪些技术变迁？](https://zhuanlan.zhihu.com/p/33596423)
 
 
 > ### 行业报告
