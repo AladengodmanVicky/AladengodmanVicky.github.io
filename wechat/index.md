@@ -21,6 +21,7 @@ published: true
 * [WSDM Cup 2019自然语言推理任务获奖解题思路](https://tech.meituan.com/2019/02/21/wsdm-cup-meituan-nlp-practice.html)
 * [美团大脑：知识图谱的建模方法及其应用](https://tech.meituan.com/2018/11/01/meituan-ai-nlp.html)
 * [美团餐饮娱乐知识图谱——美团大脑揭秘](https://tech.meituan.com/2018/11/22/meituan-brain-nlp-01.html)
+* [知识图谱数据构建的“硬骨头”，阿里工程师如何拿下？](https://zhuanlan.zhihu.com/p/34535849)
 
 
 > ### 行业报告
