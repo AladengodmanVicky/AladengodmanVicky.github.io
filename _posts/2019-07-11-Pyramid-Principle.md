@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-07-011 18:34:00 +0800'
 categories: Model
@@ -7,7 +7,8 @@ tags:
   - 金字塔原理
   - 芭芭拉明托
   - 模型
-excerpt: null
+excerpt: 《金字塔原理》- 要点汇总
+title: 「金字塔原理」附录三
 ---
 
 > 《金字塔原理》- 要点汇总
