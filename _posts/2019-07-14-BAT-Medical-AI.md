@@ -33,9 +33,7 @@ title: BAT-医疗知识图谱产品分析介绍
 百度“灵医”，主要切入方向为**临床辅助决策、医疗大数据治理与智能诊前助手**。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-01.png"/></div>
-
-<div align="center">`百度灵医产品架构图`</div>
-
+`<div align="center">百度灵医产品架构图</div>`
 <br>
 
 **临床辅助决策**面向医生，根据针对场景与疾病的不同又拆分为3个版本，分别为**标准版、基层版、专病版**。
