@@ -42,6 +42,12 @@ title: BAT-医疗知识图谱产品分析介绍
 
 标准版面向大型医院需求进行定制，针对辅助诊断、治疗方案推荐、相似病历推荐、医嘱质控、病历内涵质控、医学知识查询等目标进行功能设计，同时满足国家对电子病历系统功能应用水平分级评价、医疗健康信息互联互通标准成熟度测评等相关要求设计产品细节，嵌入医生工作流，提升临床效率。
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-15.png"/></div>
+
+<div align="center">《电子病历系统功能应用水平分级评价方法及标准（试行）》</div>
+
+<br>
+
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-02.png"/></div>
 <div align="center">辅助诊断界面</div>
 <br>
