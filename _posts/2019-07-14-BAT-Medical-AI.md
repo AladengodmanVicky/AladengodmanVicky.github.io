@@ -44,15 +44,19 @@ title: BAT-医疗知识图谱产品分析介绍
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-02.png"/></div>
 <div align="center">辅助诊断界面</div>
+<br>
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-03.png"/></div>
 <div align="center">治疗方案推荐界面</div>
+<br>
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-04.png"/></div>
 <div align="center">相似病历推荐界面</div>
+<br>
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-05.png"/></div>
 <div align="center">医嘱质控界面</div>
+<br>
 
 从以上产品截图可以看出，百度灵医临床辅助决策系统侧重建设电子病历，有利于NLP进行病历分析、语义分析，方便信息抽取去推荐。结合搜索引擎技术进行知识检索、病历检索；利用症语义向量相关性及疾病诊断模型进行疑似疾病判断、治疗方案推荐、相似病历推荐等等。
 
@@ -62,9 +66,11 @@ title: BAT-医疗知识图谱产品分析介绍
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-06.png"/></div>
 <div align="center">百度灵医功能覆盖就医流程图</div>
+<br>
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-07.png"/></div>
 <div align="center">智能问诊界面</div>
+<br>
 
 专病版面向医生在专病诊疗方面提升效率，降低疏漏可能性，也为解决专病诊治的行业性难题。
 
@@ -75,6 +81,7 @@ title: BAT-医疗知识图谱产品分析介绍
 医疗大数据治理是为推动医疗AI的基础性工作，也是实现病历结构化的第一步，针对结构化病历的分析，使得病历数据可以更方便地再利用，成为教学、科研、管理决策的重要资料。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-08.png"/></div>
+<br>
 
 结构化良好的病历数据，可支持大规模病历的自动抽取、分析，构建知识图谱，从而进行高效、精确的辅助决策。然而数据的利用存在两重困难：
 
@@ -93,6 +100,7 @@ title: BAT-医疗知识图谱产品分析介绍
 **临床医学科研辅助平台**
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-09.png"/></div>
+<br>
 
 
 中国医学会误诊资料显示，中国临床医疗误诊率为27.8%，在临床科研数据中心，使用搜索引擎技术为医生提供快速、准确，多种组合方式的病历搜索功能。通过数据仓库、数据挖掘等方法，用海量临床科研数据来评价治疗效果，发现诊疗规律，提炼最佳治疗路径，提高医疗科研的能力和水平。
@@ -108,6 +116,7 @@ title: BAT-医疗知识图谱产品分析介绍
 **临床医师能力训练平台**
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-10.png"/></div>
+<br>
 
 为建立优秀的医师培训体系是卫生事业改革和发展的一项重要任务。鉴于此，开发沉浸式医师培训系统，提升医师培训的质量与效率。新打造的医师培训系统将从过往脱敏病例（使不能从病例中推断患者个人信息）中挖掘疾病的临床路径并自动构建虚拟病人，医师用户可在模拟场景中对虚拟病人进行诊疗，并从中获取医学知识，规范诊疗操作，提高临床思维。
 
@@ -118,6 +127,7 @@ title: BAT-医疗知识图谱产品分析介绍
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-11.png"/></div>
 
 <div align="center">糖尿病诊断与用药分析系统</div>
+<br>
 
 ### ET医疗大脑：解决医疗行业的核心问题
 
@@ -150,6 +160,7 @@ title: BAT-医疗知识图谱产品分析介绍
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-12.png"/></div>
 
 <div align="center">觅影产品架构图</div>
+<br>
 
 **智能导诊优势：**
 
@@ -162,12 +173,14 @@ title: BAT-医疗知识图谱产品分析介绍
 智能导诊功能介绍：问询即出导诊结果，患者通过医院公众号、小程序等接入端，简要描述症状或疾病，导诊助手会追问引导其补充症状，从而精准匹配科室，为其推荐专业方向最相符的医生，实现线上导诊挂号一步到位。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-13.png"/></div>
+<br>
 
 病案智能管理通过深度学习技术，提取海量病案特征信息，助力医院的数据标准化和医疗数据管理，为医院科研提速。
 
 目前国内医院的病案，依赖病案室人力或数据公司进行整理。科室的医学科研，提取病案特征信息也是通过人工完成。 需要投入大量人力与资金，准确率不能得到保障。通过深度学习技术，实现病案智能化管理，自动提取病案特征信息，为科研提速。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/bat-14.png"/></div>
+<br>
 
 通过AI辅助诊疗，对医院数据做标准化处理，助力医院完成工作量巨大而且推行困难的数据治理工作。同时基于人工智能技术和产品实力，根据需求，针对数据做定制化改造优化，输出符合要求的标准化数据。
 
