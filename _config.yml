@@ -14,7 +14,7 @@ date_format: '%Y-%m-%d'
 port: 5000
 
 # 开启打赏
-reward_comment: 放个赞赏码，万一有帅哥美女想给点赏钱呢，哈哈！
+reward_comment: 放个收款码，万一有大佬想请我喝瓶苏打水呢？
 wechatpay: https://www.bobinsun.cn/assets/images/Wechat-pay.png
 
 # URL
