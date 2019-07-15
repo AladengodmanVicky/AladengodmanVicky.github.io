@@ -218,4 +218,4 @@ title: BAT-医疗知识图谱相关产品分析介绍
 
 ## ChangeLog
 
-* Created on 19.07.15
+* Created on 19.07.14
