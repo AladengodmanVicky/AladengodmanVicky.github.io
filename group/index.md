@@ -74,6 +74,7 @@ published: true
 * [Hecker News - 全球技术创业者的集中地带](https://news.ycombinator.com/)
 * [哈佛商业评论 - 「杂志」](https://www.hbrchina.org/140803-1/)
 * [Mckinsey & Company](https://www.mckinsey.com.cn/)
+* [每日易讯](https://www.eznewstoday.com/)
 
 ---
 
