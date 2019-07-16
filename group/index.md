@@ -66,13 +66,14 @@ published: true
 
 ---
 
-### 内容资讯
+### 行业资讯
 
 * [InfoQ全球性在线新闻/社区网站](https://www.infoq.cn/)
 * [湾区日报：关注创业与技术，每天推送5篇优质英文文章](https://wanqu.co/)
 * [Harvard Business Review](https://hbr.org/)
 * [Hecker News - 全球技术创业者的集中地带](https://news.ycombinator.com/)
 * [哈佛商业评论 - 「杂志」](https://www.hbrchina.org/140803-1/)
+* [Mckinsey & Company](https://www.mckinsey.com.cn/)
 
 ---
 
