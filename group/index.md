@@ -62,7 +62,7 @@ published: true
 ### 算法
 
 * [TF-IDF及其算法](http://www.cnblogs.com/biyeymyhjob/archive/2012/07/17/2595249.html)
-
+* [Jiacheng Pan - 可视化和可视化分析、图论](https://jiacheng-pan.github.io/wiki/)
 
 ---
 
