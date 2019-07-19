@@ -13,6 +13,9 @@ title: 创新-进攻者的优势
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"/></div>
 
+《创新·进攻者的优势》一书的观点说**创新**是创新者或者说进攻者与防守者之间的一场较量，在这场较量中，进攻者通过改变事物的秩序来获取收益，而防守者保护其既有的现金流。
+
+
 
 
 
