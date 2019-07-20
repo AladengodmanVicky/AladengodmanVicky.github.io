@@ -65,3 +65,19 @@ excerpt: 个人收集NLP资源及KG行业资源
 ---
 
 * [阿里机器智能 - 语音与信号处理技术精选专辑](https://alitech-private.oss-cn-beijing.aliyuncs.com/1559298230163/yuyinjisu.pdf?Expires=1562301801&OSSAccessKeyId=LTAIqKGWQyF6Vd3W&Signature=/2j/DcFUeb6jwYVMicCdAmaFpCQ%3D)
+
+
+### 推荐系统
+
+* [Semocean-和自己赛跑的人](http://www.semocean.com/)
+* [IBM推荐引擎初探](https://www.ibm.com/developerworks/cn/web/1103_zhaoct_recommstudy1/index.html#icomments)
+* [IBM推荐系统](https://www.ibm.com/developerworks/cn/opensource/os-recommender1/index.html)
+* [推荐系统实践](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/blob/master/assets/pdf/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E5%AE%9E%E8%B7%B5%20.pdf)
+
+---
+
+### 算法
+
+* [TF-IDF及其算法](http://www.cnblogs.com/biyeymyhjob/archive/2012/07/17/2595249.html)
+* [Jiacheng Pan - 可视化和可视化分析、图论](https://jiacheng-pan.github.io/wiki/)
+
