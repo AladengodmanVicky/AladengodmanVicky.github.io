@@ -7,6 +7,7 @@ tags:
   - KG&NLP
   - 资源
 excerpt: 个人收集NLP资源及KG行业资源
+title: 资源
 ---
 ### 博客
 
