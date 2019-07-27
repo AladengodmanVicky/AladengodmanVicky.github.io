@@ -11,6 +11,8 @@ excerpt: Palantir介绍-分析-09
 
 # Palantir介绍-分析-09
 
+> 这里转在一篇关于对 Palantir公司 **商业模式画布**、**SWOT**、**垄断特征**、以及 **7个商业模式**的分析文章。
+
 ## 商业模式画布
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/palantir-09-1.png"/></div>
