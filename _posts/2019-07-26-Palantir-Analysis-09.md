@@ -4,9 +4,14 @@ layout: post
 date: '2019-07-26 08:34:00 +0800'
 categories: Palantir
 tags:
-  - Palantir-Analysis
-  - Palantir介绍
-excerpt: Palantir介绍-分析-09
+  - Palantir分析
+  - 商业模式画布
+  - SWOT
+  - 垄断特征
+  - 7个商业模式
+excerpt: >-
+  这里翻译转载一篇关于对 Palantir公司 **商业模式画布**、**SWOT**、**垄断特征**、以及
+  **7个商业模式**的分析文章。关于Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。
 title: Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」
 ---
 
