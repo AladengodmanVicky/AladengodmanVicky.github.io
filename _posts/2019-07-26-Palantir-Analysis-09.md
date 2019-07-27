@@ -224,7 +224,7 @@ excerpt: Palantir介绍-分析-09
 
 * 投资者在未来18至24个月内监控的关键问题是竞争的影响以及政府/服务收入对Palantir利润率的混合转移
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/palantir-09-2.png"/></div>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/palantir-09-3.png"/></div>
 <br>
 
 * 最近有媒体报道称，Palantir有望在2017年底实现盈利。但是，可比公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转向传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出增加。
