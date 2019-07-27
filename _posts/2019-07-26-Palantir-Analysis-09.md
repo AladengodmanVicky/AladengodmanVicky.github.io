@@ -10,13 +10,13 @@ tags:
   - 垄断特征
   - 7个商业模式
 excerpt: >-
-  这里翻译转载一篇关于Palantir公司的「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」的分析文章。关于Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。
+  这里翻译一篇关于Palantir的分析文章，包括「商业模式画布」、「SWOT」、「垄断特征」、及「7个商业模式」。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。
 title: Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」
 ---
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/palantir-09-8.png"/></div>
 <br>
 
-> 这里翻译转载一篇关于Palantir公司的 **商业模式画布**、**SWOT**、**垄断特征**、以及**7个商业模式**的分析文章。关于Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。
+> 这里翻译一篇关于Palantir的分析文章，包括商业模式画布、SWOT、垄断特征、及7个商业模式。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。
 
 ## 商业模式画布
 
