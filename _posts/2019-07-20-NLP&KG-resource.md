@@ -113,4 +113,4 @@ title: 资源
 
 ## 数据分析
 
-* [一个数据分析师的自我修养](https://ask.hellobi.com/blog/dataanalystimprovement)
+* [一个数据分析师的自我修养 - 陈丹奕](https://ask.hellobi.com/blog/dataanalystimprovement)
