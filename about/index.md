@@ -18,6 +18,10 @@ published: true
 
 - 自从写博后，越来越喜欢`Markdown`.真是一种神奇的编辑方式,码起字来有一种`莫名的快感`,排版如此优雅。`你说气人不`.
 
+## 好吧，我承认，这是个广告图。
+
+
+<div align="center"><img width="500" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
 ## 联系方式
 
@@ -27,9 +31,3 @@ published: true
 - `Mail` : `bobindandan@gmail.com`
 
 - 如果您`加我好友`或者`给我发邮件`，请备注来自`博客`，那么我便知道您是`同道中人`。
-
-
-## 好吧，我承认，这是个广告图。
-
-
-<div align="center"><img width="500" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
