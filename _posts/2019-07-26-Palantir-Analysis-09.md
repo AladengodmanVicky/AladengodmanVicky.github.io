@@ -41,6 +41,17 @@ title: Palantir分析：「商业模式画布」、「SWOT」、「垄断特征�
 
 * **Palantir Gotham**：Palantir Gotham，以前称为`Palantir政府`，是Palantir的第一个产品，主要是为政府设计，帮助国防机构识别潜在的威胁。该平台的基础模型基本上是图形，主要围绕对象及其之间的链接构建。来自多个源的结构化和非结构化数据都输入到系统中。然后将数据转换为对象并生成到模型中。用户可以使用该模型来描述，探索和查询这些对象的属性和关系。通过该平台构建的多个应用程序使用户能够在平台内搜索、可视化、假设、发现模式并与同事分享见解。减少用户与其数据之间的摩擦。
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3828096221540362"
+     data-ad-slot="8737556252"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 * **Palantir Metropolis**：Palantir Metropolis，以前称为`Palantir Finance`，主要是为金融业设计，帮助进行欺诈检测。该平台围绕时间序列构建。从根本上说，它的基础模型是一系列事件。该平台非常适用于分析`保险索赔数据`，`网络流量`和`金融交易模式`。它可以帮助用户在数学上分析随着时间推移的模型行为（例如，股票价格）。Metropolis主要支持聚合分析：选择一组模型和一个时间段，然后对它们进行复杂的数学计算。由于其快速的迭代和协作能力，Metropolis在这个领域的竞争中脱颖而出。
 
 * 数据可视化、预测分析和地理智能空间。
