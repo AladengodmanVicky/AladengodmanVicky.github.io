@@ -8,3 +8,4 @@ published: true
 ---
 
 <div align="center"><img width="500" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
+<br>
