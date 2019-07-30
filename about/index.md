@@ -4,8 +4,7 @@ layout: page
 type: about
 published: true
 ---
-> ### 博客由来
----
+## 博客由来
 
 - 为什么要写博客？为记录想法，记录成长、记录人生。因此这只是一个以记录为主的空间，是一个网志。
 
@@ -19,8 +18,9 @@ published: true
 
 - 自从写博后，越来越喜欢`Markdown`.真是一种神奇的编辑方式,码起字来有一种`莫名的快感`,排版如此优雅。`你说气人不`.
 
-> ### 联系方式
----
+
+## 联系方式
+
 
 - `Wechat` : `dandan-sbb`
 
@@ -28,33 +28,9 @@ published: true
 
 - 如果您`加我好友`或者`给我发邮件`，请备注来自`博客`，那么我便知道您是`同道中人`。
 
----
 
-> ### 闲言碎语
----
+## 好吧，我承认，这是个广告图。
 
-你好，我是**阿拉灯神丁Vicky**&nbsp;&nbsp;(AladengodmanVicky)  
-一只&nbsp;**脚踏实地，仰望星空**&nbsp;的**产品经理**  
-坚持 **博学之**，**审问之**，**慎思之**，**明辨之**，**笃行之**  
-
-- **博学**：广泛学习涉猎;
-- **审问**：学会提问;
-- **慎思**：全面思考;
-- **明辨**：清晰的判断力;
-- **笃行**：用知识和思想指导实践; 
-
-
-> ### 别处账号
----
-
-- 知乎：[@阿拉灯神丁Vicky](https://www.zhihu.com/people/AladengodmanVicky/activities)
-- 简书：[@阿拉灯神丁Vicky](https://www.jianshu.com/u/d35797a7d500)
-- CSDN：[@阿拉灯神丁Vicky](https://blog.csdn.net/weixin_36105362)
-
-> ### 好吧，我承认，这是个广告图。
----
 
 <div align="center"><img width="800" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
-
-building... 
 
