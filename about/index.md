@@ -31,3 +31,7 @@ published: true
 - `Mail` : `bobindandan@gmail.com`
 
 - 如果您`加我好友`或者`给我发邮件`，请备注来自`博客`，那么我便知道您是`同道中人`。
+
+## 访客地图
+
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=602&t=tt&d=FrEpkx0CqRomrvIppR72_R_4nzbDRTIaAAxJKdKno0k&co=84bae0&ct=040000&cmo=35ed13&cmn=fc0004'></script>
