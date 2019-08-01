@@ -68,7 +68,7 @@ defaults:
 # Atom feed
 feed:
   path: atom.xml
-  path: sitemap.xml
+  path: sitemap.xslt.xml
 
 # Plugins
 ## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
