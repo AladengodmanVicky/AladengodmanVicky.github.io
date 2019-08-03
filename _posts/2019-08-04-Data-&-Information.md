@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: 数据与信息
 date: 2019-08-04T00:00:00.000Z
 categories: AI
