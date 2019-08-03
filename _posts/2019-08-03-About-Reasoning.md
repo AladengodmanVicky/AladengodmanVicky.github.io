@@ -21,8 +21,7 @@ title: 关于推理 - 7种推理类型
 
 > 「推理」是“使用理智从某些前提产生结论”的行动。    - 来自 · 维基百科
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-01.jpg"/></div>
-<br>
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-01.jpg"/></div><br>
 
 「推理」是以符合逻辑的、合理的思考方式思考事物的过程。被认为是一种人类天生的能力，但现在已经被逻辑学、数学、以及人工智能等领域逐渐形式化。
 
