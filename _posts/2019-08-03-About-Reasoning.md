@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-08-03 08:34:00 +0800'
 categories: Thinking
