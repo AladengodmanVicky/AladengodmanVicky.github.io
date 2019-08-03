@@ -20,6 +20,8 @@ title: 关于推理 - 7种推理类型
 
 > 日期： 2019-08-03
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-01.jpg"/></div>
+<br>
 
 在人工智能的各种的应用中通常需要使用推理，而常见的推理方式有哪些？这里做了一些简单整理，以供参考。
 
