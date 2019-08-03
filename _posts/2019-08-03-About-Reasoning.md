@@ -6,11 +6,16 @@ categories: Thinking
 tags:
   - 演绎推理
   - 归纳推理
+  - 类比推理
+  - 分析推理
   - 诱导推理
   - 向后归纳
   - 批判性思维
   - 反事实思维
   - 直觉
+  - 动机推理
+  - 机会推理
+  - 循环推理
 excerpt: 在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的一些推理类型做了简单整理，以供参考。
 title: 关于推理 - 12种推理类型
 ---
@@ -79,6 +84,8 @@ title: 关于推理 - 12种推理类型
 
 对计算机来说，通过机器的结束状态，来向后推理来评估动作的效果。例如：计算机下棋的经典方式是通过反向归纳。
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-02.jpg"/></div><br>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -126,6 +133,8 @@ title: 关于推理 - 12种推理类型
 * A：会计师通常擅长数学。
 * B：张三是一名会计师。
 * 演绎：张三可能擅长数学。
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-03.jpg"/></div><br>
 
 上面的例子是模糊逻辑的一个例子，因为它能够理解灰色区域，其中存在“通常”、“可能”，它属于前向链接，因为它从你已知的信息转移到新的信息。
 
