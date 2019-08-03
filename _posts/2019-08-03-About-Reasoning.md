@@ -20,14 +20,14 @@ title: 关于推理 - 7种推理类型
 
 > 日期： 2019-08-03
 
-<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-01.jpg"/></div>
-<br>
 
 在人工智能的各种应用中通常需要使用推理，而常见的推理方式有哪些？这里做了一些简单整理，以供参考。
 
 
 > 「推理」是“使用理智从某些前提产生结论”的行动。    - 来自 · 维基百科
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/reasoning-01.jpg"/></div>
+<br>
 
 「推理」是以符合逻辑的、合理的思考方式思考事物的过程。被认为是一种人类天生的能力，但现在已经被逻辑学、数学、以及人工智能等领域逐渐形式化。
 
