@@ -67,6 +67,18 @@ title: 关于推理 - 7种推理类型
 
 对计算机来说，通过机器的结束状态，来向后推理来评估动作的效果。例如：计算机下棋的经典方式是通过反向归纳。
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3828096221540362"
+     data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 ### 批判性思维
 
 「批判性思维」是一个理性思考的过程，旨在以客观、全面、知情的方式得出结论。批判性思维是人类思想的产物，受文化、语言等因素的影响。人类思想基于自然语言，做出判断前需要考虑大量的想法。
@@ -88,5 +100,3 @@ title: 关于推理 - 7种推理类型
 通常认为直觉是通过无意识感知的结果。是由无意识感知的心灵所做出的判断，这种判断表现出智慧，但产生这些判断的过程并不是很清楚。尽管直觉有时候被轻视，但他在科学发现中却发挥了重要作用。
 
 (完)
-
-
