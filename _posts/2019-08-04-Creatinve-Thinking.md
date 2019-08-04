@@ -21,6 +21,8 @@ categories: Thinking
 ---
 创造性思维是以灵活、灵动和原创的方式进行思考的过程，并且被认为是战略、解决问题和决策的重要元素。可以提供广泛的可能性和解决方案。
 
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/creative-thinking.png"/></div><br>
+
 **以下是创造性思维的常见类型：**
 
 ### 饱满的心态
