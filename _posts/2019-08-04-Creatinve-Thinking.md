@@ -2,7 +2,7 @@
 published: true
 title: 创造性思维
 date: '2019-08-04 08:34:00 +0800'
-categroies: Thinking
+categroies: false
 tages:
   - 饱满的心态
   - 发散思维
