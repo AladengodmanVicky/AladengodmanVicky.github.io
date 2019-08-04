@@ -1,7 +1,7 @@
 ---
 published: true
 title: 创造性思维
-date: 2019-08-04T08:00:00.000Z
+date: '2019-08-04 08:34:00 +0800'
 categroies: Thinking
 tages:
   - 饱满的心态
