@@ -1,10 +1,23 @@
 ---
-published: false
+published: true
 title: 创造性思维
-date: {}
+date: 2019-08-04T08:00:00.000Z
 categroies: Thinking
-tages: null
-excerpt: null
+tages:
+  - 饱满的心态
+  - 发散思维
+  - 推测
+  - 头脑风暴
+  - 保持歧义
+  - 约束的创造力
+  - 设计思维
+  - 反事实思维
+  - 抽象化
+  - 比喻
+  - 思想实验
+  - 评书
+excerpt: 创造性思维的常见类型
+categories: Thinking
 ---
 创造性思维是以灵活、灵动和原创的方式进行思考的过程，并且被认为是战略、解决问题和决策的重要元素。可以提供广泛的可能性和解决方案。
 
