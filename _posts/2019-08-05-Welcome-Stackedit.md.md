@@ -3,6 +3,8 @@
 
 ---
 
+<hr>
+<hr>
 <blockquote>
 <p>用<a href="https://stackedit.io/"> StackEdit </a> 编写。</p>
 </blockquote>
