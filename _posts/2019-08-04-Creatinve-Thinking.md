@@ -74,3 +74,6 @@ categories: Thinking
 在故事中包装想法，今天存在的许多发明首先出现在小说中。
 
 <完>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
+-->
