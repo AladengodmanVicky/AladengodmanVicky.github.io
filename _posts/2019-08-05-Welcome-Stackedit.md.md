@@ -3,6 +3,21 @@
 
 ---
 
+<hr>
+<p>layout: post<br>
+title: "StackEdit"一个超好用的 MarkDown 编辑器<br>
+date: ‘2019-08-05 10:34:45 +0800’<br>
+categories: MarkDownEditer<br>
+published: false<br>
+tags:</p>
+<ul>
+<li>博客编辑</li>
+<li>GitHub Pages</li>
+<li>Jekyll</li>
+<li>StackEdit</li>
+<li>MarkDown</li>
+</ul>
+<hr>
 <blockquote>
 <p>用<a href="https://stackedit.io/"> StackEdit </a> 编写。</p>
 </blockquote>
