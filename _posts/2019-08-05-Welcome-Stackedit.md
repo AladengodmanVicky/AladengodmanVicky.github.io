@@ -1,3 +1,6 @@
+---
+published: false
+---
 <hr>
 <p>layout: post<br>
 title: "StackEdit"一个超好用的 MarkDown 编辑器<br>
@@ -30,4 +33,3 @@ tags:</p>
 <p>引用文件</p>
 </blockquote>
 <p>曾经沧海难为水，除却巫山不是云。</p>
-
