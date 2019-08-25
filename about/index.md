@@ -29,7 +29,7 @@ published: true
 
 - `Wechat` : `dandan-sbb`
 
-- `Mail` : `bobindandan@gmail.com`
+- `E-Mail` : `bobindandan@gmail.com`
 
 - 如果您`加我好友`或者`给我发邮件`，请备注来自`博客`，那么我便知道您是`同道中人`，🤝。
 
