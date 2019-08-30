@@ -23,6 +23,7 @@ published: true
 
 <div align="center"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
+
 ## 联系方式
 
 - 现居北京
@@ -41,6 +42,7 @@ published: true
 * 在接入广告的同时，为了不影响读者阅读体验，故只加入了文章嵌入广告，且不会有各种弹出广告。如恰能平衡域名支出，仅此为盼。
 
 * 如果您喜欢😍本站，或者本站的内容对您有帮助，恰好您囊中尚不羞涩，那么欢迎👏微信联系小额赞助本站。
+
 
 ## 本站历史赞助商(者)
 
