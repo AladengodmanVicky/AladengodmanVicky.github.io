@@ -18,3 +18,5 @@ title: 中国电子技术标准化研究院发布《知识图谱标准化白皮�
     <embed src="https://www.bobinsun.cn/assets/pdf/2019知识图谱标准化白皮书.pdf">
         <p>您的浏览器不支持<b>PDFs</b>预览. 请下载该<b>PDF</b>后查看 : <a href="https://www.bobinsun.cn/assets/pdf/2019知识图谱标准化白皮书.pdf">点击下载PDF</a>.</p>
 </object>
+
+<br>
