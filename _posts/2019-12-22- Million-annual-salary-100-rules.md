@@ -13,7 +13,7 @@ excerpt: 今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩�
 title: 社会、职场100法则
 ---
 
-<div align="center"><img width="400" height="auto" src="https://www.bobinsun.cn/assets/images/100rules-01.jpeg"/></div><br>
+<div align="center"><img width="auto" height="auto" src="https://www.bobinsun.cn/assets/images/100rules-01.jpeg"/></div><br>
 
 
 * 1、这派那派无论什么派，终归斗不过行动派。
@@ -216,4 +216,4 @@ title: 社会、职场100法则
 
 * 100、任何圆满与满足，大多时候是暂时性状态。趁年轻竭尽全力为社会创造价值，给世间你最珍惜的情感最充足的物质保障，这是你我的责任。
 
-<div align="center"><img width="400" height="auto"  src="https://www.bobinsun.cn/assets/images/100rules-02.jpeg"/></div><br>
+<div align="center"><img width="auto" height="auto"  src="https://www.bobinsun.cn/assets/images/100rules-02.jpeg"/></div><br>
