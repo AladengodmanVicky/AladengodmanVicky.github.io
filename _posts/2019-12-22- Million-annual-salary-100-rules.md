@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2019-12-22 02:34:00 +0800'
 categories: Lifes
@@ -10,6 +10,7 @@ tags:
   - 关于生活
   - 一碗鸡汤
 excerpt: 今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来以后持续回味。
+title: 社会、职场100法则
 ---
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/100rules-01.jpeg"/></div><br>
@@ -216,30 +217,3 @@ excerpt: 今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩�
 * 100、任何圆满与满足，大多时候是暂时性状态。趁年轻竭尽全力为社会创造价值，给世间你最珍惜的情感最充足的物质保障，这是你我的责任。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/100rules-02.jpeg"/></div><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
