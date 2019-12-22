@@ -14,7 +14,7 @@ title: 社会、职场100法则
 ---
 ### 《社会&职场，100法则》
 
-<div align="center"><img width="400px" height="auto" src="https://www.bobinsun.cn/assets/images/100rules-001.png"/></div><br>
+<div align="center"><img width="500px" height="auto" src="https://www.bobinsun.cn/assets/images/100rules-001.png"/></div><br>
 
 * 【1】这派那派无论什么派，终归斗不过行动派。
 
@@ -216,4 +216,4 @@ title: 社会、职场100法则
 
 * 【100】任何圆满与满足，大多时候是暂时性状态。趁年轻竭尽全力为社会创造价值，给世间你最珍惜的情感最充足的物质保障，这是你我的责任。
 
-<div align="center"><img width="400px" height="auto"  src="https://www.bobinsun.cn/assets/images/100rules-002.png"/></div><br>
+<div align="center"><img width="500px" height="auto"  src="https://www.bobinsun.cn/assets/images/100rules-002.png"/></div><br>
