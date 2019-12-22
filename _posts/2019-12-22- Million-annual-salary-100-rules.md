@@ -12,6 +12,7 @@ tags:
 excerpt: 今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来以后持续回味。
 title: 社会、职场100法则
 ---
+### 《社会&职场，100法则》
 
 <div align="center"><img width="auto" height="auto" src="https://www.bobinsun.cn/assets/images/100rules-001.png"/></div><br>
 
