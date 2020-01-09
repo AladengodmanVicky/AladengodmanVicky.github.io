@@ -11,7 +11,7 @@ published: true
 ### 友情链接
 
 * [easyAI-产品经理的人工智能学习库](https://easyai.tech/)
-* [BetterManPeter](https://chiang97912.github.io/)
+* [BetterManPeter - NLPer](https://chiang97912.github.io/)
 
 
 ### 工具
