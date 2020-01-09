@@ -8,9 +8,10 @@ published: true
 
 > ##### 如需友链，请微信/邮件联系，或文章评论留言。
 
-### 特别推荐
+### 友情链接
 
 * [easyAI-产品经理的人工智能学习库](https://easyai.tech/)
+* [BetterManPeter](https://chiang97912.github.io/)
 
 
 ### 工具
@@ -63,6 +64,7 @@ published: true
 ### 写作
 
 * [文学 - 中国社会科学网](http://www.cssn.cn/wx/)
+
 
 
 
