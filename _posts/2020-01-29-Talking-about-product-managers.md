@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2020-01-29 21:34:00 +0800'
 categories: PM
@@ -8,6 +8,7 @@ tags:
   - 俞军
   - 滴滴
 excerpt: 「漫谈产品经理」- 俞军 - 滴滴
+title: 《漫谈产品经理》-俞军
 ---
 ## 《漫谈产品经理》-俞军
 
