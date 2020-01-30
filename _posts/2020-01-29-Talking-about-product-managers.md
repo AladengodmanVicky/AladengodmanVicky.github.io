@@ -38,3 +38,6 @@ title: 《漫谈产品经理》-俞军
 ## 搜索🔍研究院克隆版
 
 * [搜索引擎9238的搜索研究院克隆版](https://www.dianbo.org/9238/)
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/sousuo-9238.png"/></div>
+<br>
