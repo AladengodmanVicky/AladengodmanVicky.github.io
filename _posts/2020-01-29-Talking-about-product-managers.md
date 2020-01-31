@@ -56,3 +56,9 @@ title: 《漫谈产品经理》-俞军
 10. 如果不确定该怎么做，就先看别人是怎么做的；
 11. 把用户当傻瓜，不要让用户思考和选择，替用户预先想好；
 12. 不要给用户不想要的东西，任何没用的东西对用户而言都是一种伤害；
+
+## 「产品经理如何突破发展瓶颈」-3节课访谈视频
+
+**访谈嘉宾**: 俞军、苏杰、张涛、耿新跃、朱晓华。
+
+<video src="https://player.youku.com/embed/XNDA5Nzk5NTEyOA==?client_id=bcb351355605cb9e&password=&autoplay=true#m.xin361t.com&onPlayEnd=function(){var%20b=document.getElementById(%22related%22).getElementsByTagName(%22a%22),a=b[0].href;a==location.pathname&&(a=b[1].href);location.href=a}" controls="controls" width="100%" height="auto"/>
