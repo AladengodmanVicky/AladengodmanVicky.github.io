@@ -59,8 +59,8 @@ title: 《漫谈产品经理》-俞军
 
 ## 「产品经理如何突破发展瓶颈」-3节课访谈视频
 
-**访谈嘉宾**: 俞军、苏杰、张涛、耿新跃、朱晓华。
+**访谈嘉宾**: 俞军、苏杰、张涛、耿新跃、朱晓华。[点击立即播放视频](https://xin361t.com/vxsnkbjo/1024498782/)
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/yujun_01.png"/></div>
 <br>
-[点击立即播放视频](https://xin361t.com/vxsnkbjo/1024498782/)
+
