@@ -62,7 +62,8 @@ title: 《漫谈产品经理》-俞军
 **访谈嘉宾**: 俞军、苏杰、张涛、耿新跃、朱晓华。
 
 <div align="center"><img src="https://www.bobinsun.cn/assets/images/yujun_01.png"/></div>
+<br>
 
 **视频播放视频**
 
-<video src="https://player.youku.com/embed/XNDA5Nzk5NTEyOA==?client_id=bcb351355605cb9e&password=&autoplay=true#m.xin361t.com&onPlayEnd=function(){var%20b=document.getElementById(%22related%22).getElementsByTagName(%22a%22),a=b[0].href;a==location.pathname&&(a=b[1].href);location.href=a}" controls="controls" width="100%" height="auto"/>
+<video src="https://player.youku.com/embed/XNDA5Nzk5NTEyOA" controls="controls" width="100%" height="auto"/>
