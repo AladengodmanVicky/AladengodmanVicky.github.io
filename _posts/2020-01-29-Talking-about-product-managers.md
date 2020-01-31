@@ -66,4 +66,4 @@ title: 《漫谈产品经理》-俞军
 
 **视频播放视频**
 
-<video src="https://player.youku.com/embed/XNDA5Nzk5NTEyOA" controls="controls" width="100%" height="auto"/>
+<video src="https://v.youku.com/v_show/id_XNDA5Nzk5NTEyOA==.html" controls="controls" width="100%" height="auto"/>
