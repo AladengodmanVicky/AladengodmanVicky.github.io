@@ -32,7 +32,7 @@ title: Mac环境下EverNote与Sublime搭建云端同步Markdown写作系统
 * Evernote：一款多平台的云笔记；
 * Sublime：一款轻量级的编辑器；
 
-## 为什么是他们？
+## 为什么是它们？
 
 **为什么是Evernote？**有道云笔记没有和Sublime联动的插件，Evernote在Sublime上有插件[sublime-evernote](https://github.com/bordaigorl/sublime-evernote)-使用Markdown打开和保存Sublime中的Evernote笔记。
 
