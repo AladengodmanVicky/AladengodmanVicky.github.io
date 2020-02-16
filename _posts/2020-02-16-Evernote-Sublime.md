@@ -2,7 +2,7 @@
 published: true
 layout: post
 date: '2020-02-16 17:30:00 +0800'
-categories: 效率工具
+categories: tools
 tags:
   - EverNote
   - Sublime
