@@ -47,7 +47,7 @@ title: EverNote与Sublime搭建云端Markdown写作系统
 * **发送笔记至Evernote**： 将当前视图中的Markdown文件转化为富文本格式并将其发送到Evernote，并且可设置标题、标签和存储位置；
 * **打开Evernote笔记**：Sublime命令面板可从Evernote笔记本中选择笔记，或通过搜索将富文本笔记转换成Markdown笔记在Sublime视图中显示；
 * **更新Evernote笔记**：在Sublime编辑已打开笔记的Markdown文件后，可以将其保存回Evernote（以富文本格式）；
-* **支持全面双向元数据**：可以在Markdown文件中设置YAML元数据标头设置和更改文件中的笔记本、标题和标签；
+* **支持全面双向Metadata**：可以在Markdown文件中设置YAML Metadata更改文件中的笔记本、标题和标签；
 * **附件**：可以打开、插入、罗列、删除附件；
 * **剪辑笔记**：可将当前所选文字作为代码段保存到新笔记中；
 
