@@ -33,7 +33,8 @@ published: true
 
 ### 资源
 * [pixabay可商用免费图片库](https://pixabay.com/)
-
+* [精品Mac应用分享推荐](https://wangchujiang.com/awesome-mac/index.zh.html)
+* [GitHub全球排名](https://wangchujiang.com/github-rank/index.html)
 
 ---
 
