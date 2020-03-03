@@ -67,7 +67,9 @@ published: true
 
 * [文学 - 中国社会科学网](http://www.cssn.cn/wx/)
 
+### 电子书📚
 
+* [机器学习训练秘籍](https://deeplearning-ai.github.io/machine-learning-yearning-cn/docs/home/) 作者：Andrew Ng，教你如何使机器学习算法发挥作用。
 
 
 building...
