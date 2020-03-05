@@ -22,6 +22,7 @@ published: true
 * [创客贴·在线海报制作](https://www.chuangkit.com/templatecenter)
 * [embed.ly URL卡片式嵌入生成器](https://embed.ly/code)
 * [微信Markdown编辑器](https://doocs.github.io/md/)：支持 Markdown 所有基础语法、色盘取色、一键复制并粘贴到公众号后台、多图上传、一键下载文档、自定义 CSS 样式、一键重置等特性。
+* [PUSH TO KINDLE!](https://tokindle.top/)：PUSH TO KINDLE! 是一个开源工具，可以往你的 Kindle 上推送文档。
 
 ---
 
