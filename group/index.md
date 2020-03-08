@@ -72,5 +72,9 @@ published: true
 
 * [机器学习训练秘籍 - Andrew Ng](https://deeplearning-ai.github.io/machine-learning-yearning-cn/docs/home/) ：教你如何使机器学习算法发挥作用。
 
+### 爱情
+
+* [梁老师的爱情课](https://www.yixi.tv/wx/h5/?from=timeline&isappinstalled=0#/course_detail/2)：梁永安，复旦大学中文系文学写作专业硕士导师。
+
 
 building...
