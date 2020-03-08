@@ -75,6 +75,7 @@ published: true
 ### 爱情
 
 * [梁老师的爱情课](https://www.yixi.tv/wx/h5/?from=timeline&isappinstalled=0#/course_detail/2)：梁永安，复旦大学中文系文学写作专业硕士导师。
+* [单身的黄金年代如何面对爱情](https://www.yixi.tv/wx/h5/ifram?url=https://www.yixi.tv/wx/h5/#/speech_detail/338)：同上。
 
 
 building...
