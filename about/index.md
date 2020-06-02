@@ -24,6 +24,12 @@ published: true
 <div align="center"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
 
+## 我还有一个知识星球，欢迎加入
+
+
+<div align="center"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
+
+
 ## 联系方式
 
 - 现居北京
