@@ -50,6 +50,6 @@ published: true
 * 如果您喜欢😍本站，或者本站的内容对您有帮助，恰好您囊中尚不羞涩，那么欢迎👏微信联系小额赞助本站。
 
 
-## 本站历史赞助商(者)
+## 如有帮助，欢迎赞赏
 
-* 暂无😂😄😅😊。
+<div align="center"><img width="150" height="auto" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png"/></div>
