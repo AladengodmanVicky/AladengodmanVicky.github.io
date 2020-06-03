@@ -52,4 +52,4 @@ published: true
 
 ## 如有帮助，欢迎赞赏
 
-<div align="center"><img width="150" height="auto" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png"/></div>
+<div align="center"><img width="200" height="auto" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png"/></div>
