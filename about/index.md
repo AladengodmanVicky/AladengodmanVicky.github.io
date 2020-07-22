@@ -21,13 +21,17 @@ published: true
 ## 好吧，我承认，这是个广告图。
 
 
-<div align="center"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
+<div align="left"><img width="600" height="auto" src="https://www.bobinsun.cn/assets/images/QR-code.jpg"/></div>
 
 
-## 我还有一个知识星球，欢迎加入
+## 我的知识星球，欢迎加入（可使用下方优惠券，1年仅1元，仅限前200名）
 
 
-<div align="center"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
+<div align="left"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
+
+## 知识星球优惠券
+
+<div align="left"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/zhishixingqiu_youhuiquan.png"/></div>
 
 
 ## 联系方式
