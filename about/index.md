@@ -31,7 +31,7 @@ published: true
 
 ## 知识星球优惠券
 
-<div align="left"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/zhishixingqiu_youhuiquan.png"/></div>
+<div align="left"><img width="350" height="auto" src="https://www.bobinsun.cn/assets/images/youhuiquan.png"/></div>
 
 
 ## 联系方式
