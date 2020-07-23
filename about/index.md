@@ -27,11 +27,11 @@ published: true
 ## 我的知识星球，欢迎加入（可使用下方优惠券，1年仅1元，仅限前200名）
 
 
-<div align="left"><img width="300" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
+<div align="left"><img width="250" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
 
 ## 知识星球优惠券
 
-<div align="left"><img width="300" height="auto" src="https://www.bobinsun.cn/assets/images/YHQ.png"/></div>
+<div align="left"><img width="250" height="auto" src="https://www.bobinsun.cn/assets/images/YHQ.png"/></div>
 
 
 ## 联系方式
