@@ -29,11 +29,6 @@ published: true
 
 <div align="left"><img width="250" height="auto" src="https://www.bobinsun.cn/assets/images/Zhi_Shi_Xing_Qing.jpeg"/></div>
 
-## 知识星球优惠券
-
-<div align="left"><img width="250" height="auto" src="https://www.bobinsun.cn/assets/images/YHQ.png"/></div>
-
-
 ## 联系方式
 
 - 现居北京
