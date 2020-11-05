@@ -1,5 +1,14 @@
 ---
-published: false
+published: true
+title: '本体开发101:创建第一个本体的指南'
+layout: post
+date: '2020-10-03 02:34:00 +0800'
+categories: KG
+tags:
+  - 知识图谱
+  - 本体设计
+  - 本体开发
+excerpt: 本体开发101：创建第一个本体的指南
 ---
 # 本体开发101：创建第一个本体的指南
 
