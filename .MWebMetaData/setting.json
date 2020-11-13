@@ -1,8 +1,9 @@
 {
   "name" : "AladengodmanVicky.github.io",
   "fileExtension" : ".md",
-  "autoUploadInsertedImage" : false,
-  "folderType" : 10,
+  "autoUploadInsertedImageKey" : "sm.ms (@BobinSun)-https:\/\/sm.ms\/api\/v2\/upload",
+  "autoUploadInsertedImage" : true,
+  "folderType" : 11,
   "mediaFloder" : "media",
   "orderBy" : 0,
   "newlinesToBR" : 0
