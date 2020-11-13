@@ -52,7 +52,7 @@ highlight:
 ## 'redcarpet' is unsupported on GitHub Pages now.
 markdown: kramdown
 kramdown:
-    input: GFM
+   input: GFM
 
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults

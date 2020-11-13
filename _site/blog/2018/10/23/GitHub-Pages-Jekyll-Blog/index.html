@@ -510,36 +510,24 @@
 <h2 id="github-pages博客发布流程">GitHub pages博客发布流程</h2>
 
 <h3 id="1-更新本地博客">1. 更新本地博客</h3>
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1</pre></td>
-<td class="code"><pre class="highlight"><code>git pull                                  #从GitHub更新本地博客代码
-</code></pre></td>
-</tr></tbody></table></div></div>
+<pre><code>git pull                                  #从GitHub更新本地博客代码
+</code></pre>
 <h3 id="2-mweb写作">2. MWeb写作</h3>
-<p><code class="highlighter-rouge">command + E</code>切换至“外部模式”，<code class="highlighter-rouge">command + L</code>切换至“文档库模式”
+<p><code>command + E</code>切换至“外部模式”，<code>command + L</code>切换至“文档库模式”
 <img src="https://i.loli.net/2020/11/13/OcQosyGZmYqd1Df.png" alt="mweb-wirte-blog"></p>
 <h3 id="3-本地启动jekyll服务">3. 本地启动jekyll服务</h3>
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1</pre></td>
-<td class="code"><pre class="highlight"><code>bundle exec jekyll serve                  #启动本地jekyll服务
-</code></pre></td>
-</tr></tbody></table></div></div>
+<pre><code>bundle exec jekyll serve                  #启动本地jekyll服务
+</code></pre>
 <h3 id="4-查看博客文章效果">4. 查看博客、文章效果</h3>
 <p>打开链接🔗</p>
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1</pre></td>
-<td class="code"><pre class="highlight"><code>http://127.0.0.1:5000                     #浏览器访问本地jekyll博客
-</code></pre></td>
-</tr></tbody></table></div></div>
+<pre><code>http://127.0.0.1:5000                     #浏览器访问本地jekyll博客
+</code></pre>
 <p><img src="https://i.loli.net/2020/11/13/Q6xrhBmcwb5LUuV.png" alt="blog-view"></p>
 <h3 id="5-jekyll站点部署到github-pages线上环境">5. Jekyll站点部署到Github pages(线上环境)</h3>
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1<br>2<br>3</pre></td>
-<td class="code"><pre class="highlight"><code>git add --all                             #添加到暂存区
+<pre><code>git add --all                             #添加到暂存区
 git commit -m "提交jekyll默认页面"          #提交到本地仓库
 git push origin master                    #线上的站点是部署在master下面的
-</code></pre></td>
-</tr></tbody></table></div></div>
+</code></pre>
 <h3 id="6-等待几分钟github有一定的时间缓存">6. 等待几分钟，Github有一定的时间缓存…</h3>
 
 

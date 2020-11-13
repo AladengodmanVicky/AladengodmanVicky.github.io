@@ -465,14 +465,14 @@
 
   <h2 id="天下苦秦久矣">天下苦秦久矣</h2>
 
-<p>自从开始写博客，越来越迷恋<code class="highlighter-rouge">Markdown</code>这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地<code class="highlighter-rouge">Markdown</code>写作系统，苦于未果。</p>
+<p>自从开始写博客，越来越迷恋<code>Markdown</code>这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地<code>Markdown</code>写作系统，苦于未果。</p>
 
 <h2 id="写作系统的痛点">写作系统的痛点</h2>
 
 <p>许久未找到搜寻到适合的写作系统，究其原因，主要有两大痛点未被满足：</p>
 
 <ol>
-  <li>市面上大多数<code class="highlighter-rouge">Markdown</code>编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。</li>
+  <li>市面上大多数<code>Markdown</code>编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。</li>
   <li>Evernote、有道云笔记等云笔记既要满足多终端云同步，同时满足Markdown编辑方式，但我需要预览、查看、编辑拆分开来（这里的预览与查看状态不同），使操作轻量化、简洁化。</li>
 </ol>
 
@@ -520,60 +520,51 @@
 
 <h3 id="sublime安装markdownediting">Sublime安装MarkdownEditing</h3>
 
-<p><code class="highlighter-rouge">MarkdownEditing</code>是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。</p>
+<p><code>MarkdownEditing</code>是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。</p>
 
-<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，输入<code class="highlighter-rouge">Package Control:Install Package</code>打开下载仓库，输入MarkdownEditing下载安装。</p>
+<p>在Sublime中<code>工具</code>栏打开<code>命令面板</code>，输入<code>Package Control:Install Package</code>打开下载仓库，输入MarkdownEditing下载安装。</p>
 
 <p>如果不支持在线安装，则移步<a href="https://github.com/SublimeText-Markdown/MarkdownEditing">MarkdownEditing-github</a>下载，进行手动导入安装。</p>
 
 <h3 id="sublime安装evernote插件">Sublime安装Evernote插件</h3>
 
-<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，输入<code class="highlighter-rouge">Package Control:Install Package</code>打开下载仓库，输入Evernote下载安装。</p>
+<p>在Sublime中<code>工具</code>栏打开<code>命令面板</code>，输入<code>Package Control:Install Package</code>打开下载仓库，输入Evernote下载安装。</p>
 
 <h3 id="sublime连接印象笔记账号">Sublime连接印象笔记账号</h3>
 
 <ul>
-  <li>首先从<a href="https://app.yinxiang.com/api/DeveloperToken.action">Evernote Token</a>获取你<code class="highlighter-rouge">Evernote</code>的Token，获取之后切记保密。</li>
-  <li>拿到Token后，在<code class="highlighter-rouge">Preferences &gt; Package Settings &gt; Evernote &gt; Settings-User</code>填写<code class="highlighter-rouge">noteStoreUrl</code>和<code class="highlighter-rouge">token</code>字段。</li>
+  <li>首先从<a href="https://app.yinxiang.com/api/DeveloperToken.action">Evernote Token</a>获取你<code>Evernote</code>的Token，获取之后切记保密。</li>
+  <li>拿到Token后，在<code>Preferences &gt; Package Settings &gt; Evernote &gt; Settings-User</code>填写<code>noteStoreUrl</code>和<code>token</code>字段。</li>
   <li>保存并重新启动Sublime，完成账号的关联。</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
-<td class="code"><pre class="highlight"><code>{
+<pre><code>{
     "noteStoreUrl": "your noteStoreurl XXX",
     "token": "your token XXX",
 }
-</code></pre></td>
-</tr></tbody></table></div></div>
+</code></pre>
 
 <h3 id="sublime操作同步至evernote">Sublime操作同步至Evernote</h3>
 
-<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：</p>
+<p>在Sublime中<code>工具</code>栏打开<code>命令面板</code>，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
-<td class="code"><pre class="highlight"><code>Command Palette &gt; Evernote: New empty note    //新建空笔记
+<pre><code>Command Palette &gt; Evernote: New empty note    //新建空笔记
 Command Palette &gt; Evernote: Open Evernote Note   //打开笔记本
 Command Palette &gt; Evernote: Send to Evernote    //发送至Evernote
 Command Palette &gt; Evernote: Update Evernote Note    //更新Evernote笔记
-</code></pre></td>
-</tr></tbody></table></div></div>
+</code></pre>
 
 <p><img src="https://www.bobinsun.cn/assets/images/evernote-sublime-02.png" alt="Sublime操作Evernote方式"></p>
 
 <p>以上只是常用指令，详细指令可查看Evernote插件的官方Github地址：<a href="https://github.com/bordaigorl/sublime-evernote">sublime-evernote</a></p>
 
-<p>同时<code class="highlighter-rouge">sublime-evernote</code>非常友好的提供了快捷键设置操作，在Sublime中打开<code class="highlighter-rouge">Preferences &gt; Key Bindings-User </code>，将以下配置项填写至其中：</p>
+<p>同时<code>sublime-evernote</code>非常友好的提供了快捷键设置操作，在Sublime中打开<code>Preferences &gt; Key Bindings-User </code>，将以下配置项填写至其中：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
-<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
-<td class="code"><pre class="highlight"><code>{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
+<pre><code>{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
 { "keys": ["ctrl+e", "ctrl+s"], "command": "send_to_evernote" },
 { "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
 { "keys": ["ctrl+e", "ctrl+u"], "command": "save_evernote_note" },
-</code></pre></td>
-</tr></tbody></table></div></div>
+</code></pre>
 
 <p>好了，剩下的就自己体验吧！可以说是很优雅了。</p>
 
