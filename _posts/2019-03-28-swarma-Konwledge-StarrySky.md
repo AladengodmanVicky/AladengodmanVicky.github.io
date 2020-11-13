@@ -18,7 +18,7 @@ title: 对集智学园新版官网『知识星空』的一些思考
 
 ## 一、前面的话
 
-昨天，饭团AI产品经理大本营hanniman团长给我分享了一篇文章《[集智学园知识星空——产品介绍篇](https://mp.weixin.qq.com/s?__biz=MzI0MjY5NTM2MQ==&mid=2247487894&idx=1&sn=13688db2ec63f02e734c1e307ba01d93&chksm=e9793c38de0eb52e47ee7454026841225abd5301f0b369c9aaae633efe6127a97598fe41f3fb&mpshare=1&scene=1&srcid=0326V6gBdJoCkgRedlxuyIkC&key=730d17769db40ccb9ad70bb9b86af5037cd9bc9246d0d267e7beee040aa85c50a392cda16a6baacd6a7354053f8024b5d2c53d1a01caf9ee7e6a56c0d279417bf96b0e74a5ca859d8f05e6c4be207c81&ascene=1&uin=MjcyMjk1MTU4MA%3D%3D&devicetype=Windows+10&version=62060739&lang=zh_CN&pass_ticket=KXmNOJA%2BAMgUoERIoMnc5QTxe4cV8Ygb20ohCF%2BjtLOgB2Es6Cb06feH9C7uOMka##)》。
+昨天，饭团AI产品经理大本营hanniman团长给我分享了一篇文章《[集智学园知识星空——产品介绍篇](）》。
 
 集智学园采用知识图谱的方式对原官网进行了一次升级，**官方介绍：使用一种全新的高维方式来展示网站课程。**之前看过明略的官网，动画效果与之类似，不知道此官网是不是从明略官网得到的灵感，并进行了升级。
 

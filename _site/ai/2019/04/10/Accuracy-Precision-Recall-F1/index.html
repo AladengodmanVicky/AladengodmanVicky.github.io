@@ -1,0 +1,1213 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="模型评估,准确率(Accuracy),精确率(Precision),召回率(Recall),综合评价指标(F1-Measure)," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="自然语言处理(ML)、机器学习(NLP)、信息检索(IR)等AI领域，评估(evaluation)是一项非常重要的工作，其模型或算法的评价指标往往有如下几点：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)。 简单整理，以供参考。">
+<meta name="keywords" content="模型评估, 准确率(Accuracy), 精确率(Precision), 召回率(Recall), 综合评价指标(F1-Measure)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)">
+<meta property="og:url" content="http://localhost:5000/ai/2019/04/10/Accuracy-Precision-Recall-F1/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="自然语言处理(ML)、机器学习(NLP)、信息检索(IR)等AI领域，评估(evaluation)是一项非常重要的工作，其模型或算法的评价指标往往有如下几点：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)。 简单整理，以供参考。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/accuracy_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/accuracy_eg_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/accuracy_02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/precision_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/precision_eg_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/precision_02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/recall_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/recall_eg_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/recall_02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/f1_measure_01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/f1_measure_02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/f1_measure_03.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)">
+<meta name="twitter:description" content="自然语言处理(ML)、机器学习(NLP)、信息检索(IR)等AI领域，评估(evaluation)是一项非常重要的工作，其模型或算法的评价指标往往有如下几点：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)。 简单整理，以供参考。">
+<meta name="twitter:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure) | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/ai/2019/04/10/Accuracy-Precision-Recall-F1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-10T08:34:00+08:00">
+                2019-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/AI" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"></div>
+
+<hr>
+
+<h2 id="序言">序言</h2>
+
+<p>自然语言处理(ML)、机器学习(NLP)、信息检索(IR)等AI领域，评估(evaluation)是一项非常重要的工作，其模型或算法的评价指标往往有如下几点：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)。</p>
+
+<p>简单整理，以供参考。</p>
+
+<hr>
+
+<h2 id="准确率accuracy">准确率（Accuracy）</h2>
+
+<p>准确率(Accuracy)是一个用于评估分类模型的指标。说人话，<strong>模型预测正确数量所占总量的比例</strong>。</p>
+
+<p><strong>准确率</strong>的伪公式：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1</pre></td>
+<td class="code"><pre class="highlight"><code>准确率（Accuracy） = Number of correct predictions / Total number pf predictions = 正确预测数 / 预测总数
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<p>在二元分类中，可根据正类别与负类别按如下方式计算：</p>
+
+<p>注：下方公式中，TP = 真正例 ， TN = 真负例 ， FP = 假正例 ， FN = 假负例。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy_01.png"></div>
+
+<p><strong>名词释义:</strong></p>
+
+<ul>
+  <li>真正例（TP）: 正例样本被标记为正例。</li>
+  <li>假正例（FP）: 假例样本被标记为正例。</li>
+  <li>真反例（TN）: 假例样本被标记为假例。</li>
+  <li>假反例（FN）: 正例样本被标记为假例。</li>
+</ul>
+
+<p>试举例计算模型的准确率，假设某模型将100个肿瘤分为<strong>恶性</strong>（正类别）或<strong>良性</strong>（负类别）:</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy_eg_01.png"></div>
+
+<p>根据上述例子的数据我们来计算该模型的<strong>准确率</strong>：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/accuracy_02.png"></div>
+
+<p>乍一看，该模型的准去确率为<strong>0.91</strong>，也就是<strong>91%</strong>，（100个样本中有91个预测正确），<strong>这是不是可以表示我们的肿瘤分类器在识别恶性肿瘤方面酒标的非常出色呢？</strong></p>
+
+<p>带着这个疑问，我们仔细分析一下正类别和负类别，深入理解该模型的效果。</p>
+
+<p>100个肿瘤样本中，<strong>91个为良性</strong>，其中，1个FP（假正例）&amp; 90个TN（真负例），<strong>9个为恶性</strong>，其中，1个TP（真正例）&amp;8个FN（假负例）。</p>
+
+<p>整个样本中有91个良性肿瘤，该模型将90个样本正确识别为良性肿瘤，将1个样本识别为恶性，这个效果很好。<strong>但是</strong>，在9个恶性肿瘤样本中，将8个样本识别为良性，9个恶性肿瘤有8个未被诊断出来，8/9，这个结果多么可怕！！！</p>
+
+<p>91%的准确率，看起来还不错，如果另一个肿瘤分类器模型总是预测良性，那么这个模型使用我们的样本进行预测，也会得出相同的准确率。</p>
+
+<p>换句话说，该模型与那些没有预测恶性肿瘤和良性肿瘤的模型差不多。</p>
+
+<p>还有，当我们使用<strong>分类不平衡的数据集</strong>（如：正类别标签与负类别标签数量存在明显差异）时，就一项准确率并不能反映情况。</p>
+
+<blockquote>
+  <p>为了更好的评估分类不平衡的数据集问题，下面引入精确率（Precision）和召回率（Recall）</p>
+</blockquote>
+
+<hr>
+
+<h2 id="精确率precision">精确率（Precision）</h2>
+
+<p>精确率为解决<code class="highlighter-rouge">在被识别为正类别的样本中，为正类别的比例</code>。精确率的公式定义如下：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_01.png"></div>
+
+<p><code class="highlighter-rouge">Tips: 如果模型预测结果中没有假正例，则模型的精确率为1。</code></p>
+
+<p>那我们来接着上面肿瘤预测的样本结果来计算其精确率，好，接着看预测样本分布图：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_eg_01.png"></div>
+
+<p>其精确率的计算结果为：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/precision_02.png"></div>
+
+<p>可以看到该肿瘤预测模型的精确率为0.5，换句话说就是，该模型在预测恶性肿瘤方面的正确率是50%。</p>
+
+<hr>
+
+<h2 id="召回率recall">召回率（Recall）</h2>
+
+<p>召回率为解决<code class="highlighter-rouge">在所有正类别样本中，被正确识别为正类别的比例</code>。召回率的公式定义如下：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_01.png"></div>
+
+<p><code class="highlighter-rouge">Tips: 如果模型的预测结果没有假负例，则模型的召回率为1.0</code>。</p>
+
+<p>同样使用上述肿瘤预测的样本结果来计算其精确率，看预测样本分布图：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_eg_01.png"></div>
+
+<p>召回率的计算结果如下：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/recall_02.png"></div>
+
+<p>由以上结果可以看出，该模型的召回率为0.11，那么，就可以说，该模型的能够正确识别出所有恶性肿瘤的百分比是11%。</p>
+
+<hr>
+
+<blockquote>
+  <p>想要全面评估模型的有效性，必须同时检查精确率与召回率。但是，很遗憾，精确率和召回率往往是此消彼长。也就是说，提高精确率通常会降低召回率，反之亦然。</p>
+</blockquote>
+
+<p>好，带着这个问题，我们来看一个综合评价指标(F1-Measure)</p>
+
+<hr>
+
+<h2 id="综合评价指标f1-measure">综合评价指标（F1-Measure）</h2>
+
+<blockquote>
+  <p>F-Measure是一种统计量，又称F-Score,也是精确率（Presicion）和召回率（Recall）的加权调和平均，常用于评价分类模型的好坏。			-来自百度百科</p>
+</blockquote>
+
+<p>F-Measure数学公式为：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_01.png"></div>
+
+<p><strong>如上式中，P为Precision， R为Recall，a为权重因子。</strong></p>
+
+<p>当a = 1时，F值变为最常见的F1了，代表精确率和召回率的权重一样，是最常见的一种评价指标，因此，F1的数学公式为：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_02.png"></div>
+
+<p>根据前面的出的精确率和召回率，便可得出其F1值：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/f1_measure_03.png"></div>
+
+<blockquote>
+  <p>F1 综合了精确率和召回率的结果，当F1较高时，则说明模型或算法的效果比较理想。</p>
+</blockquote>
+
+<h2 id="changelog">ChangeLog</h2>
+
+<ul>
+  <li>Create on 2019-04-11</li>
+</ul>
+
+
+        
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/ai/2019/04/10/Accuracy-Precision-Recall-F1/" title="算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)">http://localhost:5000/ai/2019/04/10/Accuracy-Precision-Recall-F1/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0" rel="tag"># 模型评估</a>
+          
+            
+            <a href="/tag/#/%E5%87%86%E7%A1%AE%E7%8E%87%28Accuracy%29" rel="tag"># 准确率(Accuracy)</a>
+          
+            
+            <a href="/tag/#/%E7%B2%BE%E7%A1%AE%E7%8E%87%28Precision%29" rel="tag"># 精确率(Precision)</a>
+          
+            
+            <a href="/tag/#/%E5%8F%AC%E5%9B%9E%E7%8E%87%28Recall%29" rel="tag"># 召回率(Recall)</a>
+          
+            
+            <a href="/tag/#/%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%28F1-Measure%29" rel="tag"># 综合评价指标(F1-Measure)</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ai/2019/04/17/Recommender-system/" rel="next" title="浅析个性化推荐&amp;知识图谱相结合">
+                <i class="fa fa-chevron-left"></i> 浅析个性化推荐&amp;知识图谱相结合
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/work/2019/04/04/Internet-Project-Risk-List/" rel="prev" title="互联网项目风险管理清单">
+                互联网项目风险管理清单 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">97</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%BA%8F%E8%A8%80"> <span class="nav-number">1</span> <span class="nav-text">序言</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%87%86%E7%A1%AE%E7%8E%87accuracy"> <span class="nav-number">2</span> <span class="nav-text">准确率（Accuracy）</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%B2%BE%E7%A1%AE%E7%8E%87precision"> <span class="nav-number">3</span> <span class="nav-text">精确率（Precision）</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%8F%AC%E5%9B%9E%E7%8E%87recall"> <span class="nav-number">4</span> <span class="nav-text">召回率（Recall）</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87f1-measure"> <span class="nav-number">5</span> <span class="nav-text">综合评价指标（F1-Measure）</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#changelog"> <span class="nav-number">6</span> <span class="nav-text">ChangeLog</span> </a> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/ai/2019/04/10/Accuracy-Precision-Recall-F1/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

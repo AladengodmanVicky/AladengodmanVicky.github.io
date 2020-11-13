@@ -1,0 +1,1101 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="数据积累,知识图谱,数据处理能力,广度优先," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="与其说知识图谱的规模从根本上决定了智能的瓶颈，不如说是数据量的积累和数据的处理能力决定了智能的发展。">
+<meta name="keywords" content="数据积累, 知识图谱, 数据处理能力, 广度优先">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据量、数据处理能力与知识图谱">
+<meta property="og:url" content="http://localhost:5000/ai/2019/06/25/kg-data/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="与其说知识图谱的规模从根本上决定了智能的瓶颈，不如说是数据量的积累和数据的处理能力决定了智能的发展。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/medical-01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/ercode.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据量、数据处理能力与知识图谱">
+<meta name="twitter:description" content="与其说知识图谱的规模从根本上决定了智能的瓶颈，不如说是数据量的积累和数据的处理能力决定了智能的发展。">
+<meta name="twitter:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>数据量、数据处理能力与知识图谱 | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/ai/2019/06/25/kg-data/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            数据量、数据处理能力与知识图谱
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-25T08:34:00+08:00">
+                2019-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/AI" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"></div>
+
+<hr>
+
+<h3 id="前言">前言</h3>
+
+<p>之前的文章中提到过知识图谱的主要应用方向有三个：语义搜索、智能问答、可视化决策。而底层基础决定上层建筑，底层的基础说来说去还是知识快速查询、图实时计算、以及知识推理，但当下的最大困难是数据的获取与知识的抽取。</p>
+
+<p>知识图谱背后，强大的自然语言处理能力，是不可或缺的，尤其是医药行业，缺少可商业化的实体识别、抽取工具，如果一味的追求高质量的数据或自动化的办法，必然导致在行业发展初期数据量上的滞后性。</p>
+
+<hr>
+
+<h3 id="规则模式">规则模式</h3>
+
+<p>考虑到医疗行业的本身的局限性，数据需要保证严谨、合规、科学。因此可靠的数据来源为临床病历、医学指南、医学教科书、相关论文、科普资讯、医患问答。以上数据来源大多都为文献，但是文献有文献的好处，语言描述多为书面语，可以从中总结规律，从而升级为模板进行收取。比如:（疾病-&gt;症状）。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1</pre></td>
+<td class="code"><pre class="highlight"><code>书面语描述多为：&lt;X疾病&gt;的症状有&lt;Y症状&gt;，&lt;X疾病&gt;的临床表现为&lt;Y症状&gt;，&lt;X疾病&gt;容易引起&lt;Y症状&gt;等不适症状等等。
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<p>人的书写与口语表达都存在一定的模式，针对这些数据及模式，学习文献中的语法及结构，采用机器学习算法，综合统计自然语言处理，收集足够数量的数据，数据量越大越能体现出规律及语法，从海量文本中学习知识的描述方式，如果想单方面从结构化数据中获取更多的数据，那么数据量将及其有限，产出的知识效果将难以支撑上层应用。与其说知识图谱的规模从根本上决定了智能的瓶颈，不如说是数据量的积累和数据的处理能力决定了智能的发展。</p>
+
+<p>即使是高度结构化的医学病历，其结构中也大多存在着大段的文本，要想抽取其中的疾病症状，也需要强大的自然语言处理能力，所以这块终究是绕不过去的。</p>
+
+<hr>
+
+<h3 id="个人建议">个人建议</h3>
+
+<p>基于模板的方式虽然简单粗暴，但是易于利用非结构化文本进行冷启动，数据海量。其实无论采用哪种方式，前期的人工训练、干预都必不可少。虽然此方法计算复杂度较高，但可以提升计算性能，根据抽取效果对规则模式的效果设计打分卡，从而优化算法，提升覆盖率与召回率。</p>
+
+<p>如果最开始就想建立大而全知识图谱，各方面都考虑，必然导致各方面受缚，无法前进。前期选择一个小领域，例如疾病、药品。以深度优先或者广度优先的方式，从海量文本抽取信息。（个人建议采用广度优先，此处的原因与爬虫的工程要点区别不大，是采用深度优先还是广度优先，类比可得出）。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/medical-01.png"></div>
+
+<blockquote>
+  <p>如果暂时没有聪明的办法，就先想办法把笨办法做到最好。</p>
+</blockquote>
+
+<hr>
+
+<h3 id="公众号">公众号</h3>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/ercode.png"></div>
+
+
+        
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/ai/2019/06/25/kg-data/" title="数据量、数据处理能力与知识图谱">http://localhost:5000/ai/2019/06/25/kg-data/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E6%95%B0%E6%8D%AE%E7%A7%AF%E7%B4%AF" rel="tag"># 数据积累</a>
+          
+            
+            <a href="/tag/#/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1" rel="tag"># 知识图谱</a>
+          
+            
+            <a href="/tag/#/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E8%83%BD%E5%8A%9B" rel="tag"># 数据处理能力</a>
+          
+            
+            <a href="/tag/#/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88" rel="tag"># 广度优先</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ai/2019/07/02/10-Supervised-learning-methods/" rel="next" title="10 种监督学习方法特点概括">
+                <i class="fa fa-chevron-left"></i> 10 种监督学习方法特点概括
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ai/2019/06/15/AI-baogao/" rel="prev" title="「资源」| 30份人工智能行业报告">
+                「资源」| 30份人工智能行业报告 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">97</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%89%8D%E8%A8%80"> <span class="nav-number">1</span> <span class="nav-text">前言</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E8%A7%84%E5%88%99%E6%A8%A1%E5%BC%8F"> <span class="nav-number">2</span> <span class="nav-text">规则模式</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E5%BB%BA%E8%AE%AE"> <span class="nav-number">3</span> <span class="nav-text">个人建议</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%85%AC%E4%BC%97%E5%8F%B7"> <span class="nav-number">4</span> <span class="nav-text">公众号</span> </a> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/ai/2019/06/25/kg-data/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,1269 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="推荐系统,知识图谱,个性化推荐," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="推荐系统火热，是互联网、大数据、人工智能发展的必然趋势。其可应用于各个细分领域。如：新闻微博、电商、外卖团购、视频音乐、搜索查询、社交人脉、证券股票等等。本文将重点关注推荐系统与知识图谱的结合。">
+<meta name="keywords" content="推荐系统, 知识图谱, 个性化推荐">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析个性化推荐&amp;知识图谱相结合">
+<meta property="og:url" content="http://localhost:5000/ai/2019/04/17/Recommender-system/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="推荐系统火热，是互联网、大数据、人工智能发展的必然趋势。其可应用于各个细分领域。如：新闻微博、电商、外卖团购、视频音乐、搜索查询、社交人脉、证券股票等等。本文将重点关注推荐系统与知识图谱的结合。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/kg-in-rs.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/3_learning_method.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/extend_out.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/TransE_CF.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="浅析个性化推荐&amp;知识图谱相结合">
+<meta name="twitter:description" content="推荐系统火热，是互联网、大数据、人工智能发展的必然趋势。其可应用于各个细分领域。如：新闻微博、电商、外卖团购、视频音乐、搜索查询、社交人脉、证券股票等等。本文将重点关注推荐系统与知识图谱的结合。">
+<meta name="twitter:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>浅析个性化推荐&知识图谱相结合 | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/ai/2019/04/17/Recommender-system/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            浅析个性化推荐&amp;知识图谱相结合
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-17T08:34:00+08:00">
+                2019-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/AI" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"></div>
+
+<hr>
+
+<blockquote>
+  <p>推荐系统是一种信息过滤系统，用于预测用户对物品的“评分”或“偏好”。 
+– From wikipedia</p>
+</blockquote>
+
+<p>推荐系统火热，是互联网、大数据、人工智能发展的必然趋势。其可应用于各个细分领域。如：新闻微博、电商、外卖团购、视频音乐、搜索查询、社交人脉、证券股票等等。</p>
+
+<p>目前推荐系统主要4种推荐方式：热门推荐、人工推荐、相关推荐、个性化推荐。</p>
+
+<p>热门推荐顾名思义就是热度比较高的当下热点事件或内容，有广泛的社会关注；人工推荐是编辑或内容运营人员将优秀的文章或物品进行有针对性的推送；相关推荐则为根据当下浏览的内容按照一定的信息或关联规则进行内容推荐；个性化推荐时根据用户的历史浏览记录，通过算法和模型进行机器学习为用户自身定制化的推荐。本文重点关注个性化推荐与知识图谱相结合的方式。</p>
+
+<hr>
+
+<h2 id="产生背景">产生背景</h2>
+
+<p>Web2.0我们常用<strong>搜索引擎</strong>获取自己需要的信息，即使现在，搜索引擎也是主流的信息资料获取途径。但使用搜索引擎的背景是目标明确的情况下，同时也需要将目标转化为搜索🔍关键字，并在巨量的结果集下筛选信息会浪费大量的时间、资源。</p>
+
+<p>当用户需求较为模糊不能转化为搜索关键字时，推荐系统优势便凸显出来。</p>
+
+<hr>
+
+<h2 id="推荐系统浅析">推荐系统浅析</h2>
+
+<h3 id="推荐方式">推荐方式</h3>
+
+<p>推荐系统产生推荐列表的常见方式可总结为2种：基于内容与基于协同过滤。</p>
+
+<ul>
+  <li>基于<strong>内容推荐</strong>做法：利用有关物品的离散特征，推荐具有类似性质的相似物品。<strong>（以物推物）</strong>
+</li>
+</ul>
+
+<p>此方法根据用户历史信息来识别和推荐类似内容。历史信息可手动定义，也根据类似性算法自动提取。<strong><em>与协同过滤的最大区别在于它仅依赖用户自身的信息或历史访问记录，而不依赖其他相似用户的历史行为。</em></strong></p>
+
+<ul>
+  <li>基于<strong>协同过滤</strong>做法：根据用户的历史行为，如：购买、评价、点赞等行为，结合其他相邻用户的相似决策建立模型，用于预测当前用户对哪些物品感兴趣（或预测某些物品感兴趣的程度）。</li>
+</ul>
+
+<p>由于协同过滤要考虑其他用户的行为，使用群组知识并基于相似用于形成推荐内容。本质上，推荐内容基于多个相似用户之间的自动协作，并过滤出相似偏好或行为的用户。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1</pre></td>
+<td class="code"><pre class="highlight"><code>相似性: 根据所用的特定算法，将拥有类似兴趣爱好的用户进行分组，用于推荐内容。可用韦恩图表示相似程度。
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<blockquote>
+  <p><strong>Tips:</strong> 推荐系统是代替搜索引擎帮用户找到合适的物品，而推荐系统实现底层却使用搜索引擎算法对数据进行索引，还有其他大量相同的技术。但是在用户需求与应用场景上，推荐系统离用户更近。
+大多数场景下，用户的个性化需求很难转化为简短明确的查询词，推荐系统应运而生，填补空白，挖掘用户历史行为，满足个性化需求，实现精准推荐。</p>
+</blockquote>
+
+<ul>
+  <li>还有一种混合推荐方式：“<strong>混合方法</strong>”。</li>
+</ul>
+
+<p>混合方法是将基于内容与基于协同过滤结合使用，目的为增加推荐系统的效率和复杂性，并且合并之后有可能增加推荐的准确性，混合方法也可用于解决协同过滤数据冷启动。随着用户数据增加或成熟，权重逐步从基于内容过滤转向基于协同过滤。</p>
+
+<p>与搜索引擎相似，推荐系统也需要对推荐列表集进行过召回、过滤、排序，推荐引擎根据推荐算法获取到推荐结果集，然后根据筛选条件对召回结果集进行过滤，过滤后最终推荐结果，与此同时对推荐结果按照排序策略算法进行权重排序，用户便可看到最终的推荐结果。</p>
+
+<blockquote>
+  <p>以上主要为的当前业界所用或者称为传统推荐方式，以下将重点关注<strong>基于知识图谱的推荐的系统</strong></p>
+</blockquote>
+
+<hr>
+
+<h3 id="数据收集">数据收集</h3>
+
+<p>收集用户数据不是一蹴而就的。</p>
+
+<p>也就是需要经过常说的<strong>冷启动</strong>阶段。并且，数据需要经常更新，且有时效性。会随着时间、地点、年龄等因素的变化而变化。</p>
+
+<p>此处需要引入衰减机制，即<strong>让用户关键词表中的关键词喜好程度按一定周期或规律保持衰减</strong>。具体查看TF-IDF算法，此算法可返回一组某篇文本关键词TF-IDF的词对数，这些关键词最好的代表了这篇文本的核心内容，而这些关键词将本篇文章的关键程度量化。</p>
+
+<p>TF-IDF算法可参考《<a href="http://www.cnblogs.com/biyeymyhjob/archive/2012/07/17/2595249.html">TF-IDF及其算法</a>》</p>
+
+<p>数据又可分为<strong>显示数据</strong>和<strong>隐式数据</strong>，显示数据即用户的购买、退货、打分、点赞、收藏、评论等形式，直接表达自己的喜好。隐式数据可能使隐形的，需要深度挖掘，如：快进、重复观看、浏览、点击等等，隐式数据准确度较低，并存在很大的噪声。今日头条的内容推荐和微信看一看均提供了让用户主动优化推荐引擎的方式，让推荐数据最大程度的满足用户需求，精准描述用户画像。</p>
+
+<hr>
+
+<h3 id="建立评判标准">建立评判标准</h3>
+
+<p>评判一个推荐系统的前提，是建立一个好的评判标准，不断改进算法，无限靠近评判标准。推荐系统的实际效果依赖多种因素，如用户意图、用户背景知识、对系统的熟悉度、信任度、用户界面等等。</p>
+
+<p>目前推荐系统的评判标准可分为“准确度(accurary)”和“可用性(usefulness)”两种。</p>
+
+<p>准确度是推荐系统的预测结果，与用户行为之间的误差。准确度还可细分为“预测准确度”和“决策支持准确度”；预测准确度又可分为“评分预测准确度”、“使用预测准确度”、“排序准确度”等，计算推荐系统对<strong>消费者</strong>喜好的预测与<strong>消费者</strong>实际喜好间的误差平均值。</p>
+
+<p>预测准确度是非常重要的评判标准，却不是唯一。推荐系统的<strong>可用性</strong>一般用<strong>覆盖率(召回率)</strong>来描述，为描述推荐效果的多样性，也常采用其他的可用性指标，这些指标对推荐系统的用户体验也具有非常重要的意义，如：新颖性、惊奇性、实用性、风险、鲁棒性、隐私性、自适应性、可扩展性、推荐效率以及可解释性等等。</p>
+
+<p>现有评估推荐系统的评估方法主要有：离线测评、在线测评与用户调研等.下面主要介绍离线测评：</p>
+
+<p>离线测评：把数据集分成训练集和测试集，通过训练集学习优化调整模型，用测试集对模型进行测试，计算精确度和运行效率，这种方法简单、属于闭门造车，不与用户交互，不能测试出用户满意度。所以一般用户自测或内部测试。</p>
+
+<p>离线测评中使用3个指标对其推荐结果进行评估：准确率（Precision）、召回率（Recall）、F值（F-measure），这3个值可从结果矩阵中评判推荐结果；具体算法详解可见历史文章《<a href="https://mp.weixin.qq.com/s?__biz=MzU2MjM2OTY2Mw==&amp;mid=2247483885&amp;idx=1&amp;sn=2a5a59161f4011e62994435285779e56&amp;chksm=fc6bc4fdcb1c4debaef830ef8c72c4db5af47b736e3dd4de4b03792dc6ec25041e1aab81d6da&amp;token=1333252513&amp;lang=zh_CN#rd">算法模型评估：准确率(Accuracy)精确率(Precision)召回率(Recall)和综合评价指标(F1-Measure)</a>》。</p>
+
+<p><strong>召回率</strong>反应被推荐系统推荐的物品占真正喜欢的物品的比重。<strong>准确率</strong>反应推荐系统的推荐水平，能不能将用户喜欢的物品推荐给用户，而用户不喜欢的物品则不推荐。<strong>F值</strong>是准确率和召回率的加权平均，均匀的反应推荐效果。</p>
+
+<hr>
+
+<h2 id="知识图谱在推荐系统中的优势与方法介绍">知识图谱在推荐系统中的优势与方法介绍</h2>
+
+<p>大数据环境下对知识图谱的发展奠定了数据上的优势，对多源异构数据进行整合，建立更细粒度的用户实体和文章或物品实体，得到更加紧密知识相关性。因此，知识图谱在扩展实体信息、强化实体之间的联系上，有天然的优势，可为推荐系统提供强大而丰富的参考作用。在知识图谱中，实体中包含着丰富的描述性知识，而这些知识恰好可以为推荐结果提供<strong>精确性、多样性与可解释性</strong>。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/kg-in-rs.png"></div>
+
+<blockquote>
+  <p>将知识图谱引入推荐系统主要有3种处理方式，并非可商用，此处只做方法介绍：</p>
+</blockquote>
+
+<h4 id="基于特征的知识图谱辅助推荐">基于特征的知识图谱辅助推荐</h4>
+
+<p>基于特征的知识图谱辅助推荐的核心是知识图谱特征学习的引入，知识图谱可提供实体之间更深层次和更长范围内的关联，知识图谱的高纬度和丰富的语义关系，使得处理起来比物品属性更复杂困难。</p>
+
+<p>使用知识图谱特征学习对知识图谱进行处理，得到实体和关系的低维稠密向量表示，由此便可以较为自然的与推荐系统进行结合与交互。</p>
+
+<p>使用该方式处理，根据训练次序不同又可分为3种方式，以下为3种方式的处理示意图：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/3_learning_method.png"></div>
+
+<h4 id="基于结构的推荐模型">基于结构的推荐模型</h4>
+
+<p>基于结构的推荐模型可更直接的使用知识图谱的结构，对于知识图谱中的每个实体，都进行宽度优先搜索来获取其在知识图谱中的多边关联实体，并从中得到推荐结果。</p>
+
+<p>根据其所用关联实体的技术不同，有可分为<strong>向外传播法和向内聚合法</strong>：</p>
+
+<p><strong>向外传播法</strong>模拟用户兴趣在知识图谱上扩展的过程，将每个用户的历史兴趣作为知识图谱的种子集合，沿着知识图谱的链接迭代向外扩展。附示意图一张：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/extend_out.png"></div>
+
+<p><strong>向内聚合法</strong>在学习知识图谱实体特征的时候聚合该实体的邻居特征表示，通过邻居聚合操作，将每个实体的特征计算都结合其临近结构信息，且权值是由链接关系和特定的实体(用户)决定，这样就同时刻画了知识图谱的语义信息和个性化兴趣。</p>
+
+<p>在这里提供网上看到的几种方式作为参考：</p>
+
+<ul>
+  <li>
+<strong>下位实体遍历</strong>：浏览此商品或文章（实体）后还需要其他下游相关辅助物品或信息，助力或强化已知实体。例如买了手机时候有可能需要屏幕贴膜、耳机、手机保护壳等等。</li>
+  <li>
+<strong>组合属性遍历</strong>：根据用户搜索或浏览的信息提供临近或相似实体，以供参考。如：当浏览Thinkpad E450笔记本时，系统便推荐同价位的其他品牌笔记本如华硕、神州等等，供用户参考。</li>
+  <li>
+<strong>同属性遍历</strong>：相同父实体的子实体也具有相关性，当一个实体具有多个父实体，不是所有的父实体都适合被往下遍历。当用户咨询Thinkpad E450时，系统推荐台式机就不是很合适。</li>
+  <li>
+<strong>二元实体遍历</strong>：适合同父类实体遍历，同父类实体通常表示这两个产品互补或者相似。</li>
+  <li>
+<strong>多路径遍历对比</strong>：知识图谱是网状的关系，实体之间可以通过多种路径遍历得到，所以可以对遍历路径进行对比得到较为合适的路径。</li>
+</ul>
+
+<h4 id="基于知识图谱表示学习的协同过滤">基于知识图谱表示学习的协同过滤</h4>
+
+<p>基本思想是对于协同过滤计算出来的最邻近物品，系统推荐给用户，而对于该用户喜欢的物品在语义上相似的物品，同样推荐给用户。相对于协同过滤推荐算法，仅使用推荐算法，加入内涵知识（知识图谱）会得到更好的效果，推高推荐的可用性。</p>
+
+<p>此方法将推荐物品嵌入到一个低维空间，然后计算物品之间的语义相似性，生成语义相似性矩阵，最终得到物品的语义临近，同时也解决了推荐冷启动问题。这里给出一个TransE-CF算法处理流程图。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/TransE_CF.png"></div>
+
+<hr>
+
+<h2 id="推荐系统使用知识图谱的重点与难点">推荐系统使用知识图谱的重点与难点</h2>
+
+<p>1️⃣、如何对用户偏好进行精准建模？知识图谱数据往往多源异构，具有丰富的用户、物品等实体数据信息，在此基础上如何提高推荐的准确性。</p>
+
+<p>2️⃣、大数据环境下，数据生成速度快，且多源数据融合过程中引入了更多的噪声和冗余，传统推荐算法中采用的精确计算方式越来越难以应对，概率模型统计方法将继续发挥重要作用。</p>
+
+<p>3️⃣、如何评价其推荐效果？传统推荐系统的评价指标主要是准确度和可用性。这些指标当然也可以用于基于知识图谱的推荐系统，用准确率和召回率来表示推荐系统的准确度。然而不同领域的推荐系统的实际问题不同，使用不同的数据集，使得难以形成统一的效用评价标准。</p>
+
+<p>4️⃣、如何通过深度挖掘和相关性知识提高推荐效果？鉴于知识图谱的特点，其相对于因果关系，其更适合关系挖掘。通过从知识图谱中深度挖掘物品实体之间、用户实体之间、以及物品与用户间的深层次关系，来得到更多的相关性结果，帮助用户进行个性化推荐，提高推荐结果的精确性、多样性和可解释性。</p>
+
+<p>5️⃣、如何提高推荐系统的可扩展性？可扩展性一直是推荐系统应用中的难点。传统推荐系统中，用户与物品数量增加，使计算量显著增大。目前主要的解决方法有聚类、数据集缩减、降维等。知识图谱中，用户之间、用户与物品之间信息互动产生大规模的数据集；将这些数据集融入知识图谱后会急剧增加计算复杂度。如何将用户之间产生的数据动态、快速地融入知识图谱并提高推荐系统的可扩展性，是要解决的难点。</p>
+
+<p>6️⃣、怎样充分利用社交网络信息？传统的推荐系统假设用户之间是独立同分布的，忽略了用户之间的社会交互与联系。知识图谱中用户与用户、用户与物品、物品与物品之间都存在一定的联系，用户不再是单一独立的用户，需要进一步挖掘用户之间的联系以发现更多的隐含信息。如何充分利用好图谱中的社交信息，将推荐系统的效果发挥的更好，值得期待。</p>
+
+<p>7️⃣、将知识图谱与推荐系统结合已逐渐成为学术研究与产业应用的研究热点，但现有方法仍有非常大的局限性，且模型都属于统计学习，通过挖掘网络中的信息，并采用统计学来推断。现有模型网络结构都是静态的，真实的业务场景中，用户的兴趣与需求会随着时间、地点等诸多因素而改变，如此多变的情况，对知识图谱的时效性具有非常高的要求，如何刻画时间、地点的演变网络，值得深入研究。</p>
+
+<p><strong>与推荐系统结合的其他产业界研究热点方向有：</strong></p>
+
+<ul>
+  <li>推荐系统与深度学习</li>
+  <li>推荐系统与强化学习</li>
+  <li>推荐系统中的用户画像</li>
+  <li>推荐系统的可解释性</li>
+</ul>
+
+<p><strong>持续更新…</strong></p>
+
+<hr>
+
+<h2 id="changelog">ChangeLog</h2>
+
+<ul>
+  <li>Create 2019-04-24</li>
+</ul>
+
+<hr>
+
+<h2 id="参考资料">参考资料</h2>
+
+<ul>
+  <li>[1]. <a href="https://www.msra.cn/zh-cn/news/features/embedding-knowledge-graph-in-recommendation-system-ii">如何将知识图谱特征学习应用到推荐系统？</a>
+</li>
+  <li>[2]. <a href="https://www.msra.cn/zh-cn/news/features/embedding-knowledge-graph-in-recommendation-system-i">推荐算法不够精准？让知识图谱来解决</a>
+</li>
+  <li>[3]. <a href="https://www.msra.cn/zh-cn/news/executivebylines/tech-bylines-personalized-recommendation-system">个性化推荐系统，必须关注的五大研究热点</a>
+</li>
+  <li>[4]. <a href="http://html.rhhz.net/tis/html/201805001.htm#b41">知识图谱的推荐系统综述</a>
+</li>
+  <li>[5]. <a href="http://www.woshipm.com/pmd/1640689.html">知识图谱在推荐系统的落地</a>
+</li>
+  <li>[6]. <a href="https://arxiv.org/pdf/1803.03467.pdf">RippleNet: Propagating User Preferences on the Knowledge
+Graph for Recommender Systems</a>
+</li>
+</ul>
+
+
+        
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/ai/2019/04/17/Recommender-system/" title="浅析个性化推荐&amp;知识图谱相结合">http://localhost:5000/ai/2019/04/17/Recommender-system/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F" rel="tag"># 推荐系统</a>
+          
+            
+            <a href="/tag/#/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1" rel="tag"># 知识图谱</a>
+          
+            
+            <a href="/tag/#/%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A8%E8%8D%90" rel="tag"># 个性化推荐</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ai/2019/05/29/Medical-brain/" rel="next" title="「医疗知识图谱」到「综合性医疗大脑」">
+                <i class="fa fa-chevron-left"></i> 「医疗知识图谱」到「综合性医疗大脑」
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ai/2019/04/10/Accuracy-Precision-Recall-F1/" rel="prev" title="算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure)">
+                算法与模型评估：准确率(Accuracy)，精确率(Precision)，召回率(Recall)和综合评价指标(F1-Measure) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">97</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%BA%A7%E7%94%9F%E8%83%8C%E6%99%AF"> <span class="nav-number">1</span> <span class="nav-text">产生背景</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E6%B5%85%E6%9E%90"> <span class="nav-number">2</span> <span class="nav-text">推荐系统浅析</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E6%96%B9%E5%BC%8F"> <span class="nav-number">2.1</span> <span class="nav-text">推荐方式</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86"> <span class="nav-number">2.2</span> <span class="nav-text">数据收集</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E8%AF%84%E5%88%A4%E6%A0%87%E5%87%86"> <span class="nav-number">2.3</span> <span class="nav-text">建立评判标准</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E5%9C%A8%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8A%BF%E4%B8%8E%E6%96%B9%E6%B3%95%E4%BB%8B%E7%BB%8D"> <span class="nav-number">3</span> <span class="nav-text">知识图谱在推荐系统中的优势与方法介绍</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E7%89%B9%E5%BE%81%E7%9A%84%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%BE%85%E5%8A%A9%E6%8E%A8%E8%8D%90"> <span class="nav-number">3.1</span> <span class="nav-text">基于特征的知识图谱辅助推荐</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E7%BB%93%E6%9E%84%E7%9A%84%E6%8E%A8%E8%8D%90%E6%A8%A1%E5%9E%8B"> <span class="nav-number">3.2</span> <span class="nav-text">基于结构的推荐模型</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%8D%8F%E5%90%8C%E8%BF%87%E6%BB%A4"> <span class="nav-number">3.3</span> <span class="nav-text">基于知识图谱表示学习的协同过滤</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E9%87%8D%E7%82%B9%E4%B8%8E%E9%9A%BE%E7%82%B9"> <span class="nav-number">4</span> <span class="nav-text">推荐系统使用知识图谱的重点与难点</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#changelog"> <span class="nav-number">5</span> <span class="nav-text">ChangeLog</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"> <span class="nav-number">6</span> <span class="nav-text">参考资料</span> </a> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/ai/2019/04/17/Recommender-system/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

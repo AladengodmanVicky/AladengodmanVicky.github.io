@@ -1,0 +1,1187 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="EverNote,Sublime,Markdown,云端同步,写作系统," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Mac环境下使用EverNote与Sublime搭建简洁、优雅的云端同步Markdown写作系统。">
+<meta name="keywords" content="EverNote, Sublime, Markdown, 云端同步, 写作系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EverNote与Sublime搭建云端Markdown写作系统">
+<meta property="og:url" content="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="Mac环境下使用EverNote与Sublime搭建简洁、优雅的云端同步Markdown写作系统。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/evernote-sublime-01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/evernote-sublime-02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/evernote-sublime-03.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/evernote-sublime-04.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="EverNote与Sublime搭建云端Markdown写作系统">
+<meta name="twitter:description" content="Mac环境下使用EverNote与Sublime搭建简洁、优雅的云端同步Markdown写作系统。">
+<meta name="twitter:image" content="https://www.bobinsun.cn/assets/images/evernote-sublime-01.png">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>EverNote与Sublime搭建云端Markdown写作系统 | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            EverNote与Sublime搭建云端Markdown写作系统
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T17:30:00+08:00">
+                2020-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/tools" itemprop="url" rel="index">
+                    <span itemprop="name">tools</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="天下苦秦久矣">天下苦秦久矣</h2>
+
+<p>自从开始写博客，越来越迷恋<code class="highlighter-rouge">Markdown</code>这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地<code class="highlighter-rouge">Markdown</code>写作系统，苦于未果。</p>
+
+<h2 id="写作系统的痛点">写作系统的痛点</h2>
+
+<p>许久未找到搜寻到适合的写作系统，究其原因，主要有两大痛点未被满足：</p>
+
+<ol>
+  <li>市面上大多数<code class="highlighter-rouge">Markdown</code>编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。</li>
+  <li>Evernote、有道云笔记等云笔记既要满足多终端云同步，同时满足Markdown编辑方式，但我需要预览、查看、编辑拆分开来（这里的预览与查看状态不同），使操作轻量化、简洁化。</li>
+</ol>
+
+<p>以上的写作环境都不能满足我轻量化、优雅地编辑体验。因此，转而继续寻觅…</p>
+
+<h2 id="初见曙光">初见曙光</h2>
+
+<p>直到看到吕立青的一篇文章<a href="https://gitpress.io/@jimmylv/2016-06-11-write-in-mac-os-x">敏捷写作：MACOS 环境下写作系统的最优配置</a>，瞬间眼前一亮，里面提及Evernote与Sublime无缝对接的方式。</p>
+
+<ul>
+  <li>Evernote：一款多平台的云笔记；</li>
+  <li>Sublime：一款轻量级的编辑器；</li>
+</ul>
+
+<h2 id="为什么是它们">为什么是它们？</h2>
+
+<p><strong>为什么是Evernote？</strong>有道云笔记没有和Sublime联动的插件，Evernote在Sublime上有插件<a href="https://github.com/bordaigorl/sublime-evernote">sublime-evernote</a>-使用Markdown打开和保存Sublime中的Evernote笔记。</p>
+
+<p><strong>为什么是Sublime？</strong>Sublime是收费软件，但可以无限期试用，有漂亮的用户界面和强大的功能，安装包小巧、功能插件丰富。</p>
+
+<p><strong>这里先看一下效果吧：</strong></p>
+
+<p><img src="https://www.bobinsun.cn/assets/images/evernote-sublime-01.png" alt="Evernote&amp;Sublime组合使用效果"></p>
+
+<h2 id="sublime-evernote插件特点">Sublime-Evernote插件特点</h2>
+
+<ul>
+  <li>
+<strong>发送笔记至Evernote</strong>： 将当前视图中的Markdown文件转化为富文本格式并将其发送到Evernote，并且可设置标题、标签和存储位置；</li>
+  <li>
+<strong>打开Evernote笔记</strong>：Sublime命令面板可从Evernote笔记本中选择笔记，或通过搜索将富文本笔记转换成Markdown笔记在Sublime视图中显示；</li>
+  <li>
+<strong>更新Evernote笔记</strong>：在Sublime编辑已打开笔记的Markdown文件后，可以将其保存回Evernote（以富文本格式）；</li>
+  <li>
+<strong>支持全面双向Metadata</strong>：可以在Markdown文件中设置YAML Metadata更改文件中的笔记本、标题和标签；</li>
+  <li>
+<strong>附件</strong>：可以打开、插入、罗列、删除附件；</li>
+  <li>
+<strong>剪辑笔记</strong>：可将当前所选文字作为代码段保存到新笔记中；</li>
+</ul>
+
+<h2 id="evernotesublime环境配置">Evernote&amp;Sublime环境配置</h2>
+
+<p>第一步，安装Evernote和Sublime，这里就不多说了，去官网下载最新版本。</p>
+
+<h3 id="sublime安装markdownediting">Sublime安装MarkdownEditing</h3>
+
+<p><code class="highlighter-rouge">MarkdownEditing</code>是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。</p>
+
+<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，输入<code class="highlighter-rouge">Package Control:Install Package</code>打开下载仓库，输入MarkdownEditing下载安装。</p>
+
+<p>如果不支持在线安装，则移步<a href="https://github.com/SublimeText-Markdown/MarkdownEditing">MarkdownEditing-github</a>下载，进行手动导入安装。</p>
+
+<h3 id="sublime安装evernote插件">Sublime安装Evernote插件</h3>
+
+<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，输入<code class="highlighter-rouge">Package Control:Install Package</code>打开下载仓库，输入Evernote下载安装。</p>
+
+<h3 id="sublime连接印象笔记账号">Sublime连接印象笔记账号</h3>
+
+<ul>
+  <li>首先从<a href="https://app.yinxiang.com/api/DeveloperToken.action">Evernote Token</a>获取你<code class="highlighter-rouge">Evernote</code>的Token，获取之后切记保密。</li>
+  <li>拿到Token后，在<code class="highlighter-rouge">Preferences &gt; Package Settings &gt; Evernote &gt; Settings-User</code>填写<code class="highlighter-rouge">noteStoreUrl</code>和<code class="highlighter-rouge">token</code>字段。</li>
+  <li>保存并重新启动Sublime，完成账号的关联。</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
+<td class="code"><pre class="highlight"><code>{
+    "noteStoreUrl": "your noteStoreurl XXX",
+    "token": "your token XXX",
+}
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<h3 id="sublime操作同步至evernote">Sublime操作同步至Evernote</h3>
+
+<p>在Sublime中<code class="highlighter-rouge">工具</code>栏打开<code class="highlighter-rouge">命令面板</code>，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
+<td class="code"><pre class="highlight"><code>Command Palette &gt; Evernote: New empty note    //新建空笔记
+Command Palette &gt; Evernote: Open Evernote Note   //打开笔记本
+Command Palette &gt; Evernote: Send to Evernote    //发送至Evernote
+Command Palette &gt; Evernote: Update Evernote Note    //更新Evernote笔记
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<p><img src="https://www.bobinsun.cn/assets/images/evernote-sublime-02.png" alt="Sublime操作Evernote方式"></p>
+
+<p>以上只是常用指令，详细指令可查看Evernote插件的官方Github地址：<a href="https://github.com/bordaigorl/sublime-evernote">sublime-evernote</a></p>
+
+<p>同时<code class="highlighter-rouge">sublime-evernote</code>非常友好的提供了快捷键设置操作，在Sublime中打开<code class="highlighter-rouge">Preferences &gt; Key Bindings-User </code>，将以下配置项填写至其中：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1<br>2<br>3<br>4</pre></td>
+<td class="code"><pre class="highlight"><code>{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
+{ "keys": ["ctrl+e", "ctrl+s"], "command": "send_to_evernote" },
+{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
+{ "keys": ["ctrl+e", "ctrl+u"], "command": "save_evernote_note" },
+</code></pre></td>
+</tr></tbody></table></div></div>
+
+<p>好了，剩下的就自己体验吧！可以说是很优雅了。</p>
+
+<h2 id="macos中使用shiftit管理窗口的大小和位置">MacOS中使用ShiftIt管理窗口的大小和位置</h2>
+
+<p><img src="https://www.bobinsun.cn/assets/images/evernote-sublime-03.png" alt="ShiftIt快速布局多应用窗口效果"></p>
+
+<p>这里多说两句，上面的截图使用了左右窗口，此窗口不是手动布局，而是通过<a href="https://github.com/fikovnik/ShiftIt">ShiftIt工具</a>进行自动布局，可使用快捷键快速布局多应用界面窗口。</p>
+
+<p><img src="https://www.bobinsun.cn/assets/images/evernote-sublime-04.png" alt="ShiftIt快捷键列表"></p>
+
+<blockquote>
+  <p>安装软件时切记打开对应的权限。</p>
+</blockquote>
+
+<p>结合个人应用需求不断探索、寻找高效率软件，提高单位时间内的输入、产出结果。</p>
+
+
+        
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/" title="EverNote与Sublime搭建云端Markdown写作系统">http://localhost:5000/tools/2020/02/16/Evernote-Sublime/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/EverNote" rel="tag"># EverNote</a>
+          
+            
+            <a href="/tag/#/Sublime" rel="tag"># Sublime</a>
+          
+            
+            <a href="/tag/#/Markdown" rel="tag"># Markdown</a>
+          
+            
+            <a href="/tag/#/%E4%BA%91%E7%AB%AF%E5%90%8C%E6%AD%A5" rel="tag"># 云端同步</a>
+          
+            
+            <a href="/tag/#/%E5%86%99%E4%BD%9C%E7%B3%BB%E7%BB%9F" rel="tag"># 写作系统</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/kg/2020/10/03/ontology-tutorial/" rel="next" title="本体开发101:创建第一个本体的指南">
+                <i class="fa fa-chevron-left"></i> 本体开发101:创建第一个本体的指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/pm/2020/01/29/Talking-about-product-managers/" rel="prev" title="《漫谈产品经理》-俞军">
+                《漫谈产品经理》-俞军 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">97</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%A4%A9%E4%B8%8B%E8%8B%A6%E7%A7%A6%E4%B9%85%E7%9F%A3"> <span class="nav-number">1</span> <span class="nav-text">天下苦秦久矣</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%86%99%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%97%9B%E7%82%B9"> <span class="nav-number">2</span> <span class="nav-text">写作系统的痛点</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%88%9D%E8%A7%81%E6%9B%99%E5%85%89"> <span class="nav-number">3</span> <span class="nav-text">初见曙光</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%83%E4%BB%AC"> <span class="nav-number">4</span> <span class="nav-text">为什么是它们？</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#sublime-evernote%E6%8F%92%E4%BB%B6%E7%89%B9%E7%82%B9"> <span class="nav-number">5</span> <span class="nav-text">Sublime-Evernote插件特点</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#evernotesublime%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"> <span class="nav-number">6</span> <span class="nav-text">Evernote&amp;Sublime环境配置</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#sublime%E5%AE%89%E8%A3%85markdownediting"> <span class="nav-number">6.1</span> <span class="nav-text">Sublime安装MarkdownEditing</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#sublime%E5%AE%89%E8%A3%85evernote%E6%8F%92%E4%BB%B6"> <span class="nav-number">6.2</span> <span class="nav-text">Sublime安装Evernote插件</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#sublime%E8%BF%9E%E6%8E%A5%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%E8%B4%A6%E5%8F%B7"> <span class="nav-number">6.3</span> <span class="nav-text">Sublime连接印象笔记账号</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#sublime%E6%93%8D%E4%BD%9C%E5%90%8C%E6%AD%A5%E8%87%B3evernote"> <span class="nav-number">6.4</span> <span class="nav-text">Sublime操作同步至Evernote</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#macos%E4%B8%AD%E4%BD%BF%E7%94%A8shiftit%E7%AE%A1%E7%90%86%E7%AA%97%E5%8F%A3%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%92%8C%E4%BD%8D%E7%BD%AE"> <span class="nav-number">7</span> <span class="nav-text">MacOS中使用ShiftIt管理窗口的大小和位置</span> </a> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/tools/2020/02/16/Evernote-Sublime/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

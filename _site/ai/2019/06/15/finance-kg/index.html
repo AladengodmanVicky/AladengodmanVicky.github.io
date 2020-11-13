@@ -1,0 +1,1233 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="金融领域,知识图谱,营销获客,风控反欺诈," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="知识图谱因其自身的图展示、图挖掘、图模型计算优势，可帮助金融从业人员进行业务场景的分析与决策，有利于建立客户画像、进行精准营销获客，发现信用卡套现、资金挪用等行为，更好的表达、分析金融业务场景的交易全貌，从而成为行业的宠儿。">
+<meta name="keywords" content="金融领域, 知识图谱, 营销获客, 风控反欺诈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="知识图谱在金融领域的分析与应用">
+<meta property="og:url" content="http://localhost:5000/ai/2019/06/15/finance-kg/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="知识图谱因其自身的图展示、图挖掘、图模型计算优势，可帮助金融从业人员进行业务场景的分析与决策，有利于建立客户画像、进行精准营销获客，发现信用卡套现、资金挪用等行为，更好的表达、分析金融业务场景的交易全貌，从而成为行业的宠儿。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-01.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-02.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-03.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-04.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-05.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-06.jpg">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-07.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-08.png">
+<meta property="og:image" content="https://www.bobinsun.cn/assets/images/fin-09.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="知识图谱在金融领域的分析与应用">
+<meta name="twitter:description" content="知识图谱因其自身的图展示、图挖掘、图模型计算优势，可帮助金融从业人员进行业务场景的分析与决策，有利于建立客户画像、进行精准营销获客，发现信用卡套现、资金挪用等行为，更好的表达、分析金融业务场景的交易全貌，从而成为行业的宠儿。">
+<meta name="twitter:image" content="https://www.bobinsun.cn/assets/images/logo-top.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>知识图谱在金融领域的分析与应用 | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/ai/2019/06/15/finance-kg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            知识图谱在金融领域的分析与应用
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-15T08:34:00+08:00">
+                2019-06-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/AI" itemprop="url" rel="index">
+                    <span itemprop="name">AI</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div align="center"><img src="https://www.bobinsun.cn/assets/images/logo-top.jpg"></div>
+
+<hr>
+
+<h3 id="前言">前言</h3>
+
+<p>知识图谱因其自身的图展示、图挖掘、图模型计算优势，可帮助金融从业人员进行业务场景的分析与决策，有利于建立客户画像、进行精准营销获客，发现信用卡套现、资金挪用等行为，更好的表达、分析金融业务场景的交易全貌，从而成为行业的宠儿。</p>
+
+<hr>
+
+<h3 id="金融业务场景分析">金融业务场景分析</h3>
+
+<p>从上世纪 50 年代的 IT 金融开始，到如今的人工智能金融，科技的进步帮助金融行业取得更长足的发展。人工智能的进步更是让金融服务场景变得更加丰满。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-01.png"></div>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-02.png"></div>
+
+<p>近年来知识图谱在电子商务、金融、公安、医疗等行业逐步开始落地，这些行业在基础设施、应用范围、市场规模来看，对于知识图谱的应用落地打下了坚实基础，渗透更深入。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-03.png"></div>
+
+<p>本文重点来讲在金融领域的应用。金融行业的优势在于基础设施好、信息化较早且成熟，数据标准化程度高；业务由数据驱动，应用范围较广；市场规模大，金融机构在数据业务的付费意愿高，付费能力强。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-04.png"></div>
+
+<p><strong>下面将对智能在金融领域的4大业务线服务流程及细分环节、场景应用拆解，具体如下：</strong></p>
+
+<ul>
+  <li>
+<strong>信贷</strong>：<strong>获客</strong>（用户画像、智能营销、智能客服、生命周期管理）、<strong>身份验证</strong>（反欺诈、活体识别、关联分析）、<strong>授信</strong>（风险定价、信用评分）、<strong>贷中监控</strong>（交易风险欺诈）、<strong>贷后管理</strong>（智能催收）；</li>
+  <li>
+<strong>理财</strong>：<strong>获客</strong>（用户画像、智能营销）、<strong>KYC</strong>（智能投顾、智能客服）、<strong>匹配</strong>（智能匹配、智能投研、资产组合管理）；</li>
+  <li>
+<strong>保险</strong>：<strong>产品设计</strong>（声明周期管理）、<strong>获客</strong>（用户画像、智能营销、智能获客）、<strong>定价/承保</strong>（风险定价）、<strong>核保核赔</strong>（反欺诈、图像识别）、<strong>赔付</strong>（智能理赔）；</li>
+  <li>
+<strong>支付</strong>：<strong>交易前</strong>（交易反欺诈引擎）、<strong>交易中</strong>（交易反欺诈）、<strong>交易后</strong>（模型优化）；</li>
+</ul>
+
+<p>风控是金融领域的通用需求、核心需求更是金融的根基，无论是银行还是消费金融公司，风控的底层业务逻辑几乎完全相同，差异主要存在于面对客群与风险偏好。同时，风控也是金融业务的核心，无论是国家监管层还是经营利润驱动都对金融机构的风控能力提出很高的要求。</p>
+
+<p>大数据及人工智能服务商以风控切入金融领域未来发展空间非常大，金融机构通常会谨慎选取服务商，建立长周期且深度的合作。有机会获取用户整个生命周期的数据，并以此切入到金融其他领域，为服务商的发展奠定了契机。</p>
+
+<p>服务商想要服务金融领域的门槛也更高，也不是想进就能进的，门槛主要在于技术、数据、场景理解、客群和获客5各方面，金融业务依赖数据和建模，建模依赖于数据、算法的积累，同时也依赖于业务场景的理解；技术上的高投入对于客单价和客户数对服务商来说是非常大的考验，直接影响营销收入。</p>
+
+<p><strong>相关类型企业在金融领域发展的优劣势：</strong></p>
+
+<ul>
+  <li>
+<strong>互联网巨头</strong>在数据、技术、业务场景理解等方面均占优势，发展前景较好，未来市场空间大。</li>
+  <li>
+<strong>创新型公司</strong>技术、业务场景理解强，在获取客户方面较弱，很难与银行及大型金融机构合作。</li>
+  <li>
+<strong>产业类公司</strong>有数据优势，但随着百行征信的入场，数据优势被削弱。</li>
+  <li>
+<strong>I T类公司</strong>有较强的客户资源及获客能力，对业务场景的理解弱于其他类型服务商。</li>
+</ul>
+
+<p><strong>金融领域客户资源层级图：</strong></p>
+
+<p>服务商在进行金融领域切入时可先对具体要服务的客户层级进行确定，方便对产品进行定位：</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-05.png"></div>
+
+<hr>
+
+<h3 id="业务场景分析">业务场景分析</h3>
+
+<p>金融领域四大核心业务中可发展知识图谱的场景流程，也是知识图谱现阶段落地的热门应用项目：</p>
+
+<ul>
+  <li>
+    <p><strong>信贷领域</strong>的重点是获客、身份验证、以及授信环节。获客需要建立用户画像，追踪用户的完整生命周期；身份验证即通过活体识别、OCR等技术进行申请人的验证的问题，任务关联分析需要图关联技术，找出任务关系图谱；授信环节更要汇聚多方数据源，通过多维度历史数据进行建模并取得风险定价，输出信用分给金融机构。</p>
+  </li>
+  <li>
+    <p><strong>理财领域</strong>的重点是营销获客和智能投顾。营销与信贷类似，需要建立用户画像实现精准营销；智能投顾需要KYC和投借匹配，要重点分析用户风险等级及偏好，并进行KYC与KYP结合，进行智能匹配。</p>
+  </li>
+  <li>
+    <p><strong>保险领域</strong>的重点是营销获客与核保核赔。在核保核赔环节需要建立反欺诈预警模型，降低欺诈风险。</p>
+  </li>
+  <li>
+    <p><strong>支付领域</strong>的核心是交易反欺诈，需要通过各种技术建立交易反欺诈引擎，并根据交易数据进行反欺诈引擎模型优化。</p>
+  </li>
+</ul>
+
+<p>在金融行业的个领域细分场景中，唯营销、获客和反欺诈、风控是通用且核心的环节，市场上以这两个场景切入金融业务的各类公司尤为多。</p>
+
+<hr>
+
+<h3 id="营销获客">营销&amp;获客</h3>
+
+<p>在互联网的全面发展的大时代背景下，金融业务基于线下营销的模式已几乎全面转战线上，茫茫互联网，如何找到客户是进行金融营销的首要问题。</p>
+
+<p>营销获客，需要链接多个数据源搭建智能化客户经营体系尤为关键，建立尽量全面完整的用户画像，覆盖完整的用户生命周期，并做机器学习与关系挖掘的混合营销模型，才能做到真正的智能营销、获客。</p>
+
+<p>营销获客整体的系统设计搭建，可大体分为 5 个方面：数据层面、模型方案、业务引擎、场景搭建、推广渠道。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-06.jpg"></div>
+
+<p>营销客群可分为个人客户和企业客户，链接多方数据源，针对客户建立完整的画像体系，挖掘潜在需求，进行有针对性的精准营销推送，是智能营销获客的基本思想。</p>
+
+<p>个人客户画像可从基本属性、购买能力、行为特征、兴趣爱好、心理特征、社交网络等方面，采用聚类、分类，以及协同过滤，分析待售客户、及潜在客户的需求与客群之前的关系，分析用户的相似性、共同爱好，细分人群活动地点、产品使用场景，从而制定并匹配以什么样的营销策略、推送策略、洽谈策略、服务策略，沉淀企业营销获客中的方法论，提升经验的可复用性。</p>
+
+<p>企业客户画像可以从基本信息、法律诉讼、经营状况、经营风险、企业发展、知识产权、投融资信息等方向来整体建立对企业当前状况的分析，通过这些数据建立细分服务场景中的各类分析模型，得出该企业当下的可营销指数，同时生成针对化的分析报告并针对当前问题提出解决方案，以此建立的营销机制策略可提高营销获客转化率，避免人海战术，降低人力成本。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-07.png"></div>
+
+<hr>
+
+<h3 id="风控反欺诈">风控&amp;反欺诈</h3>
+
+<p>金融业务中反欺诈、风控本质上是通过数据、技术甄别业务中的潜在风险。采用不同维度的数据，灵活组合产品与服务模块，建立关联数据之间的信息挖掘、推理，识别诈骗团伙，建立科学量化的分级策略模型，进行业务场景中的欺诈风险验证，洞察业务中的高危行为，解决金融行业风险痛点。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-08.png"></div>
+
+<p>依托知识图谱中的图关联分析、图计算推理等技术，解决金融领域数据孤岛、数据不对等造成的风险不可控问题，提前对信息的一致性进行验证，识别欺诈团伙、关联监控、失踪复联、黑产识别等风险，对客户数据、交易数据全面整合，建立频繁汇入、汇出、以及环装、汇聚等模型，对用户、账户进行针对性管理，减少机构、企业的损失。</p>
+
+<p>金融欺诈的形式、方式不断更新，相对于风控，概括来说就是“道高一尺，魔高一丈”，从而引发一系列金融黑产，这些黑产的特征上逐渐呈现呈现专业化、产业化、隐蔽化、场景化等特征。</p>
+
+<p>风险是金融的固有属性。金融机构本身就是以经营风险为盈利的根本手段，所以金融机构要提高盈利，最重要的就是降低风险。金融行业的 5大风险包括：信用、市场、流动性、操作和法律，以信用和市场风险为主。</p>
+
+<ul>
+  <li>
+    <p><strong>信用风险</strong>是指债务人或交易对手未能履行合同所规定的义务或信用质量发生变化，影响金融产品价值，从而给债权人或金融产品持有人造成经济损失的风险。</p>
+  </li>
+  <li>
+    <p><strong>市场风险</strong>是指在证券市场中因股市价格、利率、汇率等的变动而导致价值未预料到的潜在损失的风险。</p>
+  </li>
+  <li>
+    <p><strong>流动性风险</strong>是指因市场成交量不足或缺乏意愿交易的对手，导致未能在理想的时点完成买卖的风险。</p>
+  </li>
+  <li>
+    <p><strong>操作风险</strong>是指由不完善或有问题的内部程序、员工、信息科技系统以及外部事件所造成损失的风险。</p>
+  </li>
+</ul>
+
+<p>为降低信用风险与市场风险给金融机构带来的影响，实时引入市场新闻、舆情、社交信息、政策变化，以及其他机构的信用数据，挖掘各放信息建立不同纬度的信用风险，信用风险不单单是评估不光是狭义的个人信用问题，还包含设计广义上的社会不可控因素。</p>
+
+<p>建立市场风险评估，更要深度结合股市价格、利率、汇率等数据，与相关数据房建立深度合作关系，把握实时市场走势，识别风险、预测风险影响范围，给出风险定价范围，清楚的给出细粒度的风险计算结果，让预测结果更有可信性和溯源性。</p>
+
+<p>风控不单单是对外，也要包含对机构内部的风险控制，对内主要是对机构内部流程、跨部门合作漏洞、子机构对接风险、业务逻辑风险、产品策略风险、多条业务线重合风险等各种隐含风险，所以在系统设计时应尽量进行全量数据、全角色的覆盖整合。</p>
+
+<p>金融知识图谱构建的早期还是以数据为主，随着不同纬度数据的补充，数据源市场集中度的提升，市场核心需求逐渐由数据过渡到建模，不久的未来金融KG市场的竞争核心，将是数据与分析平分天下。</p>
+
+<p>以前风控业务是以数据输出为主，建模分析为辅，因此收费模式核心为数据调取量，随着数据壁垒的打破，数据分析能力（打分卡+数据科学家）输出将成为风控商业模式的核心。</p>
+
+<p>需要注意的是搭建KG系统的核心不是数据和算法，而是对业务的理解和知识图谱的设计，就像常见的各类业务系统，数据库选型和数据表设计非常关键，但是这种系统的设计离不开对业务深入理解和对未来场景变化的预判。</p>
+
+<hr>
+
+<h3 id="结语">结语</h3>
+
+<p>数据驱动是金融业务的共识。基于知识图谱的数据平台，解决数据挖掘关联分析，将是金融业务机构的发展方向，以营销获客、反欺诈风控切入的公司逐步发展为提供金融全流程服务的平台服务商，实现按业务服务流量收费的商业模式。</p>
+
+<div align="center"><img src="https://www.bobinsun.cn/assets/images/fin-09.png"></div>
+
+<p>金融行业已经朝着大数据+云计算+区块链+人工智能技术互相融合的方向而去，大数据为机器学习、算法模型优化提供数据，云计算保证算力与存储，区块链避免信息泄露、被篡改的安全问题。人工智能是未来金融产业发展的核心驱动力，而知识图谱作为金融业务的核心驱动力之一，在信息数据隐含关系挖掘有着不可替代的能力，促进金融升级转型。</p>
+
+<p><strong>预告：下一篇将侧重金融领域营销获客及风控系统产品设计</strong></p>
+
+<p><code class="highlighter-rouge">注：文中部分数据、图表来源于ifenxi  、艾瑞。</code></p>
+
+<hr>
+
+<h3 id="changelog">Changelog</h3>
+
+<ul>
+  <li>创建于 2019-06-15</li>
+</ul>
+
+
+
+        
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/ai/2019/06/15/finance-kg/" title="知识图谱在金融领域的分析与应用">http://localhost:5000/ai/2019/06/15/finance-kg/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E9%87%91%E8%9E%8D%E9%A2%86%E5%9F%9F" rel="tag"># 金融领域</a>
+          
+            
+            <a href="/tag/#/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1" rel="tag"># 知识图谱</a>
+          
+            
+            <a href="/tag/#/%E8%90%A5%E9%94%80%E8%8E%B7%E5%AE%A2" rel="tag"># 营销获客</a>
+          
+            
+            <a href="/tag/#/%E9%A3%8E%E6%8E%A7%E5%8F%8D%E6%AC%BA%E8%AF%88" rel="tag"># 风控反欺诈</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ai/2019/06/15/AI-baogao/" rel="next" title="「资源」| 30份人工智能行业报告">
+                <i class="fa fa-chevron-left"></i> 「资源」| 30份人工智能行业报告
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/ai/2019/05/29/Medical-brain/" rel="prev" title="「医疗知识图谱」到「综合性医疗大脑」">
+                「医疗知识图谱」到「综合性医疗大脑」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">97</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%89%8D%E8%A8%80"> <span class="nav-number">1</span> <span class="nav-text">前言</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%87%91%E8%9E%8D%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E5%88%86%E6%9E%90"> <span class="nav-number">2</span> <span class="nav-text">金融业务场景分析</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF%E5%88%86%E6%9E%90"> <span class="nav-number">3</span> <span class="nav-text">业务场景分析</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E8%90%A5%E9%94%80%E8%8E%B7%E5%AE%A2"> <span class="nav-number">4</span> <span class="nav-text">营销&amp;获客</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%A3%8E%E6%8E%A7%E5%8F%8D%E6%AC%BA%E8%AF%88"> <span class="nav-number">5</span> <span class="nav-text">风控&amp;反欺诈</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E7%BB%93%E8%AF%AD"> <span class="nav-number">6</span> <span class="nav-text">结语</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#changelog"> <span class="nav-number">7</span> <span class="nav-text">Changelog</span> </a> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/ai/2019/06/15/finance-kg/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阿拉灯神丁Vicky侃AI</title>
+    <description>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</description>
+    <link>http://localhost:5000/</link>
+    <atom:link href="http://localhost:5000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 13 Nov 2020 15:14:29 +0800</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 15:14:29 +0800</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>知识图谱与教育</title>
+        <description>&lt;h2 id=&quot;艾瑞咨询-2020年中国知识图谱行业研究报告-p3637&quot;&gt;艾瑞咨询-2020年中国知识图谱行业研究报告 p36~37&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/edu-01.png&quot; alt=&quot;搭建知识图谱是AI技术落地教育领域核心环节的关键前提&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/edu-02.png&quot; alt=&quot;教育知识图谱为机器学习算法提供充分且必要的数据支撑&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;知识图谱在教育领域的应用场景&quot;&gt;知识图谱在教育领域的应用场景&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将教材知识进行本体建模，形成可关联性查询的知识网络。&lt;/li&gt;
+  &lt;li&gt;以图结构将教学资源以及关系进行语义化组织，以便合理调用。&lt;/li&gt;
+  &lt;li&gt;在知识图谱的基础上，应用大数据、AI等技术形成面向目标的个性化学习路径，实现千人千面的教学方案。&lt;/li&gt;
+  &lt;li&gt;面向受教育者搭建个人图谱，通过对其知识点学习进度和考试反馈数据的实时关联，形成知识掌握状态的可视化个人画像，以至于习题推送和老师一对一教学有的放矢。&lt;/li&gt;
+  &lt;li&gt;将教育领域碎片化多源异构数据进行处理，形成标准化的关联数据集，为机器学习算法训练提供充要条件。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 06 Oct 2020 02:34:00 +0800</pubDate>
+        <link>http://localhost:5000/kg/2020/10/06/kg-and-edu/</link>
+        <guid isPermaLink="true">http://localhost:5000/kg/2020/10/06/kg-and-edu/</guid>
+        
+        <category>知识图谱</category>
+        
+        <category>教育领域</category>
+        
+        <category>应用场景</category>
+        
+        
+        <category>KG</category>
+        
+      </item>
+    
+      <item>
+        <title>本体开发101:创建第一个本体的指南</title>
+        <description>&lt;h1 id=&quot;本体开发101创建第一个本体的指南&quot;&gt;本体开发101：创建第一个本体的指南&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;作者&lt;/strong&gt;娜塔莉亚·诺伊（Natalya F. Noy）  和黛博拉·麦坚尼斯（Deborah L. McGuinness）斯坦福大学，CA，94305
+&lt;strong&gt;邮箱&lt;/strong&gt;：noy@smi.stanford.edu 和 dlm@ksl.stanford.edu&lt;/p&gt;
+
+&lt;h2 id=&quot;为什么要开发本体&quot;&gt;为什么要开发本体&lt;/h2&gt;
+
+&lt;p&gt;近年来，本体的发展（对领域中术语的明确规范和它们之间的关系（Gruber 1993））已经从人工智能实验室的领域转移到领域专家的桌面。本体在万维网上已经很普遍。Web上的本体包括从对网站进行分类的大型分类法（例如在Yahoo!上）到要出售的产品及其功能的分类（例如在Amazon.com上）。WWW联盟（W3C）正在开发资源描述框架（Brickley和Guha，1999），该语言用于对网页上的知识进行编码，以使电子代理商可以轻松地搜索信息。  国防高级研究计划局（DARPA）与W3C一起，通过扩展RDF并使用更具表现力的结构来扩展DARPA代理标记语言（DAML），旨在促进Web上的代理交互（Hendler和McGuinness 2000）。现在，许多学科都在开发标准化的本体，领域专家可以使用它们来共享和注释其领域中的信息。例如，医学已经产生了大型的，标准化的，结构化的词汇，例如SNOMED （Price和Spackman 2000）和统一医学语言系统的语义网络（Humphreys and Lindberg 1993）。广泛的通用本体也正在兴起。例如，  联合国开发计划署和Dun＆Bradstreet共同努力开发UNSPSC本体，该本体提供产品和服务的术语（&lt;a href=&quot;www.unspsc.org&quot;&gt;www.unspsc.org&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;本体为需要在域中共享信息的研究人员定义了通用词汇表。它包括领域中基本概念的机器可解释的定义以及它们之间的关系。&lt;/p&gt;
+
+&lt;p&gt;为什么有人要开发一个本体？一些原因是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在人员或软件代理之间共享对信息结构的共识&lt;/li&gt;
+  &lt;li&gt;能够重用领域知识&lt;/li&gt;
+  &lt;li&gt;明确领域假设&lt;/li&gt;
+  &lt;li&gt;将领域知识与运营知识区分开&lt;/li&gt;
+  &lt;li&gt;分析领域知识&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在人员或软件代理之间共享对信息结构的 共识是开发本体论的较常见目标之一（Musen 1992； Gruber 1993）。例如，假设几个不同的网站包含医疗信息或提供医疗电子商务服务。如果这些网站共享并发布它们全部使用的术语的相同基础本体，则计算机代理可以从这些不同的网站中提取和聚合信息。代理可以使用此汇总信息来回答用户查询或作为其他应用程序的输入数据。&lt;/p&gt;
+
+&lt;p&gt;启用领域知识的重用是最近本体论研究激增的推动力之一。例如，用于许多不同领域的模型需要表示时间的概念。此表示包括时间间隔，时间点，时间的相对度量等概念。如果一组研究人员详细开发了这种本体，那么其他研究人员可以简单地将其重新用于他们的领域。此外，如果我们需要构建大型本体，则可以集成描述大型域各部分的几种现有本体。我们还可以重用通用的本体，例如UNSPSC本体，并将其扩展以描述我们感兴趣的领域。&lt;/p&gt;
+
+&lt;p&gt;如果我们对领域的了解有所变化，则对实现的基础进行明确的领域假设就可以轻松更改这些假设。关于编程语言代码世界的硬编码假设使这些假设不仅难以发现和理解，而且难以更改，尤其是对于没有编程专业知识的人。此外，明确的领域知识规范对于必须了解领域术语含义的新用户很有用。&lt;/p&gt;
+
+&lt;p&gt;将领域知识与操作知识分开是本体的另一种常见用法。我们可以描述根据所需规范从其组件配置产品的任务，并实现一个独立于产品和组件本身进行此配置的程序（McGuinness和Wright 1998）。然后，我们可以开发PC组件和特性的本体，并应用该算法来配置定制PC。如果我们将电梯组件本体“馈入”到电梯中，我们也可以使用相同的算法来配置电梯（Rothenfluh et al。1996）。&lt;/p&gt;
+
+&lt;p&gt;一旦可以使用术语的声明性规范，就可以分析领域知识。  当试图重用现有本体并扩展它们时，术语的形式分析非常有价值（McGuinness et al。2000）。&lt;/p&gt;
+
+&lt;p&gt;通常，领域的本体本身并不是目标。开发本体类似于定义一组数据及其结构以供其他程序使用。解决问题的方法，与领域无关的应用程序和软件代理使用从本体构建的本体和知识库作为数据。例如，在本文中，我们开发了葡萄酒和食物的本体以及葡萄酒和餐食的适当组合。然后，可以将此本体用作一套餐厅管理工具中某些应用程序的基础：一个应用程序可以为当天的菜单创建葡萄酒建议或回答服务员和顾客的查询。另一个应用程序可以分析酒窖的库存清单，并建议扩展哪些酒类别以及为即将来临的菜单或菜谱购买哪些特定酒。&lt;/p&gt;
+
+&lt;h3 id=&quot;本体指南&quot;&gt;本体指南&lt;/h3&gt;
+
+&lt;p&gt;我们基于使用Protg-2000 （Protege 2000），Ontolingua （Ontolingua 1997），Chimaera （Chimaera 2000）作为本体编辑环境的经验。在本指南中，我们以Prot.g-2000为例。&lt;/p&gt;
+
+&lt;p&gt;我们在本指南中始终使用的葡萄酒和食品示例大致基于本文中描述CLASSIC的示例知识库，该知识库是一种基于描述逻辑方法的知识表示系统（Brachman等，1991）。CLASSIC教程（McGuinness等，1994）进一步开发了此示例。Protg-2000和其他基于框架的系统以声明方式描述了本体，明确说明了类层次结构是什么以及个人所属的类。&lt;/p&gt;
+
+&lt;p&gt;本指南中的一些本体设计思想源于有关面向对象设计的文献（Rumbaugh等，1991； Booch等，1997）。但是，本体开发不同于面向对象程序设计中的类和关系设计。面向对象的程序设计主要围绕类的方法—程序员根据类的操作属性做出设计决策，而本体设计者则根据类的结构属性做出决策。结果，本体中的类结构和类之间的关系与面向对象程序中类似域的结构不同。&lt;/p&gt;
+
+&lt;p&gt;无法涵盖本体开发人员可能需要解决的所有问题，因此我们在本指南中并未尝试解决所有这些问题。相反，我们试图提供一个起点。可以帮助新的本体设计者开发本体的初步指南。最后，如果领域需要它们，我们建议地方寻找对更复杂的结构和设计机制的解释。&lt;/p&gt;
+
+&lt;p&gt;最后，没有一种正确的本体设计方法，我们也没有尝试定义一种方法。我们在这里提出的想法是在我们自己的本体开发经验中发现有用的想法。在本指南的最后，我们建议了替代方法的参考文献列表。&lt;/p&gt;
+
+&lt;h2 id=&quot;本体是什么&quot;&gt;本体是什么&lt;/h2&gt;
+
+&lt;p&gt;人工智能文献包含本体的许多定义。其中许多相互矛盾。在本指南中，本体是对话语领域（类（有时称为概念））中的概念的正式的显式描述，每个概念的属性描述了概念的各种特征和属性（插槽 （有时称为角色或属性） ）以及对插槽的限制（构面（有时也称为角色限制））。本体与一组单独的类实例一起构成一个知识库。实际上，在本体结束和知识库开始之间存在一条界限。&lt;/p&gt;
+
+&lt;p&gt;类是大多数本体的重点。类描述领域中的概念。例如，一类葡萄酒代表所有葡萄酒。特定的葡萄酒是此类的实例。阅读本文时，杯中  的波尔多葡萄酒是波尔多葡萄酒的一个实例。一个类可以具有表示比超类更具体的概念的子类。例如，我们可以将所有葡萄酒的类别分为红葡萄酒，白葡萄酒和罗斯葡萄酒。或者，我们可以将所有葡萄酒分为起泡酒和非起泡酒。&lt;/p&gt;
+
+&lt;p&gt;插槽 描述了类和实例的属性： 拉菲堡罗斯柴尔德堡雅克红葡萄酒具有完整的酒体。它由ChâteauLafite Rothschild酒庄生产。在此示例中，我们有两个描述葡萄酒的位置：具有完整值的位置主体和具有ChâteauLafite Rothschild酒庄价值的位置制造商。在类级别，我们可以说，Wine类的实例 将具有描述其风味， 酒体， 糖 水平， 葡萄酒制造商等的位置。[1]&lt;/p&gt;
+
+&lt;p&gt;Wine类及其子类Pauillac的所有实例都有一个老虎机制造商， 其值是Winery类的一个实例（图1）。Winery类的所有实例都有一个插槽产品 ，该插槽引用了该酿酒厂生产的所有葡萄酒（Wine及其子类的实例）。&lt;/p&gt;
+
+&lt;p&gt;实际上，开发本体包括：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;限定在本体类，&lt;/li&gt;
+  &lt;li&gt;将类别按分类（子类-超类）层次结构排列&lt;/li&gt;
+  &lt;li&gt;限定槽和描述用于这些槽允许值&lt;/li&gt;
+  &lt;li&gt;填充中的值用于实例时隙&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;然后，我们可以通过定义这些类的各个实例来填充特定的插槽值信息和其他插槽限制，从而创建知识库。&lt;/p&gt;
+
+&lt;p&gt;图1。  葡萄酒领域中的某些类，实例以及它们之间的关系。  我们将黑色用于类，将红色用于实例。直接链接表示插槽和内部链接，例如instance-of和subclass-of。&lt;/p&gt;
+
+&lt;h2 id=&quot;一种简单的知识工程方法&quot;&gt;一种简单的知识工程方法&lt;/h2&gt;
+
+&lt;p&gt;正如我们之前所说，没有一种“正确”的方法或方法来开发本体。在这里，我们讨论要考虑的一般问题，并提供了一种开发本体的可能过程。我们描述了一种用于本体开发的迭代方法：我们从对本体的初步了解开始。然后，我们修改和完善不断发展的本体，并填写详细信息。在此过程中，我们讨论了设计师需要做出的建模决策，以及不同解决方案的利弊。&lt;/p&gt;
+
+&lt;p&gt;首先，我们要强调本体设计中的一些基本规则，我们将多次参考这些规则。这些规则似乎很教条。但是，它们可以在许多情况下帮助您做出设计决策。&lt;/p&gt;
+
+&lt;p&gt;1）没有一种正确的域建模方法-总是有可行的替代方法。最佳解决方案几乎总是取决于您所考虑的应用程序和预期的扩展。&lt;/p&gt;
+
+&lt;p&gt;2）本体开发必然是一个迭代过程。&lt;/p&gt;
+
+&lt;p&gt;3）本体中的概念应该与您感兴趣的领域中的对象（物理或逻辑）和关系紧密相关。这些最有可能是描述您的域的句子中的名词（宾语）或动词（关系）。&lt;/p&gt;
+
+&lt;p&gt;也就是说，决定我们将使用本体做什么以及本体将要多么详细或通用将指导许多建模决策。在几种可行的替代方案中，我们将需要确定哪种方案更适合计划的任务，更直观，更可扩展且更易于维护。我们还需要记住，本体是世界现实的模型，本体中的概念必须反映这一现实。在定义了本体的初始版本之后，我们可以通过在应用程序或解决问题的方法中使用它或与本领域的专家进行讨论，或者同时使用两者来评估和调试它。结果，我们几乎肯定会需要修改初始本体。&lt;/p&gt;
+
+&lt;h3 id=&quot;确定本体的范围和范围&quot;&gt;确定本体的范围和范围&lt;/h3&gt;
+
+&lt;p&gt;我们建议通过定义领域和范围来开始开发本体。也就是说，回答几个基本问​​题：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本体将涵盖的领域是什么？&lt;/li&gt;
+  &lt;li&gt;为了什么，我们将使用本体论？&lt;/li&gt;
+  &lt;li&gt;对于哪种类型的问题，本体中的信息应该提供答案？&lt;/li&gt;
+  &lt;li&gt;谁将会使用和维护本体？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这些问题的答案可能会在本体设计过程中发生变化，但是在任何给定的时间，它们都有助于限制模型的范围。&lt;/p&gt;
+
+&lt;p&gt;考虑一下我们前面介绍的葡萄酒和食物的本体。食物和葡萄酒的表示是本体论的领域。我们计划将这种本体用于建议葡萄酒和食物良好组合的应用程序。&lt;/p&gt;
+
+&lt;p&gt;自然地，描述葡萄酒的不同类型，主要食物类型，葡萄酒与食物的良好组合以及不良组合的概念将成为我们的本体。同时，本体不大可能包含用于管理酒厂或饭店员工库存的概念，即使这些概念在某种程度上与葡萄酒和食物的概念相关。&lt;/p&gt;
+
+&lt;p&gt;如果我们正在设计的本体将用于协助葡萄酒杂志中文章的自然语言处理，则在本体中包含概念的同义词和词性信息可能很重要。如果本体将用于帮助餐厅顾客决定订购哪种酒，我们需要包括零售价格信息。  如果将其用于购酒者的酒窖储藏，可能需要批发价格和供货情况。  如果维护本体的人员使用与本体用户所用语言不同的语言来描述域，则可能需要提供这些语言之间的映射。&lt;/p&gt;
+
+&lt;p&gt;能力问题。
+确定本体论范围的一种方法是勾勒出基于本体论的知识库应该能够回答的一系列问题，即能力问题 （Gruninger和Fox 1995）。这些问题将在稍后用作石蕊测试：本体是否包含足够的信息来回答这些类型的问题？答案是否需要特定级别的详细信息或特定区域的表示形式？这些能力问题仅是一个草图，不需要详尽。&lt;/p&gt;
+
+&lt;p&gt;在葡萄酒和食品领域，以下是可能的能力问题：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;选择葡萄酒时应考虑哪些葡萄酒特性？&lt;/li&gt;
+  &lt;li&gt;是波尔多红葡萄酒或白葡萄酒？&lt;/li&gt;
+  &lt;li&gt;不赤霞珠与海鲜顺利？&lt;/li&gt;
+  &lt;li&gt;烤肉用葡萄酒的最佳选择是什么？&lt;/li&gt;
+  &lt;li&gt;葡萄酒的哪些特性会影响其对菜肴的适合性？&lt;/li&gt;
+  &lt;li&gt;特定年份的酒香或酒体会随着年份的变化而变化吗？&lt;/li&gt;
+  &lt;li&gt;什么是好的年份纳帕粉黛？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;从这个问题列表中判断，本体将包括有关各种葡萄酒特性和葡萄酒类型，年份（好坏）的信息，这些葡萄酒的分类对选择合适的葡萄酒至关重要，推荐的葡萄酒和食物组合。&lt;/p&gt;
+
+&lt;h3 id=&quot;考虑重用现有的本体&quot;&gt;考虑重用现有的本体&lt;/h3&gt;
+
+&lt;p&gt;几乎总是值得考虑别人做了什么，并检查我们是否可以针对特定领域和任务优化和扩展现有资源。如果我们的系统需要与已经承诺使用特定本体或受控词汇表的其他应用程序进行交互，则可能需要重用现有本体。  许多本体已经可以电子形式获得，并且可以导入到您正在使用的本体开发环境中。表达本体的形式主义通常并不重要，因为许多知识表示系统可以导入和导出本体。即使知识表示系统不能直接用于特定形式主义，将本体从一种形式主义转换为另一种形式主义的任务通常也不是一件容易的事。&lt;/p&gt;
+
+&lt;p&gt;网络上和文献中都有可重用的本体库。例如，我们可以使用Ontolingua本体库（http://www.ksl.stanford.edu/software/ontolingua/）或DAML本体库（http://www.daml.org/ontologies/）。  也有许多公开可用的商业本体（例如，UNSPSC（www.unspsc.org），RosettaNet（www.rosettanet.org），DMOZ（www.dmoz.org））。&lt;/p&gt;
+
+&lt;p&gt;例如，法国葡萄酒的知识库可能已经存在。如果我们可以导入此知识库及其基础知识，那么我们不仅将具有法国葡萄酒的分类，而且还将获得用于区分和描述葡萄酒的葡萄酒特征分类的第一遍。葡萄酒属性列表可能已经可以从商业网站（例如www.wines.com）上获得 ，客户可以将其用于购买葡萄酒。&lt;/p&gt;
+
+&lt;p&gt;但是，对于本指南，我们将假定不存在相关的本体，并从头开始开发本体。&lt;/p&gt;
+
+&lt;h3 id=&quot;列举本体中的重要术语&quot;&gt;列举本体中的重要术语&lt;/h3&gt;
+
+&lt;p&gt;写下所有我们希望对用户发表声明或向用户解释的术语的列表很有用。我们想谈什么？这些条款具有哪些属性？我们想对这些条款说些什么？例如，与葡萄酒有关的重要术语将包括葡萄酒，葡萄，酿酒厂，位置，葡萄酒的颜色，酒体，风味 和含糖量；不同类型的食物，如鱼 和红肉; 葡萄酒的亚型，例如白葡萄酒， 等等。最初，获得完整的术语列表很重要，而不必担心它们表示的概念之间的重叠，术语之间的关系或概念可能具有的任何属性，或者概念是类还是插槽。&lt;/p&gt;
+
+&lt;p&gt;接下来的两个步骤（开发类层次结构和定义概念（插槽）的属性）紧密地交织在一起。很难先做一个，然后再做另一个。通常，我们在层次结构中创建一些概念定义，然后  继续描述这些概念的属性，依此类推。这两个步骤也是  本体设计过程中最重要的步骤。我们将在这里简要描述它们，然后在接下来的两个部分中讨论需要考虑的更复杂的问题，常见的陷阱，做出的决定等等。&lt;/p&gt;
+
+&lt;h3 id=&quot;定义类和类层次结构&quot;&gt;定义类和类层次结构&lt;/h3&gt;
+
+&lt;p&gt;开发类层次结构有几种可能的方法（Uschold和Gruninger 1996）：&lt;/p&gt;
+
+&lt;p&gt;一个自上而下的发展过程开始的域和的概念，随后专业化的最一般的概念的定义。例如，我们可以从创建Wine 和Food的一般概念的类开始。然后，我们 通过创建其子类别来专门研究Wine类：白葡萄酒，红葡萄酒，玫瑰酒。我们可以将红酒 类进一步分类，例如，西拉， 勃艮第红葡萄酒，赤霞珠等。&lt;/p&gt;
+
+&lt;p&gt;一个自下而上的发展过程从最具体的类的定义，层次结构的叶子，这些类的后续分组到更一般的概念。例如，我们首先定义波雅克 和玛歌 葡萄酒的类。然后，我们为这两个类（Medoc）创建一个公共超类，而该类又是Bordeaux的子类。&lt;/p&gt;
+
+&lt;p&gt;一个组合的发展过程是自上而下的组合和自下而上的方法：我们定义更加突出的概念，然后再推广，并适当专门它们。我们可能从一些顶级概念（例如Wine）和一些特定概念（例如Margaux）开始 。然后，我们可以将它们与诸如Medoc的中级概念相关联。  然后，我们可能想从法国生成所有区域葡萄酒类，从而生成许多中级概念。&lt;/p&gt;
+
+&lt;p&gt;图2 显示了不同普遍性级别之间的细分情况。&lt;/p&gt;
+
+&lt;p&gt;图2。酒类 分类的不同层次：酒， 红葡萄酒，白葡萄酒，玫瑰酒是更一般的概念，即顶层。波雅克 和玛歌 是层次结构中最具体的类，即最底层。&lt;/p&gt;
+
+&lt;p&gt;这三种方法在本质上都不比其他任何一种更好。采取的方法在很大程度上取决于域的个人观点。如果开发人员具有系统的自上而下的领域视图，则使用自上而下的方法可能会更容易。对于许多本体开发者来说，组合方法通常是最简单的，因为“中间”的概念往往是该领域中更具描述性的概念（Rosch 1978）。&lt;/p&gt;
+
+&lt;p&gt;如果您倾向于先区分最一般的分类来考虑葡萄酒，那么自上而下的方法可能会更好。如果您希望从具体示例入手，那么自下而上的方法可能更合适。&lt;/p&gt;
+
+&lt;p&gt;无论选择哪种方法，我们通常都从定义类开始。从步骤3中创建的列表中，我们选择描述具有独立存在的对象的术语，而不是描述这些对象的术语。这些术语将成为本体中的类，并将成为类层次结构中的基础。[2]通过询问是否作为一个类的实例，该对象是否必然（即根据定义）是某个其他类的实例，从而将这些类组织为分层分类法。&lt;/p&gt;
+
+&lt;p&gt;如果类A是类B的超类，则B的每个实例也是A的实例&lt;/p&gt;
+
+&lt;p&gt;换句话说，类别B表示为“种类”的概念。换句话说，类别B表示为“种类” A的概念。&lt;/p&gt;
+
+&lt;p&gt;例如，每种黑比诺葡萄酒都一定是红酒。因此，黑皮诺（Pinot   Noir）类是红酒类的子类。&lt;/p&gt;
+
+&lt;p&gt;图2 显示了Wine本体的部分层次结构。第4节 详细讨论了在定义类层次结构时要寻找的内容。&lt;/p&gt;
+
+&lt;p&gt;图3。Wine类的插槽 和这些插槽的构面。厂商 插槽旁边的“ I”图标表示该插槽具有相反符号（第5.1节）&lt;/p&gt;
+
+&lt;h3 id=&quot;定义类的属性-插槽&quot;&gt;定义类的属性-插槽&lt;/h3&gt;
+
+&lt;p&gt;仅这些课程将无法提供足够的信息来回答步骤1中的能力问题。一旦定义了一些类，就必须描述概念的内部结构。&lt;/p&gt;
+
+&lt;p&gt;我们已经从步骤3中创建的术语列表中选择了类。其余大多数术语可能是这些类的属性。这些术语包括，例如，葡萄酒的颜色，酒体，风味和糖分含量以及 酒厂的位置。&lt;/p&gt;
+
+&lt;p&gt;对于列表中的每个属性，我们必须确定其描述的类。这些属性成为附加到类的插槽。因此，Wine 类将具有以下位置：颜色，主体， 风味和糖。酒庄 课程将有一个位置 栏。&lt;/p&gt;
+
+&lt;p&gt;通常，有几种类型的对象属性可以成为本体中的插槽：&lt;/p&gt;
+
+&lt;p&gt;“内在”特性，例如 葡萄酒的味道;&lt;/p&gt;
+
+&lt;p&gt;“外在”性质，如酒的名字， 和区域 它来自;&lt;/p&gt;
+
+&lt;p&gt;份，如果对象被构造; 这些可以是物理的和抽象的“部分”（例如，一顿饭的过程）&lt;/p&gt;
+
+&lt;p&gt;关系到其他人; 这些是班级成员与其他项目之间的关系（例如， 葡萄酒制造商，代表一种葡萄酒与一个酿酒厂之间的关系，以及 该葡萄酒所用的葡萄。）&lt;/p&gt;
+
+&lt;p&gt;因此，除了我们先前确定的属性之外，我们还需要在Wine 类中添加以下插槽：name， area， maker， grape。 图3显示了Wine类的插槽。&lt;/p&gt;
+
+&lt;p&gt;一个类的所有子类都继承该类 的插槽。例如，Wine类的所有插槽 都将继承到Wine的所有子类，包括Red Wine和White Wine。我们将在红酒类中添加一个附加的单宁水平（低，中或高）。所述单宁水平槽就会由表示红葡萄酒（如所有类继承波尔多 和博若莱）。&lt;/p&gt;
+
+&lt;p&gt;应该在可以具有该属性的最通用类上附加一个插槽。例如， 葡萄酒类的酒体 和颜色应该附加在酒类上，因为它是最通用的类​​，其实例将具有酒体和颜色。&lt;/p&gt;
+
+&lt;h3 id=&quot;定义插槽的刻面&quot;&gt;定义插槽的刻面&lt;/h3&gt;
+
+&lt;p&gt;插槽可以具有描述值类型，允许的值，值的数量（基数）以及插槽可以采用的值的其他特征的不同方面。例如，名称 槽的值（如“葡萄酒的名称”）为一个字符串。即，名称 是值为字符串类型的插槽。槽位生产 （如“酿酒厂生产 这些葡萄酒”）可以具有多个值，并且这些值是Wine类的实例。也就是说，产生的 是具有类型类型为实例的插槽， 并且将Wine 作为允许的类。&lt;/p&gt;
+
+&lt;p&gt;现在，我们将描述几个常见方面。&lt;/p&gt;
+
+&lt;h4 id=&quot;插槽基数&quot;&gt;插槽基数&lt;/h4&gt;
+&lt;p&gt;插槽基数定义一个插槽可以具有多少个值。某些系统仅区分单基数（最多允许一个值）和多基数（允许任意数量的值）。 葡萄酒的主体将是单个基数槽（葡萄酒只能具有一个主体）。通过在多基数时隙的特定酒厂填充生产的葡萄酒生产 用于酿酒厂 类。&lt;/p&gt;
+
+&lt;p&gt;一些系统允许指定最小和最大基数，以更精确地描述插槽值的数量。最小基数N表示插槽必须至少具有N个值。例如， 葡萄酒的葡萄槽的最小基数为1：每种葡萄酒均由至少一种葡萄制成。M的最大基数意味着一个插槽最多可以具有M个值。 单一品种葡萄酒的葡萄位的最大基数为1：这些葡萄酒仅由一种葡萄制成。有时将最大基数设置为0可能会有用。此设置将指示该插槽对于特定子类不能具有任何值。&lt;/p&gt;
+
+&lt;h4 id=&quot;广告位值类型&quot;&gt;广告位值类型&lt;/h4&gt;
+&lt;p&gt;值类型构面描述了可以在插槽中填充哪些类型的值。这是更常见的值类型的列表：&lt;/p&gt;
+
+&lt;p&gt;字符串是用于诸如名称之类的插槽的最简单的值类型：该值是一个简单的字符串&lt;/p&gt;
+
+&lt;p&gt;编号（有时使用浮点数和整数的更具体的值类型）描述带有数字值的插槽。例如， 葡萄酒的价格可以具有值类型Float&lt;/p&gt;
+
+&lt;p&gt;布尔插槽是简单的是，没有任何标志。例如，如果我们选择不将起泡酒表示为一个单独的类，则可以将一个酒是否起泡表示为布尔值槽的值：如果该值为“ true”（“是”），则该酒为起泡酒如果值为“ false”（“否”），则该葡萄酒不是气泡酒。&lt;/p&gt;
+
+&lt;p&gt;枚举插槽指定插槽特定允许值的列表。例如，我们可以指定风味 插槽可以采用以下三种可能的值之一：强， 中度和精致。在Protg-2000中，枚举插槽的类型为Symbol。&lt;/p&gt;
+
+&lt;p&gt;实例型插槽允许个人之间的关系的定义。值类型为Instance的插槽还必须定义实例可以来自的允许类的列表。例如， 为Winery类产生的广告位 可以将Wine类的实例 作为其值。[3]&lt;/p&gt;
+
+&lt;p&gt;图4显示了 在Winery类上产生的广告位的定义。&lt;/p&gt;
+
+&lt;p&gt;图4。插槽产品的定义 描述了酒厂生产的葡萄酒。该广告位的基数为倍，值类型为Instance，并且类Wine 为值的允许类。&lt;/p&gt;
+
+&lt;h4 id=&quot;插槽的域和范围&quot;&gt;插槽的域和范围&lt;/h4&gt;
+&lt;p&gt;实例类型的插槽的允许类通常称为插槽范围。在图4的示例中 ，Wine类 是Produces 广告位的范围。当为特定类别连接插槽时，某些系统允许限制插槽的范围。&lt;/p&gt;
+
+&lt;p&gt;插槽所属的类或插槽描述的属性的类称为插槽的域。在酒厂 类是的域产生 槽。在将插槽附加到类的系统中，插槽所附加的类通常构成该插槽的域。无需单独指定域。&lt;/p&gt;
+
+&lt;p&gt;确定插槽的域和范围的基本规则相似：&lt;/p&gt;
+
+&lt;p&gt;在定义插槽的域或范围时，找到最通用的类或可以分别是插槽的域或范围的类。&lt;/p&gt;
+
+&lt;p&gt;另一方面，请勿定义过于笼统的域和范围：插槽的域中的所有类均应由插槽描述，并且插槽范围中的所有类的实例应为插槽。范围过于笼统的类（即，一个不想使范围为THING的类），但是想要选择一个覆盖所有填充物的类&lt;/p&gt;
+
+&lt;p&gt;而不是列出Produces 插槽 范围内Wine类的所有可能子类，只需列出Wine即可。同时，我们不想将插槽的范围指定为THING（本体中最通用的类）。&lt;/p&gt;
+
+&lt;p&gt;具体来说：&lt;/p&gt;
+
+&lt;p&gt;如果定义  插槽范围或域的类列表中包括一个类及其子类，请删除该子类。&lt;/p&gt;
+
+&lt;p&gt;如果槽的范围包含两个葡萄酒 类和红酒类，我们可以去除红葡萄酒从范围，因为它没有添加任何新的信息：红葡萄酒是一个子类葡萄酒 ，因此插槽范围已经隐含包括它以及Wine 类的所有其他子类。&lt;/p&gt;
+
+&lt;p&gt;如果定义  插槽范围或域的类列表包含类A的所有子类，但不包含类A本身，则范围应仅包含类A，而不包含子类。&lt;/p&gt;
+
+&lt;p&gt;无需定义插槽的范围包括红葡萄酒，白葡萄酒和桃红葡萄酒（列举的所有直接子类酒），我们可以限制的范围内对类酒 本身。&lt;/p&gt;
+
+&lt;p&gt;如果定义  插槽范围或域的类的列表包含A类的少数几个子类，则请考虑A类是否会做出更  合适的范围定义。&lt;/p&gt;
+
+&lt;p&gt;在将插槽附加到类与将类添加到插槽的域相同的系统中，相同的规则适用于插槽附加：一方面，我们应尝试使其尽可能通用。另一方面，我们必须确保插槽所连接的每个类确实可以具有插槽所代表的属性。我们可以将单宁水平槽附加到代表红酒的每个类别上（例如，波尔多， 梅洛， 博若莱等）。但是，由于所有红酒都具有单宁水平，因此我们应该将插槽添加到此类更通用的红酒中。一般化的域单宁平 由于我们不使用单宁水平来描述白葡萄酒，因此进一步扩展（通过将其附加到Wine类）是不正确的。&lt;/p&gt;
+
+&lt;h3 id=&quot;创建实例&quot;&gt;创建实例&lt;/h3&gt;
+
+&lt;p&gt;最后一步是在层次结构中创建类的各个实例。定义一个类的单个实例需要（1）选择一个类，（2）创建该类的单个实例，以及（3）填写广告位值。例如，我们可以创建一个单独的Chateau-Morgon-Beaujolais实例 来代表特定类型的博若莱葡萄酒。 夏上海摩根-博若莱是类的实例薄酒 代表所有的博若莱葡萄酒。该实例定义了以下插槽值（图5）：&lt;/p&gt;
+
+&lt;p&gt;身体: 轻
+颜色: 红色
+味道: 玲珑、鞣酸       &lt;br /&gt;
+水平: 低
+葡萄: 佳美（葡萄酒级葡萄的实例）
+制造者: Chateau-Morgon（酒庄 级别的实例）
+地区: 博若莱（葡萄酒区域 等级实例）
+糖: 干&lt;/p&gt;
+
+&lt;p&gt;图5。博若莱 类的实例的定义。实例是博若莱地区的Chateua Morgon博若莱酒，它是由莫贡城堡酒庄的佳美葡萄酿制而成。酒体清淡，香气细腻，红色，单宁含量低。这是干酒。&lt;/p&gt;
+
+&lt;h2 id=&quot;定义类和类层次&quot;&gt;定义类和类层次&lt;/h2&gt;
+
+&lt;p&gt;本节讨论的事情看出来的和定义类和类层次结构（何时进行，很容易错误的步骤4，从第3节）。如前所述，对于任何给定的域，没有单个正确的类层次结构。层次结构取决于本体的可能用途，应用程序必需的详细程度，个人喜好，有时还要求与其他模型兼容。但是，我们讨论了开发类层次结构时要牢记的几条准则。定义了大量新类后，退后一步检查新兴层次结构是否符合这些准则将很有帮助。&lt;/p&gt;
+
+&lt;h3 id=&quot;确保类层次结构正确&quot;&gt;确保类层次结构正确&lt;/h3&gt;
+
+&lt;p&gt;“是”关系
+类层次结构表示“ is-a”关系：如果B的每个实例也是A的实例，则类A是B的子类。例如，霞多丽 是White wine的子类。认为生物分类关系的另一种方式是“种”关系：霞多丽 是一种白葡萄酒。喷气客机是一种飞机。肉是一种食物。&lt;/p&gt;
+
+&lt;p&gt;类的子类表示一个概念，该概念是超类表示的概念的“种类”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;单一的葡萄酒不是所有葡萄酒的子类&lt;/strong&gt;
+常见的建模错误是在层次结构中包含相同概念的单数形式和复数形式，从而使前者成为后者的子类。例如，它是错误的定义类葡萄酒 和一类葡萄酒 作为一个子类葡萄酒。一旦您将层次结构视为代表“某种”关系，就可以清楚地看出建模错误：单个Wine 并不是一种 Wines。避免此类错误的最佳方法始终是在命名类中使用单数或复数（有关命名概念的讨论，请参见第6节）。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;等级关系的可及性&lt;/strong&gt;
+子类关系是可传递的：&lt;/p&gt;
+
+&lt;p&gt;如果B是A的子类并且C是B的子类，则C是A的子类&lt;/p&gt;
+
+&lt;p&gt;例如，我们可以定义一个Wine类，然后将一个White wine类定义为Wine的子类。然后，我们将霞多丽 类别定义为白葡萄酒的子类别。子类关系的及物性意味着霞多丽 类也是Wine的子类。有时我们区分直接子类和间接子类。一个直接的子类是类的“最近的”子类：有一类和层次结构的直接子类之间没有阶级。也就是说，在一个类及其直接超类之间的层次结构中没有其他类。在我们的示例中霞多丽 是一个直接子类白葡萄酒，而不是直接的子类酒。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;类层次结构的演变&lt;/strong&gt;
+随着领域的发展，保持一致的类层次结构可能会变得充满挑战。例如，多年来，所有仙粉黛葡萄酒都是红色的。因此，我们将一类金粉黛 葡萄酒定义为红葡萄酒类的子类。但是，有时酿酒师开始压榨葡萄，并立即去除葡萄的颜色产生部分，从而改变了所得葡萄酒的颜色。因此，我们得到颜色为玫瑰色的“白色仙粉黛”。现在，我们需要将“仙粉黛” 类划分为两个仙粉黛类：白仙粉黛和红仙粉黛，并将它们分类为玫瑰酒和红酒的子类。 分别。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;类及其名称&lt;/strong&gt;
+区分类及其名称很重要：&lt;/p&gt;
+
+&lt;p&gt;类代表领域中的概念，而不是代表这些概念的词。&lt;/p&gt;
+
+&lt;p&gt;如果我们选择其他术语，则类别的名称可能会更改，但是该术语本身代表着世界上的客观现实。例如，我们可以创建一个Shrimps类，然后将其重命名为Prawns-该类仍表示相同的概念。指虾菜肴的适当葡萄酒组合应指对虾菜肴。实际上，应始终遵循以下规则：&lt;/p&gt;
+
+&lt;p&gt;相同概念的同义词不代表不同的类别&lt;/p&gt;
+
+&lt;p&gt;同义词只是概念或术语的不同名称。因此，我们应该不会有一类叫做虾 和被称为类虾，以及可能称为类Crevette。而是有一个类，名为Shrimp 或Prawn。许多系统允许将同义词，  翻译或表示名称的列表与类相关联。如果系统不允许这种关联，则可以始终在类文档中列出同义词。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;避免上课周期&lt;/strong&gt;
+我们应该避免类层次结构中的循环。我们说，当某个类A具有子类B并且同时B是A的超类时，层次结构中存在一个循环。在层次结构中创建这样的循环等于声明类A和B是等效的：全部A的实例是B的实例，B的所有实例也是A的实例。确实，由于B是A的子类，所以所有B的实例都必须是A类的实例。由于A是B的子类，所以所有A的实例也必须是B类的实例。&lt;/p&gt;
+
+&lt;h3 id=&quot;分析类层次结构中的同级&quot;&gt;分析类层次结构中的同级&lt;/h3&gt;
+
+&lt;p&gt;类层次结构中的兄弟姐妹
+兄弟姐妹在层次是属于同一类的直接子类类（参见第4.1）。&lt;/p&gt;
+
+&lt;p&gt;层次结构中的所有兄弟姐妹（除了根节点的兄弟姐妹）都必须处于相同的通用级别。&lt;/p&gt;
+
+&lt;p&gt;例如，白葡萄酒和霞多丽 不应该是同一类的子类（例如Wine）。 白酒比霞多丽更普遍。兄弟姐妹应该代表“沿着同一线”的概念，就像  书中相同级别的部分具有相同的一般性。从这个意义上讲，对类层次结构的要求类似于对书本大纲的要求。&lt;/p&gt;
+
+&lt;p&gt;但是，位于层次结构根部的概念（通常表示为某些非常通用的类的直接子类，例如Thing）表示域的主要划分，而不必是相似的概念。&lt;/p&gt;
+
+&lt;p&gt;多少是太多？
+对于一个类应具有的直接子类数目，没有硬性规定。但是，许多结构良好的本体具有两个到十二个直接子类。因此，以下两个准则：&lt;/p&gt;
+
+&lt;p&gt;如果一个类只有一个直接子类，则可能存在建模问题或本体不完整。&lt;/p&gt;
+
+&lt;p&gt;如果给定类的子类超过十二个，则可能需要其他中间类。&lt;/p&gt;
+
+&lt;p&gt;这两个规则中的第一个类似于排版规则，即项目符号列表永远不应只有一个项目符号点。例如，大多数勃艮第红葡萄酒都是Côtesd’Or葡萄酒。假设我们只想代表大多数这种勃艮第葡萄酒。我们可以创建一个类干红葡萄酒，然后一个子类柯特斯d’Or的（图6一）。但是，如果在我们的代理中，勃艮第红葡萄酒和科特迪瓦葡萄酒基本相同（所有勃艮第红葡萄酒都为科特迪瓦葡萄酒，而科特迪瓦所有葡萄酒都是勃艮第红葡萄酒），则可以创建科特斯d’Or类不是必需的，并且不会向表示形式添加任何新信息。如果我们要包括的CTE Chalonnaise葡萄酒，这是更便宜的勃艮第葡萄酒来自该地区南部的热膨胀系数D’或，然后我们将创建的两个子类勃艮第 类：柯特斯d’Or酒店和科茨Chalonnaise（图6 b）。&lt;/p&gt;
+
+&lt;p&gt;图6。红色勃艮第类的子类。一个类只有一个子类通常会指出建模中的问题。&lt;/p&gt;
+
+&lt;p&gt;现在假设我们将所有类型的葡萄酒都列为Wine 类的直接子类。然后，该列表将包括这样的更一般类型的酒作为博若莱和波尔多，以及更具体的类型，如Paulliac和玛（图7一个）。Wine类 有太多直接的子类，而且，为了使本体论能够以更有条理的方式反映不同类型的葡萄酒，Medoc 应该是波尔多的子类， 而Cotes d’Or应该是勃艮第的子类。还具有红酒和白葡萄酒等中间类别这也将反映出许多人拥有的葡萄酒领域的概念模型（图7b）。&lt;/p&gt;
+
+&lt;p&gt;但是，如果不存在自然类来将一长串同胞中的概念进行分组，则无需创建人工类，只需将类保持原样即可。毕竟，本体是对现实世界的反映，如果在现实世界中不存在任何分类，则本体应该反映出来。&lt;/p&gt;
+
+&lt;p&gt;图7。对葡萄酒进行分类。具有所有葡萄酒和葡萄酒类型，而不具有多个分类级别。&lt;/p&gt;
+
+&lt;h3 id=&quot;多重继承&quot;&gt;多重继承&lt;/h3&gt;
+
+&lt;p&gt;大多数知识表示系统都允许在类层次结构中进行多重继承：一个类可以是多个类的子类。假设我们要创建一个单独的甜品酒类，即甜品酒类。波特酒既是红酒又是甜品酒。[4] 因此，我们将Port类定义 为具有两个超类：Red wine和Dessert wine。Port 类的所有实例都将是Red Wine类和Dessert wine类的实例。该端口 班级将从其父母双方那里继承其槽位及其侧面。因此，将继承该插槽的值SWEET糖 从甜酒类和单宁水平槽和用于从它的色彩时隙的值红酒类。&lt;/p&gt;
+
+&lt;h3 id=&quot;何时开设新课程或不开设&quot;&gt;何时开设新课程（或不开设）&lt;/h3&gt;
+
+&lt;p&gt;在建模期间做出的最困难的决定之一是何时引入新类或何时通过不同的属性值表示区别。既很难导航具有许多无关类的极其嵌套的层次结构，又很难导航具有很少类且在插槽中编码了太多信息的非常扁平的层次结构。要找到合适的平衡并不容易。&lt;/p&gt;
+
+&lt;p&gt;有几条经验法则可以帮助您决定何时在层次结构中引入新类。&lt;/p&gt;
+
+&lt;p&gt;一个类的子类通常（1）具有超类没有的其他属性  ，或者（2）与超类不同的限制，或者（3）参与与超类不同的关系&lt;/p&gt;
+
+&lt;p&gt;红酒可以具有不同水平的单宁，而此属性通常不用于描述葡萄酒。甜品酒的糖槽值是SWEET，而甜品酒的超类不是。黑比诺葡萄酒可能与海鲜搭配得很好，而其他红酒则不能。换句话说，通常仅在存在我们可以说出的有关该类的东西而我们不能说出的有关超类的东西时，才在层次结构中引入一个新类。&lt;/p&gt;
+
+&lt;p&gt;实际上，每个子类都应该添加新的插槽，或者定义新的插槽值，或者为继承的插槽覆盖某些方面。&lt;/p&gt;
+
+&lt;p&gt;但是，有时即使没有引入任何新属性，创建新类还是有用的。&lt;/p&gt;
+
+&lt;p&gt;术语层次结构中的类不必引入新的属性&lt;/p&gt;
+
+&lt;p&gt;例如，某些本体包括领域中使用的常用术语的大型参考层次结构。例如，电子病历系统下的本体可以包括各种疾病的分类。这种分类可能就是这样-术语的层次结构，没有属性（或具有相同的属性集）。在这种情况下，将术语组织为层次结构而不是统一列表仍然很有用，因为它将（1）允许更轻松地进行探索和导航，以及（2）使医生能够轻松地选择术语的通用级别，即适合这种情况。&lt;/p&gt;
+
+&lt;p&gt;引入没有任何新属性的新类的另一个原因是要对概念建模，领域专家通常会在其中进行区分，即使我们可能决定不对区分本身进行建模。由于我们使用本体来促进领域专家之间以及领域专家和基于知识的系统之间的通信，因此我们希望在本体中反映专家对领域的看法。&lt;/p&gt;
+
+&lt;p&gt;最后，我们不应该为每个附加限制创建类的子类。  例如，我们引入了红葡萄酒，白葡萄酒和玫瑰葡萄酒两类，  因为这种区别在葡萄酒界是很自然的。我们没有介绍  精致葡萄酒，中度葡萄酒等的课程。在定义类层次结构时，我们的目标是在创建对类组织有用的新类和创建太多类之间取得平衡。&lt;/p&gt;
+
+&lt;h3 id=&quot;一个新的类或属性值&quot;&gt;一个新的类或属性值&lt;/h3&gt;
+
+&lt;p&gt;在为领域建模时，我们经常需要决定是否将特定的区别（例如白葡萄酒，红葡萄酒或玫瑰酒）建模为属性值或一组类，这再次取决于领域的范围和任务手。&lt;/p&gt;
+
+&lt;p&gt;是创建类白葡萄酒还是简单地创建类Wine 并为广告位颜色填充不同的值？答案通常在我们为本体定义的范围内。白葡萄酒的概念有多重要在我们的域中？如果葡萄酒在该领域中仅具有很小的重要性，并且该葡萄酒是否为白葡萄酒对其与其他物品的关系没有任何特别的暗示，那么我们就不应该为白葡萄酒引入单独的类别。对于工厂生产酒标的领域模型，任何颜色的酒标的规则都是相同的，区别也不是很重要。另外，对于葡萄酒，食物及其适当的组合，红酒与白葡萄酒的区别很大：它与不同的食物搭配，具有不同的特性，依此类推。同样，酒的颜色对于我们可以用来确定品酒顺序的酒知识基础也很重要。  因此，我们为白葡萄酒创建了一个单独的类。&lt;/p&gt;
+
+&lt;p&gt;如果具有不同插槽值的概念成为其他类中不同插槽的限制。否则，我们以广告位值表示区别。&lt;/p&gt;
+
+&lt;p&gt;同样，我们的葡萄酒本​​体具有Red Merlot和White Merlot之类的类别，而不是所有Merlot葡萄酒的单一类别：Red Merlots和White Merlots确实是不同的葡萄酒（由相同的葡萄制成），并且如果我们正在开发葡萄酒，这种区别很重要。&lt;/p&gt;
+
+&lt;p&gt;如果区分在领域中很重要，并且我们将具有不同值的对象视为不同种类的对象，  则应该为该区分创建一个新类。&lt;/p&gt;
+
+&lt;p&gt;考虑类的潜在个体实例也可能有助于决定是否引入新类。&lt;/p&gt;
+
+&lt;p&gt;单个实例所属的类不应经常更改。&lt;/p&gt;
+
+&lt;p&gt;通常，当我们使用概念的外在属性而不是内在属性来区分类时，这些类的实例通常必须从一个类迁移到另一个类。例如，冷冻酒不应该是描述餐厅酒瓶的本体中的一类。该性质C hilled 应该仅仅是葡萄酒在瓶中的一个属性，因为实例冷藏的葡萄酒可以轻松地停止作为这个类的一个实例，然后再次成为这个类的一个实例。&lt;/p&gt;
+
+&lt;p&gt;通常，数字，颜色，位置是插槽值，并且不会导致创建新类。然而，酒是一个明显的例外，因为酒的颜色对酒的描述至为重要。&lt;/p&gt;
+
+&lt;p&gt;再举一个例子，考虑人体解剖学本体。当我们代表肋骨时，我们是否为“第一个左肋骨”，“第二个左肋骨”等等创建一个类？还是我们有一个带肋的类肋骨，用于排列顺序和横向位置（左右）？[5]如果我们在本体中表示的关于每个肋骨的信息明显不同，那么我们确实应该为每个肋骨创建一个类。也就是说，如果我们要表示详细的邻接关系和位置信息（每个肋骨都不同）以及每个肋骨playa和它保护的器官的特定功能，我们需要这些类。如果我们以稍低的一般性水平对解剖模型进行建模，并且就我们的潜在应用而言，所有肋骨都非常相似（我们只是在X射线上谈论哪根肋骨断裂，而不会影响身体的其他部位） ，我们可能想简化层次结构，只使用Rib类，它有两个位置：横向位置，顺序。&lt;/p&gt;
+
+&lt;h3 id=&quot;实例还是类&quot;&gt;实例还是类&lt;/h3&gt;
+&lt;p&gt;确定特定概念是本体中的类还是单个实例取决于本体的潜在应用范围。确定类从何处结束和各个实例开始的地方，首先要确定表示形式中最低的粒度级别。粒度级别又由本体的潜在应用确定。换句话说，知识库中最具体的项目是什么？回到我们 在第3节第1步中确定的能力问题，构成这些问题答案的最具体概念是知识库中各个人的很好的候选人。&lt;/p&gt;
+
+&lt;p&gt;个体实例是知识库中最具体的概念。&lt;/p&gt;
+
+&lt;p&gt;例如，如果我们仅谈论将葡萄酒与食物搭配，我们将对特定的葡萄酒瓶不感兴趣。因此，诸如Sterling Vineyards Merlot之类的术语可能会成为我们使用的最具体的术语。因此，Sterling Vineyards Merlot将成为知识库中的一个实例。&lt;/p&gt;
+
+&lt;p&gt;另一方面，如果我们除了要保持良好的葡萄酒-食物搭配知识基础之外，还希望在餐厅中保存葡萄酒的清单，则每种葡萄酒的单个瓶子都可能成为我们知识库中的单个实例。&lt;/p&gt;
+
+&lt;p&gt;同样，如果我们想为斯特林葡萄园梅洛葡萄酒的每个特定年份记录不同的属性，则该葡萄酒的特定年份是知识库中的一个实例，而斯特林葡萄园梅洛葡萄酒是一个包含所有年份的实例的类。&lt;/p&gt;
+
+&lt;p&gt;另一个规则可以将某些个体实例“移动”到类集中：&lt;/p&gt;
+
+&lt;p&gt;如果概念形成自然的层次结构，那么我们应该将它们表示为类&lt;/p&gt;
+
+&lt;p&gt;考虑葡萄酒产区。最初，我们可以将主要葡萄酒产区（例如法国，美国，德国等）定义为类别，并在这些大区域内定义特定的葡萄酒产区作为实例。例如，勃艮第地区是法国地区类别的一个实例。但是，我们还要说的是科特迪瓦地区是勃艮第地区。因此，勃艮第大区必须是一个类（为了具有子类或实例）。然而，使勃艮第地区的一类和阿摩尔滨海省或地区的实例勃艮第地区似乎是任意的：很难清楚地区分哪些区域是类，哪些是实例。因此，我们将所有葡萄酒产区定义为类。Prot-g-2000允许用户将某些类指定为Abstract，这表示该类不能具有任何直接实例。在我们的例子中，所有区域类都是抽象的（图8）。&lt;/p&gt;
+
+&lt;p&gt;图8。葡萄酒产区的层次结构。类名旁边的“ A”图标表示这些类是抽象的，不能有任何直接实例。&lt;/p&gt;
+
+&lt;p&gt;如果我们从类名称中省略单词“ region”，则相同的类层次结构将是不正确的。我们不能说阿尔萨斯阶级 是法国阶级的子类：阿尔萨斯不是法国的一种。但是，阿尔萨斯地区是法国的一种地区。&lt;/p&gt;
+
+&lt;p&gt;只能将类安排在层次结构中-知识表示系统没有子实例的概念。因此，如果术语之间存在自然的层次结构，例如在第4.2节中的术语层次结构中，即使它们本身没有任何实例，也应将这些术语定义为类。&lt;/p&gt;
+
+&lt;h3 id=&quot;限制范围&quot;&gt;限制范围&lt;/h3&gt;
+&lt;p&gt;作为定义类层次结构的最后注解，以下规则集始终有助于确定何时完成本体定义：&lt;/p&gt;
+
+&lt;p&gt;本体不应包含有关该域的所有可能的信息：您不需要专门化（或泛化）超过应用程序所需的内容（每种方式最多可以多一层）。&lt;/p&gt;
+
+&lt;p&gt;对于我们的葡萄酒和食物示例，我们不需要知道标签使用哪种纸或如何烹饪虾类。&lt;/p&gt;
+
+&lt;p&gt;同样，本体不应包含层次结构中所有可能的属性以及类之间的区别。&lt;/p&gt;
+
+&lt;p&gt;在我们的本体中，我们当然没有包括葡萄酒或食物可能具有的所有属性。  我们代表了本体中项目类别最突出的特性。  尽管葡萄酒书籍可以告诉我们葡萄的大小，但我们并未包括这些知识。  同样，我们也没有在系统中的所有术语之间添加可以想象的所有关系。  例如，我们在本体中没有包括诸如喜欢的葡萄酒和喜欢的食物之类的关系，只是为了更完整地表示我们定义的术语之间的所有相互联系。&lt;/p&gt;
+
+&lt;p&gt;最后一条规则也适用于在我们已经包含在本体中的概念之间建立关系。考虑描述生物学实验的本体。本体将可能包含生物有机体的概念。它还将包含实验者 执行实验的概念（带有他的名字，隶属关系等）。的确，作为一个人的实验者也恰巧是生物体。但是，我们可能不应该在本体中包含这种区别：出于这种表示的目的，实验者不是生物体，我们可能永远不会对实验者本身进行实验。如果我们代表了一切，我们可以说的关于本体中的类的话，实验者 将成为生物有机体的一个子类。但是，对于可预见的应用程序，我们不需要包括此知识。实际上，在现有类别中包括此类附加分类实际上会造成伤害：现在，实验人员的实例将具有与  生物体有关的重量，年龄，物种和其他数据的空位，但与描述实验的上下文绝对无关。但是，我们应该将此类设计决策记录在文档中，以使那些正在关注该本体并且可能不了解我们所考虑的应用程序的用户受益。&lt;/p&gt;
+
+&lt;h3 id=&quot;不相交的子类&quot;&gt;不相交的子类&lt;/h3&gt;
+&lt;p&gt;许多系统允许我们明确指定几个类是不相交的。如果类不能有任何共同的实例，则它们是不相交的。例如，我们本体中的甜品酒和白酒  类并非脱节：有很多酒是两者的实例。Sweet Riesling类的Rothermel Trochenbierenauslese Riesling实例就是这样的一个例子。同时，红葡萄酒和白葡萄酒是互不相干的：没有一种葡萄酒可以同时具有红白两色。指定类是不相交的  使系统能够更好地验证本体。如果我们声明红葡萄酒和白葡萄酒类是不相交的，然后创建一个类，该类是雷司令 （白葡萄酒的子类）和波特 （红葡萄酒的子类）的子类，则系统可以指出建模错误。&lt;/p&gt;
+
+&lt;h2 id=&quot;定义属性-更多详细信息&quot;&gt;定义属性-更多详细信息&lt;/h2&gt;
+&lt;p&gt;在本节中，我们讨论在定义本体中的插槽时要牢记的其他一些细节（第3节中的步骤5和步骤6）。主要地，我们讨论反向时隙和时隙的默认值。&lt;/p&gt;
+
+&lt;h3 id=&quot;反槽&quot;&gt;反槽&lt;/h3&gt;
+&lt;p&gt;一个时隙的值可以取决于另一个时隙的值。例如，如果一个 葡萄酒 是通过产生一个酒厂，则酒厂 产生 该葡萄酒。制造商 和生产商这两个关系称为逆关系。“双向存储”信息是多余的。当我们知道某酒厂生产葡萄酒时，使用知识库的应用程序总是可以推断出该酒厂生产该酒的逆关系的价值。但是，从知识获取的角度来看，使这两条信息明确可用很方便。这种方法允许用户在一种情况下填写葡萄酒，而在另一种情况下填写酒庄。然后，知识获取系统可以自动填写逆关系的值，以确保知识库的一致性。&lt;/p&gt;
+
+&lt;p&gt;我们的例子中有一个对  逆槽：该制造商 的的槽葡萄酒 类和产生 所述的槽酒厂 类。当用户创建Wine 类的实例并填写maker 插槽的值时，系统会自动将新创建的实例添加到 相应Winery 实例的Produces插槽。例如，当我们说Sterling Merlot由Sterling Vineyard酒厂生产时，系统会自动将Sterling Merlot添加到Sterling Vineyard酒厂生产的葡萄酒清单中。（图9）。&lt;/p&gt;
+
+&lt;p&gt;图9。具有反槽的实例。槽产生 的类酒厂 是槽的逆制造者 为类葡萄酒。填充其中一个插槽会触发另一个插槽的自动更新。&lt;/p&gt;
+
+&lt;h3 id=&quot;默认值&quot;&gt;默认值&lt;/h3&gt;
+&lt;p&gt;许多基于帧的系统都允许指定插槽的默认值。  如果某个类的大多数实例的特定插槽值都相同，则可以将该值定义为该 插槽的默认 值。然后，在创建包含该插槽的类的每个新实例时，系统会自动填写默认值。然后，我们可以将值更改为构面允许的任何其他值。也就是说，这里有默认值是为了方便：它们不会对模型施加任何新限制或以任何方式更改模型。&lt;/p&gt;
+
+&lt;p&gt;例如，如果我们将要讨论的大多数葡萄酒是浓郁的葡萄酒，我们可以将“丰满”作为该葡萄酒的默认值。然后，除非另有说明，否则我们定义的所有葡萄酒都将是浓郁的。&lt;/p&gt;
+
+&lt;p&gt;请注意，这与 插槽值不同。插槽值不能更改。例如， 对于甜品酒类，可以说槽糖的价值为SWEET 。然后，甜酒类的所有子类和实例都将具有槽糖的SWEET值。在任何子类或类实例中都不能更改此值。&lt;/p&gt;
+
+&lt;h2 id=&quot;名字叫什么&quot;&gt;名字叫什么&lt;/h2&gt;
+&lt;p&gt;为本体中的概念定义命名约定，然后严格遵守这些约定，不仅使本体更易于理解，而且还有助于避免一些常见的建模错误。命名概念有很多选择。通常，没有特别的理由选择一个或另一种选择。但是，我们需要&lt;/p&gt;
+
+&lt;p&gt;定义类和插槽的命名约定并遵守。&lt;/p&gt;
+
+&lt;p&gt;知识表示系统的以下功能会影响命名约定的选择：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统是否为类，插槽和实例使用相同的名称空间？也就是说，系统是否允许具有相同名称的类和槽位（例如类酒厂 和槽位酒厂）？&lt;/li&gt;
+  &lt;li&gt;系统区分大小写吗？也就是说，系统是否将仅在大小写不同的名称视为不同的名称（例如Winery 和winery）？&lt;/li&gt;
+  &lt;li&gt;系统允许在名称中使用哪些定界符？也就是说，名称可以包含空格，逗号，星号等吗？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如，Protg-2000为所有框架保留一个名称空间。区分大小写。因此，我们不能拥有一流的酿酒厂 和散装酿酒厂。但是，我们可以有一个Winery类 （不是大写）和一个slot winery。另一方面，CLASSIC不区分大小写，并且为类，插槽和个人维护不同的名称空间。因此，从系统角度来看，命名类和老虎机Winery都没有问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;大写和分隔符&quot;&gt;大写和分隔符&lt;/h3&gt;
+&lt;p&gt;首先，如果对概念名称使用一致的大写字母，则可以大大提高本体的可读性。例如，通常使用大写的类名，并使用小写字母表示插槽名称（假设系统区分大小写）。&lt;/p&gt;
+
+&lt;p&gt;当一个概念名称包含多个单词（例如Meal course）时，我们需要对这些单词定界。这是一些可能的选择。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用空间：用餐过程（许多系统，包括Protg，在概念名称中都允许有空格）。&lt;/li&gt;
+  &lt;li&gt;一起运行单词并大写每个新单词：MealCourse&lt;/li&gt;
+  &lt;li&gt;在名称下使用下划线或破折号或其他定界符：Meal_Course，Meal_course，Meal-Course，Meal-course。（如果使用定界符，则还需要确定每个新单词是否都大写）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果知识表示系统允许在名称中使用空格，那么对于许多本体开发人员来说，使用它们可能是最直观的解决方案。但是，重要的是要考虑您的系统可能与之交互的其他系统。  如果这些系统不使用空格，或者您的表示媒体不能很好地处理空格，则使用另一种方法会很有用。&lt;/p&gt;
+
+&lt;h3 id=&quot;单数或复数&quot;&gt;单数或复数&lt;/h3&gt;
+&lt;p&gt;类名表示对象的集合。例如，葡萄酒 一类实际上代表了所有葡萄酒。因此，对于某些设计师而言，将类称为Wines 而不是Wine更为自然。没有其他选择比其他选择更好或更差（尽管在实践中，类名的单数用法更常见）。但是，无论选择什么，都应该在整个本体中保持一致。某些系统甚至要求其用户预先声明是否将概念名称使用单数或复数，并且不允许他们偏离该选择。&lt;/p&gt;
+
+&lt;p&gt;始终使用相同的表单还可以防止设计人员犯下诸如创建类Wines 然后创建类Wine 作为其子类的建模错误（请参见4.1节）。&lt;/p&gt;
+
+&lt;h3 id=&quot;前缀和后缀约定&quot;&gt;前缀和后缀约定&lt;/h3&gt;
+&lt;p&gt;一些知识库方法建议在名称中使用前缀和后缀约定来区分类和插槽。  两种常见的做法是增加一个人─ 或后缀-of 位名称。  因此， 如果我们选择了has- 常规，我们的老虎机将成为has-maker 和has-winery。槽成为制造商-中 和酒厂-的 ，如果我们选择了OF- 约定。这种方法允许任何查看术语的人立即确定该术语是类还是空位。但是，术语名称会稍长一些。&lt;/p&gt;
+
+&lt;h3 id=&quot;其他命名注意事项&quot;&gt;其他命名注意事项&lt;/h3&gt;
+&lt;p&gt;定义命名约定时，还需要考虑以下几点：&lt;/p&gt;
+
+&lt;p&gt;请勿在概念名称中添加诸如&lt;code class=&quot;highlighter-rouge&quot;&gt;class''，&lt;/code&gt; property’‘，``slot’‘等字符串。&lt;/p&gt;
+
+&lt;p&gt;例如，从上下文中始终可以清楚地看到该概念是类还是插槽。另外，您对类和插槽使用了不同的命名约定（例如，分别使用大写和不使用大写），该名称本身将指示该概念是什么。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;避免概念名称的缩写通常是一个好主意（即使用Cabernet Sauvignon而不是Cab）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;类别的直接子类别的名称应全部包含或不包含超类别的名称。例如，如果我们要创建Wine 类的两个子类来表示红葡萄酒和白葡萄酒，则这两个子类名称应该是Red Wine和White Wine或Red and White，而不是Red Wine and White。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;其他资源&quot;&gt;其他资源&lt;/h2&gt;
+
+&lt;p&gt;我们将Prot.g.-2000用作示例的本体开发环境。Duineveld及其同事（Duineveld等，2000） 描述并比较了许多其他本体开发环境。&lt;/p&gt;
+
+&lt;p&gt;我们试图解决本体开发的基础知识，并且没有讨论本体开发的许多高级主题或替代方法。戈麦斯-普雷斯（G.mez-Prez 1998）和乌斯霍德（Uschold ）（Uschold and Gruninger 1996） 提出了替代的本体开发方法论。Ontolingua教程（Farquhar，1997年）讨论了知识建模的一些形式方面。&lt;/p&gt;
+
+&lt;p&gt;当前，研究人员不仅强调本体的发展，还强调本体的分析。  随着更多本体的产生和重用，将有更多工具可用于分析本体。例如，Chimaera （McGuinness et al。2000） 提供了用于分析本体的诊断工具。Chimaera执行的分析既包括检查本体的逻辑正确性，也包括诊断常见的本体设计错误。本体设计者可能希望在不断发展的本体上运行Chimaera诊断，以确定与常见本体建模实践的一致性。&lt;/p&gt;
+
+&lt;h2 id=&quot;结论&quot;&gt;结论&lt;/h2&gt;
+
+&lt;p&gt;在本指南中，我们描述了基于声明性框架的系统的本体开发方法。我们列出了本体开发过程中的步骤，并解决了定义类层次结构以及类和实例的属性的复杂问题。但是，遵循所有规则和建议后，要记住的最重要的事情之一是：对于任何域，都没有单一的正确本体。本体设计是一个创造性的过程，没有两个由不同人设计的本体是相同的。本体的潜在应用以及设计者对领域的理解和看法无疑会影响本体设计的选择。“证明在布丁中” —我们只能通过在我们为其设计的应用程序中使用本体来评估本体的质量。&lt;/p&gt;
+
+&lt;h2 id=&quot;致谢&quot;&gt;致谢&lt;/h2&gt;
+
+&lt;p&gt;Protg-2000（http://protege.stanford.edu）由斯坦福大学医学信息学的Mark Musen小组开发。我们使用Protog-2000的OntoViz插件生成了一些图形。我们从Ontolingua本体库（http://www.ksl.stanford.edu/software/ontolingua/）中导入了葡萄酒本体的初始版本，该库又使用了Brachman及其同事发布的版本（Brachman等，1991）。并随CLASSIC知识表示系统一起分发。然后，我们修改了本体，以提供基于声明性框架的本体的概念建模原则。雷·费尔格森（Ray Fergerson）和莫·佩莱格（Mor Peleg）对早期草案的广泛评论极大地改善了本文。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考文献&quot;&gt;参考文献&lt;/h2&gt;
+
+&lt;p&gt;Booch，G.，Rumbaugh，J。和Jacobson，I。（1997）。统一建模语言用户指南：Addison-Wesley。&lt;/p&gt;
+
+&lt;p&gt;Brachman，RJ，McGuinness，DL，Patel-Schneider，PF，Resnick，LA和Borgida，A。（1991）。与CLASSIC一起生活：何时以及如何使用类似KL-ONE的语言。语义网络原理。JF Sowa，摩根考夫曼（Morgan Kaufmann）编辑： 401-456。&lt;/p&gt;
+
+&lt;p&gt;Brickley，D.和Guha，RV（1999）。资源描述框架（RDF）架构规范。万维网联盟建议的建议： http : //www.w3.org/TR/PR-rdf-schema。&lt;/p&gt;
+
+&lt;p&gt;Chimaera（2000）。Chimaera本体环境。www.ksl.stanford.edu/software/chimaera&lt;/p&gt;
+
+&lt;p&gt;Duineveld，AJ，Stoter，R.，Weiden，MR，Kenepa，B.和Benjamins，VR（2000）。WonderTools？本体工程工具的比较研究。国际人类计算机研究杂志 52（6）：1111-1133。&lt;/p&gt;
+
+&lt;p&gt;Farquhar，A.（1997）。Ontolingua教程。http://ksl-web.stanford.edu/people/axf/tutorial.pdf&lt;/p&gt;
+
+&lt;p&gt;G.mez-Préz，A.（1998年）。知识共享和重用。应用专家系统手册。利勃维茨，CRC出版社编辑。&lt;/p&gt;
+
+&lt;p&gt;Gruber，TR（1993）。一种可移植本体规范的翻译方法。知识获取 5：199-220。&lt;/p&gt;
+
+&lt;p&gt;Gruninger，M。和Fox，MS（1995）。本体设计和评估的方法论。在：知识共享中的基本本体问题研讨会的论文集，IJCAI-95，蒙特利尔。&lt;/p&gt;
+
+&lt;p&gt;Hendler，J。和McGuinness，DL（2000）。DARPA代理标记语言。IEEE智能系统 16（6）：67-73。&lt;/p&gt;
+
+&lt;p&gt;Humphreys，BL和Lindberg，DAB（1993）。UMLS项目：在用户和他们所需的信息之间建立概念上的联系。医学图书馆协会公告 81（2）：170。&lt;/p&gt;
+
+&lt;p&gt;McGuinness，DL，Abrahams，MK，Resnick，LA，Patel-Schneider，PF，Thomason，RH，Cavalli-Sforza，V.和Conati，C.（1994）。经典知识表示系统教程。http://www.bell-labs.com/project/classic/papers/ClassTut/ClassTut.html&lt;/p&gt;
+
+&lt;p&gt;McGuinness，DL，Fikes，R.，Rice，J。和Wilder，S。（2000）。合并和测试大型本体的环境。知识表示和推理的原理：第七届国际会议论文集（KR2000）。AG Cohn，F。Giunchiglia和B. Selman，编辑。加利福尼亚州旧金山，摩根考夫曼出版社。&lt;/p&gt;
+
+&lt;p&gt;McGuinness，DL和Wright，J.（1998）。配置的概念建模：一种基于描述逻辑的方法。工程设计，分析和制造的人工智能-有关配置的特殊问题。&lt;/p&gt;
+
+&lt;p&gt;马萨诸塞州穆森（1992）。知识共享和重用的维度。计算机与生物医学研究 25：435-467。&lt;/p&gt;
+
+&lt;p&gt;Ontolingua（1997）。《 Ontolingua系统参考手册》。http://www-ksl-svc.stanford.edu:5915/doc/frame-editor/index.html&lt;/p&gt;
+
+&lt;p&gt;Price，C。和Spackman，K。（2000）。SNOMED临床术语。BJHC＆IM-英国医疗计算与信息管理杂志 17（3）：27-31。&lt;/p&gt;
+
+&lt;p&gt;Protege（2000）。Protege项目。http://protege.stanford.edu&lt;/p&gt;
+
+&lt;p&gt;Rosch，E。（1978）。分类原则。认知与分类。RE和BB Lloyd，编辑。新泽西州希尔赛德（Lawrence Erlbaum）出版商： 27-48。&lt;/p&gt;
+
+&lt;p&gt;Rothenfluh，TR，Gennari，JH，Eriksson，H.，Puerta，AR，Tu，SW和Musen，MA（1996）。可重用的本体，知识获取工具和性能系统：  Sisyphus-2的PROT-G-II解决方案。国际人类计算机研究杂志 44：303-332。&lt;/p&gt;
+
+&lt;p&gt;Rumbaugh，J.，Blaha，M.，Premerlani，W.，Eddy，F。和Lorensen，W。（1991）。面向对象的建模和设计。新泽西州恩格尔伍德悬崖：Prentice Hall。&lt;/p&gt;
+
+&lt;p&gt;Uschold，M.和Gruninger，M.（1996）。本体：原理，方法和应用。知识工程评论 11（2）。&lt;/p&gt;
+
+&lt;p&gt;[1]我们将类名大写，并以小写字母开头插槽名称。对于示例本体中的所有术语，我们还使用打字机字体。&lt;/p&gt;
+
+&lt;p&gt;[2]我们还可以将类视为一元谓词，即具有一个自变量的问题。  例如，“这是葡萄酒吗？”   一元谓词（或类）与二进制谓词（或槽）形成对比，二元谓词具有两个参数。  例如，“这个物品的味道浓吗？” “这个东西的味道是什么？”&lt;/p&gt;
+
+&lt;p&gt;[3]有些系统仅使用类指定值类型，而不需要实例类型插槽的特殊声明。&lt;/p&gt;
+
+&lt;p&gt;[4]我们选择在本体中仅代表红色端口：白色端口的确存在，但极为罕见。&lt;/p&gt;
+
+&lt;p&gt;[5] 在这里，我们假设每个解剖器官是因为我们也想谈一类“约翰1日左肋。” 现有个体的各个器官将在我们的本体中表示为个体。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 03 Oct 2020 02:34:00 +0800</pubDate>
+        <link>http://localhost:5000/kg/2020/10/03/ontology-tutorial/</link>
+        <guid isPermaLink="true">http://localhost:5000/kg/2020/10/03/ontology-tutorial/</guid>
+        
+        <category>知识图谱</category>
+        
+        <category>本体设计</category>
+        
+        <category>本体开发</category>
+        
+        
+        <category>KG</category>
+        
+      </item>
+    
+      <item>
+        <title>EverNote与Sublime搭建云端Markdown写作系统</title>
+        <description>&lt;h2 id=&quot;天下苦秦久矣&quot;&gt;天下苦秦久矣&lt;/h2&gt;
+
+&lt;p&gt;自从开始写博客，越来越迷恋&lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地&lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;写作系统，苦于未果。&lt;/p&gt;
+
+&lt;h2 id=&quot;写作系统的痛点&quot;&gt;写作系统的痛点&lt;/h2&gt;
+
+&lt;p&gt;许久未找到搜寻到适合的写作系统，究其原因，主要有两大痛点未被满足：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;市面上大多数&lt;code class=&quot;highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。&lt;/li&gt;
+  &lt;li&gt;Evernote、有道云笔记等云笔记既要满足多终端云同步，同时满足Markdown编辑方式，但我需要预览、查看、编辑拆分开来（这里的预览与查看状态不同），使操作轻量化、简洁化。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上的写作环境都不能满足我轻量化、优雅地编辑体验。因此，转而继续寻觅…&lt;/p&gt;
+
+&lt;h2 id=&quot;初见曙光&quot;&gt;初见曙光&lt;/h2&gt;
+
+&lt;p&gt;直到看到吕立青的一篇文章&lt;a href=&quot;https://gitpress.io/@jimmylv/2016-06-11-write-in-mac-os-x&quot;&gt;敏捷写作：MACOS 环境下写作系统的最优配置&lt;/a&gt;，瞬间眼前一亮，里面提及Evernote与Sublime无缝对接的方式。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Evernote：一款多平台的云笔记；&lt;/li&gt;
+  &lt;li&gt;Sublime：一款轻量级的编辑器；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;为什么是它们&quot;&gt;为什么是它们？&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;为什么是Evernote？&lt;/strong&gt;有道云笔记没有和Sublime联动的插件，Evernote在Sublime上有插件&lt;a href=&quot;https://github.com/bordaigorl/sublime-evernote&quot;&gt;sublime-evernote&lt;/a&gt;-使用Markdown打开和保存Sublime中的Evernote笔记。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;为什么是Sublime？&lt;/strong&gt;Sublime是收费软件，但可以无限期试用，有漂亮的用户界面和强大的功能，安装包小巧、功能插件丰富。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这里先看一下效果吧：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/evernote-sublime-01.png&quot; alt=&quot;Evernote&amp;amp;Sublime组合使用效果&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sublime-evernote插件特点&quot;&gt;Sublime-Evernote插件特点&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;发送笔记至Evernote&lt;/strong&gt;： 将当前视图中的Markdown文件转化为富文本格式并将其发送到Evernote，并且可设置标题、标签和存储位置；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;打开Evernote笔记&lt;/strong&gt;：Sublime命令面板可从Evernote笔记本中选择笔记，或通过搜索将富文本笔记转换成Markdown笔记在Sublime视图中显示；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;更新Evernote笔记&lt;/strong&gt;：在Sublime编辑已打开笔记的Markdown文件后，可以将其保存回Evernote（以富文本格式）；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;支持全面双向Metadata&lt;/strong&gt;：可以在Markdown文件中设置YAML Metadata更改文件中的笔记本、标题和标签；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;附件&lt;/strong&gt;：可以打开、插入、罗列、删除附件；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;剪辑笔记&lt;/strong&gt;：可将当前所选文字作为代码段保存到新笔记中；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;evernotesublime环境配置&quot;&gt;Evernote&amp;amp;Sublime环境配置&lt;/h2&gt;
+
+&lt;p&gt;第一步，安装Evernote和Sublime，这里就不多说了，去官网下载最新版本。&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime安装markdownediting&quot;&gt;Sublime安装MarkdownEditing&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MarkdownEditing&lt;/code&gt;是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。&lt;/p&gt;
+
+&lt;p&gt;在Sublime中&lt;code class=&quot;highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入MarkdownEditing下载安装。&lt;/p&gt;
+
+&lt;p&gt;如果不支持在线安装，则移步&lt;a href=&quot;https://github.com/SublimeText-Markdown/MarkdownEditing&quot;&gt;MarkdownEditing-github&lt;/a&gt;下载，进行手动导入安装。&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime安装evernote插件&quot;&gt;Sublime安装Evernote插件&lt;/h3&gt;
+
+&lt;p&gt;在Sublime中&lt;code class=&quot;highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入Evernote下载安装。&lt;/p&gt;
+
+&lt;h3 id=&quot;sublime连接印象笔记账号&quot;&gt;Sublime连接印象笔记账号&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先从&lt;a href=&quot;https://app.yinxiang.com/api/DeveloperToken.action&quot;&gt;Evernote Token&lt;/a&gt;获取你&lt;code class=&quot;highlighter-rouge&quot;&gt;Evernote&lt;/code&gt;的Token，获取之后切记保密。&lt;/li&gt;
+  &lt;li&gt;拿到Token后，在&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences &amp;gt; Package Settings &amp;gt; Evernote &amp;gt; Settings-User&lt;/code&gt;填写&lt;code class=&quot;highlighter-rouge&quot;&gt;noteStoreUrl&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;token&lt;/code&gt;字段。&lt;/li&gt;
+  &lt;li&gt;保存并重新启动Sublime，完成账号的关联。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;noteStoreUrl&quot;: &quot;your noteStoreurl XXX&quot;,
+    &quot;token&quot;: &quot;your token XXX&quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sublime操作同步至evernote&quot;&gt;Sublime操作同步至Evernote&lt;/h3&gt;
+
+&lt;p&gt;在Sublime中&lt;code class=&quot;highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Command Palette &amp;gt; Evernote: New empty note    //新建空笔记
+Command Palette &amp;gt; Evernote: Open Evernote Note   //打开笔记本
+Command Palette &amp;gt; Evernote: Send to Evernote    //发送至Evernote
+Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔记
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/evernote-sublime-02.png&quot; alt=&quot;Sublime操作Evernote方式&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以上只是常用指令，详细指令可查看Evernote插件的官方Github地址：&lt;a href=&quot;https://github.com/bordaigorl/sublime-evernote&quot;&gt;sublime-evernote&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;同时&lt;code class=&quot;highlighter-rouge&quot;&gt;sublime-evernote&lt;/code&gt;非常友好的提供了快捷键设置操作，在Sublime中打开&lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences &amp;gt; Key Bindings-User &lt;/code&gt;，将以下配置项填写至其中：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{ &quot;keys&quot;: [&quot;super+e&quot;], &quot;command&quot;: &quot;show_overlay&quot;, &quot;args&quot;: {&quot;overlay&quot;: &quot;command_palette&quot;, &quot;text&quot;: &quot;Evernote: &quot;} },
+{ &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+s&quot;], &quot;command&quot;: &quot;send_to_evernote&quot; },
+{ &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+o&quot;], &quot;command&quot;: &quot;open_evernote_note&quot; },
+{ &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+u&quot;], &quot;command&quot;: &quot;save_evernote_note&quot; },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;好了，剩下的就自己体验吧！可以说是很优雅了。&lt;/p&gt;
+
+&lt;h2 id=&quot;macos中使用shiftit管理窗口的大小和位置&quot;&gt;MacOS中使用ShiftIt管理窗口的大小和位置&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/evernote-sublime-03.png&quot; alt=&quot;ShiftIt快速布局多应用窗口效果&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里多说两句，上面的截图使用了左右窗口，此窗口不是手动布局，而是通过&lt;a href=&quot;https://github.com/fikovnik/ShiftIt&quot;&gt;ShiftIt工具&lt;/a&gt;进行自动布局，可使用快捷键快速布局多应用界面窗口。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/evernote-sublime-04.png&quot; alt=&quot;ShiftIt快捷键列表&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;安装软件时切记打开对应的权限。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;结合个人应用需求不断探索、寻找高效率软件，提高单位时间内的输入、产出结果。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Feb 2020 17:30:00 +0800</pubDate>
+        <link>http://localhost:5000/tools/2020/02/16/Evernote-Sublime/</link>
+        <guid isPermaLink="true">http://localhost:5000/tools/2020/02/16/Evernote-Sublime/</guid>
+        
+        <category>EverNote</category>
+        
+        <category>Sublime</category>
+        
+        <category>Markdown</category>
+        
+        <category>云端同步</category>
+        
+        <category>写作系统</category>
+        
+        
+        <category>tools</category>
+        
+      </item>
+    
+      <item>
+        <title>《漫谈产品经理》-俞军</title>
+        <description>&lt;h2 id=&quot;漫谈产品经理-俞军&quot;&gt;《漫谈产品经理》-俞军&lt;/h2&gt;
+
+&lt;object data=&quot;https://www.bobinsun.cn/assets/pdf/%E6%BC%AB%E8%B0%88%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86.pdf&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;1000px&quot;&gt;
+    &lt;embed src=&quot;https://www.bobinsun.cn/assets/pdf/%E6%BC%AB%E8%B0%88%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86.pdf&quot; /&gt;
+        &lt;p&gt;您的浏览器不支持&lt;b&gt;PDFs&lt;/b&gt;预览. 请下载该&lt;b&gt;PDF&lt;/b&gt;后查看 : &lt;a href=&quot;https://www.bobinsun.cn/assets/pdf/Technologies-QA-Based-on-KG.pdf&quot;&gt;点击下载PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;/object&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;俞军当年求职简历&quot;&gt;俞军当年求职简历&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;男&lt;/li&gt;
+  &lt;li&gt;26岁&lt;/li&gt;
+  &lt;li&gt;上海籍&lt;/li&gt;
+  &lt;li&gt;同济大学化学系五年制&lt;/li&gt;
+  &lt;li&gt;览群书，多游历&lt;/li&gt;
+  &lt;li&gt;97年7月起在一个国营单位筹备进口生产项目&lt;/li&gt;
+  &lt;li&gt;99年4月起在一个代理公司销售进口化工原料兼报关跟单&lt;/li&gt;
+  &lt;li&gt;2000年1月起在一个垂直网络公司做分析仪器资料采编&lt;/li&gt;
+  &lt;li&gt;2000年7月起去一个网络公司应聘搜索引擎产品经理，却被派去做数据库策划，9月起任数据中心经理&lt;/li&gt;
+  &lt;li&gt;长期想踏入搜索引擎业，无奈欲投无门，心下甚急，故有此文&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如有公司想做最好的中文搜索，诚意乞一参与机会&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;本人热爱搜索成痴，只要是做搜索，不计较地域（无论天南海北，刀山火海），不计较职位（无论高低贵贱一线二线，与搜索相关即可），不计较薪水（可维持个人当地衣食住行即是底线），不计较工作强度（反正已习惯了每日14小时工作制）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;搜索研究院克隆版&quot;&gt;搜索🔍研究院克隆版&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dianbo.org/9238/&quot;&gt;搜索引擎9238的搜索研究院克隆版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/sousuo-9238.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;俞军产品经理十二条&quot;&gt;俞军产品经理十二条&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;产品经理首先是用户；&lt;/li&gt;
+  &lt;li&gt;站在用户角度看问题；&lt;/li&gt;
+  &lt;li&gt;用户体验是一个完整的过程；&lt;/li&gt;
+  &lt;li&gt;追求效用，不做无用的东西；&lt;/li&gt;
+  &lt;li&gt;发现需求，而不是创造需求；&lt;/li&gt;
+  &lt;li&gt;决定不做什么往往比决定做什么重要；&lt;/li&gt;
+  &lt;li&gt;用户是很难被教育的，要迎合用户，而不是改变用户；&lt;/li&gt;
+  &lt;li&gt;关注最大多数用户，在关键点上超越竞争对手，快速上线，在实践中不断改进；&lt;/li&gt;
+  &lt;li&gt;给用户稳定的体验预期；&lt;/li&gt;
+  &lt;li&gt;如果不确定该怎么做，就先看别人是怎么做的；&lt;/li&gt;
+  &lt;li&gt;把用户当傻瓜，不要让用户思考和选择，替用户预先想好；&lt;/li&gt;
+  &lt;li&gt;不要给用户不想要的东西，任何没用的东西对用户而言都是一种伤害；&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;产品经理如何突破发展瓶颈-3节课访谈视频&quot;&gt;「产品经理如何突破发展瓶颈」-3节课访谈视频&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;访谈嘉宾&lt;/strong&gt;: 俞军、苏杰、张涛、耿新跃、朱晓华。&lt;a href=&quot;https://xin361t.com/vxsnkbjo/1024498782/&quot;&gt;点击立即播放视频&lt;/a&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/yujun_01.png&quot; /&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 29 Jan 2020 21:34:00 +0800</pubDate>
+        <link>http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/</link>
+        <guid isPermaLink="true">http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/</guid>
+        
+        <category>漫谈产品经理</category>
+        
+        <category>俞军</category>
+        
+        <category>滴滴</category>
+        
+        
+        <category>PM</category>
+        
+      </item>
+    
+      <item>
+        <title>社会、职场100法则</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来后面持续回味。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;社会职场100法则&quot;&gt;《社会&amp;amp;职场，100法则》&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img width=&quot;500px&quot; height=&quot;auto&quot; src=&quot;https://www.bobinsun.cn/assets/images/100rules-001.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;【1】这派那派无论什么派，终归斗不过行动派。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【2】所谓奋斗的意义，无非是竭尽全力远离庸人！这些年拼命做事，无非是希望看到更美的风景，也希望自己能成为别人眼中不错的风景。现在回头来看，最有趣的景色，其实就在翻山越岭的路途之中。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【3】知到极处便是行，行到极处即为知，知行合一是职场最大的修行。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【4】“小和尚为啥斗得过老妖怪？”，因为“小和尚有戒律”！戒律就是让你“先为不可胜而后求胜”。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【5】毕业前几年，其实就是个体实现真正的社会化和独立意志逐渐觉醒的过程。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【6】狭路相逢勇者胜。能吃苦的人很多，但有勇气的人凤毛麟角。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【7】在最有承受能力的时候冲出去，靠的是时机，敢不敢冲出去靠的是勇气。这都取决于观念。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【8】永远不要轻视学历的力量，更不要否认和轻视名校学历的力量。这个法则适用于地球上任何国家。但名校更多的是入场券和催化剂，并不能保证商业和职场的最终成功。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【9】当一个人心智越成熟、能力越强、社会地位越高，不需要其他人提供情感和物质上的援助时，他的共情社交就越少，而功利社交就越多。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【10】粉和黑，难以持久。长远讲：路人，才是人际常态。虽有些悲哀，但这是现实。与其在可疑的人际关系上耗费心力，不如一心一意低头练剑。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【11】个人真正的长大，是认识到社会和个人发展的根本动力是交换，客观评估自己所拥有的竞争资源，用最有效的方式来配置自己的资源，并通过社会分工和交换获得最高的价值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【12】5%的勇气锁定了100%的未来，只有迈出第一个5%，才会拥有后来的100%。有些人，一辈子爬过的高峰，只是上下班高峰。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【13】没有什么是安全的，安全的生活比死亡更糟糕；没有什么是确定的，悬而未决才是生活大美；自由的生命是缤纷高贵和绚美庄严之所在。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【14】路走久了，关系背景自然就多了。让阴谋论、背景论见鬼去吧。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【15】在积累了丰富的社会经验和行业经验后，实现财富的爆发式增长往往只需要很短的时间。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【16】人生的意义究竟是什么？管他呢！不该去追寻或者试图证明存在的意义，我们存在的本身就是最大的意义。如同流萤的莹，如同星空的星，如同草长莺飞的草，如同宇宙微尘的尘埃，四时消长，繁衍与消亡，无意义的本身就是人生所有的意义！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【17】我最喜欢知乎这句话：你爷爷不努力，你爸爸不努力，你知道来问这个问题。你再不努力，你儿子、你孙子将来还要关注这个问题。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【18】其实我们都是在海边玩沙子的小孩，在岁月之浪侵袭而来前，我们只有加油抓紧垒起自己心中的城堡。但如果遇到有沙子磨脚，不要硬扛，要先弯腰，把沙子倒出来。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【19】不管愿不愿意，无论承不承认，每个人都根据稀缺性，而被暗中标好了价格。商品的价值是使用价值，人的价值是利用价值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【20】智慧的出发点是怀疑，道德的出发点是相信！商业中不要掺和伦理，也不要抗拒别人对你的怀疑。想获得职位，就得把事情搞定，要不然只能被离开。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【21】专业的表现就是“说到做到”。生命的本质是时间，品牌的本质是承诺，不遵守承诺就是谋财害命，连累自己的个人品牌一文不值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【22】世界是面镜子，你只看到你愿意看到的，这叫幻境。陷入幻境很危险，挣脱出来，一需要棒喝，而需要慧根。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【23】职场中什么人容易成功？我来告诉你：傻子和疯子。傻子是肯吃亏的人，疯子是肯行动的人。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【24】生活的本质是选择，一场没有彩排的演出，一场走向坟墓的舞蹈，一场注定要孤独的盛宴，一场持续不断的试图不堕入平庸泥潭的努力。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【25】年轻人的苦恼无非是：自己想站着，亲朋好友无一例外地告诉你，跪着舒服！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【26】智商是世界的秩序，而降维攻击则是胜利者的秘密。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【27】战略的核心是重点论，本质是权衡取舍，外在体现是“放弃”。管理的核心呢？是“残忍”，要求极其理性。为什么，因为现实很残忍。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【28】岁月最大的敌手不是死亡、不是孤独、而是虚妄。管理最大的难题就是个性的成熟。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【29】除了生病和亲友去世的痛苦是真实的，其他痛苦只是价值观而已。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【30】CEO的能力是 - 专心致志的能力和无路可走时选择最佳路线的能力。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【31】个人发展的野心必须建立在公司发展的前提和依托之上，0的99%还是0。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【32】做领导的，不能逼着英雄抗事，就是笨蛋！识别不了真正的英雄，就是失职！轻易放走了英雄，简直就是犯罪。让狗熊坐在英雄的位子上，那就该沙头了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【33】50年的利益格局叫规则；500年的利益格局叫法律；5000年的利益格局叫文化。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【34】招人就像武大郎开店，要找拥有一只价值观的人做事，否则即便能力再强也要出问题。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【35】金钱的快感，在于它能带来更多的选择，而不只是更多的物质。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【36】产品人格化，CEO明星化，是网红时代的导流技巧。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【37】以己之短，攻敌之长，是对别人几十年付出和学习的蔑视。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【38】穷人家的孩子，缺的绝对不是宠爱，而是见识，是充裕经济条件支撑下的视野、格局和心态的提升，是多情境高效率的社交训练。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【39】30之前要放，要张扬，要试错，要撞墙碰壁跌跟头，要看风景攒经验，以此来获得洞穿世道人心的能力和清醒的自我观照与定位。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【40】对度过艰苦岁月的人来看，快乐是奢侈品，可有可无；而对于“90后”而言，快乐是必需品，和阳光空气一样与生俱来。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【41】找一家中意的公司、找一个中意的岗位，坚持10年必成大器。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【42】如何抓住发财的机会？态度端正、头脑清晰；未雨绸缪、专心积累；扩展人脉、勇于尝试。一句话：卡位、布局、等风来！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【43】成不了网红，那你就别去创业！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【44】99.99%的新品牌、新产品和新企业，都是死于流量不足。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【45】以“勾引”为主要手段的病毒营销，已经是企业老板和创业精英们的终极门槛。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【46】以人为商业的切入点和运营核心，这就是生意的趋势和未来。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【47】“网红经济”的本质可以概括为“做内容 + 养粉丝 + 卖产品”。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【48】在社交媒体的新传播时代，冒犯别人、极端化的表达和吹牛大王，反而成为圈粉和建立影响力的不二之选。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【49】这个世界，但凡取得点成就的人，都是有点“自虐”请向的人。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【50】如何创建“很毒”的内容，少花钱甚至不花钱而实现百万甚至千万级别的品牌曝光，将成为“网红”能否持久红下去的关键。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【51】好产品到底怎么做？一言以蔽之，以差异化价值聚拢规模化客户并创造长期价值。差异化价值是核心。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【52】智慧是最大的性感，唯有智慧，才能成就神一样和拥有牢固护城河的“网红”，而且，不会弄脏自己的羽毛。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【53】阅读量高低是能力，尽力则无悔，但阅读量造假可就是人品了，这个信息越来越对称的时代，谁比谁傻？这样做其实是自毁前程。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【54】即便你选择创业的行业符合O2O模式的前提条件，我还是要提醒你：运营、资本、营销，一个也不能少！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【55】商业的发展途径只有一个：复制！小米生态链的本质，我的理解就是，对小米成功关键因素的复制和放大。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【56】寒门难出贵子，责任真的在父母。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【57】如果你觉得生活容易，一定是有人替你承担了太多不易。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【58】寒门子弟，至少得焦虑30年，才能学会放松；必须被挫败300次，才能逐渐从容；丛林社会没有人指导，盲人骑瞎马，夜半临深池；头破血流到40岁，才算真正了解社会。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【59】同智商、情商、逆商等一样，时商，也就是对待时间的态度和运用时间创造价值的能力。我认为，这是当下最靠谱的概念。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【60】精神自由在先，财富自由在后。精神自由是超越自我，财富自由是超越外在。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【61】啥叫安全感？在我看来，它是懒惰惯性作用下的不良嗜好。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【62】你所谓的舒适区，不过是“英年早逝”的墓志铭。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【63】“舒适区”更像是理想国，是一个毕生朝圣的目标，而不是路上的的一把躺椅，随时可供你休息。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【64】“生命有限，知识无穷”，你要变的杰出，就必须花比别人更多的时间来学习，来磨练自己的大脑。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【65】经验是智慧的一种，其实更是勇气的重要部分。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【66】缺乏对传统营销的精髓的尊重和掌握，任何新媒体工具都不过是流动的盛宴和短命的狂欢；放弃对病毒式营销的追进和学习，任何顶尖策略和产品都不过是易逝之烟花和注定之败局。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【67】在行的人，永远都抢手。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【68】抓住根本，绕开细枝末节，这是一个人在有限生命中取得成功的关键。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【69】理性的行动派，最性感。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【70】从本质上讲，理性是一种技能而非性格，因为性格的养成最终还是来源于技能的提升。职场中的成熟不见得能眼前能迁延到生活中去。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【71】主动的去经历事物，积极的从书中和自己的实践中总结规律，思考如何应用规律，就是达到“理性”彼岸的通道。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【72】在执行力面前，想法和创意一文不值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【73】岁月能拉平任何人与人之间的距离。生活有一种神奇的平衡能力，任何一条道路都不可能只有利没有弊。拖着不做选择，才是最大的风险。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【74】63%的富豪为了财富甘愿承担风险，但只有6%的穷人愿意这么做。但他们坚信自己是自己的皇帝、是自己的太阳、是自己的宙斯。别笑，这是真的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【75】交朋友的本质是资源互换、利益共享，也就是合作。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【76】好的内容能像病毒一样自复制自传播。一篇文章能在短短两天时间实现爆炸式和病毒式推广？我认为根本原因在于“将合适的内容在合适的平台上推送给合适的人”。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【77】用一句话概括O2O就是：凡订单和收入来自线上，线下只承担配送，而且“解决掉不创造核心价值的中间环节”的商业模式，皆可称为O2O。而且如果只是借助互联网和移动互联网做一些品牌宣传和产品推广，并没有实现渠道变革型精简的，只能成为具有互联网意识的传统企业。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【78】无直播，不网红。直播的时代才刚刚开始，我们通过与众人的相互结合，将自己变为一种新的、更强大的物种。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【79】“将一些有的没的，可能有用又没什么用的东西，给那些自己都想不明白需不需要的人。”这句话道出了营销的本质。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【80】无论是博客，微博，还是微信时代，写作是营销人的基本功，是对思维的训练，是头脑的草稿纸，当然也是情绪的沙袋。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【81】小狼要辉煌，还得靠老狼。老狼在资源和技能上的加持，足以让小狼获得神一样的光彩。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【82】一切节省，本质上都是对时间上的节省！&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【83】看不透自然想不通，想不通自然做不到。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【84】看不透“职场就是一个冷酷残酷的价值交换体系”，升值和自我升值一定就跟你没什么关系。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【85】坚信自己的直觉，坚定的对自己抱有最大的期望，就是最大的自我善待。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【86】多琢磨琢磨如何错位竞争，比长得帅的人更聪明，比聪明的人家境好，比家境好的人身体棒，比身体棒的人学历高……相信我，你一定有超越他人的地方，这就是你的竞争优势。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【87】最强大的人脉，其实就是你自己。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【88】企业的生命线是现金流，人生也是！当现金流断了，只能拿命挡，此时的命就是比纸还贱。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【89】人生是一场世代累加的马拉松，教育一定是投资回报率最高的方式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【90】成长道路无非两条，或循规蹈矩，或野蛮生长。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【91】勇气其实是平凡人的一次选择。搞定貌似不可能搞定的事，就是人生最大的胜利。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【92】奋斗就像明星，你看到的是他们风光靓丽的那一刻，你没看到的是他们当年蘑菇一样在等待在修炼在哭泣在焦虑。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【93】体面体面，先靠体力，后靠面子。在商业世界很现实，它只在乎你的业绩，没人关注自尊。有业绩为体，才有薪酬、地位做面子。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【94】切记用体力上的勤奋，代替脑力上的懒惰。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【95】优秀是一个陷阱。你刚毕业能优秀到哪儿去？职场前10年，不要参加同学会，不会跟别人比。闷下头好好干10年，10年后我保证你鹤立鸡群。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【96】北京是世界上最大的城市，它无比包容，你所拥有的梦想基本都可以在这里实现，只要你足够坚持。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【97】要用制度解决道义上的困境。靠管理者自我道德约束，其实是将企业置于极其危险的境地。制度创新才是企业管理的顶层设计。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【98】优秀的人只在做事上较劲，恩怨纠葛属于情绪问题，对于做事和成长毫无意义。一个人具备做大事的能力，首先必须超级理性。不让情绪纠缠自己，懂得和现实讲和。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【99】如果你想变富，只需在一生中不断地买入资产就行了；如果你想变穷，只需不断买入负债。搞清楚了资产和负债的区别，财富自由就触手可及。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;【100】任何圆满与满足，大多时候是暂时性状态。趁年轻竭尽全力为社会创造价值，给世间你最珍惜的情感最充足的物质保障，这是你我的责任。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img width=&quot;500px&quot; height=&quot;auto&quot; src=&quot;https://www.bobinsun.cn/assets/images/100rules-002.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;再附一段朋友发过来的认知与财富理论：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;你永远赚不到&lt;br /&gt;
+超出你认知范围外的钱&lt;br /&gt;
+除非你靠运气&lt;br /&gt;
+但是靠运气赚到的钱&lt;br /&gt; 
+最后往往又会靠实力亏掉&lt;br /&gt; 
+这是一种必然&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;你所赚的每一分钱&lt;br /&gt; 
+都是你对这个世界认知的变现&lt;br /&gt; 
+你所亏的每一分钱&lt;br /&gt; 
+都是因为对这个世界认知有缺陷&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这个世界最大的公平在于&lt;br /&gt; 
+当一个人的财富大于自己的认知的时候&lt;br /&gt;
+这个社会有100种方法收割你&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;直到你的认知和财富相匹配为止&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sun, 22 Dec 2019 02:34:00 +0800</pubDate>
+        <link>http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/</link>
+        <guid isPermaLink="true">http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/</guid>
+        
+        <category>百万年薪</category>
+        
+        <category>100法则</category>
+        
+        <category>关于职场</category>
+        
+        <category>关于生活</category>
+        
+        <category>一碗鸡汤</category>
+        
+        
+        <category>Lifes</category>
+        
+      </item>
+    
+      <item>
+        <title>《大数据时代》书摘</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;《大数据时代》是国外大数据研究的先河之作，作者维克托•迈尔•舍恩伯格被誉为“大数据商业应用第一人”，书中有一些观点个人比较认同，摘抄过来，留作记录📝。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;大数据时代的3个转变&quot;&gt;大数据时代的3个转变&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;第一个转变是不再依赖于&lt;strong&gt;随机采样&lt;/strong&gt;。我们有更多的数据和信息，甚至可以处理和某个特别现象相关的所有数据。（采用分析的精确性随着采样随机性强相关，而与样本数量相关性较弱）。&lt;strong&gt;不是随机样本，而是全体数据。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;第二个转变是不再热衷于追求精确度。&lt;strong&gt;不是精确性，而是混杂性。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;第三个转变是不再热衷于寻找因果关系。&lt;strong&gt;不是因果关系，而是相关关系。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;大数据时代更强调混杂性而不是精确性&quot;&gt;大数据时代更强调混杂性而不是精确性&lt;/h2&gt;
+
+&lt;p&gt;执迷于精确性是信息缺乏时代和模拟时代的产物，只有5%的数据是结构化且能适用于传统数据库的。如果不接受混乱，剩下95%的非结构化数据都无法被利用，只有接受不确定性，我们才能打开一扇从未涉足的世界之窗。&lt;/p&gt;
+
+&lt;h2 id=&quot;学会拥抱混乱&quot;&gt;学会拥抱混乱&lt;/h2&gt;
+
+&lt;p&gt;“大数据”通常用概率说话，而不是板着“确凿无疑”的面孔。整个社会要习惯这种思维需要很长时间，其中也会出现一些问题。但现在，有必要指出的是，当我们试图扩大数据规模的时候，要学会拥抱混乱。&lt;/p&gt;
+
+&lt;h2 id=&quot;数据量与算法的关系&quot;&gt;数据量与算法的关系&lt;/h2&gt;
+
+&lt;p&gt;当数据只有500万的时候，有一种简单的算法表现的很差，当数据达到10亿的时候，它变成了表现最好的，准确率从原来的75%；提高到了95%以上。&lt;/p&gt;
+
+&lt;p&gt;与之相反地，在少量数据情况下运行的最好的算法，当加入更多数据时，也会像其他算法一样有所提高，但是却变成了在大量数据条件下运行的最不好的。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“大数据基础上的简单算法比小数据基础上的复杂算法更加有效。” - Peter Norvig 《数据的非理性效果》&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;基于相关关系的预测&quot;&gt;基于相关关系的预测&lt;/h2&gt;
+
+&lt;p&gt;相关关系的核心是量化数值之间的数理关系。想关关系强调当一个数据增加时，另一个数值很有可能会随之增加。这种很强的相关关系，比如谷歌的流感趋势：在一个特定的地理位置，很多人通过谷歌搜索特定的词条，该地区就有更多的人患了流感。&lt;/p&gt;
+
+&lt;p&gt;相反，相关关系弱就意味着当一个数值增加时，另一个数据几乎不会发生变化。例如：一个人的鞋码和他幸福的相关关系，就会他们之间几乎没有关系。&lt;/p&gt;
+
+&lt;p&gt;建立在相关关系分析基础上的预测是大数据的核心，而且更快、更准确，且不易受偏见的影响。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这个系统依赖的是相关关系，而非因果关系。它会告诉你会发生什么，而不是为什么发生，这正是这个系统的价值。   - 麦格雷戈博士&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 13 Aug 2019 06:34:00 +0800</pubDate>
+        <link>http://localhost:5000/ai/2019/08/13/BigData-Times/</link>
+        <guid isPermaLink="true">http://localhost:5000/ai/2019/08/13/BigData-Times/</guid>
+        
+        <category>大数据</category>
+        
+        <category>相关关系</category>
+        
+        <category>拥抱混乱</category>
+        
+        
+        <category>AI</category>
+        
+      </item>
+    
+      <item>
+        <title>创造性思维</title>
+        <description>&lt;p&gt;创造性思维是以灵活、灵动和原创的方式进行思考的过程，并且被认为是战略、解决问题和决策的重要元素。可以提供广泛的可能性和解决方案。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/creative-thinking.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;以下是创造性思维的常见类型：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;饱满的心态&quot;&gt;饱满的心态&lt;/h3&gt;
+
+&lt;p&gt;支持、拓展、连接其他人的想法，而不是竞争性的解决问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;发散思维&quot;&gt;发散思维&lt;/h3&gt;
+
+&lt;p&gt;挑战公认的假设和想法。&lt;/p&gt;
+
+&lt;h3 id=&quot;推测&quot;&gt;推测&lt;/h3&gt;
+
+&lt;p&gt;猜测缺少信息或不确定性的地方。&lt;/p&gt;
+
+&lt;h3 id=&quot;头脑风暴&quot;&gt;头脑风暴&lt;/h3&gt;
+
+&lt;p&gt;允许想法快速流动而无需验证。&lt;/p&gt;
+
+&lt;h3 id=&quot;保持歧义&quot;&gt;保持歧义&lt;/h3&gt;
+
+&lt;p&gt;延迟假设和约束的加强，直到最后一刻。&lt;/p&gt;
+
+&lt;h3 id=&quot;约束的创造力&quot;&gt;约束的创造力&lt;/h3&gt;
+
+&lt;p&gt;施加旨在激发创造力的约束。例如：排除解决问题的明显方案。&lt;/p&gt;
+
+&lt;h3 id=&quot;设计思维&quot;&gt;设计思维&lt;/h3&gt;
+
+&lt;p&gt;将所有策略、解决问题和决策制定视为一个设计过程，也就是创造某事的过程。&lt;/p&gt;
+
+&lt;h3 id=&quot;反事实思维&quot;&gt;反事实思维&lt;/h3&gt;
+
+&lt;p&gt;思考如果历史事实发生变化，世界会有何不同。例如：考虑如果没有发明飞机🛫或重力不存在，世界会是什么样子。&lt;/p&gt;
+
+&lt;h3 id=&quot;抽象化&quot;&gt;抽象化&lt;/h3&gt;
+
+&lt;p&gt;思考与具体现实不同的概念。&lt;/p&gt;
+
+&lt;h3 id=&quot;比喻&quot;&gt;比喻&lt;/h3&gt;
+
+&lt;p&gt;将复杂事物简化为更简单的类比。&lt;/p&gt;
+
+&lt;h3 id=&quot;思想实验&quot;&gt;思想实验&lt;/h3&gt;
+
+&lt;p&gt;通过思想实验反驳或验证想法。&lt;/p&gt;
+
+&lt;h3 id=&quot;评书&quot;&gt;评书&lt;/h3&gt;
+
+&lt;p&gt;在故事中包装想法，今天存在的许多发明首先出现在小说中。&lt;/p&gt;
+
+&lt;完&gt;
+&lt;!--stackedit_data:
+eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
+--&gt;
+&lt;/完&gt;
+</description>
+        <pubDate>Sun, 04 Aug 2019 08:34:00 +0800</pubDate>
+        <link>http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/</link>
+        <guid isPermaLink="true">http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/</guid>
+        
+        
+        <category>Thinking</category>
+        
+      </item>
+    
+      <item>
+        <title>数据与信息</title>
+        <description>&lt;h2 id=&quot;数据&quot;&gt;数据&lt;/h2&gt;
+
+&lt;p&gt;数据是可以由机器高速处理的原始事实。&lt;/p&gt;
+
+&lt;h2 id=&quot;信息&quot;&gt;信息&lt;/h2&gt;
+
+&lt;p&gt;信息是为人类消费而处理和组织的数据。&lt;/p&gt;
+
+&lt;h2 id=&quot;差异&quot;&gt;差异&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;「数据」&lt;/strong&gt; 意味着文件、数据库、数据结构中由机器组织的原始事实。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「信息」&lt;/strong&gt; 意味着由机器处理的数据以供人们理解。人类为人类创造的信息通常被称为「知识」。&lt;/p&gt;
+
+&lt;h2 id=&quot;案例&quot;&gt;案例&lt;/h2&gt;
+
+&lt;p&gt;假如市场数据包含大型公司股票在过去十年期间发生的十几亿笔交易的细节，这些数据汇聚总结在一个图表中，显示了一段时间内的价格，人们可以在图表中立即了解股票的历史价格信息与走势，用于创建此类图形的原始数据量非常大，并且对人们判断未来走势极其有用。&lt;/p&gt;
+
+&lt;h2 id=&quot;数据与信息&quot;&gt;数据与信息&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;/&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;数据&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;信息&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;定义&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;事实是对机器有用的格式&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;已经处理和结构化以供人们使用的数据&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;例如&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;一个天气数据库，每天从气象站和卫星捕获数百万的大气观测数据&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;天气预报&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 04 Aug 2019 08:00:00 +0800</pubDate>
+        <link>http://localhost:5000/ai/2019/08/04/Data-&-Information/</link>
+        <guid isPermaLink="true">http://localhost:5000/ai/2019/08/04/Data-&-Information/</guid>
+        
+        
+        <category>AI</category>
+        
+      </item>
+    
+      <item>
+        <title>关于推理 - 12种推理类型</title>
+        <description>&lt;p&gt;在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的几种推理做了简单整理，以供参考。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;「推理」是“使用理智从某些前提产生结论”的行动。    - 来自 · 维基百科&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-01.jpg&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;「推理」是以符合逻辑的、合理的思考方式思考事物的过程。被认为是一种人类天生的能力，但现在已经被逻辑学、数学、以及人工智能等领域逐渐形式化。&lt;/p&gt;
+
+&lt;p&gt;「推理」是一种过程或者行动，主要用于决策、解决问题和评估事物。&lt;/p&gt;
+
+&lt;p&gt;推理可以是正式的，可以是非正式的；可以是自上而下的，也可以是自下而上的；可以用来处理不确定性，也可以用来处理科学真理。&lt;/p&gt;
+
+&lt;h2 id=&quot;常见的12种推理类型&quot;&gt;常见的12种推理类型&lt;/h2&gt;
+
+&lt;h3 id=&quot;演绎推理&quot;&gt;演绎推理&lt;/h3&gt;
+
+&lt;p&gt;「演绎推理」是从一般到具体，换句话说，它是从一个理论开始，并努力寻找确认的观察结果，被称为自上而下的逻辑。常用来寻求现象来证明理论。它使用形式逻辑并在逻辑上产生结果。&lt;/p&gt;
+
+&lt;p&gt;演绎推理通常与归纳推理形成对比，可以说，演绎推理对确定性感兴趣，而归纳推理处理存在的可能性。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;逻辑学中有名的三段论（syllogism）就是典型的演绎推理例子：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;人皆有一死&lt;/li&gt;
+      &lt;li&gt;苏格拉底是人&lt;/li&gt;
+      &lt;li&gt;所以，苏格拉底会死&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;归纳推理&quot;&gt;归纳推理&lt;/h3&gt;
+
+&lt;p&gt;「归纳推理」是一种基于一系列已知事实形成理论的逻辑形式，是自上而下的逻辑，寻求理论来解释观察。它的本质是探索，允许意料之外但在情理之中的结果。&lt;/p&gt;
+
+&lt;p&gt;归纳推理的典型例子：因为地球上大多数生命都依赖于液态水生存，所以水对外星生命形式（如果存在的话）必须是重要的。&lt;/p&gt;
+
+&lt;h3 id=&quot;类比推理&quot;&gt;类比推理&lt;/h3&gt;
+
+&lt;p&gt;「类比推理」是使用类比对两事物之间进行比较，来进一步理解事物的意义。通常用于制定决策、解决问题和沟通。&lt;/p&gt;
+
+&lt;p&gt;作为制定决策和解决问题的工具，类比用于将复杂场景简化更为容易的事物，只要替换有效，可以提高解决方案的质量；作为一种交流工具，类比可通过熟悉且易于理解的比较，将复杂问题简单化。&lt;/p&gt;
+
+&lt;h3 id=&quot;分析推理&quot;&gt;分析推理&lt;/h3&gt;
+
+&lt;p&gt;「分析推理」是使用独立的逻辑，基于事实的思想或论据。换句话说，解释分析推理不需要有关于世界的经验或信息。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;分析陈述&lt;/strong&gt;本身就是事实；而&lt;strong&gt;合成陈述&lt;/strong&gt;需要有关世界的其它知识才能知道它们是真实的。&lt;/p&gt;
+
+&lt;p&gt;例如：“所有单身汉未婚”之类的陈述本身就是分析；“中国🇨🇳拥有丰富的传统文化”这样的陈述是合成的，因为没有额外的信息就无法证明这一点。&lt;/p&gt;
+
+&lt;h3 id=&quot;诱导推理&quot;&gt;诱导推理&lt;/h3&gt;
+
+&lt;p&gt;「诱导推理」类似归纳推理，从寻找或猜测理论来解释观察到的一系列现象。诱导推理并不是很严谨，但可以做出最好的假设和猜测。它通常用于背景不确定的情况下，主要用来做辅助决策和故障排除等相关情况。&lt;/p&gt;
+
+&lt;p&gt;例如：医学评估可以从解释一组症状的最可能的病症开始。诱导推理也是人工智能常用的方法。&lt;/p&gt;
+
+&lt;h3 id=&quot;向后归纳&quot;&gt;向后归纳&lt;/h3&gt;
+
+&lt;p&gt;「向后归纳」是从潜在结论开始向后推理的过程，可以反向绘制可以达到每个潜在结论的步骤，然后根据目标评估路径。这是一种自上而下的方法，从理论或结果开始，向后解释，它允许不确定性并且通常用于人工智能。&lt;/p&gt;
+
+&lt;p&gt;向后归纳往往需要做很多工作，因为通常有很多路径可以到达既定结果，就像“条条大路通罗马”。&lt;/p&gt;
+
+&lt;p&gt;对计算机来说，通过机器的结束状态，来向后推理来评估动作的效果。例如：计算机下棋的经典方式是通过反向归纳。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-02.jpg&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-3828096221540362&quot; data-ad-slot=&quot;4243777471&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;批判性思维&quot;&gt;批判性思维&lt;/h3&gt;
+
+&lt;p&gt;「批判性思维」是一个理性思考的过程，旨在以客观、全面、知情的方式得出结论。批判性思维是人类思想的产物，受文化、语言等因素的影响。人类思想基于自然语言，做出判断前需要考虑大量的想法。&lt;/p&gt;
+
+&lt;p&gt;批判性思维是一种智力参与的过程，在发表意见之前，要仔细查证据和假设，以达到深入的理解。&lt;/p&gt;
+
+&lt;h3 id=&quot;反事实思维&quot;&gt;反事实思维&lt;/h3&gt;
+
+&lt;p&gt;「反事实思维」是一种常见的思维模式，已知结果来追溯未评估的选择和行动，典型代表是“如果我有…”，“如果我当时怎么…做,就会怎么…”。&lt;/p&gt;
+
+&lt;p&gt;考虑的是已知不可能的发生的事情，考虑过去的决策是如何制定的，这是一个可以提高决策能力的共同的人类思维过程。&lt;/p&gt;
+
+&lt;p&gt;换句话说，反事实思维是评估过去的可能性对于改善未来决策或解决问题的价值。&lt;/p&gt;
+
+&lt;h3 id=&quot;直觉&quot;&gt;直觉&lt;/h3&gt;
+
+&lt;p&gt;「直觉」是心灵在没有推理等逻辑过程的情况下获取知识的能力，换句话说，大脑🧠获得直觉判断的方法对于思想者来说是未知的。&lt;/p&gt;
+
+&lt;p&gt;通常认为直觉是通过无意识感知的结果。是由无意识感知的心灵所做出的判断，这种判断表现出智慧，但产生这些判断的过程并不是很清楚。尽管直觉有时候被轻视，但他在科学发现中却发挥了重要作用。&lt;/p&gt;
+
+&lt;h3 id=&quot;动机推理&quot;&gt;动机推理&lt;/h3&gt;
+
+&lt;p&gt;「动机推理」是欲望和恐惧影响理性思维过程的倾向。通常人们可能会寻求合理的理由来做他们想做的事情，而不是使用逻辑来发现最佳的情况。&lt;/p&gt;
+
+&lt;p&gt;我们通常很容易想出一些逻辑参数来支持自己做出这样或那样的选择，就不会再去探索其他可替代的选择，因此放弃了潜在的更好的选择。&lt;/p&gt;
+
+&lt;h3 id=&quot;机会推理&quot;&gt;机会推理&lt;/h3&gt;
+
+&lt;p&gt;「机会推理」是一种人工智能，它可以根据情况使用不同的逻辑方法，即「正向链接」和「反向链接」。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「正向链接」&lt;/strong&gt;，举个例子：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A：会计师通常擅长数学。&lt;/li&gt;
+  &lt;li&gt;B：张三是一名会计师。&lt;/li&gt;
+  &lt;li&gt;演绎：张三可能擅长数学。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-03.jpg&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;上面的例子是模糊逻辑的一个例子，因为它能够理解灰色区域，其中存在“通常”、“可能”，它属于前向链接，因为它从你已知的信息转移到新的信息。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「反向链接」&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;p&gt;反向链接看未来状态，并试图看到未来是如何发生的，这对于实现目标或避免损失非常有用。&lt;/p&gt;
+
+&lt;p&gt;例如：人工智能可以使用反向链接检查国际象棋游戏中给定时刻的最终状态，来确定可能获胜的移动序列。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;机会推理&lt;/strong&gt;根据情况使用正向链接和反向链接。&lt;/p&gt;
+
+&lt;p&gt;人工智能可以具有多个逻辑引擎，这些逻辑引擎基于它们在给定情况下过去的表现而被选择。理论上，单个人工智能可以拥有大量逻辑引擎，它根据特定类型的问题的已知结果进行选择。&lt;/p&gt;
+
+&lt;h3 id=&quot;循环推理&quot;&gt;循环推理&lt;/h3&gt;
+
+&lt;p&gt;「循环推理」是逻辑，一个自己证明自己的结论。结论可以作为假设或前提采用。循环推理通常会产生逻辑上有效的参数，并且是没有实际意义的逻辑示例。&lt;/p&gt;
+
+&lt;p&gt;例如：如果我是 DJ,那么我就是 DJ。&lt;/p&gt;
+
+&lt;p&gt;(完)&lt;/p&gt;
+</description>
+        <pubDate>Sat, 03 Aug 2019 08:34:00 +0800</pubDate>
+        <link>http://localhost:5000/thinking/2019/08/03/About-Reasoning/</link>
+        <guid isPermaLink="true">http://localhost:5000/thinking/2019/08/03/About-Reasoning/</guid>
+        
+        <category>演绎推理</category>
+        
+        <category>归纳推理</category>
+        
+        <category>类比推理</category>
+        
+        <category>分析推理</category>
+        
+        <category>诱导推理</category>
+        
+        <category>向后归纳</category>
+        
+        <category>批判性思维</category>
+        
+        <category>反事实思维</category>
+        
+        <category>直觉</category>
+        
+        <category>动机推理</category>
+        
+        <category>机会推理</category>
+        
+        <category>循环推理</category>
+        
+        
+        <category>Thinking</category>
+        
+      </item>
+    
+      <item>
+        <title>Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」</title>
+        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-8.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这里翻译一篇关于Palantir的分析文章，包括商业模式画布、SWOT、垄断特征、及7个商业模式。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;商业模式画布&quot;&gt;商业模式画布&lt;/h2&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-1.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;再放一张Google 翻译后的吧，可以对照着看。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-7.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;价值主张&quot;&gt;价值主张&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;它通过整合客户拥有的所有数据 - （任何规模&amp;amp;任何类型的数据），促进人与计算机之间的协同工作。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;独特的价值主张&lt;/strong&gt;：它为企业和政府机构的所有分析需求提供了一个单一平台，主要用于&lt;code class=&quot;highlighter-rouge&quot;&gt;检测欺诈和犯罪&lt;/code&gt;。Palantir开发了&lt;code class=&quot;highlighter-rouge&quot;&gt;动态本体&lt;/code&gt;等技术，将各种数据源集成到一个平台中，非技术用户可以专注于调查查询，而不是学习复杂的查询语言。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;它专注于一个核心产品 - （机器增强6数据分析） - 并建立了一个几乎完全独立的工程团队来实现它。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-5.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Palantir Gotham&lt;/strong&gt;：Palantir Gotham，以前称为&lt;code class=&quot;highlighter-rouge&quot;&gt;Palantir政府&lt;/code&gt;，是Palantir的第一个产品，主要是为政府设计，帮助国防机构识别潜在的威胁。该平台的基础模型基本上是图形，主要围绕对象及其之间的链接构建。来自多个源的结构化和非结构化数据都输入到系统中。然后将数据转换为对象并生成到模型中。用户可以使用该模型来描述，探索和查询这些对象的属性和关系。通过该平台构建的多个应用程序使用户能够在平台内搜索、可视化、假设、发现模式并与同事分享见解。减少用户与其数据之间的摩擦。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-3828096221540362&quot; data-ad-slot=&quot;8737556252&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Palantir Metropolis&lt;/strong&gt;：Palantir Metropolis，以前称为&lt;code class=&quot;highlighter-rouge&quot;&gt;Palantir Finance&lt;/code&gt;，主要是为金融业设计，帮助进行欺诈检测。该平台围绕时间序列构建。从根本上说，它的基础模型是一系列事件。该平台非常适用于分析&lt;code class=&quot;highlighter-rouge&quot;&gt;保险索赔数据&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;网络流量&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;金融交易模式&lt;/code&gt;。它可以帮助用户在数学上分析随着时间推移的模型行为（例如，股票价格）。Metropolis主要支持聚合分析：选择一组模型和一个时间段，然后对它们进行复杂的数学计算。由于其快速的迭代和协作能力，Metropolis在这个领域的竞争中脱颖而出。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;数据可视化、预测分析和地理智能空间。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;虽然Palantir只在数据可视化、预测分析和地理情报空间中发挥作用，但却是这些领域的领域专家。虽然Palantir一直在扩展其产品组合以提供其他分析功能，但它受到来自业内其他参与者激烈竞争与挑战。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为了进一步说明Palantir庞大且不断增长的市场机会，强调我们对IT决策者的调查。要求IT专业人员在未来12-24个月内确定他们在数据分析中的首要任务。当今企业的首要任务是&lt;code class=&quot;highlighter-rouge&quot;&gt;数据集成和可视化&lt;/code&gt;，然后是&lt;code class=&quot;highlighter-rouge&quot;&gt;洞察力生成&lt;/code&gt;。这个领域的领导者目前是拥有这些重要功能的更好工具的公司。尽管Tableau，Qlik和Splunk在这个市场上取得了进展，但仍避免不了与微软，IBM，甲骨文和SAP等大公司竞争。现阶段Palantir尚未被企业客户广泛使用，但它拥有出色的集成和可视化工具，这对政府和商业机构都非常有价值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;四分之一的受访者认为，预测分析以及机器学习集成代表了分析的未来。这在数据量不断增长的世界中是有道理的，因为报告和可视化工具本身并不足够。业务领导者需要解析数据以做出业务决策。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir平台用于多个行业领域，以帮助实现数据集成，数据可视化和数据分析需求。Palantir擅长整合几乎任何类型的数据：文本，电子邮件，日志，甚至图像和视频。通过为其数据创建引用对象，它可以搜索和识别不同数据之间的链接。然后，不同行业流中的分析师使用此数据进行进一步调查。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在反欺诈，反恐，情报和犯罪预防领域，Palantir帮助整合来自随机来源的数据，例如现场报告，与首次信息报告（FIR）相关的电话号码，甚至来自移动设备的低分辨率图像设备。然后通过Palantir Graph或Map提供数据，这些易于查看的应用程序可帮助研究人员发现事件之间的模式并发展假设。在数据源和记录保存极为重要的保险，金融和医疗保健行业中，Palantir使用其知识管理应用程序来跟踪和保护通过其平台传输的每个数据。它还确保在将数据索引到平台以供将来引用时将适当的安全级别关联起来，通过其协作应用程序。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir真正的差异化特征是服务组件，以及其运营模式、执行工程人才、套利的能力。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;收入来源&quot;&gt;收入来源&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;就预订而言，我们估计2017年Palantir接近35亿美元，其中约40-50％的预订来自政府合同。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;重大的欧洲扩张; 自2014年以来欧洲的收入增加了三倍。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir是一家企业软件公司，通过两种标准定价模式获得收入：&lt;strong&gt;SaaS订阅和专业服务&lt;/strong&gt;。我们认为Palantir的季度收入遵循类似SaaS的趋势，从季度到季度连续增长。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;典型的Gotham安装包括：56.4万美元Palantir服务器的价格，假设4个核心$112K软件更新和维护服务器，每年（第一年免费）$ 100K培训，假设50个用户$600K工程服务集成。假设2-3名部署工程师为1年总计：150名用户为150名。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir特别令人困惑的是，它并不能完全清楚它是产品还是服务公司。除了对其实际软件产品的使用收费之外，在安装时他们还提供大量的工程，部署和培训服务合同包，所有这些服务都要收取额外费用。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;成本&quot;&gt;成本&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;虽然Palantir可能会将相对较小比例的收入用于销售和营销，但其同行（如Splunk，Tableau和Qlik）将其50％以上的收入用于吸引和留住客户。我们认为这些公司营销支出水平提高的主要原因之一是来自大型成熟企业软件供应商的激烈竞争。规模较小的公司倾向于花更多钱与企业客户站在一起，提供大幅折扣以说服客户改变他们的分析平台。然而，即使小公司采取这一步骤，已建立的参与者也可以降低价格以保留其客户群。由于Palantir不必将其收入用于销售和营销，这可能会带来大量节省，从而增加其盈利。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir认为它能够在合同中收取如此高的价格是因为他们的服务对他们的客户来说是一个非常高的价值。此外，Palantir的价格实际上比同等价格的技术解决方案（如Bloomberg终端或SAP）便宜。在一个典型的一般例子中，Palantir部署超过3年，每用户11,000美元（3），低于Bloomberg终端（5）的24,000美元价格。考虑到典型分析师的年薪从40,000美元到90,000美元不等，3年以上的每用户成本是相对较小的成本，特别是如果Palantir能够使这些用户在一个数量级上更有效。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;核心资源&quot;&gt;核心资源&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;在筹款方面，Palantir自成立以来已筹集了约27.5亿美元的总股本。该公司最近一轮融资于2016年1月完成，当时筹资约8.8亿美元，导致后期资金估值约为200亿美元。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir开发了多种应用程序（如图形和地图）和创新仪表板和技术（如动态本体和Nexus对等）来处理大量结构化和非结构化数据。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们相信Palantir的员工基础在过去五到七年中迅速增长。该公司估计2009年员工人数不足50人; 然而，到2017年，该公司在全球范围内增加到2,000多名员工，在华盛顿特区，欧洲和硅谷建立了主要业务。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;主要合作伙伴&quot;&gt;主要合作伙伴&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CIA的风险投资公司In-Q-Tel是美国情报界的一部分，投资于国防运营的新技术，是Palantir的早期投资者。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;主要活动&quot;&gt;主要活动&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;空中客车公司利用硅谷的专业知识（Palantir）来加速A350的生产。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;德国默克公司采用Palantir进行大数据健康计划。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;与产品和许可证相比，软件服务的利润率往往较低，主要原因是人员成分可变。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从加密和多级权限保持坏人到审计跟踪和匿名化保持好人好29，Palantir努力保护自由。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接下来，看看Palantir的职位列表，它更加模糊。他们为某些职位编造了自己的头衔。设计师 - Palantir办公室软件工程师 - Palantir Office前向部署软件工程师 - 客户现场部署战略专家 - 客户现场产品专家 - 客户站点此结构看起来更像是埃森哲咨询团队，而不是硅谷产品公司。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从财务角度来看，很明显，工程服务是最高利润率。假设您可以通过利润丰厚的股票期权向FDE支付10万美元/年，Palantir每位部署工程师的利润率为60％。此外，客户经常将FDE保持在比所需要的更长的时间，因为他们比自己的员工更好。然而，在操作上，Palantir的思想领袖是产品工程师，他们提出了先进的数据处理算法。我推测这些特殊头衔是人力资源部门争夺山谷中最优秀的人才。顶级工程师不尊重在技术服务公司工作，因此Palantir必须重新成为一家产品公司，以吸引最优秀的技术人才。这种方法非常成功，因为Palantir被视为硅谷的宠儿。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir通过向客户收取数百万甚至数十亿美元的大型部署合同来为其产品定价，该合同包括现场实施团队，培训服务，维护和许多服务器核心。由于每个客户端都有一组完全独特的数据源，因此Palantir部署具有极高的触摸性，需要高水平的自定义。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;价值链。大数据分析涉及检查大量结构化和非结构化数据，以发现隐藏的模式，趋势和相关性，以帮助企业做出有关其产品或服务的明智决策。企业使用执行数据提取，策划，分析和可视化的工具和应用程序来支持战略决策。虽然“大数据分析”一词描述了各种各样的功能和任务，如图表5所示，但行业专家认为，更广泛的软件分析领域包括三大类功能：（1）商业智能和分析工具/平台; （2）分析和绩效管理应用; （3）分析数据管理和集成平台。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-6.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;客户细分&quot;&gt;客户细分&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir的早期客户包括相当长的联邦，州和地方机构和部门名单，如国防部，CIA，FBI，国土安全部，洛杉矶警察局，芝加哥PD和NSA。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;该公司与不同的政府机构（如FBI，CBI，国防部和司法部）合作，将所有数据整合到一个平台中。此步骤在解决复杂案例时非常有用，因为分析师能够识别不同数据源中的模式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir失去了一个关键的网络安全客户：Home Depot。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;通道&quot;&gt;通道&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;最后，据Palantir公开交易的同行称，市场机会正在以相当强劲的速度增长。Tableau估计其产品的可用市场将从2013年的约150亿美元增长到2019年的266亿美元，主要是通过新客户收购和增加渠道预订。该公司认为，到2017年底，其国际增长将占其总收入的三分之一左右。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir开发了多种应用程序（如图形和地图）和创新仪表板和技术（如动态本体和Nexus对等）来处理大量结构化和非结构化数据。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;口口相传。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;客户关系&quot;&gt;客户关系&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;情报、执法和国土安全客户。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SaaS订阅和专业服务。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;数据分析供应商以不同的方式为其产品定价。一些价格基于使用的数据量;，每个用户一些价格， 和其他人使用用户编号和基于数据的定价的组合。虽然有些公司提供永久许可选项，但大多数公司都为其客户使用基于订阅的模式。定价模型可以从非常简单（例如，Tableau的单一定价模型）到非常复杂（例如，Palantir的定价，其未公开披露）。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;快速浏览Palantir的定价图表显示，虽然每台服务器的许可证价格约为140,000美元至150,000美元，但其服务每年可增加35万至75万美元。鉴于整合各种数据源所涉及的复杂性，对于计划使用Palantir产品的企业而言，其中一些服务实际上是强制性的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir做为B2B公司而言，仍然存在两个悬而未决的问题：Palantir的收入中有多少来自永久许可证？从SaaS许可证中获得的收入的Palantir政府和商业合同的平均持续时间是多少？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir称他们实行基于价值的定价，这使他们能够为每个客户最大化WTP。例如，在政府方面，Gotham唯一可比的产品是美国陆军的内部分布式共用地面系统，耗资23亿美元。一份泄露的文件引用了2012年的一项研究，其中96％的阿富汗战争战士更喜欢Palantir。所以我们可以假设Palantir可以为他们的产品收取高达2.3B的费用 - 仅靠陆军。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如今，Palantir正在向零售/ CPG公司扩张，因为他们寻求新的市场机会，销售周期比政府更短。与政府不同，这些公司确实与IBM BI，SAP和内部解决方案有比较点。当他们进入这个行业时，Palantir应该会看到由于竞争加剧而导致其利润率下降，特别是因为IBM BI甚至可能只是为了阻止Palantir。有趣的是，这些较低的利润率最终是否会扩散到政府方面，因为更高的透明度应该标识数据分析产品的真正价值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一旦Palantir建立了他们的员工基础，他们就可以向他们的客户收取他们迫切需要的工程人才的溢价。这不是要淡化他们的技术堆栈 - 但考虑到它需要多少定制，并且Palantir的商业模式不是通过软件包销售其产品，而是以其商业模式的大型部署合同的形式销售，Palantir的运营模式吸引的方式，投资于并管理其劳动力资本是其目前成功的主要原因之一！&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;swot分析&quot;&gt;SWOT分析&lt;/h2&gt;
+
+&lt;h3 id=&quot;优势strengths&quot;&gt;优势（Strengths）&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-2.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;劣势weaknesses&quot;&gt;劣势（Weaknesses）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir面临与潜在定价去杠杆化和将预订转换为现金相关的挑战。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;拥挤的竞争格局&lt;/code&gt;：目前有100多家大小公司提供大数据和分析软件产品和服务。我们的调查表明，大型软件技术供应商（包括Microsoft，IBM，Oracle和SAP）是BI和Analytics最常用的IT供应商之一。是什么让我们对Palantir的近期前景略微谨慎？在过去的几年里，Palantir的大型科技公司的竞争逆风加强了。这些不利因素以及对AI / ML计划的更多关注正在推动BI /分析产品。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;不明确的长期盈利潜力&lt;/code&gt;：我们对最近的媒体报道感到鼓舞，即Palantir有望在2017年底实现盈利。但是，可比较的大数据分析和商业智能公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转变为传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出与今天的水平相比更高。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;不透明的定价策略&lt;/code&gt;：与其他同行不同，Palantir不会公开披露其定价策略。缺乏透明度导致对其产品的理解不清楚，以及它们与同行的产品相比如何。关于Palantir价格表的媒体报道表明，Palantir的产品可能比同行更昂贵，这种情况可能导致缺乏定价杠杆或增加客户获取成本。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;数据隐私和安全挑战&lt;/code&gt;：由于Palantir与解决欺诈和犯罪的政府机构有关，因此Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;客户流失带来的潜在定价去杠杆化&lt;/code&gt;：媒体报道表明，Palantir的定价可能导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;：2015年，Palantir的客户预订超过了约1​​7亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换率为33％。投资者会将现金转换率提高作为长期健康表现的标志。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;服务收入影响Palantir的毛利率&lt;/code&gt;：与产品和许可证相比，软件服务的利润率往往较低，这主要是由于人事部门的变化。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;不断上升的私人股东激进主义潜力&lt;/code&gt;：Palantir的早期投资者对流动性事件一直相当耐心。Palantir首次筹集机构资本将近十年。在过去一年左右的时间里，该公司卷入了与早期投资者（KT4 Partners）进行信息访问的双向法律斗争。此类法律纠纷凸显了初创投资者与希望保持对股东严格控制的公司之间的争议关系。最近在优步发生的事件就证明了这一点，我们将密切关注与KT4合作伙伴正在进行的诉讼，以及任何此类其他相关事件。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;继富达和贝莱德之后，摩根士丹利显著降低了Palantir的估值。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;由客户流失驱动的潜在定价去杠杆化&lt;/code&gt;。媒体报道表明，Palantir的定价可能会导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的典型Palantir Gotham或Metropolis许可证的价格在3,000美元到10,000美元之间，需要额外的支持，维护和培训费用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;。2015年，Palantir的客户预订量超过了约17亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换比例为33％。投资者认为不断增长的现金转换率是长期健康表现的标志。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;机会opportunities&quot;&gt;机会（Opportunities）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;IT专业人员青睐大型技术供应商的BI和分析产品&lt;/code&gt;。我们的大多数受访者都将Microsoft，IBM，Oracle和SAP视为其公司目前使用的供应商。这些选择突出了Palantir面临的竞争格局，尽管其创新和独特的产品。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;未来12个月BI和分析支出前景乐观&lt;/code&gt;。89％的受访IT专业人士表示他们计划在未来12个月内增加对BI＆Analytics软件的支出。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;预测分析和机器学习集成将是未来五年关注的重点领域&lt;/code&gt;。49％使用BI和分析工具的公司将预测分析和机器学习集成确定为未来五年的主要关注领域。这些高级分析可帮助企业分析他们收集的数据量并从中获取可操作的见解&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;大多数公司更喜欢使用咨询服务以及BI和分析产品&lt;/code&gt;。83％的受访者表示他们使用专业服务和数据分析产品，进一步加强了Palantir的市场推广战略。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;非结构化数据已经在企业中广泛使用&lt;/code&gt;。47％的受访者表示他们在执行数据分析时“始终”使用非结构化数据。另有43％的受访者表示他们“偶尔”会使用这些数据。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;庞大且不断增长的市场机遇&lt;/code&gt;：对大数据分析，可视化和商业智能软件的需求估计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。虽然Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品演变的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析，这意味着公平强劲和可持续的增长轨迹。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;重要的长期趋势&lt;/code&gt;：关键的长期趋势，如移动性，数据增长和向云的迁移，增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;在网络安全，反欺诈措施和反恐方面增加IT支出的受益者&lt;/code&gt;：行业专家预测全球军事和国防预算的IT份额将持续上升。我们相信Palantir在数据分析领域占据独特的地位，并从提高对全球打击犯罪和欺诈的认识中获益。该公司业界领先的分析平台使其成为全球政府和企业的首选供应商。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;政府IT支出持续显着增长潜力&lt;/code&gt;：2017年美国联邦，州和地方IT支出预计将超过2000亿美元，其中约30-35％用于国防，公共安全和司法部门的IT。Palantir主要关注这些垂直行业，加上针对特定政府用例的定制产品，使我们更加坚信Palantir有一条通向政府内部长期发展的途径。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;独特，用户友好的客户主张&lt;/code&gt;：Palantir的第一代产品路线图主要由政府用例驱动，强调易用性和非技术最终用户可操作的仪表板。我们认为，Palantir的内部知识产权建立在早期政府合同的基础上，使公司能够减少大数据分析的摩擦。企业公司现在可以专注于绘制可操作的业务结论，而不是实现数据清理，解析和其他与输入相关的活动。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;备受瞩目的客户增加了销售和营销杠杆&lt;/code&gt;：Palantir的技术与赈灾（飓风桑迪），欺诈检测（伯尼麦道夫庞氏骗局）以及反恐活动（捕获奥萨马本拉登）等重大全球事件有关。虽然其同行SaaS公司将其净收入的50％用于销售和营销，但我们相信Palantir受益于媒体对高度可见事件和客户故事的报道。这种宣传可能会大大节省销售和营销费用，使公司在2017年底前更接近盈利&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;有吸引力的收入组合 - 从政府转向商业&lt;/code&gt;：我们认为，Palantir通过将其商业收入从2008年的约0％增长到2017年的约50-60％，使其客户群多样化。投资者将积极看待这一转变，它将提高报告透明度并减轻投资者对Palantir与某些政府机构发生冲突的担忧。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;潜在的收购目标&lt;/code&gt;：今年的预订总额估计为35亿美元，数据分析领域的行业领先技术，以及围绕其政府关系的可争议的护城河，Palantir为希望扩展到预测分析的老牌企业提出了一个有吸引力的收购目标，数据集成和数据可视化空间。这种吸引力在Palantir的估值下提供了合理的底线，并将帮助投资者在其估值框架中构建下行风险情景。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;专家希望内容和预测分析能够带头帮助企业整合多个数据源并提供可操作的洞察力。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;由于企业收集和需要解释的大量数据，其中一个子部分，即商业智能和分析，一直在快速增长&lt;/code&gt;。在过去几年中，报告和查询工具的需求量很大。然而，在向前发展的过程中，专家们希望内容和预测分析能够带头帮助企业集成多个数据源并提供可操作的见解。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;从分析师转向业务用户&lt;/code&gt;：这个市场中用户增长的主要原因是使用部分的转变。用法正在从分析用户转移到业务用户，将用户群增加了3.5倍以上。这些额外的用户需要更复杂和跨功能的分析。业务用户已经成为创新的主要推动力，因为他们在没有IT干预的情况下寻求自助服务，并通过创新的协作工具来分享整个组织的洞察力。组织正在从基础数据报告转向更高级的分析和基于洞察的工具，以帮助做出未来的决策。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BI模型的分散化&lt;/code&gt;：传统BI平台由组织内的IT团队领导，BI分析由数据科学家执行，但其余活动（如数据收集，维护和安全性）均由IT管理球队。BI现在正朝着完全分散的模式发展，不需要IT帮助。在此模型中，业务用户通过直接访问不同的数据源来实现数据准备和可视化。这种方法可以使小型和大型组织更容易，更广泛地使用。BI领域的新进入者主要使用此模型。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;融合下一代BI架构&lt;/code&gt;：目前，没有一个平台可以满足所有BI需求。组织使用多种工具来实现BI的不同方面，例如数据报告，日志记录，可视化和高级分析。个别组件玩家现在正在添加更多功能以转换为平台播放器。他们努力成为客户的单一BI和分析源。即使是以IT为中心的传统BI平台也试图提供更好的分析和可视化工具，但它们已被现有的基础架构所拖累。IBM在其Cognitive Analytics平台上取得了一些进展，但尚未被企业所接受&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;进一步考虑这一估计，我们强调了我们专有调查的相关观察结果。当被问及他们目前使用的BI和分析工具的类型时，超过40％的IT专业人员表示他们使用所有三种主要的分析工具。换句话说，今天使用分析软件工具的方式发生了明显的变化。他们的核心价值主张已经从简单的仪表板式工具演变为更智能的软件，可以帮助推动业务决策。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;根据2016年IDG研究调查，数据分析是预计将迁移到云端的最佳应用程序。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;根据我们最近的两次投资者情绪调查，我们了解到大数据和分析代表了所有软件应用程序中最有希望的增长领域&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;移动性、数据增长和向云移动等关键的长期趋势增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在网络犯罪，反欺诈措施和反恐方面增加支出的受益者.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;政府IT支出持续显着增长潜力.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;威胁threats&quot;&gt;威胁（Threats）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;投资者在未来18至24个月内监控的关键问题是竞争的影响以及政府/服务收入对Palantir利润率的混合转移&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-3.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;最近有媒体报道称，Palantir有望在2017年底实现盈利。但是，可比公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转向传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出增加。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;最后，盈利门槛似乎已被推迟。规模较小，年轻的公司没有达到盈利水平，而这些公司的年龄较大，年龄较大的同行正在大量涌现。快速比较分析供应商在增加收入里程碑时的利润率表明，较大的，已建立的分析供应商（如Adobe）已经能够实现盈利，而较小的供应商（如Workday）的盈利能力则低于负20％。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;数据隐私和安全挑战&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;由于Palantir与解决欺诈和犯罪的政府机构合作，Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;垄断特征&quot;&gt;垄断特征&lt;/h2&gt;
+
+&lt;h3 id=&quot;专有技术&quot;&gt;专有技术&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir能够整合所有形式的数据，包括实时日志，电子邮件，聊天对话，社交媒体内容，甚至图像和视频内容。工程师在帮助安装平台时，汇集来自所有来源的数据，将其摄取到Palantir平台并创建可在调查期间引用的对象。与其他主要分析平台不同，Palantir平台可以在几周内安装并完全运行，而不是数月或数年。多年来，Palantir基于其在国防和金融领域的学习，在其两个产品平台上增加了几项新技术，并将其扩展到其他行业领域。Palantir在客户中非常受欢迎，主要是因为其用户友好的应用程序，有助于识别不寻常的模式。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir平台融合了基于人类的算法和强大的引擎，可以在极其精细的水平上同时扫描多个数据库。该公司的主要收入来源是其两个大型分析平台：Palantir Gotham和Palantir Metropolis。这两个平台集成了针对不同分析领域的技术解决方案。该系统接受庞大的数据库，并允许用户以看似无数的方式对信息进行切片，并对所有必要的安全需求具有适当的敏感性。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;处理非结构化数据是当今的核心竞争力之一&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在创业社区，我们喜欢谈论快速迭代的重要性，但是在推送代码时很容易做到就像在服务器上点击刷新一样简单。在企业界，计算机通常不与互联网连接，因此推送代码实际意味着工程师必须飞到公司的物理位置并亲自升级软件。尽管存在额外的挑战，但Palantir将快速迭代作为优先事项的方式有助于它在短短几年内开发出经过实战考验的世界级工具。搬运工：客户的讨价还价能力&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;网络效应&quot;&gt;网络效应&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;大量企业和政府机构继续采用该平台&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir介绍了Horizon技术，以推动大量数据的交互式工作流程&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;备受瞩目的客户提供销售和营销杠杆&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;经济舱规模&quot;&gt;经济舱规模&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我们相信Palantir公司将继续保持其估值，因为它增加了空客和默克等大客户，并通过自动化加快成本削减。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;品牌&quot;&gt;品牌&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;为了使Palantir保持竞争力，它需要不断重塑自身，以便在竞争扩大其产品时保持相关性。这种重新发明可能需要大量投资，只有规模才具有成本效益。随着分析领域的众多供应商，Palantir在研发和销售方面的投资预计将增加，从而导致其长期利润率的不确定性。此外，Palantir可能会发现很难与具有更大口袋和更广泛品牌认知度的公司竞争，因为这些大公司可以大量折扣新兴产品以获得牵引力或留住客户。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;7个商业问题&quot;&gt;7个商业问题&lt;/h2&gt;
+
+&lt;h3 id=&quot;工程&quot;&gt;工程&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir开发数据分析软件，以解决欺诈预防，反恐和其他商业情报任务。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如今，Palantir的软件无缝地工作，将大量结构化数据（如电子表格）和非结构化数据（如图像和社交媒体帖子）导入一个集中式数据库，可以对所有信息进行可视化和分析。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir平台融合了基于人类的算法和强大的引擎，可以在极其精细的水平上同时扫描多个数据库。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;问题：SQL有一个令人沮丧的学习曲线。只有分析师知道今天如何使用它，这已经足够困难了。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解决方案：Palantir的数据分析运行在自然语言查询上，因此普通人可以轻松使用它，这为更多关注重要数据提供了巨大的机会。BOS：减少。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;问题：数据分散在各处。例如，如果联邦调查局有人的案件档案，那么中央情报局很可能甚至都不知道。同样，洛杉矶警察局的官员必须在一个数据库中搜查抢劫案件，但要进行不同的搜查以检查是否有谋杀案。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解决方案：通过与潜在用户交谈，Palantir意识到大多数数据都是碎片化的，而且大部分数据都是非结构化的。因此，他们构建了工具来组合多个非结构化源。BOS：减少。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;问题：查询很慢。即使计算行业与摩尔定律保持同步，速度仍然是分析数据繁重任务的一个问题。如果你有一个10k行的小型数据库，你可以很快地运行一个查询，但是一旦你处理了几千兆字节的信息，你可能很容易等待半小时的结果…如果结果没有超时或命中内存问题。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;解决方案：Palantir在运行时和迭代中针对速度进行了优化。BOS：减少。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-4.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;在Palantir Gotham（政府产品）投入多年的思考和编程后，Palantir意识到许多相同的核心竞争力 - 处理非结构化数据，结合多个数据集，查询速度 - 可以在商业世界中发挥巨大作用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir的技术是其竞争优势。没有其他系统允许用户在不同的数据集之间绘制关联，并且可以轻松或快速地可视化连接。在后端，Palantir的基础设施使用尖端数据处理算法以闪电般的速度搜索大量数据集。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;时机&quot;&gt;时机&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我们的投资理念受到以下需求的推动：先进且最终用户友好的数据分析，将知识产权追溯到其政府关系，更高的大数据分析和网络安全支出。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;垄断&quot;&gt;垄断&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;例如，Palantir只在数据可视化，预测分析和地理情报空间中发挥作用，但却是这些领域的领域专家。虽然Palantir一直在扩展其产品组合以提供其他分析功能，但它受到来自业内其他参与者的激烈竞争的挑战。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;总体而言，我们认为Palantir的市场规模在400亿至500亿美元之间，主要在数据可视化，预测分析和欺诈分析领域。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;虽然Palantir的大规模数据集成方法听起来类似于IBM等知名技术公司的工作，但它在实际工作中采用了截然不同的方法。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在一个新项目中，公司通常会派出一个不超过三名工程师的小团队，其任务是在几天内提出可能的解决方案。Palantir工程师喜欢他们作为技术世界的局外人的角色：他们没有站在仪式上，而且往往非常不受内部IT专家的欢迎，他们的工作是他们的第二猜测。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;与此同时，竞争对手的人工智能公司认为，Palantir已经进行了巧妙的自我推销交易，其数据集成技术远非业内独一无二。他们还说，它的方法有时比纯AI公司更慢，更昂贵，因为它使用工程师团队设计即时响应问题而不是简单地应用现有算法。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;但随着该公司的估值上升至200亿美元，它成功围绕其数据分析方法创造的神秘感已证明是非常有价值的。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;人&quot;&gt;人&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;由前PayPal执行官Peter Thiel，以及来自斯坦福大学的Alex Karp，Joe Lonsdale和Stephen Cohen于2004年创立。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir Technologies是一家数据分析软件供应商，由前PayPal执行官Peter Thiel和Alex Karp，Joe Lonsdale以及斯坦福大学的Stephen Cohen于2004年创立。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;CNN任命Shyam Shankar为世界十大思想家之一。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;招聘过程是人才和文化的平等部分。特别是在工程方面，人才是一个很好的理性衡量标准（“你能用C++写一个程序来做x吗？”），但评估某人的文化契合度总是有点试探性。在Palantir的案例中，他们选择了一个能够考虑所有文化因素的单一措施：“这是一个你想与之合作的人吗？”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;分配&quot;&gt;分配&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;当时美国副总统乔·拜登（Joe Biden）承认该公司的防欺诈能力。此次荣誉之后还有其他几项认可，例如被“商业周刊”，CNBC和大通创新奖评选为最佳50家科技创业公司名单。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;虽然2016年5月的BuzzFeed文章揭示了Palantir与其所服务的政府机构之间的紧张关系，但由于其在非政府部门的多元化客户群，该公司的预计在2015年继续稳步增长，超过17亿美元。Palantir参与社会事业 - 例如与圣克拉拉县共同努力解决无家可归问题 - 使公司能够展示其平台的广泛能力，并通过口口相传获得宣传。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;持久&quot;&gt;持久&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;对大数据分析，数据可视化和商业智能软件的需求预计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。尽管Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品发展的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析领域，这意味着相当强劲和可持续的增长。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir的高接触安装也有助于建立长期动力，因为一旦部署成为客户的新标准并且多年来一直用于构建部署，就很难移除部署。这种粘性使Palantir在如此短的时间内迅速增长到了5亿美元的收入，没有放缓的迹象。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;匿名是正确的。Palantir不在AI领域，仅使用机器学习来支持其主要的数据分析重点。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;模式匹配。在银行业，Palantir通过向分析师提供详细信息来帮助分析师调查欺诈行为，以便他们进行交互式调查。当分析师识别出欺诈性交易时，Palantir会训练模型来表示和识别这种欺诈形式，然后将其用于优先处理类似案例以进行分析师调查。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;预测分析：例如，给定时间序列数据，关于工业零件在其整个生命周期中的表现以及它在开始破坏之前的样子，Palantir将尝试在它们破裂之前识别零件*，以便在它们可以维修或更换期间一个预定的维护窗口，而不是需要紧急停机，可能节省大量的资金。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;所以，Palantir使用机器学习来增强其分析平台的有效性。但同样，他们并没有参与任何人工智能。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;秘密&quot;&gt;秘密&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;独特，用户友好的客户主张。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir的关键区别在于其将大量结构化数据（数据库表，电子表格等）和非结构化数据（图像，视频，报告等）集成到用户友好的分析平台中的独特能力。任何处理大量数据搜索和排序的人都知道使用数据库查询语言会令人沮丧。通常，只有专门的分析师才能有效地使用这些查询语言 Palantir通过使用自然语言查询，将这个问题颠倒过来，因此任何人 - 甚至是不懂编程语言的人 - 都可以轻松地通过大量数据进行深入的搜索。因此，Palantir的平台已经被多个政府组织的各种用户广泛接受。由于该软件易于使用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Palantir拥有三个关键特性，使其成为独特的数据分析产品：Palantir Graph，Palantir Map和Palantir的移动应用程序。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 26 Jul 2019 08:34:00 +0800</pubDate>
+        <link>http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/</link>
+        <guid isPermaLink="true">http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/</guid>
+        
+        <category>Palantir分析</category>
+        
+        <category>商业模式画布</category>
+        
+        <category>SWOT</category>
+        
+        <category>垄断特征</category>
+        
+        <category>7个商业模式</category>
+        
+        
+        <category>Palantir</category>
+        
+      </item>
+    
+  </channel>
+</rss>
