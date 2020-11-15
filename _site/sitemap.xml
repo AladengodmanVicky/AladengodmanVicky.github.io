@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:5000/sitemap.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:5000/" rel="alternate" type="text/html" /><updated>2020-11-13T18:00:28+08:00</updated><id>http://localhost:5000/sitemap.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">知识图谱与教育</title><link href="http://localhost:5000/kg/2020/10/06/kg-and-edu/" rel="alternate" type="text/html" title="知识图谱与教育" /><published>2020-10-06T02:34:00+08:00</published><updated>2020-10-06T02:34:00+08:00</updated><id>http://localhost:5000/kg/2020/10/06/kg-and-edu</id><content type="html" xml:base="http://localhost:5000/kg/2020/10/06/kg-and-edu/">&lt;h2 id=&quot;艾瑞咨询-2020年中国知识图谱行业研究报告-p3637&quot;&gt;艾瑞咨询-2020年中国知识图谱行业研究报告 p36~37&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:5000/sitemap.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:5000/" rel="alternate" type="text/html" /><updated>2020-11-15T08:59:50+08:00</updated><id>http://localhost:5000/sitemap.xml</id><title type="html">阿拉灯神丁Vicky侃AI</title><subtitle>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</subtitle><author><name>阿拉灯神丁Vicky</name></author><entry><title type="html">知识图谱与教育</title><link href="http://localhost:5000/kg/2020/10/06/kg-and-edu/" rel="alternate" type="text/html" title="知识图谱与教育" /><published>2020-10-06T02:34:00+08:00</published><updated>2020-10-06T02:34:00+08:00</updated><id>http://localhost:5000/kg/2020/10/06/kg-and-edu</id><content type="html" xml:base="http://localhost:5000/kg/2020/10/06/kg-and-edu/">&lt;h2 id=&quot;艾瑞咨询-2020年中国知识图谱行业研究报告-p3637&quot;&gt;艾瑞咨询-2020年中国知识图谱行业研究报告 p36~37&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/edu-01.png&quot; alt=&quot;搭建知识图谱是AI技术落地教育领域核心环节的关键前提&quot; /&gt;&lt;/p&gt;
 
@@ -12,7 +12,7 @@
   &lt;li&gt;在知识图谱的基础上，应用大数据、AI等技术形成面向目标的个性化学习路径，实现千人千面的教学方案。&lt;/li&gt;
   &lt;li&gt;面向受教育者搭建个人图谱，通过对其知识点学习进度和考试反馈数据的实时关联，形成知识掌握状态的可视化个人画像，以至于习题推送和老师一对一教学有的放矢。&lt;/li&gt;
   &lt;li&gt;将教育领域碎片化多源异构数据进行处理，形成标准化的关联数据集，为机器学习算法训练提供充要条件。&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="知识图谱" /><category term="教育领域" /><category term="应用场景" /><summary type="html">知识图谱在教育领域的应用场景</summary></entry><entry><title type="html">本体开发101:创建第一个本体的指南</title><link href="http://localhost:5000/kg/2020/10/03/ontology-tutorial/" rel="alternate" type="text/html" title="本体开发101:创建第一个本体的指南" /><published>2020-10-03T02:34:00+08:00</published><updated>2020-10-03T02:34:00+08:00</updated><id>http://localhost:5000/kg/2020/10/03/ontology-tutorial</id><content type="html" xml:base="http://localhost:5000/kg/2020/10/03/ontology-tutorial/">&lt;h1 id=&quot;本体开发101创建第一个本体的指南&quot;&gt;本体开发101：创建第一个本体的指南&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="KG" /><category term="知识图谱" /><category term="教育领域" /><category term="应用场景" /><summary type="html">知识图谱在教育领域的应用场景</summary></entry><entry><title type="html">本体开发101:创建第一个本体的指南</title><link href="http://localhost:5000/kg/2020/10/03/ontology-tutorial/" rel="alternate" type="text/html" title="本体开发101:创建第一个本体的指南" /><published>2020-10-03T02:34:00+08:00</published><updated>2020-10-03T02:34:00+08:00</updated><id>http://localhost:5000/kg/2020/10/03/ontology-tutorial</id><content type="html" xml:base="http://localhost:5000/kg/2020/10/03/ontology-tutorial/">&lt;h1 id=&quot;本体开发101创建第一个本体的指南&quot;&gt;本体开发101：创建第一个本体的指南&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;作者&lt;/strong&gt;娜塔莉亚·诺伊（Natalya F. Noy）  和黛博拉·麦坚尼斯（Deborah L. McGuinness）斯坦福大学，CA，94305
 &lt;strong&gt;邮箱&lt;/strong&gt;：noy@smi.stanford.edu 和 dlm@ksl.stanford.edu&lt;/p&gt;
@@ -479,7 +479,7 @@
 &lt;h3 id=&quot;其他命名注意事项&quot;&gt;其他命名注意事项&lt;/h3&gt;
 &lt;p&gt;定义命名约定时，还需要考虑以下几点：&lt;/p&gt;
 
-&lt;p&gt;请勿在概念名称中添加诸如&lt;code&gt;class''，&lt;/code&gt; property’‘，``slot’‘等字符串。&lt;/p&gt;
+&lt;p&gt;请勿在概念名称中添加诸如&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;class''，&lt;/code&gt; property’‘，``slot’‘等字符串。&lt;/p&gt;
 
 &lt;p&gt;例如，从上下文中始终可以清楚地看到该概念是类还是插槽。另外，您对类和插槽使用了不同的命名约定（例如，分别使用大写和不使用大写），该名称本身将指示该概念是什么。&lt;/p&gt;
 
@@ -562,16 +562,16 @@
 
 &lt;p&gt;[4]我们选择在本体中仅代表红色端口：白色端口的确存在，但极为罕见。&lt;/p&gt;
 
-&lt;p&gt;[5] 在这里，我们假设每个解剖器官是因为我们也想谈一类“约翰1日左肋。” 现有个体的各个器官将在我们的本体中表示为个体。&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="知识图谱" /><category term="本体设计" /><category term="本体开发" /><summary type="html">本体开发101：创建第一个本体的指南</summary></entry><entry><title type="html">EverNote与Sublime搭建云端Markdown写作系统</title><link href="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/" rel="alternate" type="text/html" title="EverNote与Sublime搭建云端Markdown写作系统" /><published>2020-02-16T17:30:00+08:00</published><updated>2020-02-16T17:30:00+08:00</updated><id>http://localhost:5000/tools/2020/02/16/Evernote-Sublime</id><content type="html" xml:base="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/">&lt;h2 id=&quot;天下苦秦久矣&quot;&gt;天下苦秦久矣&lt;/h2&gt;
+&lt;p&gt;[5] 在这里，我们假设每个解剖器官是因为我们也想谈一类“约翰1日左肋。” 现有个体的各个器官将在我们的本体中表示为个体。&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="KG" /><category term="知识图谱" /><category term="本体设计" /><category term="本体开发" /><summary type="html">本体开发101：创建第一个本体的指南</summary></entry><entry><title type="html">EverNote与Sublime搭建云端Markdown写作系统</title><link href="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/" rel="alternate" type="text/html" title="EverNote与Sublime搭建云端Markdown写作系统" /><published>2020-02-16T17:30:00+08:00</published><updated>2020-02-16T17:30:00+08:00</updated><id>http://localhost:5000/tools/2020/02/16/Evernote-Sublime</id><content type="html" xml:base="http://localhost:5000/tools/2020/02/16/Evernote-Sublime/">&lt;h2 id=&quot;天下苦秦久矣&quot;&gt;天下苦秦久矣&lt;/h2&gt;
 
-&lt;p&gt;自从开始写博客，越来越迷恋&lt;code&gt;Markdown&lt;/code&gt;这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地&lt;code&gt;Markdown&lt;/code&gt;写作系统，苦于未果。&lt;/p&gt;
+&lt;p&gt;自从开始写博客，越来越迷恋&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;这种优雅的写作方式，无论写什么，一直在寻觅一种优雅地、得心应手地&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;写作系统，苦于未果。&lt;/p&gt;
 
 &lt;h2 id=&quot;写作系统的痛点&quot;&gt;写作系统的痛点&lt;/h2&gt;
 
 &lt;p&gt;许久未找到搜寻到适合的写作系统，究其原因，主要有两大痛点未被满足：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;市面上大多数&lt;code&gt;Markdown&lt;/code&gt;编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。&lt;/li&gt;
+  &lt;li&gt;市面上大多数&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;编辑器都需要保存在本地，而我确需要多终端同步，在家里电脑、公司电脑以及手机端同步。&lt;/li&gt;
   &lt;li&gt;Evernote、有道云笔记等云笔记既要满足多终端云同步，同时满足Markdown编辑方式，但我需要预览、查看、编辑拆分开来（这里的预览与查看状态不同），使操作轻量化、简洁化。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -613,51 +613,51 @@
 
 &lt;h3 id=&quot;sublime安装markdownediting&quot;&gt;Sublime安装MarkdownEditing&lt;/h3&gt;
 
-&lt;p&gt;&lt;code&gt;MarkdownEditing&lt;/code&gt;是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MarkdownEditing&lt;/code&gt;是一款Sublime中编辑Markdown的插件，安装后Sublime可支持编辑Markdown文件。&lt;/p&gt;
 
-&lt;p&gt;在Sublime中&lt;code&gt;工具&lt;/code&gt;栏打开&lt;code&gt;命令面板&lt;/code&gt;，输入&lt;code&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入MarkdownEditing下载安装。&lt;/p&gt;
+&lt;p&gt;在Sublime中&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入MarkdownEditing下载安装。&lt;/p&gt;
 
 &lt;p&gt;如果不支持在线安装，则移步&lt;a href=&quot;https://github.com/SublimeText-Markdown/MarkdownEditing&quot;&gt;MarkdownEditing-github&lt;/a&gt;下载，进行手动导入安装。&lt;/p&gt;
 
 &lt;h3 id=&quot;sublime安装evernote插件&quot;&gt;Sublime安装Evernote插件&lt;/h3&gt;
 
-&lt;p&gt;在Sublime中&lt;code&gt;工具&lt;/code&gt;栏打开&lt;code&gt;命令面板&lt;/code&gt;，输入&lt;code&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入Evernote下载安装。&lt;/p&gt;
+&lt;p&gt;在Sublime中&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Package Control:Install Package&lt;/code&gt;打开下载仓库，输入Evernote下载安装。&lt;/p&gt;
 
 &lt;h3 id=&quot;sublime连接印象笔记账号&quot;&gt;Sublime连接印象笔记账号&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;首先从&lt;a href=&quot;https://app.yinxiang.com/api/DeveloperToken.action&quot;&gt;Evernote Token&lt;/a&gt;获取你&lt;code&gt;Evernote&lt;/code&gt;的Token，获取之后切记保密。&lt;/li&gt;
-  &lt;li&gt;拿到Token后，在&lt;code&gt;Preferences &amp;gt; Package Settings &amp;gt; Evernote &amp;gt; Settings-User&lt;/code&gt;填写&lt;code&gt;noteStoreUrl&lt;/code&gt;和&lt;code&gt;token&lt;/code&gt;字段。&lt;/li&gt;
+  &lt;li&gt;首先从&lt;a href=&quot;https://app.yinxiang.com/api/DeveloperToken.action&quot;&gt;Evernote Token&lt;/a&gt;获取你&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Evernote&lt;/code&gt;的Token，获取之后切记保密。&lt;/li&gt;
+  &lt;li&gt;拿到Token后，在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Preferences &amp;gt; Package Settings &amp;gt; Evernote &amp;gt; Settings-User&lt;/code&gt;填写&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;noteStoreUrl&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;token&lt;/code&gt;字段。&lt;/li&gt;
   &lt;li&gt;保存并重新启动Sublime，完成账号的关联。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;{
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
     &quot;noteStoreUrl&quot;: &quot;your noteStoreurl XXX&quot;,
     &quot;token&quot;: &quot;your token XXX&quot;,
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;sublime操作同步至evernote&quot;&gt;Sublime操作同步至Evernote&lt;/h3&gt;
 
-&lt;p&gt;在Sublime中&lt;code&gt;工具&lt;/code&gt;栏打开&lt;code&gt;命令面板&lt;/code&gt;，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：&lt;/p&gt;
+&lt;p&gt;在Sublime中&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;工具&lt;/code&gt;栏打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;命令面板&lt;/code&gt;，此时输入Evernote就会出现有关操作Evernote的指令，常用指令包括：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Command Palette &amp;gt; Evernote: New empty note    //新建空笔记
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Command Palette &amp;gt; Evernote: New empty note    //新建空笔记
 Command Palette &amp;gt; Evernote: Open Evernote Note   //打开笔记本
 Command Palette &amp;gt; Evernote: Send to Evernote    //发送至Evernote
 Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔记
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/evernote-sublime-02.png&quot; alt=&quot;Sublime操作Evernote方式&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;以上只是常用指令，详细指令可查看Evernote插件的官方Github地址：&lt;a href=&quot;https://github.com/bordaigorl/sublime-evernote&quot;&gt;sublime-evernote&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;同时&lt;code&gt;sublime-evernote&lt;/code&gt;非常友好的提供了快捷键设置操作，在Sublime中打开&lt;code&gt;Preferences &amp;gt; Key Bindings-User &lt;/code&gt;，将以下配置项填写至其中：&lt;/p&gt;
+&lt;p&gt;同时&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sublime-evernote&lt;/code&gt;非常友好的提供了快捷键设置操作，在Sublime中打开&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Preferences &amp;gt; Key Bindings-User &lt;/code&gt;，将以下配置项填写至其中：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{ &quot;keys&quot;: [&quot;super+e&quot;], &quot;command&quot;: &quot;show_overlay&quot;, &quot;args&quot;: {&quot;overlay&quot;: &quot;command_palette&quot;, &quot;text&quot;: &quot;Evernote: &quot;} },
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{ &quot;keys&quot;: [&quot;super+e&quot;], &quot;command&quot;: &quot;show_overlay&quot;, &quot;args&quot;: {&quot;overlay&quot;: &quot;command_palette&quot;, &quot;text&quot;: &quot;Evernote: &quot;} },
 { &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+s&quot;], &quot;command&quot;: &quot;send_to_evernote&quot; },
 { &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+o&quot;], &quot;command&quot;: &quot;open_evernote_note&quot; },
 { &quot;keys&quot;: [&quot;ctrl+e&quot;, &quot;ctrl+u&quot;], &quot;command&quot;: &quot;save_evernote_note&quot; },
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;好了，剩下的就自己体验吧！可以说是很优雅了。&lt;/p&gt;
 
@@ -673,7 +673,7 @@ Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔�
   &lt;p&gt;安装软件时切记打开对应的权限。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;结合个人应用需求不断探索、寻找高效率软件，提高单位时间内的输入、产出结果。&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="EverNote" /><category term="Sublime" /><category term="Markdown" /><category term="云端同步" /><category term="写作系统" /><summary type="html">Mac环境下使用EverNote与Sublime搭建简洁、优雅的云端同步Markdown写作系统。</summary></entry><entry><title type="html">《漫谈产品经理》-俞军</title><link href="http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/" rel="alternate" type="text/html" title="《漫谈产品经理》-俞军" /><published>2020-01-29T21:34:00+08:00</published><updated>2020-01-29T21:34:00+08:00</updated><id>http://localhost:5000/pm/2020/01/29/Talking-about-product-managers</id><content type="html" xml:base="http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/">&lt;h2 id=&quot;漫谈产品经理-俞军&quot;&gt;《漫谈产品经理》-俞军&lt;/h2&gt;
+&lt;p&gt;结合个人应用需求不断探索、寻找高效率软件，提高单位时间内的输入、产出结果。&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="tools" /><category term="EverNote" /><category term="Sublime" /><category term="Markdown" /><category term="云端同步" /><category term="写作系统" /><summary type="html">Mac环境下使用EverNote与Sublime搭建简洁、优雅的云端同步Markdown写作系统。</summary></entry><entry><title type="html">《漫谈产品经理》-俞军</title><link href="http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/" rel="alternate" type="text/html" title="《漫谈产品经理》-俞军" /><published>2020-01-29T21:34:00+08:00</published><updated>2020-01-29T21:34:00+08:00</updated><id>http://localhost:5000/pm/2020/01/29/Talking-about-product-managers</id><content type="html" xml:base="http://localhost:5000/pm/2020/01/29/Talking-about-product-managers/">&lt;h2 id=&quot;漫谈产品经理-俞军&quot;&gt;《漫谈产品经理》-俞军&lt;/h2&gt;
 
 &lt;object data=&quot;https://www.bobinsun.cn/assets/pdf/%E6%BC%AB%E8%B0%88%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86.pdf&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;1000px&quot;&gt;
     &lt;embed src=&quot;https://www.bobinsun.cn/assets/pdf/%E6%BC%AB%E8%B0%88%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86.pdf&quot; /&gt;
@@ -731,7 +731,7 @@ Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔�
 
 &lt;p&gt;&lt;strong&gt;访谈嘉宾&lt;/strong&gt;: 俞军、苏杰、张涛、耿新跃、朱晓华。&lt;a href=&quot;https://xin361t.com/vxsnkbjo/1024498782/&quot;&gt;点击立即播放视频&lt;/a&gt;&lt;/p&gt;
 
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/yujun_01.png&quot; /&gt;&lt;/div&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="漫谈产品经理" /><category term="俞军" /><category term="滴滴" /><summary type="html">「产品经理就是以产品当笔，与世界对话」。</summary></entry><entry><title type="html">社会、职场100法则</title><link href="http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/" rel="alternate" type="text/html" title="社会、职场100法则" /><published>2019-12-22T02:34:00+08:00</published><updated>2019-12-22T02:34:00+08:00</updated><id>http://localhost:5000/lifes/2019/12/22/%20Million-annual-salary-100-rules</id><content type="html" xml:base="http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/">&lt;blockquote&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/yujun_01.png&quot; /&gt;&lt;/div&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="PM" /><category term="漫谈产品经理" /><category term="俞军" /><category term="滴滴" /><summary type="html">「产品经理就是以产品当笔，与世界对话」。</summary></entry><entry><title type="html">社会、职场100法则</title><link href="http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/" rel="alternate" type="text/html" title="社会、职场100法则" /><published>2019-12-22T02:34:00+08:00</published><updated>2019-12-22T02:34:00+08:00</updated><id>http://localhost:5000/lifes/2019/12/22/%20Million-annual-salary-100-rules</id><content type="html" xml:base="http://localhost:5000/lifes/2019/12/22/Million-annual-salary-100-rules/">&lt;blockquote&gt;
   &lt;p&gt;今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来后面持续回味。&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1074,7 +1074,7 @@ Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔�
 
 &lt;blockquote&gt;
   &lt;p&gt;直到你的认知和财富相匹配为止&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="百万年薪" /><category term="100法则" /><category term="关于职场" /><category term="关于生活" /><category term="一碗鸡汤" /><summary type="html">今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来后面持续回味。</summary></entry><entry><title type="html">《大数据时代》书摘</title><link href="http://localhost:5000/ai/2019/08/13/BigData-Times/" rel="alternate" type="text/html" title="《大数据时代》书摘" /><published>2019-08-13T06:34:00+08:00</published><updated>2019-08-13T06:34:00+08:00</updated><id>http://localhost:5000/ai/2019/08/13/BigData-Times</id><content type="html" xml:base="http://localhost:5000/ai/2019/08/13/BigData-Times/">&lt;blockquote&gt;
+&lt;/blockquote&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Lifes" /><category term="百万年薪" /><category term="100法则" /><category term="关于职场" /><category term="关于生活" /><category term="一碗鸡汤" /><summary type="html">今天在书店看到一本鸡汤手册《百万年薪100法则-陈轩说》，比较有意思，是一些金句摘选，搬过来后面持续回味。</summary></entry><entry><title type="html">《大数据时代》书摘</title><link href="http://localhost:5000/ai/2019/08/13/BigData-Times/" rel="alternate" type="text/html" title="《大数据时代》书摘" /><published>2019-08-13T06:34:00+08:00</published><updated>2019-08-13T06:34:00+08:00</updated><id>http://localhost:5000/ai/2019/08/13/BigData-Times</id><content type="html" xml:base="http://localhost:5000/ai/2019/08/13/BigData-Times/">&lt;blockquote&gt;
   &lt;p&gt;《大数据时代》是国外大数据研究的先河之作，作者维克托•迈尔•舍恩伯格被誉为“大数据商业应用第一人”，书中有一些观点个人比较认同，摘抄过来，留作记录📝。&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1120,7 +1120,7 @@ Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔�
 
 &lt;blockquote&gt;
   &lt;p&gt;这个系统依赖的是相关关系，而非因果关系。它会告诉你会发生什么，而不是为什么发生，这正是这个系统的价值。   - 麦格雷戈博士&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="大数据" /><category term="相关关系" /><category term="拥抱混乱" /><summary type="html">《大数据时代》是国外大数据研究的先河之作，作者维克托•迈尔•舍恩伯格被誉为“大数据商业应用第一人”，书中有一些观点个人非常喜欢，这里摘抄过来，留作记录📝。</summary></entry><entry><title type="html">创造性思维</title><link href="http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/" rel="alternate" type="text/html" title="创造性思维" /><published>2019-08-04T08:34:00+08:00</published><updated>2019-08-04T08:34:00+08:00</updated><id>http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking</id><content type="html" xml:base="http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/">&lt;p&gt;创造性思维是以灵活、灵动和原创的方式进行思考的过程，并且被认为是战略、解决问题和决策的重要元素。可以提供广泛的可能性和解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="AI" /><category term="大数据" /><category term="相关关系" /><category term="拥抱混乱" /><summary type="html">《大数据时代》是国外大数据研究的先河之作，作者维克托•迈尔•舍恩伯格被誉为“大数据商业应用第一人”，书中有一些观点个人非常喜欢，这里摘抄过来，留作记录📝。</summary></entry><entry><title type="html">创造性思维</title><link href="http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/" rel="alternate" type="text/html" title="创造性思维" /><published>2019-08-04T08:34:00+08:00</published><updated>2019-08-04T08:34:00+08:00</updated><id>http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking</id><content type="html" xml:base="http://localhost:5000/thinking/2019/08/04/Creatinve-Thinking/">&lt;p&gt;创造性思维是以灵活、灵动和原创的方式进行思考的过程，并且被认为是战略、解决问题和决策的重要元素。可以提供广泛的可能性和解决方案。&lt;/p&gt;
 
 &lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/creative-thinking.png&quot; /&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1179,7 +1179,7 @@ Command Palette &amp;gt; Evernote: Update Evernote Note    //更新Evernote笔�
 &lt;!--stackedit_data:
 eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
 --&gt;
-&lt;/完&gt;</content><author><name>阿拉灯神丁Vicky</name></author><summary type="html">创造性思维的常见类型</summary></entry><entry><title type="html">数据与信息</title><link href="http://localhost:5000/ai/2019/08/04/Data-&-Information/" rel="alternate" type="text/html" title="数据与信息" /><published>2019-08-04T08:00:00+08:00</published><updated>2019-08-04T08:00:00+08:00</updated><id>http://localhost:5000/ai/2019/08/04/Data-&amp;-Information</id><content type="html" xml:base="http://localhost:5000/ai/2019/08/04/Data-&amp;-Information/">&lt;h2 id=&quot;数据&quot;&gt;数据&lt;/h2&gt;
+&lt;/完&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Thinking" /><summary type="html">创造性思维的常见类型</summary></entry><entry><title type="html">数据与信息</title><link href="http://localhost:5000/ai/2019/08/04/Data-&-Information/" rel="alternate" type="text/html" title="数据与信息" /><published>2019-08-04T08:00:00+08:00</published><updated>2019-08-04T08:00:00+08:00</updated><id>http://localhost:5000/ai/2019/08/04/Data-&amp;-Information</id><content type="html" xml:base="http://localhost:5000/ai/2019/08/04/Data-&amp;-Information/">&lt;h2 id=&quot;数据&quot;&gt;数据&lt;/h2&gt;
 
 &lt;p&gt;数据是可以由机器高速处理的原始事实。&lt;/p&gt;
 
@@ -1219,7 +1219,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
       &lt;td style=&quot;text-align: center&quot;&gt;天气预报&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>阿拉灯神丁Vicky</name></author><summary type="html">数据与信息的区别</summary></entry><entry><title type="html">关于推理 - 12种推理类型</title><link href="http://localhost:5000/thinking/2019/08/03/About-Reasoning/" rel="alternate" type="text/html" title="关于推理 - 12种推理类型" /><published>2019-08-03T08:34:00+08:00</published><updated>2019-08-03T08:34:00+08:00</updated><id>http://localhost:5000/thinking/2019/08/03/About-Reasoning</id><content type="html" xml:base="http://localhost:5000/thinking/2019/08/03/About-Reasoning/">&lt;p&gt;在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的几种推理做了简单整理，以供参考。&lt;/p&gt;
+&lt;/table&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="AI" /><summary type="html">数据与信息的区别</summary></entry><entry><title type="html">关于推理 - 12种推理类型</title><link href="http://localhost:5000/thinking/2019/08/03/About-Reasoning/" rel="alternate" type="text/html" title="关于推理 - 12种推理类型" /><published>2019-08-03T08:34:00+08:00</published><updated>2019-08-03T08:34:00+08:00</updated><id>http://localhost:5000/thinking/2019/08/03/About-Reasoning</id><content type="html" xml:base="http://localhost:5000/thinking/2019/08/03/About-Reasoning/">&lt;p&gt;在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的几种推理做了简单整理，以供参考。&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;「推理」是“使用理智从某些前提产生结论”的行动。    - 来自 · 维基百科&lt;/p&gt;
@@ -1357,7 +1357,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
 
 &lt;p&gt;例如：如果我是 DJ,那么我就是 DJ。&lt;/p&gt;
 
-&lt;p&gt;(完)&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="演绎推理" /><category term="归纳推理" /><category term="类比推理" /><category term="分析推理" /><category term="诱导推理" /><category term="向后归纳" /><category term="批判性思维" /><category term="反事实思维" /><category term="直觉" /><category term="动机推理" /><category term="机会推理" /><category term="循环推理" /><summary type="html">在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的一些推理类型做了简单整理，以供参考。</summary></entry><entry><title type="html">Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」</title><link href="http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/" rel="alternate" type="text/html" title="Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」" /><published>2019-07-26T08:34:00+08:00</published><updated>2019-07-26T08:34:00+08:00</updated><id>http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09</id><content type="html" xml:base="http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-8.png&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;(完)&lt;/p&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Thinking" /><category term="演绎推理" /><category term="归纳推理" /><category term="类比推理" /><category term="分析推理" /><category term="诱导推理" /><category term="向后归纳" /><category term="批判性思维" /><category term="反事实思维" /><category term="直觉" /><category term="动机推理" /><category term="机会推理" /><category term="循环推理" /><summary type="html">在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的一些推理类型做了简单整理，以供参考。</summary></entry><entry><title type="html">Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」</title><link href="http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/" rel="alternate" type="text/html" title="Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」" /><published>2019-07-26T08:34:00+08:00</published><updated>2019-07-26T08:34:00+08:00</updated><id>http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09</id><content type="html" xml:base="http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/">&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-8.png&quot; /&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1383,7 +1383,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
     &lt;p&gt;它通过整合客户拥有的所有数据 - （任何规模&amp;amp;任何类型的数据），促进人与计算机之间的协同工作。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;独特的价值主张&lt;/strong&gt;：它为企业和政府机构的所有分析需求提供了一个单一平台，主要用于&lt;code&gt;检测欺诈和犯罪&lt;/code&gt;。Palantir开发了&lt;code&gt;动态本体&lt;/code&gt;等技术，将各种数据源集成到一个平台中，非技术用户可以专注于调查查询，而不是学习复杂的查询语言。&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;独特的价值主张&lt;/strong&gt;：它为企业和政府机构的所有分析需求提供了一个单一平台，主要用于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;检测欺诈和犯罪&lt;/code&gt;。Palantir开发了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;动态本体&lt;/code&gt;等技术，将各种数据源集成到一个平台中，非技术用户可以专注于调查查询，而不是学习复杂的查询语言。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;它专注于一个核心产品 - （机器增强6数据分析） - 并建立了一个几乎完全独立的工程团队来实现它。&lt;/p&gt;
@@ -1394,7 +1394,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Palantir Gotham&lt;/strong&gt;：Palantir Gotham，以前称为&lt;code&gt;Palantir政府&lt;/code&gt;，是Palantir的第一个产品，主要是为政府设计，帮助国防机构识别潜在的威胁。该平台的基础模型基本上是图形，主要围绕对象及其之间的链接构建。来自多个源的结构化和非结构化数据都输入到系统中。然后将数据转换为对象并生成到模型中。用户可以使用该模型来描述，探索和查询这些对象的属性和关系。通过该平台构建的多个应用程序使用户能够在平台内搜索、可视化、假设、发现模式并与同事分享见解。减少用户与其数据之间的摩擦。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Palantir Gotham&lt;/strong&gt;：Palantir Gotham，以前称为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Palantir政府&lt;/code&gt;，是Palantir的第一个产品，主要是为政府设计，帮助国防机构识别潜在的威胁。该平台的基础模型基本上是图形，主要围绕对象及其之间的链接构建。来自多个源的结构化和非结构化数据都输入到系统中。然后将数据转换为对象并生成到模型中。用户可以使用该模型来描述，探索和查询这些对象的属性和关系。通过该平台构建的多个应用程序使用户能够在平台内搜索、可视化、假设、发现模式并与同事分享见解。减少用户与其数据之间的摩擦。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
@@ -1406,7 +1406,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Palantir Metropolis&lt;/strong&gt;：Palantir Metropolis，以前称为&lt;code&gt;Palantir Finance&lt;/code&gt;，主要是为金融业设计，帮助进行欺诈检测。该平台围绕时间序列构建。从根本上说，它的基础模型是一系列事件。该平台非常适用于分析&lt;code&gt;保险索赔数据&lt;/code&gt;，&lt;code&gt;网络流量&lt;/code&gt;和&lt;code&gt;金融交易模式&lt;/code&gt;。它可以帮助用户在数学上分析随着时间推移的模型行为（例如，股票价格）。Metropolis主要支持聚合分析：选择一组模型和一个时间段，然后对它们进行复杂的数学计算。由于其快速的迭代和协作能力，Metropolis在这个领域的竞争中脱颖而出。&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Palantir Metropolis&lt;/strong&gt;：Palantir Metropolis，以前称为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Palantir Finance&lt;/code&gt;，主要是为金融业设计，帮助进行欺诈检测。该平台围绕时间序列构建。从根本上说，它的基础模型是一系列事件。该平台非常适用于分析&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;保险索赔数据&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;网络流量&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;金融交易模式&lt;/code&gt;。它可以帮助用户在数学上分析随着时间推移的模型行为（例如，股票价格）。Metropolis主要支持聚合分析：选择一组模型和一个时间段，然后对它们进行复杂的数学计算。由于其快速的迭代和协作能力，Metropolis在这个领域的竞争中脱颖而出。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;数据可视化、预测分析和地理智能空间。&lt;/p&gt;
@@ -1415,7 +1415,7 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
     &lt;p&gt;虽然Palantir只在数据可视化、预测分析和地理情报空间中发挥作用，但却是这些领域的领域专家。虽然Palantir一直在扩展其产品组合以提供其他分析功能，但它受到来自业内其他参与者激烈竞争与挑战。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;为了进一步说明Palantir庞大且不断增长的市场机会，强调我们对IT决策者的调查。要求IT专业人员在未来12-24个月内确定他们在数据分析中的首要任务。当今企业的首要任务是&lt;code&gt;数据集成和可视化&lt;/code&gt;，然后是&lt;code&gt;洞察力生成&lt;/code&gt;。这个领域的领导者目前是拥有这些重要功能的更好工具的公司。尽管Tableau，Qlik和Splunk在这个市场上取得了进展，但仍避免不了与微软，IBM，甲骨文和SAP等大公司竞争。现阶段Palantir尚未被企业客户广泛使用，但它拥有出色的集成和可视化工具，这对政府和商业机构都非常有价值。&lt;/p&gt;
+    &lt;p&gt;为了进一步说明Palantir庞大且不断增长的市场机会，强调我们对IT决策者的调查。要求IT专业人员在未来12-24个月内确定他们在数据分析中的首要任务。当今企业的首要任务是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;数据集成和可视化&lt;/code&gt;，然后是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;洞察力生成&lt;/code&gt;。这个领域的领导者目前是拥有这些重要功能的更好工具的公司。尽管Tableau，Qlik和Splunk在这个市场上取得了进展，但仍避免不了与微软，IBM，甲骨文和SAP等大公司竞争。现阶段Palantir尚未被企业客户广泛使用，但它拥有出色的集成和可视化工具，这对政府和商业机构都非常有价值。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;四分之一的受访者认为，预测分析以及机器学习集成代表了分析的未来。这在数据量不断增长的世界中是有道理的，因为报告和可视化工具本身并不足够。业务领导者需要解析数据以做出业务决策。&lt;/p&gt;
@@ -1588,37 +1588,37 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
     &lt;p&gt;Palantir面临与潜在定价去杠杆化和将预订转换为现金相关的挑战。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;拥挤的竞争格局&lt;/code&gt;：目前有100多家大小公司提供大数据和分析软件产品和服务。我们的调查表明，大型软件技术供应商（包括Microsoft，IBM，Oracle和SAP）是BI和Analytics最常用的IT供应商之一。是什么让我们对Palantir的近期前景略微谨慎？在过去的几年里，Palantir的大型科技公司的竞争逆风加强了。这些不利因素以及对AI / ML计划的更多关注正在推动BI /分析产品。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;拥挤的竞争格局&lt;/code&gt;：目前有100多家大小公司提供大数据和分析软件产品和服务。我们的调查表明，大型软件技术供应商（包括Microsoft，IBM，Oracle和SAP）是BI和Analytics最常用的IT供应商之一。是什么让我们对Palantir的近期前景略微谨慎？在过去的几年里，Palantir的大型科技公司的竞争逆风加强了。这些不利因素以及对AI / ML计划的更多关注正在推动BI /分析产品。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;不明确的长期盈利潜力&lt;/code&gt;：我们对最近的媒体报道感到鼓舞，即Palantir有望在2017年底实现盈利。但是，可比较的大数据分析和商业智能公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转变为传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出与今天的水平相比更高。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不明确的长期盈利潜力&lt;/code&gt;：我们对最近的媒体报道感到鼓舞，即Palantir有望在2017年底实现盈利。但是，可比较的大数据分析和商业智能公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转变为传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出与今天的水平相比更高。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;不透明的定价策略&lt;/code&gt;：与其他同行不同，Palantir不会公开披露其定价策略。缺乏透明度导致对其产品的理解不清楚，以及它们与同行的产品相比如何。关于Palantir价格表的媒体报道表明，Palantir的产品可能比同行更昂贵，这种情况可能导致缺乏定价杠杆或增加客户获取成本。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不透明的定价策略&lt;/code&gt;：与其他同行不同，Palantir不会公开披露其定价策略。缺乏透明度导致对其产品的理解不清楚，以及它们与同行的产品相比如何。关于Palantir价格表的媒体报道表明，Palantir的产品可能比同行更昂贵，这种情况可能导致缺乏定价杠杆或增加客户获取成本。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;数据隐私和安全挑战&lt;/code&gt;：由于Palantir与解决欺诈和犯罪的政府机构有关，因此Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;数据隐私和安全挑战&lt;/code&gt;：由于Palantir与解决欺诈和犯罪的政府机构有关，因此Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;客户流失带来的潜在定价去杠杆化&lt;/code&gt;：媒体报道表明，Palantir的定价可能导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;客户流失带来的潜在定价去杠杆化&lt;/code&gt;：媒体报道表明，Palantir的定价可能导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;将预订转换为净收入的挑战&lt;/code&gt;：2015年，Palantir的客户预订超过了约1​​7亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换率为33％。投资者会将现金转换率提高作为长期健康表现的标志。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;：2015年，Palantir的客户预订超过了约1​​7亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换率为33％。投资者会将现金转换率提高作为长期健康表现的标志。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;服务收入影响Palantir的毛利率&lt;/code&gt;：与产品和许可证相比，软件服务的利润率往往较低，这主要是由于人事部门的变化。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务收入影响Palantir的毛利率&lt;/code&gt;：与产品和许可证相比，软件服务的利润率往往较低，这主要是由于人事部门的变化。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;不断上升的私人股东激进主义潜力&lt;/code&gt;：Palantir的早期投资者对流动性事件一直相当耐心。Palantir首次筹集机构资本将近十年。在过去一年左右的时间里，该公司卷入了与早期投资者（KT4 Partners）进行信息访问的双向法律斗争。此类法律纠纷凸显了初创投资者与希望保持对股东严格控制的公司之间的争议关系。最近在优步发生的事件就证明了这一点，我们将密切关注与KT4合作伙伴正在进行的诉讼，以及任何此类其他相关事件。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不断上升的私人股东激进主义潜力&lt;/code&gt;：Palantir的早期投资者对流动性事件一直相当耐心。Palantir首次筹集机构资本将近十年。在过去一年左右的时间里，该公司卷入了与早期投资者（KT4 Partners）进行信息访问的双向法律斗争。此类法律纠纷凸显了初创投资者与希望保持对股东严格控制的公司之间的争议关系。最近在优步发生的事件就证明了这一点，我们将密切关注与KT4合作伙伴正在进行的诉讼，以及任何此类其他相关事件。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;继富达和贝莱德之后，摩根士丹利显著降低了Palantir的估值。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;由客户流失驱动的潜在定价去杠杆化&lt;/code&gt;。媒体报道表明，Palantir的定价可能会导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的典型Palantir Gotham或Metropolis许可证的价格在3,000美元到10,000美元之间，需要额外的支持，维护和培训费用。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;由客户流失驱动的潜在定价去杠杆化&lt;/code&gt;。媒体报道表明，Palantir的定价可能会导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的典型Palantir Gotham或Metropolis许可证的价格在3,000美元到10,000美元之间，需要额外的支持，维护和培训费用。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;将预订转换为净收入的挑战&lt;/code&gt;。2015年，Palantir的客户预订量超过了约17亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换比例为33％。投资者认为不断增长的现金转换率是长期健康表现的标志。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;。2015年，Palantir的客户预订量超过了约17亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换比例为33％。投资者认为不断增长的现金转换率是长期健康表现的标志。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1626,58 +1626,58 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;IT专业人员青睐大型技术供应商的BI和分析产品&lt;/code&gt;。我们的大多数受访者都将Microsoft，IBM，Oracle和SAP视为其公司目前使用的供应商。这些选择突出了Palantir面临的竞争格局，尽管其创新和独特的产品。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IT专业人员青睐大型技术供应商的BI和分析产品&lt;/code&gt;。我们的大多数受访者都将Microsoft，IBM，Oracle和SAP视为其公司目前使用的供应商。这些选择突出了Palantir面临的竞争格局，尽管其创新和独特的产品。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;未来12个月BI和分析支出前景乐观&lt;/code&gt;。89％的受访IT专业人士表示他们计划在未来12个月内增加对BI＆Analytics软件的支出。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;未来12个月BI和分析支出前景乐观&lt;/code&gt;。89％的受访IT专业人士表示他们计划在未来12个月内增加对BI＆Analytics软件的支出。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;预测分析和机器学习集成将是未来五年关注的重点领域&lt;/code&gt;。49％使用BI和分析工具的公司将预测分析和机器学习集成确定为未来五年的主要关注领域。这些高级分析可帮助企业分析他们收集的数据量并从中获取可操作的见解&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;预测分析和机器学习集成将是未来五年关注的重点领域&lt;/code&gt;。49％使用BI和分析工具的公司将预测分析和机器学习集成确定为未来五年的主要关注领域。这些高级分析可帮助企业分析他们收集的数据量并从中获取可操作的见解&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;大多数公司更喜欢使用咨询服务以及BI和分析产品&lt;/code&gt;。83％的受访者表示他们使用专业服务和数据分析产品，进一步加强了Palantir的市场推广战略。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;大多数公司更喜欢使用咨询服务以及BI和分析产品&lt;/code&gt;。83％的受访者表示他们使用专业服务和数据分析产品，进一步加强了Palantir的市场推广战略。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;非结构化数据已经在企业中广泛使用&lt;/code&gt;。47％的受访者表示他们在执行数据分析时“始终”使用非结构化数据。另有43％的受访者表示他们“偶尔”会使用这些数据。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;非结构化数据已经在企业中广泛使用&lt;/code&gt;。47％的受访者表示他们在执行数据分析时“始终”使用非结构化数据。另有43％的受访者表示他们“偶尔”会使用这些数据。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;庞大且不断增长的市场机遇&lt;/code&gt;：对大数据分析，可视化和商业智能软件的需求估计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。虽然Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品演变的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析，这意味着公平强劲和可持续的增长轨迹。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;庞大且不断增长的市场机遇&lt;/code&gt;：对大数据分析，可视化和商业智能软件的需求估计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。虽然Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品演变的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析，这意味着公平强劲和可持续的增长轨迹。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;重要的长期趋势&lt;/code&gt;：关键的长期趋势，如移动性，数据增长和向云的迁移，增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;重要的长期趋势&lt;/code&gt;：关键的长期趋势，如移动性，数据增长和向云的迁移，增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;在网络安全，反欺诈措施和反恐方面增加IT支出的受益者&lt;/code&gt;：行业专家预测全球军事和国防预算的IT份额将持续上升。我们相信Palantir在数据分析领域占据独特的地位，并从提高对全球打击犯罪和欺诈的认识中获益。该公司业界领先的分析平台使其成为全球政府和企业的首选供应商。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;在网络安全，反欺诈措施和反恐方面增加IT支出的受益者&lt;/code&gt;：行业专家预测全球军事和国防预算的IT份额将持续上升。我们相信Palantir在数据分析领域占据独特的地位，并从提高对全球打击犯罪和欺诈的认识中获益。该公司业界领先的分析平台使其成为全球政府和企业的首选供应商。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;政府IT支出持续显着增长潜力&lt;/code&gt;：2017年美国联邦，州和地方IT支出预计将超过2000亿美元，其中约30-35％用于国防，公共安全和司法部门的IT。Palantir主要关注这些垂直行业，加上针对特定政府用例的定制产品，使我们更加坚信Palantir有一条通向政府内部长期发展的途径。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;政府IT支出持续显着增长潜力&lt;/code&gt;：2017年美国联邦，州和地方IT支出预计将超过2000亿美元，其中约30-35％用于国防，公共安全和司法部门的IT。Palantir主要关注这些垂直行业，加上针对特定政府用例的定制产品，使我们更加坚信Palantir有一条通向政府内部长期发展的途径。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;独特，用户友好的客户主张&lt;/code&gt;：Palantir的第一代产品路线图主要由政府用例驱动，强调易用性和非技术最终用户可操作的仪表板。我们认为，Palantir的内部知识产权建立在早期政府合同的基础上，使公司能够减少大数据分析的摩擦。企业公司现在可以专注于绘制可操作的业务结论，而不是实现数据清理，解析和其他与输入相关的活动。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;独特，用户友好的客户主张&lt;/code&gt;：Palantir的第一代产品路线图主要由政府用例驱动，强调易用性和非技术最终用户可操作的仪表板。我们认为，Palantir的内部知识产权建立在早期政府合同的基础上，使公司能够减少大数据分析的摩擦。企业公司现在可以专注于绘制可操作的业务结论，而不是实现数据清理，解析和其他与输入相关的活动。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;备受瞩目的客户增加了销售和营销杠杆&lt;/code&gt;：Palantir的技术与赈灾（飓风桑迪），欺诈检测（伯尼麦道夫庞氏骗局）以及反恐活动（捕获奥萨马本拉登）等重大全球事件有关。虽然其同行SaaS公司将其净收入的50％用于销售和营销，但我们相信Palantir受益于媒体对高度可见事件和客户故事的报道。这种宣传可能会大大节省销售和营销费用，使公司在2017年底前更接近盈利&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;备受瞩目的客户增加了销售和营销杠杆&lt;/code&gt;：Palantir的技术与赈灾（飓风桑迪），欺诈检测（伯尼麦道夫庞氏骗局）以及反恐活动（捕获奥萨马本拉登）等重大全球事件有关。虽然其同行SaaS公司将其净收入的50％用于销售和营销，但我们相信Palantir受益于媒体对高度可见事件和客户故事的报道。这种宣传可能会大大节省销售和营销费用，使公司在2017年底前更接近盈利&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;有吸引力的收入组合 - 从政府转向商业&lt;/code&gt;：我们认为，Palantir通过将其商业收入从2008年的约0％增长到2017年的约50-60％，使其客户群多样化。投资者将积极看待这一转变，它将提高报告透明度并减轻投资者对Palantir与某些政府机构发生冲突的担忧。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;有吸引力的收入组合 - 从政府转向商业&lt;/code&gt;：我们认为，Palantir通过将其商业收入从2008年的约0％增长到2017年的约50-60％，使其客户群多样化。投资者将积极看待这一转变，它将提高报告透明度并减轻投资者对Palantir与某些政府机构发生冲突的担忧。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;潜在的收购目标&lt;/code&gt;：今年的预订总额估计为35亿美元，数据分析领域的行业领先技术，以及围绕其政府关系的可争议的护城河，Palantir为希望扩展到预测分析的老牌企业提出了一个有吸引力的收购目标，数据集成和数据可视化空间。这种吸引力在Palantir的估值下提供了合理的底线，并将帮助投资者在其估值框架中构建下行风险情景。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;潜在的收购目标&lt;/code&gt;：今年的预订总额估计为35亿美元，数据分析领域的行业领先技术，以及围绕其政府关系的可争议的护城河，Palantir为希望扩展到预测分析的老牌企业提出了一个有吸引力的收购目标，数据集成和数据可视化空间。这种吸引力在Palantir的估值下提供了合理的底线，并将帮助投资者在其估值框架中构建下行风险情景。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;专家希望内容和预测分析能够带头帮助企业整合多个数据源并提供可操作的洞察力。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;由于企业收集和需要解释的大量数据，其中一个子部分，即商业智能和分析，一直在快速增长&lt;/code&gt;。在过去几年中，报告和查询工具的需求量很大。然而，在向前发展的过程中，专家们希望内容和预测分析能够带头帮助企业集成多个数据源并提供可操作的见解。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;由于企业收集和需要解释的大量数据，其中一个子部分，即商业智能和分析，一直在快速增长&lt;/code&gt;。在过去几年中，报告和查询工具的需求量很大。然而，在向前发展的过程中，专家们希望内容和预测分析能够带头帮助企业集成多个数据源并提供可操作的见解。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;从分析师转向业务用户&lt;/code&gt;：这个市场中用户增长的主要原因是使用部分的转变。用法正在从分析用户转移到业务用户，将用户群增加了3.5倍以上。这些额外的用户需要更复杂和跨功能的分析。业务用户已经成为创新的主要推动力，因为他们在没有IT干预的情况下寻求自助服务，并通过创新的协作工具来分享整个组织的洞察力。组织正在从基础数据报告转向更高级的分析和基于洞察的工具，以帮助做出未来的决策。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;从分析师转向业务用户&lt;/code&gt;：这个市场中用户增长的主要原因是使用部分的转变。用法正在从分析用户转移到业务用户，将用户群增加了3.5倍以上。这些额外的用户需要更复杂和跨功能的分析。业务用户已经成为创新的主要推动力，因为他们在没有IT干预的情况下寻求自助服务，并通过创新的协作工具来分享整个组织的洞察力。组织正在从基础数据报告转向更高级的分析和基于洞察的工具，以帮助做出未来的决策。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;BI模型的分散化&lt;/code&gt;：传统BI平台由组织内的IT团队领导，BI分析由数据科学家执行，但其余活动（如数据收集，维护和安全性）均由IT管理球队。BI现在正朝着完全分散的模式发展，不需要IT帮助。在此模型中，业务用户通过直接访问不同的数据源来实现数据准备和可视化。这种方法可以使小型和大型组织更容易，更广泛地使用。BI领域的新进入者主要使用此模型。&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BI模型的分散化&lt;/code&gt;：传统BI平台由组织内的IT团队领导，BI分析由数据科学家执行，但其余活动（如数据收集，维护和安全性）均由IT管理球队。BI现在正朝着完全分散的模式发展，不需要IT帮助。在此模型中，业务用户通过直接访问不同的数据源来实现数据准备和可视化。这种方法可以使小型和大型组织更容易，更广泛地使用。BI领域的新进入者主要使用此模型。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code&gt;融合下一代BI架构&lt;/code&gt;：目前，没有一个平台可以满足所有BI需求。组织使用多种工具来实现BI的不同方面，例如数据报告，日志记录，可视化和高级分析。个别组件玩家现在正在添加更多功能以转换为平台播放器。他们努力成为客户的单一BI和分析源。即使是以IT为中心的传统BI平台也试图提供更好的分析和可视化工具，但它们已被现有的基础架构所拖累。IBM在其Cognitive Analytics平台上取得了一些进展，但尚未被企业所接受&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;融合下一代BI架构&lt;/code&gt;：目前，没有一个平台可以满足所有BI需求。组织使用多种工具来实现BI的不同方面，例如数据报告，日志记录，可视化和高级分析。个别组件玩家现在正在添加更多功能以转换为平台播放器。他们努力成为客户的单一BI和分析源。即使是以IT为中心的传统BI平台也试图提供更好的分析和可视化工具，但它们已被现有的基础架构所拖累。IBM在其Cognitive Analytics平台上取得了一些进展，但尚未被企业所接受&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;进一步考虑这一估计，我们强调了我们专有调查的相关观察结果。当被问及他们目前使用的BI和分析工具的类型时，超过40％的IT专业人员表示他们使用所有三种主要的分析工具。换句话说，今天使用分析软件工具的方式发生了明显的变化。他们的核心价值主张已经从简单的仪表板式工具演变为更智能的软件，可以帮助推动业务决策。&lt;/p&gt;
@@ -1906,4 +1906,4 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
   &lt;li&gt;
     &lt;p&gt;Palantir拥有三个关键特性，使其成为独特的数据分析产品：Palantir Graph，Palantir Map和Palantir的移动应用程序。&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Palantir分析" /><category term="商业模式画布" /><category term="SWOT" /><category term="垄断特征" /><category term="7个商业模式" /><summary type="html">这里翻译一篇关于Palantir的分析文章，包括「商业模式画布」、「SWOT」、「垄断特征」、及「7个商业模式」。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>阿拉灯神丁Vicky</name></author><category term="Palantir" /><category term="Palantir分析" /><category term="商业模式画布" /><category term="SWOT" /><category term="垄断特征" /><category term="7个商业模式" /><summary type="html">这里翻译一篇关于Palantir的分析文章，包括「商业模式画布」、「SWOT」、「垄断特征」、及「7个商业模式」。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。</summary></entry></feed>

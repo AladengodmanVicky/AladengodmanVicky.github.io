@@ -554,46 +554,46 @@ python build_medicalgraph.py，导入的数据较多，估计需要几个小时�
 <h3 id="31-项目目录"><strong>3.1 项目目录</strong></h3>
 <div class="language-python highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
 <td class="gutter"><pre>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40</pre></td>
-<td class="code"><pre class="highlight"><code><span class="o">.</span>
-<span class="err">├──</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
-<span class="err">├──</span> <span class="n">__pycache__</span>      <span class="err">编译结果保存目录</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">answer_search</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">question_classifier</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">question_parser</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
-<span class="err">├──</span> <span class="n">answer_search</span><span class="o">.</span><span class="n">py</span>
-<span class="err">├──</span> <span class="n">answer_search</span><span class="o">.</span><span class="n">pyc</span>
-<span class="err">├──</span> <span class="n">build_medicalgraph</span><span class="o">.</span><span class="n">py</span>    <span class="err">知识图谱数据入库脚本</span>
-<span class="err">├──</span> <span class="n">chatbot_graph</span><span class="o">.</span><span class="n">py</span>    <span class="err">问答程序脚本</span>
+<td class="code"><pre class="highlight"><code><span class="p">.</span>
+<span class="err">├──</span> <span class="n">README</span><span class="p">.</span><span class="n">md</span>
+<span class="err">├──</span> <span class="n">__pycache__</span>      <span class="n">编译结果保存目录</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">answer_search</span><span class="p">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">question_classifier</span><span class="p">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">question_parser</span><span class="p">.</span><span class="n">cpython</span><span class="o">-</span><span class="mf">36.</span><span class="n">pyc</span>
+<span class="err">├──</span> <span class="n">answer_search</span><span class="p">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">answer_search</span><span class="p">.</span><span class="n">pyc</span>
+<span class="err">├──</span> <span class="n">build_medicalgraph</span><span class="p">.</span><span class="n">py</span>    <span class="n">知识图谱数据入库脚本</span>
+<span class="err">├──</span> <span class="n">chatbot_graph</span><span class="p">.</span><span class="n">py</span>    <span class="n">问答程序脚本</span>
 <span class="err">├──</span> <span class="n">data</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">medicaln</span><span class="o">.</span><span class="n">json</span>  <span class="err">本项目的全部数据，通过</span><span class="n">build_medicalgraph</span><span class="o">.</span><span class="n">py</span><span class="err">导</span><span class="n">neo4j</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">medicaln</span><span class="p">.</span><span class="n">json</span>  <span class="n">本项目的全部数据</span><span class="err">，</span><span class="n">通过build_medicalgraph</span><span class="p">.</span><span class="n">py导neo4j</span>
 <span class="err">├──</span> <span class="nb">dict</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">check</span><span class="o">.</span><span class="n">txt</span>    <span class="err">诊断检查项目实体库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">deny</span><span class="o">.</span><span class="n">txt</span>      <span class="err">否定词库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">department</span><span class="o">.</span><span class="n">txt</span>  <span class="err">医疗科目实体库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">disease</span><span class="o">.</span><span class="n">txt</span>    <span class="err">疾病实体库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">drug</span><span class="o">.</span><span class="n">txt</span>      <span class="err">药品实体库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">food</span><span class="o">.</span><span class="n">txt</span>      <span class="err">食物实体库</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">producer</span><span class="o">.</span><span class="n">txt</span>    <span class="err">在售药品库</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">symptom</span><span class="o">.</span><span class="n">txt</span>    <span class="err">疾病症状实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">check</span><span class="p">.</span><span class="n">txt</span>    <span class="n">诊断检查项目实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">deny</span><span class="p">.</span><span class="n">txt</span>      <span class="n">否定词库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">department</span><span class="p">.</span><span class="n">txt</span>  <span class="n">医疗科目实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">disease</span><span class="p">.</span><span class="n">txt</span>    <span class="n">疾病实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">drug</span><span class="p">.</span><span class="n">txt</span>      <span class="n">药品实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">food</span><span class="p">.</span><span class="n">txt</span>      <span class="n">食物实体库</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">producer</span><span class="p">.</span><span class="n">txt</span>    <span class="n">在售药品库</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">symptom</span><span class="p">.</span><span class="n">txt</span>    <span class="n">疾病症状实体库</span>
 <span class="err">├──</span> <span class="n">document</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat1</span><span class="o">.</span><span class="n">png</span>    <span class="err">系统运行问答截图</span><span class="mo">01</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat2</span><span class="o">.</span><span class="n">png</span>      <span class="err">系统运行问答截图</span><span class="mo">01</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">kg_route</span><span class="o">.</span><span class="n">png</span>    <span class="err">知识图谱构建框架</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">qa_route</span><span class="o">.</span><span class="n">png</span>    <span class="err">问答系统框架图</span>
-<span class="err">├──</span> <span class="n">img</span>    <span class="n">README</span><span class="o">.</span><span class="n">md</span><span class="err">中的所用图片</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat1</span><span class="o">.</span><span class="n">png</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat2</span><span class="o">.</span><span class="n">png</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">graph_summary</span><span class="o">.</span><span class="n">png</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">kg_route</span><span class="o">.</span><span class="n">png</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">qa_route</span><span class="o">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat1</span><span class="p">.</span><span class="n">png</span>    <span class="n">系统运行问答截图01</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat2</span><span class="p">.</span><span class="n">png</span>      <span class="n">系统运行问答截图01</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">kg_route</span><span class="p">.</span><span class="n">png</span>    <span class="n">知识图谱构建框架</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">qa_route</span><span class="p">.</span><span class="n">png</span>    <span class="n">问答系统框架图</span>
+<span class="err">├──</span> <span class="n">img</span>    <span class="n">README</span><span class="p">.</span><span class="n">md中的所用图片</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat1</span><span class="p">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">chat2</span><span class="p">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">graph_summary</span><span class="p">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">kg_route</span><span class="p">.</span><span class="n">png</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">qa_route</span><span class="p">.</span><span class="n">png</span>
 <span class="err">├──</span> <span class="n">prepare_data</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">build_data</span><span class="o">.</span><span class="n">py</span>    <span class="err">数据库操作脚本</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">data_spider</span><span class="o">.</span><span class="n">py</span>    <span class="err">网络资讯采集脚本</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">max_cut</span><span class="o">.</span><span class="n">py</span>      <span class="err">基于词典的最大向前</span><span class="o">/</span><span class="err">向后脚本</span>
-<span class="err">├──</span> <span class="n">question_classifier</span><span class="o">.</span><span class="n">py</span>    <span class="err">问句类型分类脚本</span>
-<span class="err">├──</span> <span class="n">question_classifier</span><span class="o">.</span><span class="n">pyc</span>    
-<span class="err">├──</span> <span class="n">question_parser</span><span class="o">.</span><span class="n">py</span>    <span class="err">问句解析脚本</span>
-<span class="err">├──</span> <span class="n">question_parser</span><span class="o">.</span><span class="n">pyc</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">build_data</span><span class="p">.</span><span class="n">py</span>    <span class="n">数据库操作脚本</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">data_spider</span><span class="p">.</span><span class="n">py</span>    <span class="n">网络资讯采集脚本</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">max_cut</span><span class="p">.</span><span class="n">py</span>      <span class="n">基于词典的最大向前</span><span class="o">/</span><span class="n">向后脚本</span>
+<span class="err">├──</span> <span class="n">question_classifier</span><span class="p">.</span><span class="n">py</span>    <span class="n">问句类型分类脚本</span>
+<span class="err">├──</span> <span class="n">question_classifier</span><span class="p">.</span><span class="n">pyc</span>    
+<span class="err">├──</span> <span class="n">question_parser</span><span class="p">.</span><span class="n">py</span>    <span class="n">问句解析脚本</span>
+<span class="err">├──</span> <span class="n">question_parser</span><span class="p">.</span><span class="n">pyc</span>
 </code></pre></td>
 </tr></tbody></table></div></div>
 

@@ -14,20 +14,19 @@ tags:
 
 ## 本博客所用工具介绍
 
-- **服务器托管**：[GitHub Pages](https://pages.github.com/)
+服务器托管：[GitHub Pages](https://pages.github.com/)
 
-- **博客生成工具**：[Jekyll](https://jekyllrb.com/)
+博客生成工具：[Jekyll](https://jekyllrb.com/)
 
-- **Jekyll Schemes**: Mist
+Jekyll Schemes： Mist
 
-- **评论功能**：[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
+评论功能：[gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
 
-- **分享功能**：[Baidu Share](http://share.baidu.com/)
+分享功能：[Baidu Share](http://share.baidu.com/)
 
-- **自定义域名**： [在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)。当然，也可**通过此链接**[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
+自定义域名： [在阿里云买的域名](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)。当然，也可通过此链接[购买自己的服务器](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=uxdvd8jo)
 
-- **访客统计**: 使用[ClustrMaps](https://clustrmaps.com/)，进行网站实时访客地图统计并展示。
-
+访客统计： 使用[ClustrMaps](https://clustrmaps.com/)，进行网站实时访客地图统计并展示。
 
 ## 免费CDN加速
 
@@ -39,38 +38,53 @@ tags:
 
 ## 博客后台管理系统
 
-授权[Prose.io](https://prose.io)去管理博客
-
-其简单好用的特点，让我爱不释手。喜欢玩博客的朋友们可以试试！
-
-好了总算搞完了。有问题的同学可以留言咨询。欢迎Fork.
+授权[Prose.io](https://prose.io)去管理博客，其简单好用的特点，让人爱不释手，喜欢玩博客的朋友们可以试试！好了总算搞完了。有问题的同学可以留言咨询。欢迎Fork.
 
 ## GitHub pages博客发布流程
 
-### 1. 更新本地博客
+### 更新本地博客
 ```
 git pull                                  #从GitHub更新本地博客代码
 ```
-### 2. MWeb写作
+### MWeb写作
 `command + E`切换至“外部模式”，`command + L`切换至“文档库模式”
 ![mweb-wirte-blog](https://i.loli.net/2020/11/13/OcQosyGZmYqd1Df.png) 
-### 3. 本地启动jekyll服务
+### 本地启动jekyll服务
 ```
 bundle exec jekyll serve                  #启动本地jekyll服务
 ```
-### 4. 查看博客、文章效果
+### 查看博客、文章效果
 打开链接🔗
 ```
 http://127.0.0.1:5000                     #浏览器访问本地jekyll博客
 ```              
 ![blog-view](https://i.loli.net/2020/11/13/Q6xrhBmcwb5LUuV.png)
-### 5. Jekyll站点部署到Github pages(线上环境)
+### Jekyll站点部署到Github pages(线上环境)
 ```
 git add --all                             #添加到暂存区
 git commit -m "提交jekyll默认页面"          #提交到本地仓库
 git push origin master                    #线上的站点是部署在master下面的
 ```
-### 6. 等待几分钟，Github有一定的时间缓存...
+### 等待几分钟，Github有一定的时间缓存...
 
+## 问题集锦
 
-
+### 本地jekyll查看与实际效果不一致
+由于长期未更新本地jekyll及其依赖包，导致本地jekyll查看效果与实际效果不一致。
+```
+bundle update jekyll                      #更新jekyll
+```
+更新bundle，非常慢，因为`Gemfile.lock`固定了gem源：
+```
+GEM
+  remote: https://rubygems.org/
+```
+那么修改镜像：
+```
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+```
+修改完镜像，升级bundle，中间需要输入密码
+```
+bundle update
+```
+升级完，运行`bundle exec jekyll serve`
