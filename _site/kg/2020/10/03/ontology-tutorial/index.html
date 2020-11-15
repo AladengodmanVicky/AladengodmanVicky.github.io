@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="本体开发101：创建第一个本体的指南">
+<meta name="description" content="领会知识图谱本体创建方法论">
 <meta name="keywords" content="知识图谱, 本体设计, 本体开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="本体开发101:创建第一个本体的指南">
+<meta property="og:title" content="知识图谱本体创建指南[译文]">
 <meta property="og:url" content="http://localhost:5000/kg/2020/10/03/ontology-tutorial/">
 <meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
-<meta property="og:description" content="本体开发101：创建第一个本体的指南">
+<meta property="og:description" content="领会知识图谱本体创建方法论">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="本体开发101:创建第一个本体的指南">
-<meta name="twitter:description" content="本体开发101：创建第一个本体的指南">
+<meta name="twitter:title" content="知识图谱本体创建指南[译文]">
+<meta name="twitter:description" content="领会知识图谱本体创建方法论">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -164,7 +164,7 @@
 
 
 
-  <title>本体开发101:创建第一个本体的指南 | 阿拉灯神丁Vicky侃AI</title>
+  <title>知识图谱本体创建指南[译文] | 阿拉灯神丁Vicky侃AI</title>
   
 
 
@@ -356,7 +356,7 @@
           <h2 class="post-title" itemprop="name headline">
           
           
-            本体开发101:创建第一个本体的指南
+            知识图谱本体创建指南[译文]
           
         </h2>
         
@@ -458,30 +458,42 @@
 
 
 
-  <h1 id="本体开发101创建第一个本体的指南">本体开发101：创建第一个本体的指南</h1>
+  <h1 id="知识图谱本体创建指南译文">知识图谱本体创建指南[译文]</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1<br>2<br>3</pre></td>
+<td class="code"><pre class="highlight"><code>斯坦福大学，CA，94305，作者：
+娜塔莉亚·诺伊（Natalya F. Noy），noy@smi.stanford.edu
+黛博拉·麦坚尼斯（Deborah L. McGuinness），dlm@ksl.stanford.edu
+</code></pre></td>
+</tr></tbody></table></div></div>
 
-<p><strong>作者</strong>娜塔莉亚·诺伊（Natalya F. Noy）  和黛博拉·麦坚尼斯（Deborah L. McGuinness）斯坦福大学，CA，94305
-<strong>邮箱</strong>：noy@smi.stanford.edu 和 dlm@ksl.stanford.edu</p>
+<h2 id="为什么要创建本体">为什么要创建本体</h2>
 
-<h2 id="为什么要开发本体">为什么要开发本体</h2>
+<p><strong>本体</strong>是领域的规范概念集及其之间的逻辑关系。</p>
 
-<p>近年来，本体的发展（对领域中术语的明确规范和它们之间的关系（Gruber 1993））已经从人工智能实验室的领域转移到领域专家的桌面。本体在万维网上已经很普遍。Web上的本体包括从对网站进行分类的大型分类法（例如在Yahoo!上）到要出售的产品及其功能的分类（例如在Amazon.com上）。WWW联盟（W3C）正在开发资源描述框架（Brickley和Guha，1999），该语言用于对网页上的知识进行编码，以使电子代理商可以轻松地搜索信息。  国防高级研究计划局（DARPA）与W3C一起，通过扩展RDF并使用更具表现力的结构来扩展DARPA代理标记语言（DAML），旨在促进Web上的代理交互（Hendler和McGuinness 2000）。现在，许多学科都在开发标准化的本体，领域专家可以使用它们来共享和注释其领域中的信息。例如，医学已经产生了大型的，标准化的，结构化的词汇，例如SNOMED （Price和Spackman 2000）和统一医学语言系统的语义网络（Humphreys and Lindberg 1993）。广泛的通用本体也正在兴起。例如，  联合国开发计划署和Dun＆Bradstreet共同努力开发UNSPSC本体，该本体提供产品和服务的术语（<a href="www.unspsc.org">www.unspsc.org</a>）</p>
+<p>近年来，本体的创建已经从人工智能专家的专属领域转移到领域专家的工作中。本体在万维网上已经较为普遍。例如：雅虎的网站分类体系和亚马逊的产品分类和功能分类。</p>
 
-<p>本体为需要在域中共享信息的研究人员定义了通用词汇表。它包括领域中基本概念的机器可解释的定义以及它们之间的关系。</p>
+<p>万维网联盟（W3C）开发的RDF（资源描述框架）语言，支持把网页中的知识表示为机器可解析的语言，使机器可以轻松的解析和处理。</p>
 
-<p>为什么有人要开发一个本体？一些原因是：</p>
+<p>美国国防高级研究计划局（DARPA）与W3C一起，通过扩展RDF并使用更具表现力的结构来扩展DARPA代理标记语言（DAML），该语言旨在促进Web上的代理交互（Hendler和McGuinness 2000）。</p>
+
+<p>现在，许多学科都在开发标准化的本体，领域专家可以使用本体来共享和注释其领域中的信息。医学已经产生了大量标准化、结构化的词汇集，例如：SNOMED （Price和Spackman 2000）和统一医学语言系统的语义网络（Humphreys and Lindberg 1993），同时通用本体也正在兴起，例如联合国开发计划署和美国邓白氏公司共同努力开发UNSPSC本体，该本体为产品和服务提供术语（<a href="www.unspsc.org">www.unspsc.org</a>）</p>
+
+<p>本体为领域中共享信息的研究人员定义了通用词汇表，包括可理解的领域基本概念以及逻辑关系。</p>
+
+<p>为什么有人要开发一个本体？原因如下：</p>
 
 <ul>
-  <li>在人员或软件代理之间共享对信息结构的共识</li>
-  <li>能够重用领域知识</li>
+  <li>达成信息结构共识</li>
+  <li>复用领域知识</li>
   <li>明确领域假设</li>
-  <li>将领域知识与运营知识区分开</li>
+  <li>区分领域知识与运营知识</li>
   <li>分析领域知识</li>
 </ul>
 
-<p>在人员或软件代理之间共享对信息结构的 共识是开发本体论的较常见目标之一（Musen 1992； Gruber 1993）。例如，假设几个不同的网站包含医疗信息或提供医疗电子商务服务。如果这些网站共享并发布它们全部使用的术语的相同基础本体，则计算机代理可以从这些不同的网站中提取和聚合信息。代理可以使用此汇总信息来回答用户查询或作为其他应用程序的输入数据。</p>
+<p><strong>达成信息结构共识</strong>是开发本体的较常见目标之一（Musen 1992； Gruber 1993）。例如，几个不同的网站都包含医疗信息或提供医疗电子商务服务，如果它们全部使用术语相同本体，则机器可以从这些网站中提取并聚合信息，并且可以使用此聚合信息来回答用户查询或作为其他应用程序的输入数据。</p>
 
-<p>启用领域知识的重用是最近本体论研究激增的推动力之一。例如，用于许多不同领域的模型需要表示时间的概念。此表示包括时间间隔，时间点，时间的相对度量等概念。如果一组研究人员详细开发了这种本体，那么其他研究人员可以简单地将其重新用于他们的领域。此外，如果我们需要构建大型本体，则可以集成描述大型域各部分的几种现有本体。我们还可以重用通用的本体，例如UNSPSC本体，并将其扩展以描述我们感兴趣的领域。</p>
+<p><strong>复用用于知识</strong>是本体研究激增的推动力之一。例如，许多不同领域的模型需要表示时间概念。此表示包括时间间隔，时间点，时间的相对度量等概念。如果一组研究人员详细开发了这种本体，那么其他研究人员可以简单地将其重新用于他们的领域。此外，如果我们需要构建大型本体，则可以集成描述大型域各部分的几种现有本体。我们还可以重用通用的本体，例如UNSPSC本体，并将其扩展以描述我们感兴趣的领域。</p>
 
 <p>如果我们对领域的了解有所变化，则对实现的基础进行明确的领域假设就可以轻松更改这些假设。关于编程语言代码世界的硬编码假设使这些假设不仅难以发现和理解，而且难以更改，尤其是对于没有编程专业知识的人。此外，明确的领域知识规范对于必须了解领域术语含义的新用户很有用。</p>
 
@@ -1063,7 +1075,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://localhost:5000/kg/2020/10/03/ontology-tutorial/" title="本体开发101:创建第一个本体的指南">http://localhost:5000/kg/2020/10/03/ontology-tutorial/</a>
+      <a href="http://localhost:5000/kg/2020/10/03/ontology-tutorial/" title="知识图谱本体创建指南[译文]">http://localhost:5000/kg/2020/10/03/ontology-tutorial/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -1315,7 +1327,7 @@
             
               <div class="post-toc-content">
     <ol class="nav">
-      <li class="nav-item nav-level-1"> <a class="nav-link" href="#%E6%9C%AC%E4%BD%93%E5%BC%80%E5%8F%91101%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%9C%AC%E4%BD%93%E7%9A%84%E6%8C%87%E5%8D%97"> <span class="nav-number">1</span> <span class="nav-text">本体开发101：创建第一个本体的指南</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BC%80%E5%8F%91%E6%9C%AC%E4%BD%93"> <span class="nav-number">1.1</span> <span class="nav-text">为什么要开发本体</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%9C%AC%E4%BD%93%E6%8C%87%E5%8D%97"> <span class="nav-number">1.1.1</span> <span class="nav-text">本体指南</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E6%9C%AC%E4%BD%93%E6%98%AF%E4%BB%80%E4%B9%88"> <span class="nav-number">1.2</span> <span class="nav-text">本体是什么</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%96%B9%E6%B3%95"> <span class="nav-number">1.3</span> <span class="nav-text">一种简单的知识工程方法</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E7%A1%AE%E5%AE%9A%E6%9C%AC%E4%BD%93%E7%9A%84%E8%8C%83%E5%9B%B4%E5%92%8C%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.3.1</span> <span class="nav-text">确定本体的范围和范围</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E8%80%83%E8%99%91%E9%87%8D%E7%94%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E6%9C%AC%E4%BD%93"> <span class="nav-number">1.3.2</span> <span class="nav-text">考虑重用现有的本体</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%97%E4%B8%BE%E6%9C%AC%E4%BD%93%E4%B8%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%9C%AF%E8%AF%AD"> <span class="nav-number">1.3.3</span> <span class="nav-text">列举本体中的重要术语</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%92%8C%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"> <span class="nav-number">1.3.4</span> <span class="nav-text">定义类和类层次结构</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7-%E6%8F%92%E6%A7%BD"> <span class="nav-number">1.3.5</span> <span class="nav-text">定义类的属性-插槽</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%8F%92%E6%A7%BD%E7%9A%84%E5%88%BB%E9%9D%A2"> <span class="nav-number">1.3.6</span> <span class="nav-text">定义插槽的刻面</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E6%8F%92%E6%A7%BD%E5%9F%BA%E6%95%B0"> <span class="nav-number">1.3.6.1</span> <span class="nav-text">插槽基数</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%B9%BF%E5%91%8A%E4%BD%8D%E5%80%BC%E7%B1%BB%E5%9E%8B"> <span class="nav-number">1.3.6.2</span> <span class="nav-text">广告位值类型</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E6%8F%92%E6%A7%BD%E7%9A%84%E5%9F%9F%E5%92%8C%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.3.6.3</span> <span class="nav-text">插槽的域和范围</span> </a> </li> </ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B"> <span class="nav-number">1.3.7</span> <span class="nav-text">创建实例</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%92%8C%E7%B1%BB%E5%B1%82%E6%AC%A1"> <span class="nav-number">1.4</span> <span class="nav-text">定义类和类层次</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E7%A1%AE%E4%BF%9D%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%AD%A3%E7%A1%AE"> <span class="nav-number">1.4.1</span> <span class="nav-text">确保类层次结构正确</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%86%E6%9E%90%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E5%90%8C%E7%BA%A7"> <span class="nav-number">1.4.2</span> <span class="nav-text">分析类层次结构中的同级</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF"> <span class="nav-number">1.4.3</span> <span class="nav-text">多重继承</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%BD%95%E6%97%B6%E5%BC%80%E8%AE%BE%E6%96%B0%E8%AF%BE%E7%A8%8B%E6%88%96%E4%B8%8D%E5%BC%80%E8%AE%BE"> <span class="nav-number">1.4.4</span> <span class="nav-text">何时开设新课程（或不开设）</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E7%B1%BB%E6%88%96%E5%B1%9E%E6%80%A7%E5%80%BC"> <span class="nav-number">1.4.5</span> <span class="nav-text">一个新的类或属性值</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%E8%BF%98%E6%98%AF%E7%B1%BB"> <span class="nav-number">1.4.6</span> <span class="nav-text">实例还是类</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%99%90%E5%88%B6%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.4.7</span> <span class="nav-text">限制范围</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E5%AD%90%E7%B1%BB"> <span class="nav-number">1.4.8</span> <span class="nav-text">不相交的子类</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7-%E6%9B%B4%E5%A4%9A%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"> <span class="nav-number">1.5</span> <span class="nav-text">定义属性-更多详细信息</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%8F%8D%E6%A7%BD"> <span class="nav-number">1.5.1</span> <span class="nav-text">反槽</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%80%BC"> <span class="nav-number">1.5.2</span> <span class="nav-text">默认值</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%90%8D%E5%AD%97%E5%8F%AB%E4%BB%80%E4%B9%88"> <span class="nav-number">1.6</span> <span class="nav-text">名字叫什么</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%A4%A7%E5%86%99%E5%92%8C%E5%88%86%E9%9A%94%E7%AC%A6"> <span class="nav-number">1.6.1</span> <span class="nav-text">大写和分隔符</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%8D%95%E6%95%B0%E6%88%96%E5%A4%8D%E6%95%B0"> <span class="nav-number">1.6.2</span> <span class="nav-text">单数或复数</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%89%8D%E7%BC%80%E5%92%8C%E5%90%8E%E7%BC%80%E7%BA%A6%E5%AE%9A"> <span class="nav-number">1.6.3</span> <span class="nav-text">前缀和后缀约定</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%91%BD%E5%90%8D%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"> <span class="nav-number">1.6.4</span> <span class="nav-text">其他命名注意事项</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90"> <span class="nav-number">1.7</span> <span class="nav-text">其他资源</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%BB%93%E8%AE%BA"> <span class="nav-number">1.8</span> <span class="nav-text">结论</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E8%87%B4%E8%B0%A2"> <span class="nav-number">1.9</span> <span class="nav-text">致谢</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"> <span class="nav-number">1.10</span> <span class="nav-text">参考文献</span> </a> </li> </ol> </li>
+      <li class="nav-item nav-level-1"> <a class="nav-link" href="#%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9C%AC%E4%BD%93%E5%88%9B%E5%BB%BA%E6%8C%87%E5%8D%97%E8%AF%91%E6%96%87"> <span class="nav-number">1</span> <span class="nav-text">知识图谱本体创建指南[译文]</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9B%E5%BB%BA%E6%9C%AC%E4%BD%93"> <span class="nav-number">1.1</span> <span class="nav-text">为什么要创建本体</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%9C%AC%E4%BD%93%E6%8C%87%E5%8D%97"> <span class="nav-number">1.1.1</span> <span class="nav-text">本体指南</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E6%9C%AC%E4%BD%93%E6%98%AF%E4%BB%80%E4%B9%88"> <span class="nav-number">1.2</span> <span class="nav-text">本体是什么</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%80%E7%A7%8D%E7%AE%80%E5%8D%95%E7%9A%84%E7%9F%A5%E8%AF%86%E5%B7%A5%E7%A8%8B%E6%96%B9%E6%B3%95"> <span class="nav-number">1.3</span> <span class="nav-text">一种简单的知识工程方法</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E7%A1%AE%E5%AE%9A%E6%9C%AC%E4%BD%93%E7%9A%84%E8%8C%83%E5%9B%B4%E5%92%8C%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.3.1</span> <span class="nav-text">确定本体的范围和范围</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E8%80%83%E8%99%91%E9%87%8D%E7%94%A8%E7%8E%B0%E6%9C%89%E7%9A%84%E6%9C%AC%E4%BD%93"> <span class="nav-number">1.3.2</span> <span class="nav-text">考虑重用现有的本体</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%97%E4%B8%BE%E6%9C%AC%E4%BD%93%E4%B8%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%9C%AF%E8%AF%AD"> <span class="nav-number">1.3.3</span> <span class="nav-text">列举本体中的重要术语</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%92%8C%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"> <span class="nav-number">1.3.4</span> <span class="nav-text">定义类和类层次结构</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7-%E6%8F%92%E6%A7%BD"> <span class="nav-number">1.3.5</span> <span class="nav-text">定义类的属性-插槽</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E6%8F%92%E6%A7%BD%E7%9A%84%E5%88%BB%E9%9D%A2"> <span class="nav-number">1.3.6</span> <span class="nav-text">定义插槽的刻面</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E6%8F%92%E6%A7%BD%E5%9F%BA%E6%95%B0"> <span class="nav-number">1.3.6.1</span> <span class="nav-text">插槽基数</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%B9%BF%E5%91%8A%E4%BD%8D%E5%80%BC%E7%B1%BB%E5%9E%8B"> <span class="nav-number">1.3.6.2</span> <span class="nav-text">广告位值类型</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E6%8F%92%E6%A7%BD%E7%9A%84%E5%9F%9F%E5%92%8C%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.3.6.3</span> <span class="nav-text">插槽的域和范围</span> </a> </li> </ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B"> <span class="nav-number">1.3.7</span> <span class="nav-text">创建实例</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%92%8C%E7%B1%BB%E5%B1%82%E6%AC%A1"> <span class="nav-number">1.4</span> <span class="nav-text">定义类和类层次</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E7%A1%AE%E4%BF%9D%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%AD%A3%E7%A1%AE"> <span class="nav-number">1.4.1</span> <span class="nav-text">确保类层次结构正确</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%86%E6%9E%90%E7%B1%BB%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E4%B8%AD%E7%9A%84%E5%90%8C%E7%BA%A7"> <span class="nav-number">1.4.2</span> <span class="nav-text">分析类层次结构中的同级</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF"> <span class="nav-number">1.4.3</span> <span class="nav-text">多重继承</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%BD%95%E6%97%B6%E5%BC%80%E8%AE%BE%E6%96%B0%E8%AF%BE%E7%A8%8B%E6%88%96%E4%B8%8D%E5%BC%80%E8%AE%BE"> <span class="nav-number">1.4.4</span> <span class="nav-text">何时开设新课程（或不开设）</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E7%B1%BB%E6%88%96%E5%B1%9E%E6%80%A7%E5%80%BC"> <span class="nav-number">1.4.5</span> <span class="nav-text">一个新的类或属性值</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%E8%BF%98%E6%98%AF%E7%B1%BB"> <span class="nav-number">1.4.6</span> <span class="nav-text">实例还是类</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%99%90%E5%88%B6%E8%8C%83%E5%9B%B4"> <span class="nav-number">1.4.7</span> <span class="nav-text">限制范围</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E5%AD%90%E7%B1%BB"> <span class="nav-number">1.4.8</span> <span class="nav-text">不相交的子类</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7-%E6%9B%B4%E5%A4%9A%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"> <span class="nav-number">1.5</span> <span class="nav-text">定义属性-更多详细信息</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%8F%8D%E6%A7%BD"> <span class="nav-number">1.5.1</span> <span class="nav-text">反槽</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%80%BC"> <span class="nav-number">1.5.2</span> <span class="nav-text">默认值</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%90%8D%E5%AD%97%E5%8F%AB%E4%BB%80%E4%B9%88"> <span class="nav-number">1.6</span> <span class="nav-text">名字叫什么</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%A4%A7%E5%86%99%E5%92%8C%E5%88%86%E9%9A%94%E7%AC%A6"> <span class="nav-number">1.6.1</span> <span class="nav-text">大写和分隔符</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%8D%95%E6%95%B0%E6%88%96%E5%A4%8D%E6%95%B0"> <span class="nav-number">1.6.2</span> <span class="nav-text">单数或复数</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%89%8D%E7%BC%80%E5%92%8C%E5%90%8E%E7%BC%80%E7%BA%A6%E5%AE%9A"> <span class="nav-number">1.6.3</span> <span class="nav-text">前缀和后缀约定</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%91%BD%E5%90%8D%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"> <span class="nav-number">1.6.4</span> <span class="nav-text">其他命名注意事项</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%85%B6%E4%BB%96%E8%B5%84%E6%BA%90"> <span class="nav-number">1.7</span> <span class="nav-text">其他资源</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%BB%93%E8%AE%BA"> <span class="nav-number">1.8</span> <span class="nav-text">结论</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E8%87%B4%E8%B0%A2"> <span class="nav-number">1.9</span> <span class="nav-text">致谢</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"> <span class="nav-number">1.10</span> <span class="nav-text">参考文献</span> </a> </li> </ol> </li>
     </ol>
   </div>
             

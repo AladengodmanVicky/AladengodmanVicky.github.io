@@ -5,8 +5,8 @@
     <description>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</description>
     <link>http://localhost:5000/</link>
     <atom:link href="http://localhost:5000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Nov 2020 09:09:49 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2020 09:09:49 +0800</lastBuildDate>
+    <pubDate>Sun, 15 Nov 2020 11:31:50 +0800</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2020 11:31:50 +0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -43,31 +43,40 @@
       </item>
     
       <item>
-        <title>本体开发101:创建第一个本体的指南</title>
-        <description>&lt;h1 id=&quot;本体开发101创建第一个本体的指南&quot;&gt;本体开发101：创建第一个本体的指南&lt;/h1&gt;
+        <title>知识图谱本体创建指南[译文]</title>
+        <description>&lt;h1 id=&quot;知识图谱本体创建指南译文&quot;&gt;知识图谱本体创建指南[译文]&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;斯坦福大学，CA，94305，作者：
+娜塔莉亚·诺伊（Natalya F. Noy），noy@smi.stanford.edu
+黛博拉·麦坚尼斯（Deborah L. McGuinness），dlm@ksl.stanford.edu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;作者&lt;/strong&gt;娜塔莉亚·诺伊（Natalya F. Noy）  和黛博拉·麦坚尼斯（Deborah L. McGuinness）斯坦福大学，CA，94305
-&lt;strong&gt;邮箱&lt;/strong&gt;：noy@smi.stanford.edu 和 dlm@ksl.stanford.edu&lt;/p&gt;
+&lt;h2 id=&quot;为什么要创建本体&quot;&gt;为什么要创建本体&lt;/h2&gt;
 
-&lt;h2 id=&quot;为什么要开发本体&quot;&gt;为什么要开发本体&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;本体&lt;/strong&gt;是领域的规范概念集及其之间的逻辑关系。&lt;/p&gt;
 
-&lt;p&gt;近年来，本体的发展（对领域中术语的明确规范和它们之间的关系（Gruber 1993））已经从人工智能实验室的领域转移到领域专家的桌面。本体在万维网上已经很普遍。Web上的本体包括从对网站进行分类的大型分类法（例如在Yahoo!上）到要出售的产品及其功能的分类（例如在Amazon.com上）。WWW联盟（W3C）正在开发资源描述框架（Brickley和Guha，1999），该语言用于对网页上的知识进行编码，以使电子代理商可以轻松地搜索信息。  国防高级研究计划局（DARPA）与W3C一起，通过扩展RDF并使用更具表现力的结构来扩展DARPA代理标记语言（DAML），旨在促进Web上的代理交互（Hendler和McGuinness 2000）。现在，许多学科都在开发标准化的本体，领域专家可以使用它们来共享和注释其领域中的信息。例如，医学已经产生了大型的，标准化的，结构化的词汇，例如SNOMED （Price和Spackman 2000）和统一医学语言系统的语义网络（Humphreys and Lindberg 1993）。广泛的通用本体也正在兴起。例如，  联合国开发计划署和Dun＆Bradstreet共同努力开发UNSPSC本体，该本体提供产品和服务的术语（&lt;a href=&quot;www.unspsc.org&quot;&gt;www.unspsc.org&lt;/a&gt;）&lt;/p&gt;
+&lt;p&gt;近年来，本体的创建已经从人工智能专家的专属领域转移到领域专家的工作中。本体在万维网上已经较为普遍。例如：雅虎的网站分类体系和亚马逊的产品分类和功能分类。&lt;/p&gt;
 
-&lt;p&gt;本体为需要在域中共享信息的研究人员定义了通用词汇表。它包括领域中基本概念的机器可解释的定义以及它们之间的关系。&lt;/p&gt;
+&lt;p&gt;万维网联盟（W3C）开发的RDF（资源描述框架）语言，支持把网页中的知识表示为机器可解析的语言，使机器可以轻松的解析和处理。&lt;/p&gt;
 
-&lt;p&gt;为什么有人要开发一个本体？一些原因是：&lt;/p&gt;
+&lt;p&gt;美国国防高级研究计划局（DARPA）与W3C一起，通过扩展RDF并使用更具表现力的结构来扩展DARPA代理标记语言（DAML），该语言旨在促进Web上的代理交互（Hendler和McGuinness 2000）。&lt;/p&gt;
+
+&lt;p&gt;现在，许多学科都在开发标准化的本体，领域专家可以使用本体来共享和注释其领域中的信息。医学已经产生了大量标准化、结构化的词汇集，例如：SNOMED （Price和Spackman 2000）和统一医学语言系统的语义网络（Humphreys and Lindberg 1993），同时通用本体也正在兴起，例如联合国开发计划署和美国邓白氏公司共同努力开发UNSPSC本体，该本体为产品和服务提供术语（&lt;a href=&quot;www.unspsc.org&quot;&gt;www.unspsc.org&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;本体为领域中共享信息的研究人员定义了通用词汇表，包括可理解的领域基本概念以及逻辑关系。&lt;/p&gt;
+
+&lt;p&gt;为什么有人要开发一个本体？原因如下：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;在人员或软件代理之间共享对信息结构的共识&lt;/li&gt;
-  &lt;li&gt;能够重用领域知识&lt;/li&gt;
+  &lt;li&gt;达成信息结构共识&lt;/li&gt;
+  &lt;li&gt;复用领域知识&lt;/li&gt;
   &lt;li&gt;明确领域假设&lt;/li&gt;
-  &lt;li&gt;将领域知识与运营知识区分开&lt;/li&gt;
+  &lt;li&gt;区分领域知识与运营知识&lt;/li&gt;
   &lt;li&gt;分析领域知识&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;在人员或软件代理之间共享对信息结构的 共识是开发本体论的较常见目标之一（Musen 1992； Gruber 1993）。例如，假设几个不同的网站包含医疗信息或提供医疗电子商务服务。如果这些网站共享并发布它们全部使用的术语的相同基础本体，则计算机代理可以从这些不同的网站中提取和聚合信息。代理可以使用此汇总信息来回答用户查询或作为其他应用程序的输入数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;达成信息结构共识&lt;/strong&gt;是开发本体的较常见目标之一（Musen 1992； Gruber 1993）。例如，几个不同的网站都包含医疗信息或提供医疗电子商务服务，如果它们全部使用术语相同本体，则机器可以从这些网站中提取并聚合信息，并且可以使用此聚合信息来回答用户查询或作为其他应用程序的输入数据。&lt;/p&gt;
 
-&lt;p&gt;启用领域知识的重用是最近本体论研究激增的推动力之一。例如，用于许多不同领域的模型需要表示时间的概念。此表示包括时间间隔，时间点，时间的相对度量等概念。如果一组研究人员详细开发了这种本体，那么其他研究人员可以简单地将其重新用于他们的领域。此外，如果我们需要构建大型本体，则可以集成描述大型域各部分的几种现有本体。我们还可以重用通用的本体，例如UNSPSC本体，并将其扩展以描述我们感兴趣的领域。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;复用用于知识&lt;/strong&gt;是本体研究激增的推动力之一。例如，许多不同领域的模型需要表示时间概念。此表示包括时间间隔，时间点，时间的相对度量等概念。如果一组研究人员详细开发了这种本体，那么其他研究人员可以简单地将其重新用于他们的领域。此外，如果我们需要构建大型本体，则可以集成描述大型域各部分的几种现有本体。我们还可以重用通用的本体，例如UNSPSC本体，并将其扩展以描述我们感兴趣的领域。&lt;/p&gt;
 
 &lt;p&gt;如果我们对领域的了解有所变化，则对实现的基础进行明确的领域假设就可以轻松更改这些假设。关于编程语言代码世界的硬编码假设使这些假设不仅难以发现和理解，而且难以更改，尤其是对于没有编程专业知识的人。此外，明确的领域知识规范对于必须了解领域术语含义的新用户很有用。&lt;/p&gt;
 
