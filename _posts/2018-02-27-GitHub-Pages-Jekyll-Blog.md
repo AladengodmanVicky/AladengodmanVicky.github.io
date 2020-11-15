@@ -70,7 +70,7 @@ git push origin master                    #线上的站点是部署在master下�
 ## 问题集锦
 
 ### 本地jekyll查看与实际效果不一致
-由于长期未更新本地jekyll及其依赖包，导致本地jekyll查看效果与实际效果不一致。
+由于长期未更新本地jekyll及其依赖包，导致本地jekyll查看效果与实际效果不一致，参考[更新Jekyll](https://www.cnblogs.com/obarong/p/12596067.html)。
 ```
 bundle update jekyll                      #更新jekyll
 ```
@@ -88,3 +88,7 @@ bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 bundle update
 ```
 升级完，运行`bundle exec jekyll serve`
+
+## 更新日志
+* 创建时间：2018-2-27
+* 更新时间：2020-11-15
