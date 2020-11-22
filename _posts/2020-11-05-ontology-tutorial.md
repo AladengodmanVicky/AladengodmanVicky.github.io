@@ -16,7 +16,6 @@ excerpt: 领会知识图谱本体创建方法论
 娜塔莉亚·诺伊（Natalya F. Noy），noy@smi.stanford.edu
 黛博拉·麦坚尼斯（Deborah L. McGuinness），dlm@ksl.stanford.edu
 ```
-
 ## 为什么要创建本体
 
 **本体**是领域的规范概念集及其之间的逻辑关系。

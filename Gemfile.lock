@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  bundle config mirror.https://rubygems.org https://gems.ruby-china.com
   specs:
     activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
