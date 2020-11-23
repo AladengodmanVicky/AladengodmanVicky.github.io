@@ -2,7 +2,7 @@
 published: true
 layout: post
 date: '2020-11-23 02:34:00 +0800'
-categories: 金融风控
+categories: Fintech
 tags:
   - 反欺诈
   - 关键指标
