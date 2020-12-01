@@ -12,9 +12,9 @@ title: 反欺诈在全流程信贷中的关键指标
 ---
 
 ## 注册
-![注册](https://i.loli.net/2020/11/23/UxVjDRYotfBq4Jm.png)
+![注册](https://i.loli.net/2020/11/23/w2v76Ud8VThHO3u.png)
 ## 登陆
-![登陆](https://i.loli.net/2020/11/23/u5692pWE4rUZKYL.png)
+![登陆](https://i.loli.net/2020/11/23/KbDkxOT9tRPWXAv.png)
 ## 实名认证
 ![实名认证](https://i.loli.net/2020/11/23/DaS5OvdnhlfrXNm.png)
 ## 绑卡
