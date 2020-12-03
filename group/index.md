@@ -4,17 +4,18 @@ layout: page
 type: about
 published: true
 ---
-> ##### 以下内容版权©️归原作者，罗列以供个人学习使用，如有侵权请联系，立删。
+```
+以下内容版权©️归原作者，罗列以供个人学习使用，如有侵权请联系，立删。
+如需友链，请微信/邮件联系，或文章评论留言。
+```
 
-> ##### 如需友链，请微信/邮件联系，或文章评论留言。
-
-### 友情链接
+## 友情链接
 
 * [easyAI-产品经理的人工智能学习库](https://easyai.tech/)
 * [BetterManPeter - NLPer](https://chiang97912.github.io/)
 
 
-### 工具
+## 工具
 
 * [在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
 * [postimages免费图床](https://postimages.org/)
@@ -26,21 +27,21 @@ published: true
 
 ---
 
-### 快捷键
+## 快捷键
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
 * [Mac 多点触控手势](https://support.apple.com/zh-cn/HT204895)
 * [Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
 
 ---
 
-### 资源
+## 资源
 * [pixabay可商用免费图片库](https://pixabay.com/)
 * [精品Mac应用分享推荐](https://wangchujiang.com/awesome-mac/index.zh.html)
 * [GitHub全球排名](https://wangchujiang.com/github-rank/index.html)
 
 ---
 
-### 行业资讯
+## 行业资讯
 
 * [InfoQ全球性在线新闻/社区网站](https://www.infoq.cn/)
 * [湾区日报：关注创业与技术，每天推送5篇优质英文文章](https://wanqu.co/)
@@ -52,7 +53,7 @@ published: true
 
 ---
 
-### AI前沿资源
+## AI前沿资源
 
 * [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
 
