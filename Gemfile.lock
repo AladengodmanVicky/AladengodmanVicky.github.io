@@ -1,5 +1,5 @@
 GEM
-  bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+  remote: https://rubygems.org/
   specs:
     activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -262,11 +262,13 @@ GEM
 PLATFORMS
   ruby
   x64-mingw32
+  x86_64-darwin-20
 
 DEPENDENCIES
+  commonmarker
   github-pages
   jekyll-target-blank
   kramdown-parser-gfm
 
 BUNDLED WITH
-   2.1.4
+   2.2.0

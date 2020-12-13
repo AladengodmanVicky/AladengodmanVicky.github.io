@@ -89,6 +89,99 @@ bundle update
 ```
 升级完，运行`bundle exec jekyll serve`
 
+### 安装Homebrew
+
+> Homebrew是Mac OS 不可或缺的套件管理器 ---- Homebrew官方
+
+Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
+
+#### Homebrew官方指定的安装方法
+
+将以下命令粘贴到终端：
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+但这种方法并不适用国内的Mac用户，因为网络资源的原因，电脑下载是龟速，实在是无法忍受，不信你自己试试就知道了。
+
+解决下载慢有两个办法：
+1. 替换镜像源，将下载资源改为国内镜像资源即可（推荐）
+2. 科学上网，通过全局代理来进行安装，也是解决网络问题的一种方法（不推荐）
+
+#### 使用国内镜像资源
+```
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+```
+可以选择: 
+
+1.中科大下载源，如图，然后根据提示输入开机密码，（这里需要提示下，输入密码的时候，光标是不移动的，保护机制，不用管，输入完直接回车键即可)
+
+![iShot2020-12-13 12.04.11](https://i.loli.net/2020/12/13/67LYqH82kaWl9Ad.jpg)
+
+### 本地运行bundle exec jekyll serve报错
+本地运行`bundle exec jekyll serve`命令启动jekyll时，出现以下错误:
+```
+Could not find commonmarker-0.17.13 in any of the sources
+```
+并提示运行`bundle install`,执行后报错：
+```
+An error occurred while installing commonmarker (0.17.13), and Bundler cannot continue.
+Make sure that `gem install commonmarker -v '0.17.13' --source 'https://rubygems.org/'` succeeds before bundling.
+
+In Gemfile:
+  github-pages was resolved to 192, which depends on
+    jekyll-commonmark-ghpages was resolved to 0.1.5, which depends on
+      jekyll-commonmark was resolved to 1.2.0, which depends on
+        commonmarker
+```
+提示执行`gem install commonmarker -v '0.17.13' --source 'https://rubygems.org/'`,执行结果：
+```
+Building native extensions.  This could take a while...
+ERROR:  Error installing commonmarker:
+        ERROR: Failed to build gem native extension.
+
+    current directory: /Library/Ruby/Gems/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20181112-6105-u9aca2.rb extconf.rb
+creating Makefile
+
+current directory: /Library/Ruby/Gems/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" clean
+
+current directory: /Library/Ruby/Gems/2.3.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR="
+make: *** No rule to make target `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/include/ruby-2.3.0/universal-darwin16/ruby/config.h', needed by `arena.o'.  Stop.
+
+make failed, exit code 2
+
+Gem files will remain installed in /Library/Ruby/Gems/2.3.0/gems/commonmarker-0.17.13 for inspection.
+Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/commonmarker-0.17.13/gem_make.out
+```
+看报错信息可能是由于系统ruby环境和jekyll之间的一些分歧造成的，最简单的解决方法是创建一个新的环境。使用rvm来管理ruby版本，以避免删除系统ruby并破坏您的操作系统。
+1. RVM是一个命令行工具，它允许轻松地安装、管理和使用从解释器到多个ruby环境。
+2. 使用Ruby原因：
+    * 虽然 macOS 自带了一个 ruby 环境，但是是系统自己使用的，所以权限很小，只有 system。而/Library目录是root权限，所以很多会提示无权限。
+    * 使用自带ruby更新,管理不方便
+    * 一系列无原因的报错
+
+**安装RVM**
+1. 下载并安装: `curl -L https://get.rvm.io | bash -s stable`
+2. 载入RVM环境: `source ~/.rvm/scripts/rvm`
+3. 查看RVM版本: `rvm -v`
+4. 更新RVM版本: `rvm get stable`
+
+**RVM安装Ruby环境**
+1. 列出已知的Ruby版本: `rvm list known`
+2. 查看当前Ruby版本: `ruby -v`
+3. 安装Ruby版本: `rvm install 2.7.0`
+4. 将指定版本设置为系统默认版本: `rvm use 2.7.0 --default`
+5. 查看Ruby版本: `ruby -v`
+
+**安装完成之后更新jekyll环境**
+1. 安装bundler: `gem install bundler`
+2. 安装jekyll: `gem install jekyll`
+3. 安装项目依赖的所有gem包: `bundle install`
+
+升级完，运行`bundle exec jekyll serve`
+
 ## 更新日志
 * 创建时间：2018-2-27
-* 更新时间：2020-11-15
+* 更新时间：2020-12-13

@@ -4,3 +4,4 @@ gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-target-blank', group: :jekyll_plugins
 #支持kramdown-GFM
 gem "kramdown-parser-gfm"
+gem 'commonmarker'

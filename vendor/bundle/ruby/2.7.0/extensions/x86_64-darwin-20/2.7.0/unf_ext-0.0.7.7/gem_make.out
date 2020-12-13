@@ -1,0 +1,16 @@
+current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+/Users/bobinsun/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/bobinsun/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201212-56643-1gcgrnj.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 unf_ext.bundle ./.gem.20201212-56643-1stqt4b

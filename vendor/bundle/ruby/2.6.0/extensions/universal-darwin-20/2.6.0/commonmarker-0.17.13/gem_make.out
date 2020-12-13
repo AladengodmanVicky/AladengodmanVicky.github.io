@@ -1,5 +1,6 @@
 current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20201201-2926-4edru5.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20201212-6881-141t0r5.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin20/rbconfig.rb:229: warning: Insecure world writable dir /usr/local/sbin in PATH, mode 040777
 creating Makefile
 
 current directory: /Users/bobinsun/Documents/bobinsun.cn/blog.bobinsun.cn/AladengodmanVicky.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker

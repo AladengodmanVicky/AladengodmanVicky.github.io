@@ -5,9 +5,78 @@
     <description>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</description>
     <link>http://localhost:5000/</link>
     <atom:link href="http://localhost:5000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Nov 2020 20:30:45 +0800</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2020 20:30:45 +0800</lastBuildDate>
+    <pubDate>Sun, 13 Dec 2020 12:12:49 +0800</pubDate>
+    <lastBuildDate>Sun, 13 Dec 2020 12:12:49 +0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>反欺诈在全流程信贷中的关键指标</title>
+        <description>&lt;h2 id=&quot;注册&quot;&gt;注册&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/w2v76Ud8VThHO3u.png&quot; alt=&quot;注册&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;登陆&quot;&gt;登陆&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/KbDkxOT9tRPWXAv.png&quot; alt=&quot;登陆&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;实名认证&quot;&gt;实名认证&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/DaS5OvdnhlfrXNm.png&quot; alt=&quot;实名认证&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;绑卡&quot;&gt;绑卡&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/s4pvtRVx7OcSqYJ.png&quot; alt=&quot;绑卡&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;授信&quot;&gt;授信&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/THioYdKhAC5wXIa.png&quot; alt=&quot;授信-01&quot; /&gt;
+&lt;img src=&quot;https://i.loli.net/2020/11/23/MyJdRk3sVHrwbXh.png&quot; alt=&quot;授信-02&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;放款&quot;&gt;放款&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/PehvQJL3ZtlqCSy.png&quot; alt=&quot;放款&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;提现&quot;&gt;提现&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/11/23/8QPNIgqwmkerJnH.png&quot; alt=&quot;提现&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Nov 2020 02:34:00 +0800</pubDate>
+        <link>http://localhost:5000/fintech/2020/11/23/Anti-fraud-indicators/</link>
+        <guid isPermaLink="true">http://localhost:5000/fintech/2020/11/23/Anti-fraud-indicators/</guid>
+        
+        <category>反欺诈</category>
+        
+        <category>关键指标</category>
+        
+        <category>全流程信贷</category>
+        
+        
+        <category>Fintech</category>
+        
+      </item>
+    
+      <item>
+        <title>知识图谱应用场景</title>
+        <description>&lt;p&gt;&lt;strong&gt;有不少人问：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;知识图谱可以有哪些应用，是不是只能用于搜索、问答和推荐？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;我的答案是：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;只要有数据处理的场景都可以使用知识图谱，比如：商品销售分析、大型设备故障诊断。这是因为知识图谱可以看成是一类结构化数据，只不过是三元组格式存在，但是知识图谱又不仅仅是数据，因为一个知识图谱可以有本体来规范管理，并且支持本体推理，从而支持知识的内涵和外延语义，知识图谱遵循的知识工程理论是建立在软件工程和数据工程基础上的，目前这套理论还不够完善，所以很多人会感到困惑，有时候觉得知识图谱很神秘，有时候又觉得知识图谱跟数据库没什么区别。&lt;/p&gt;
+
+&lt;p&gt;追加一句话，如果理解了我的回答，大家就会清楚知识图谱还有很广阔的发展空间，而且只有数据处理需求越来越大，知识图谱的需求就会越来越大！&lt;/p&gt;
+
+&lt;p&gt;另外，图谱是什么，这个没有标准答案，随着应用还会不断演化，图谱这个概念也是可分不同层次和维度的。&lt;/p&gt;
+
+&lt;p&gt;现在迫切需要的是一本关于知识图谱工程方法的书，而不是技术书，因为技术书都是在堆砌各种技术，读者看了晕乎乎的，也搞不清楚怎么用。&lt;/p&gt;
+
+&lt;p&gt;具备做一件事的能力不代表这件事一定可以做成，要做成一件事，还需要看成本有多高，投入有多大，很多图谱可以做的事，因为成本问题，会变成不好做。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;漆桂林 2020.11.20&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Sat, 21 Nov 2020 02:34:00 +0800</pubDate>
+        <link>http://localhost:5000/kg/2020/11/21/KG-Application-Scenes/</link>
+        <guid isPermaLink="true">http://localhost:5000/kg/2020/11/21/KG-Application-Scenes/</guid>
+        
+        <category>知识图谱</category>
+        
+        <category>应用场景</category>
+        
+        
+        <category>KG</category>
+        
+      </item>
     
       <item>
         <title>知识图谱与教育</title>
@@ -49,7 +118,6 @@
 娜塔莉亚·诺伊（Natalya F. Noy），noy@smi.stanford.edu
 黛博拉·麦坚尼斯（Deborah L. McGuinness），dlm@ksl.stanford.edu
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
 &lt;h2 id=&quot;为什么要创建本体&quot;&gt;为什么要创建本体&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;本体&lt;/strong&gt;是领域的规范概念集及其之间的逻辑关系。&lt;/p&gt;
@@ -1391,753 +1459,6 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
         
         
         <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>关于推理 - 12种推理类型</title>
-        <description>&lt;p&gt;在人工智能的各种应用中通常需要使用推理，而推理始于人类的思维模式，这里对常见的几种推理做了简单整理，以供参考。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;「推理」是“使用理智从某些前提产生结论”的行动。    - 来自 · 维基百科&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-01.jpg&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;「推理」是以符合逻辑的、合理的思考方式思考事物的过程。被认为是一种人类天生的能力，但现在已经被逻辑学、数学、以及人工智能等领域逐渐形式化。&lt;/p&gt;
-
-&lt;p&gt;「推理」是一种过程或者行动，主要用于决策、解决问题和评估事物。&lt;/p&gt;
-
-&lt;p&gt;推理可以是正式的，可以是非正式的；可以是自上而下的，也可以是自下而上的；可以用来处理不确定性，也可以用来处理科学真理。&lt;/p&gt;
-
-&lt;h2 id=&quot;常见的12种推理类型&quot;&gt;常见的12种推理类型&lt;/h2&gt;
-
-&lt;h3 id=&quot;演绎推理&quot;&gt;演绎推理&lt;/h3&gt;
-
-&lt;p&gt;「演绎推理」是从一般到具体，换句话说，它是从一个理论开始，并努力寻找确认的观察结果，被称为自上而下的逻辑。常用来寻求现象来证明理论。它使用形式逻辑并在逻辑上产生结果。&lt;/p&gt;
-
-&lt;p&gt;演绎推理通常与归纳推理形成对比，可以说，演绎推理对确定性感兴趣，而归纳推理处理存在的可能性。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;逻辑学中有名的三段论（syllogism）就是典型的演绎推理例子：&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;人皆有一死&lt;/li&gt;
-      &lt;li&gt;苏格拉底是人&lt;/li&gt;
-      &lt;li&gt;所以，苏格拉底会死&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;归纳推理&quot;&gt;归纳推理&lt;/h3&gt;
-
-&lt;p&gt;「归纳推理」是一种基于一系列已知事实形成理论的逻辑形式，是自上而下的逻辑，寻求理论来解释观察。它的本质是探索，允许意料之外但在情理之中的结果。&lt;/p&gt;
-
-&lt;p&gt;归纳推理的典型例子：因为地球上大多数生命都依赖于液态水生存，所以水对外星生命形式（如果存在的话）必须是重要的。&lt;/p&gt;
-
-&lt;h3 id=&quot;类比推理&quot;&gt;类比推理&lt;/h3&gt;
-
-&lt;p&gt;「类比推理」是使用类比对两事物之间进行比较，来进一步理解事物的意义。通常用于制定决策、解决问题和沟通。&lt;/p&gt;
-
-&lt;p&gt;作为制定决策和解决问题的工具，类比用于将复杂场景简化更为容易的事物，只要替换有效，可以提高解决方案的质量；作为一种交流工具，类比可通过熟悉且易于理解的比较，将复杂问题简单化。&lt;/p&gt;
-
-&lt;h3 id=&quot;分析推理&quot;&gt;分析推理&lt;/h3&gt;
-
-&lt;p&gt;「分析推理」是使用独立的逻辑，基于事实的思想或论据。换句话说，解释分析推理不需要有关于世界的经验或信息。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;分析陈述&lt;/strong&gt;本身就是事实；而&lt;strong&gt;合成陈述&lt;/strong&gt;需要有关世界的其它知识才能知道它们是真实的。&lt;/p&gt;
-
-&lt;p&gt;例如：“所有单身汉未婚”之类的陈述本身就是分析；“中国🇨🇳拥有丰富的传统文化”这样的陈述是合成的，因为没有额外的信息就无法证明这一点。&lt;/p&gt;
-
-&lt;h3 id=&quot;诱导推理&quot;&gt;诱导推理&lt;/h3&gt;
-
-&lt;p&gt;「诱导推理」类似归纳推理，从寻找或猜测理论来解释观察到的一系列现象。诱导推理并不是很严谨，但可以做出最好的假设和猜测。它通常用于背景不确定的情况下，主要用来做辅助决策和故障排除等相关情况。&lt;/p&gt;
-
-&lt;p&gt;例如：医学评估可以从解释一组症状的最可能的病症开始。诱导推理也是人工智能常用的方法。&lt;/p&gt;
-
-&lt;h3 id=&quot;向后归纳&quot;&gt;向后归纳&lt;/h3&gt;
-
-&lt;p&gt;「向后归纳」是从潜在结论开始向后推理的过程，可以反向绘制可以达到每个潜在结论的步骤，然后根据目标评估路径。这是一种自上而下的方法，从理论或结果开始，向后解释，它允许不确定性并且通常用于人工智能。&lt;/p&gt;
-
-&lt;p&gt;向后归纳往往需要做很多工作，因为通常有很多路径可以到达既定结果，就像“条条大路通罗马”。&lt;/p&gt;
-
-&lt;p&gt;对计算机来说，通过机器的结束状态，来向后推理来评估动作的效果。例如：计算机下棋的经典方式是通过反向归纳。&lt;/p&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-02.jpg&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-3828096221540362&quot; data-ad-slot=&quot;4243777471&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;批判性思维&quot;&gt;批判性思维&lt;/h3&gt;
-
-&lt;p&gt;「批判性思维」是一个理性思考的过程，旨在以客观、全面、知情的方式得出结论。批判性思维是人类思想的产物，受文化、语言等因素的影响。人类思想基于自然语言，做出判断前需要考虑大量的想法。&lt;/p&gt;
-
-&lt;p&gt;批判性思维是一种智力参与的过程，在发表意见之前，要仔细查证据和假设，以达到深入的理解。&lt;/p&gt;
-
-&lt;h3 id=&quot;反事实思维&quot;&gt;反事实思维&lt;/h3&gt;
-
-&lt;p&gt;「反事实思维」是一种常见的思维模式，已知结果来追溯未评估的选择和行动，典型代表是“如果我有…”，“如果我当时怎么…做,就会怎么…”。&lt;/p&gt;
-
-&lt;p&gt;考虑的是已知不可能的发生的事情，考虑过去的决策是如何制定的，这是一个可以提高决策能力的共同的人类思维过程。&lt;/p&gt;
-
-&lt;p&gt;换句话说，反事实思维是评估过去的可能性对于改善未来决策或解决问题的价值。&lt;/p&gt;
-
-&lt;h3 id=&quot;直觉&quot;&gt;直觉&lt;/h3&gt;
-
-&lt;p&gt;「直觉」是心灵在没有推理等逻辑过程的情况下获取知识的能力，换句话说，大脑🧠获得直觉判断的方法对于思想者来说是未知的。&lt;/p&gt;
-
-&lt;p&gt;通常认为直觉是通过无意识感知的结果。是由无意识感知的心灵所做出的判断，这种判断表现出智慧，但产生这些判断的过程并不是很清楚。尽管直觉有时候被轻视，但他在科学发现中却发挥了重要作用。&lt;/p&gt;
-
-&lt;h3 id=&quot;动机推理&quot;&gt;动机推理&lt;/h3&gt;
-
-&lt;p&gt;「动机推理」是欲望和恐惧影响理性思维过程的倾向。通常人们可能会寻求合理的理由来做他们想做的事情，而不是使用逻辑来发现最佳的情况。&lt;/p&gt;
-
-&lt;p&gt;我们通常很容易想出一些逻辑参数来支持自己做出这样或那样的选择，就不会再去探索其他可替代的选择，因此放弃了潜在的更好的选择。&lt;/p&gt;
-
-&lt;h3 id=&quot;机会推理&quot;&gt;机会推理&lt;/h3&gt;
-
-&lt;p&gt;「机会推理」是一种人工智能，它可以根据情况使用不同的逻辑方法，即「正向链接」和「反向链接」。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「正向链接」&lt;/strong&gt;，举个例子：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A：会计师通常擅长数学。&lt;/li&gt;
-  &lt;li&gt;B：张三是一名会计师。&lt;/li&gt;
-  &lt;li&gt;演绎：张三可能擅长数学。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/reasoning-03.jpg&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;上面的例子是模糊逻辑的一个例子，因为它能够理解灰色区域，其中存在“通常”、“可能”，它属于前向链接，因为它从你已知的信息转移到新的信息。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「反向链接」&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;p&gt;反向链接看未来状态，并试图看到未来是如何发生的，这对于实现目标或避免损失非常有用。&lt;/p&gt;
-
-&lt;p&gt;例如：人工智能可以使用反向链接检查国际象棋游戏中给定时刻的最终状态，来确定可能获胜的移动序列。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;机会推理&lt;/strong&gt;根据情况使用正向链接和反向链接。&lt;/p&gt;
-
-&lt;p&gt;人工智能可以具有多个逻辑引擎，这些逻辑引擎基于它们在给定情况下过去的表现而被选择。理论上，单个人工智能可以拥有大量逻辑引擎，它根据特定类型的问题的已知结果进行选择。&lt;/p&gt;
-
-&lt;h3 id=&quot;循环推理&quot;&gt;循环推理&lt;/h3&gt;
-
-&lt;p&gt;「循环推理」是逻辑，一个自己证明自己的结论。结论可以作为假设或前提采用。循环推理通常会产生逻辑上有效的参数，并且是没有实际意义的逻辑示例。&lt;/p&gt;
-
-&lt;p&gt;例如：如果我是 DJ,那么我就是 DJ。&lt;/p&gt;
-
-&lt;p&gt;(完)&lt;/p&gt;
-</description>
-        <pubDate>Sat, 03 Aug 2019 08:34:00 +0800</pubDate>
-        <link>http://localhost:5000/thinking/2019/08/03/About-Reasoning/</link>
-        <guid isPermaLink="true">http://localhost:5000/thinking/2019/08/03/About-Reasoning/</guid>
-        
-        <category>演绎推理</category>
-        
-        <category>归纳推理</category>
-        
-        <category>类比推理</category>
-        
-        <category>分析推理</category>
-        
-        <category>诱导推理</category>
-        
-        <category>向后归纳</category>
-        
-        <category>批判性思维</category>
-        
-        <category>反事实思维</category>
-        
-        <category>直觉</category>
-        
-        <category>动机推理</category>
-        
-        <category>机会推理</category>
-        
-        <category>循环推理</category>
-        
-        
-        <category>Thinking</category>
-        
-      </item>
-    
-      <item>
-        <title>Palantir分析：「商业模式画布」、「SWOT」、「垄断特征」、以及「7个商业模式」</title>
-        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-8.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这里翻译一篇关于Palantir的分析文章，包括商业模式画布、SWOT、垄断特征、及7个商业模式。有关Palantir，这里暂不赘述，不了解且感兴趣的读者可自行Google。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;商业模式画布&quot;&gt;商业模式画布&lt;/h2&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-1.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;再放一张Google 翻译后的吧，可以对照着看。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-7.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;价值主张&quot;&gt;价值主张&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;它通过整合客户拥有的所有数据 - （任何规模&amp;amp;任何类型的数据），促进人与计算机之间的协同工作。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;独特的价值主张&lt;/strong&gt;：它为企业和政府机构的所有分析需求提供了一个单一平台，主要用于&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;检测欺诈和犯罪&lt;/code&gt;。Palantir开发了&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;动态本体&lt;/code&gt;等技术，将各种数据源集成到一个平台中，非技术用户可以专注于调查查询，而不是学习复杂的查询语言。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;它专注于一个核心产品 - （机器增强6数据分析） - 并建立了一个几乎完全独立的工程团队来实现它。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-5.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Palantir Gotham&lt;/strong&gt;：Palantir Gotham，以前称为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Palantir政府&lt;/code&gt;，是Palantir的第一个产品，主要是为政府设计，帮助国防机构识别潜在的威胁。该平台的基础模型基本上是图形，主要围绕对象及其之间的链接构建。来自多个源的结构化和非结构化数据都输入到系统中。然后将数据转换为对象并生成到模型中。用户可以使用该模型来描述，探索和查询这些对象的属性和关系。通过该平台构建的多个应用程序使用户能够在平台内搜索、可视化、假设、发现模式并与同事分享见解。减少用户与其数据之间的摩擦。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-3828096221540362&quot; data-ad-slot=&quot;8737556252&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Palantir Metropolis&lt;/strong&gt;：Palantir Metropolis，以前称为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Palantir Finance&lt;/code&gt;，主要是为金融业设计，帮助进行欺诈检测。该平台围绕时间序列构建。从根本上说，它的基础模型是一系列事件。该平台非常适用于分析&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;保险索赔数据&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;网络流量&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;金融交易模式&lt;/code&gt;。它可以帮助用户在数学上分析随着时间推移的模型行为（例如，股票价格）。Metropolis主要支持聚合分析：选择一组模型和一个时间段，然后对它们进行复杂的数学计算。由于其快速的迭代和协作能力，Metropolis在这个领域的竞争中脱颖而出。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据可视化、预测分析和地理智能空间。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;虽然Palantir只在数据可视化、预测分析和地理情报空间中发挥作用，但却是这些领域的领域专家。虽然Palantir一直在扩展其产品组合以提供其他分析功能，但它受到来自业内其他参与者激烈竞争与挑战。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;为了进一步说明Palantir庞大且不断增长的市场机会，强调我们对IT决策者的调查。要求IT专业人员在未来12-24个月内确定他们在数据分析中的首要任务。当今企业的首要任务是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;数据集成和可视化&lt;/code&gt;，然后是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;洞察力生成&lt;/code&gt;。这个领域的领导者目前是拥有这些重要功能的更好工具的公司。尽管Tableau，Qlik和Splunk在这个市场上取得了进展，但仍避免不了与微软，IBM，甲骨文和SAP等大公司竞争。现阶段Palantir尚未被企业客户广泛使用，但它拥有出色的集成和可视化工具，这对政府和商业机构都非常有价值。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;四分之一的受访者认为，预测分析以及机器学习集成代表了分析的未来。这在数据量不断增长的世界中是有道理的，因为报告和可视化工具本身并不足够。业务领导者需要解析数据以做出业务决策。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir平台用于多个行业领域，以帮助实现数据集成，数据可视化和数据分析需求。Palantir擅长整合几乎任何类型的数据：文本，电子邮件，日志，甚至图像和视频。通过为其数据创建引用对象，它可以搜索和识别不同数据之间的链接。然后，不同行业流中的分析师使用此数据进行进一步调查。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在反欺诈，反恐，情报和犯罪预防领域，Palantir帮助整合来自随机来源的数据，例如现场报告，与首次信息报告（FIR）相关的电话号码，甚至来自移动设备的低分辨率图像设备。然后通过Palantir Graph或Map提供数据，这些易于查看的应用程序可帮助研究人员发现事件之间的模式并发展假设。在数据源和记录保存极为重要的保险，金融和医疗保健行业中，Palantir使用其知识管理应用程序来跟踪和保护通过其平台传输的每个数据。它还确保在将数据索引到平台以供将来引用时将适当的安全级别关联起来，通过其协作应用程序。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir真正的差异化特征是服务组件，以及其运营模式、执行工程人才、套利的能力。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;收入来源&quot;&gt;收入来源&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;就预订而言，我们估计2017年Palantir接近35亿美元，其中约40-50％的预订来自政府合同。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;重大的欧洲扩张; 自2014年以来欧洲的收入增加了三倍。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir是一家企业软件公司，通过两种标准定价模式获得收入：&lt;strong&gt;SaaS订阅和专业服务&lt;/strong&gt;。我们认为Palantir的季度收入遵循类似SaaS的趋势，从季度到季度连续增长。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;典型的Gotham安装包括：56.4万美元Palantir服务器的价格，假设4个核心$112K软件更新和维护服务器，每年（第一年免费）$ 100K培训，假设50个用户$600K工程服务集成。假设2-3名部署工程师为1年总计：150名用户为150名。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir特别令人困惑的是，它并不能完全清楚它是产品还是服务公司。除了对其实际软件产品的使用收费之外，在安装时他们还提供大量的工程，部署和培训服务合同包，所有这些服务都要收取额外费用。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;成本&quot;&gt;成本&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;虽然Palantir可能会将相对较小比例的收入用于销售和营销，但其同行（如Splunk，Tableau和Qlik）将其50％以上的收入用于吸引和留住客户。我们认为这些公司营销支出水平提高的主要原因之一是来自大型成熟企业软件供应商的激烈竞争。规模较小的公司倾向于花更多钱与企业客户站在一起，提供大幅折扣以说服客户改变他们的分析平台。然而，即使小公司采取这一步骤，已建立的参与者也可以降低价格以保留其客户群。由于Palantir不必将其收入用于销售和营销，这可能会带来大量节省，从而增加其盈利。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir认为它能够在合同中收取如此高的价格是因为他们的服务对他们的客户来说是一个非常高的价值。此外，Palantir的价格实际上比同等价格的技术解决方案（如Bloomberg终端或SAP）便宜。在一个典型的一般例子中，Palantir部署超过3年，每用户11,000美元（3），低于Bloomberg终端（5）的24,000美元价格。考虑到典型分析师的年薪从40,000美元到90,000美元不等，3年以上的每用户成本是相对较小的成本，特别是如果Palantir能够使这些用户在一个数量级上更有效。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;核心资源&quot;&gt;核心资源&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;在筹款方面，Palantir自成立以来已筹集了约27.5亿美元的总股本。该公司最近一轮融资于2016年1月完成，当时筹资约8.8亿美元，导致后期资金估值约为200亿美元。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir开发了多种应用程序（如图形和地图）和创新仪表板和技术（如动态本体和Nexus对等）来处理大量结构化和非结构化数据。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;我们相信Palantir的员工基础在过去五到七年中迅速增长。该公司估计2009年员工人数不足50人; 然而，到2017年，该公司在全球范围内增加到2,000多名员工，在华盛顿特区，欧洲和硅谷建立了主要业务。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;主要合作伙伴&quot;&gt;主要合作伙伴&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CIA的风险投资公司In-Q-Tel是美国情报界的一部分，投资于国防运营的新技术，是Palantir的早期投资者。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;主要活动&quot;&gt;主要活动&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;空中客车公司利用硅谷的专业知识（Palantir）来加速A350的生产。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;德国默克公司采用Palantir进行大数据健康计划。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;与产品和许可证相比，软件服务的利润率往往较低，主要原因是人员成分可变。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从加密和多级权限保持坏人到审计跟踪和匿名化保持好人好29，Palantir努力保护自由。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;接下来，看看Palantir的职位列表，它更加模糊。他们为某些职位编造了自己的头衔。设计师 - Palantir办公室软件工程师 - Palantir Office前向部署软件工程师 - 客户现场部署战略专家 - 客户现场产品专家 - 客户站点此结构看起来更像是埃森哲咨询团队，而不是硅谷产品公司。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从财务角度来看，很明显，工程服务是最高利润率。假设您可以通过利润丰厚的股票期权向FDE支付10万美元/年，Palantir每位部署工程师的利润率为60％。此外，客户经常将FDE保持在比所需要的更长的时间，因为他们比自己的员工更好。然而，在操作上，Palantir的思想领袖是产品工程师，他们提出了先进的数据处理算法。我推测这些特殊头衔是人力资源部门争夺山谷中最优秀的人才。顶级工程师不尊重在技术服务公司工作，因此Palantir必须重新成为一家产品公司，以吸引最优秀的技术人才。这种方法非常成功，因为Palantir被视为硅谷的宠儿。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir通过向客户收取数百万甚至数十亿美元的大型部署合同来为其产品定价，该合同包括现场实施团队，培训服务，维护和许多服务器核心。由于每个客户端都有一组完全独特的数据源，因此Palantir部署具有极高的触摸性，需要高水平的自定义。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;价值链。大数据分析涉及检查大量结构化和非结构化数据，以发现隐藏的模式，趋势和相关性，以帮助企业做出有关其产品或服务的明智决策。企业使用执行数据提取，策划，分析和可视化的工具和应用程序来支持战略决策。虽然“大数据分析”一词描述了各种各样的功能和任务，如图表5所示，但行业专家认为，更广泛的软件分析领域包括三大类功能：（1）商业智能和分析工具/平台; （2）分析和绩效管理应用; （3）分析数据管理和集成平台。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-6.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;客户细分&quot;&gt;客户细分&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir的早期客户包括相当长的联邦，州和地方机构和部门名单，如国防部，CIA，FBI，国土安全部，洛杉矶警察局，芝加哥PD和NSA。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;该公司与不同的政府机构（如FBI，CBI，国防部和司法部）合作，将所有数据整合到一个平台中。此步骤在解决复杂案例时非常有用，因为分析师能够识别不同数据源中的模式。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir失去了一个关键的网络安全客户：Home Depot。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;通道&quot;&gt;通道&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;最后，据Palantir公开交易的同行称，市场机会正在以相当强劲的速度增长。Tableau估计其产品的可用市场将从2013年的约150亿美元增长到2019年的266亿美元，主要是通过新客户收购和增加渠道预订。该公司认为，到2017年底，其国际增长将占其总收入的三分之一左右。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir开发了多种应用程序（如图形和地图）和创新仪表板和技术（如动态本体和Nexus对等）来处理大量结构化和非结构化数据。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;口口相传。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;客户关系&quot;&gt;客户关系&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;情报、执法和国土安全客户。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;SaaS订阅和专业服务。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据分析供应商以不同的方式为其产品定价。一些价格基于使用的数据量;，每个用户一些价格， 和其他人使用用户编号和基于数据的定价的组合。虽然有些公司提供永久许可选项，但大多数公司都为其客户使用基于订阅的模式。定价模型可以从非常简单（例如，Tableau的单一定价模型）到非常复杂（例如，Palantir的定价，其未公开披露）。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;快速浏览Palantir的定价图表显示，虽然每台服务器的许可证价格约为140,000美元至150,000美元，但其服务每年可增加35万至75万美元。鉴于整合各种数据源所涉及的复杂性，对于计划使用Palantir产品的企业而言，其中一些服务实际上是强制性的。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir做为B2B公司而言，仍然存在两个悬而未决的问题：Palantir的收入中有多少来自永久许可证？从SaaS许可证中获得的收入的Palantir政府和商业合同的平均持续时间是多少？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir称他们实行基于价值的定价，这使他们能够为每个客户最大化WTP。例如，在政府方面，Gotham唯一可比的产品是美国陆军的内部分布式共用地面系统，耗资23亿美元。一份泄露的文件引用了2012年的一项研究，其中96％的阿富汗战争战士更喜欢Palantir。所以我们可以假设Palantir可以为他们的产品收取高达2.3B的费用 - 仅靠陆军。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;如今，Palantir正在向零售/ CPG公司扩张，因为他们寻求新的市场机会，销售周期比政府更短。与政府不同，这些公司确实与IBM BI，SAP和内部解决方案有比较点。当他们进入这个行业时，Palantir应该会看到由于竞争加剧而导致其利润率下降，特别是因为IBM BI甚至可能只是为了阻止Palantir。有趣的是，这些较低的利润率最终是否会扩散到政府方面，因为更高的透明度应该标识数据分析产品的真正价值。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;一旦Palantir建立了他们的员工基础，他们就可以向他们的客户收取他们迫切需要的工程人才的溢价。这不是要淡化他们的技术堆栈 - 但考虑到它需要多少定制，并且Palantir的商业模式不是通过软件包销售其产品，而是以其商业模式的大型部署合同的形式销售，Palantir的运营模式吸引的方式，投资于并管理其劳动力资本是其目前成功的主要原因之一！&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;swot分析&quot;&gt;SWOT分析&lt;/h2&gt;
-
-&lt;h3 id=&quot;优势strengths&quot;&gt;优势（Strengths）&lt;/h3&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-2.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;劣势weaknesses&quot;&gt;劣势（Weaknesses）&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir面临与潜在定价去杠杆化和将预订转换为现金相关的挑战。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;拥挤的竞争格局&lt;/code&gt;：目前有100多家大小公司提供大数据和分析软件产品和服务。我们的调查表明，大型软件技术供应商（包括Microsoft，IBM，Oracle和SAP）是BI和Analytics最常用的IT供应商之一。是什么让我们对Palantir的近期前景略微谨慎？在过去的几年里，Palantir的大型科技公司的竞争逆风加强了。这些不利因素以及对AI / ML计划的更多关注正在推动BI /分析产品。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不明确的长期盈利潜力&lt;/code&gt;：我们对最近的媒体报道感到鼓舞，即Palantir有望在2017年底实现盈利。但是，可比较的大数据分析和商业智能公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转变为传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出与今天的水平相比更高。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不透明的定价策略&lt;/code&gt;：与其他同行不同，Palantir不会公开披露其定价策略。缺乏透明度导致对其产品的理解不清楚，以及它们与同行的产品相比如何。关于Palantir价格表的媒体报道表明，Palantir的产品可能比同行更昂贵，这种情况可能导致缺乏定价杠杆或增加客户获取成本。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;数据隐私和安全挑战&lt;/code&gt;：由于Palantir与解决欺诈和犯罪的政府机构有关，因此Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;客户流失带来的潜在定价去杠杆化&lt;/code&gt;：媒体报道表明，Palantir的定价可能导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的Palantir Gotham或Metropolis许可证的价格可能在每月3,000到10,000美元之间，还需要额外的支持，维护和培训费用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;：2015年，Palantir的客户预订超过了约1​​7亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换率为33％。投资者会将现金转换率提高作为长期健康表现的标志。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;服务收入影响Palantir的毛利率&lt;/code&gt;：与产品和许可证相比，软件服务的利润率往往较低，这主要是由于人事部门的变化。我们相信Palantir通过其客户合同捆绑咨询，支持，维护，培训和其他此类现场服务。从长远来看，我们预计公司将“产品化”其服务，因为它已经开始明确推动企业。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;不断上升的私人股东激进主义潜力&lt;/code&gt;：Palantir的早期投资者对流动性事件一直相当耐心。Palantir首次筹集机构资本将近十年。在过去一年左右的时间里，该公司卷入了与早期投资者（KT4 Partners）进行信息访问的双向法律斗争。此类法律纠纷凸显了初创投资者与希望保持对股东严格控制的公司之间的争议关系。最近在优步发生的事件就证明了这一点，我们将密切关注与KT4合作伙伴正在进行的诉讼，以及任何此类其他相关事件。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;继富达和贝莱德之后，摩根士丹利显著降低了Palantir的估值。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;由客户流失驱动的潜在定价去杠杆化&lt;/code&gt;。媒体报道表明，Palantir的定价可能会导致客户流失率上升，尤其是那些可能不需要高度复杂的分析平台的客户。虽然很难找到公开的Palantir定价数据，但我们估计，每个服务器核心每月的典型Palantir Gotham或Metropolis许可证的价格在3,000美元到10,000美元之间，需要额外的支持，维护和培训费用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;将预订转换为净收入的挑战&lt;/code&gt;。2015年，Palantir的客户预订量超过了约17亿美元。但是，目前还不清楚这笔资金中有多少会转化为公司的收入。我们认为典型的Palantir客户签订了为期三年的合同，这意味着当前财政年度的账面转换比例为33％。投资者认为不断增长的现金转换率是长期健康表现的标志。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;机会opportunities&quot;&gt;机会（Opportunities）&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IT专业人员青睐大型技术供应商的BI和分析产品&lt;/code&gt;。我们的大多数受访者都将Microsoft，IBM，Oracle和SAP视为其公司目前使用的供应商。这些选择突出了Palantir面临的竞争格局，尽管其创新和独特的产品。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;未来12个月BI和分析支出前景乐观&lt;/code&gt;。89％的受访IT专业人士表示他们计划在未来12个月内增加对BI＆Analytics软件的支出。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;预测分析和机器学习集成将是未来五年关注的重点领域&lt;/code&gt;。49％使用BI和分析工具的公司将预测分析和机器学习集成确定为未来五年的主要关注领域。这些高级分析可帮助企业分析他们收集的数据量并从中获取可操作的见解&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;大多数公司更喜欢使用咨询服务以及BI和分析产品&lt;/code&gt;。83％的受访者表示他们使用专业服务和数据分析产品，进一步加强了Palantir的市场推广战略。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;非结构化数据已经在企业中广泛使用&lt;/code&gt;。47％的受访者表示他们在执行数据分析时“始终”使用非结构化数据。另有43％的受访者表示他们“偶尔”会使用这些数据。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;庞大且不断增长的市场机遇&lt;/code&gt;：对大数据分析，可视化和商业智能软件的需求估计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。虽然Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品演变的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析，这意味着公平强劲和可持续的增长轨迹。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;重要的长期趋势&lt;/code&gt;：关键的长期趋势，如移动性，数据增长和向云的迁移，增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;在网络安全，反欺诈措施和反恐方面增加IT支出的受益者&lt;/code&gt;：行业专家预测全球军事和国防预算的IT份额将持续上升。我们相信Palantir在数据分析领域占据独特的地位，并从提高对全球打击犯罪和欺诈的认识中获益。该公司业界领先的分析平台使其成为全球政府和企业的首选供应商。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;政府IT支出持续显着增长潜力&lt;/code&gt;：2017年美国联邦，州和地方IT支出预计将超过2000亿美元，其中约30-35％用于国防，公共安全和司法部门的IT。Palantir主要关注这些垂直行业，加上针对特定政府用例的定制产品，使我们更加坚信Palantir有一条通向政府内部长期发展的途径。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;独特，用户友好的客户主张&lt;/code&gt;：Palantir的第一代产品路线图主要由政府用例驱动，强调易用性和非技术最终用户可操作的仪表板。我们认为，Palantir的内部知识产权建立在早期政府合同的基础上，使公司能够减少大数据分析的摩擦。企业公司现在可以专注于绘制可操作的业务结论，而不是实现数据清理，解析和其他与输入相关的活动。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;备受瞩目的客户增加了销售和营销杠杆&lt;/code&gt;：Palantir的技术与赈灾（飓风桑迪），欺诈检测（伯尼麦道夫庞氏骗局）以及反恐活动（捕获奥萨马本拉登）等重大全球事件有关。虽然其同行SaaS公司将其净收入的50％用于销售和营销，但我们相信Palantir受益于媒体对高度可见事件和客户故事的报道。这种宣传可能会大大节省销售和营销费用，使公司在2017年底前更接近盈利&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;有吸引力的收入组合 - 从政府转向商业&lt;/code&gt;：我们认为，Palantir通过将其商业收入从2008年的约0％增长到2017年的约50-60％，使其客户群多样化。投资者将积极看待这一转变，它将提高报告透明度并减轻投资者对Palantir与某些政府机构发生冲突的担忧。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;潜在的收购目标&lt;/code&gt;：今年的预订总额估计为35亿美元，数据分析领域的行业领先技术，以及围绕其政府关系的可争议的护城河，Palantir为希望扩展到预测分析的老牌企业提出了一个有吸引力的收购目标，数据集成和数据可视化空间。这种吸引力在Palantir的估值下提供了合理的底线，并将帮助投资者在其估值框架中构建下行风险情景。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;专家希望内容和预测分析能够带头帮助企业整合多个数据源并提供可操作的洞察力。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;由于企业收集和需要解释的大量数据，其中一个子部分，即商业智能和分析，一直在快速增长&lt;/code&gt;。在过去几年中，报告和查询工具的需求量很大。然而，在向前发展的过程中，专家们希望内容和预测分析能够带头帮助企业集成多个数据源并提供可操作的见解。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;从分析师转向业务用户&lt;/code&gt;：这个市场中用户增长的主要原因是使用部分的转变。用法正在从分析用户转移到业务用户，将用户群增加了3.5倍以上。这些额外的用户需要更复杂和跨功能的分析。业务用户已经成为创新的主要推动力，因为他们在没有IT干预的情况下寻求自助服务，并通过创新的协作工具来分享整个组织的洞察力。组织正在从基础数据报告转向更高级的分析和基于洞察的工具，以帮助做出未来的决策。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BI模型的分散化&lt;/code&gt;：传统BI平台由组织内的IT团队领导，BI分析由数据科学家执行，但其余活动（如数据收集，维护和安全性）均由IT管理球队。BI现在正朝着完全分散的模式发展，不需要IT帮助。在此模型中，业务用户通过直接访问不同的数据源来实现数据准备和可视化。这种方法可以使小型和大型组织更容易，更广泛地使用。BI领域的新进入者主要使用此模型。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;融合下一代BI架构&lt;/code&gt;：目前，没有一个平台可以满足所有BI需求。组织使用多种工具来实现BI的不同方面，例如数据报告，日志记录，可视化和高级分析。个别组件玩家现在正在添加更多功能以转换为平台播放器。他们努力成为客户的单一BI和分析源。即使是以IT为中心的传统BI平台也试图提供更好的分析和可视化工具，但它们已被现有的基础架构所拖累。IBM在其Cognitive Analytics平台上取得了一些进展，但尚未被企业所接受&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;进一步考虑这一估计，我们强调了我们专有调查的相关观察结果。当被问及他们目前使用的BI和分析工具的类型时，超过40％的IT专业人员表示他们使用所有三种主要的分析工具。换句话说，今天使用分析软件工具的方式发生了明显的变化。他们的核心价值主张已经从简单的仪表板式工具演变为更智能的软件，可以帮助推动业务决策。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;根据2016年IDG研究调查，数据分析是预计将迁移到云端的最佳应用程序。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;根据我们最近的两次投资者情绪调查，我们了解到大数据和分析代表了所有软件应用程序中最有希望的增长领域&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;移动性、数据增长和向云移动等关键的长期趋势增加了数据分析需求，引发了几家新分析供应商的崛起。这些趋势导致来自多个来源的非结构化数据呈指数增长。我们对IT决策者的调查显示，目前超过90％的公司使用非结构化数据。Palantir凭借其先进的数据集成技术，将从这些长期趋势中受益。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在网络犯罪，反欺诈措施和反恐方面增加支出的受益者.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;政府IT支出持续显着增长潜力.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;威胁threats&quot;&gt;威胁（Threats）&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;投资者在未来18至24个月内监控的关键问题是竞争的影响以及政府/服务收入对Palantir利润率的混合转移&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-3.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;最近有媒体报道称，Palantir有望在2017年底实现盈利。但是，可比公司的长期成本结构仍未得到证实和争议。从长远来看，随着Palantir从服务/咨询驱动的销售周期转向传统的SaaS销售周期，我们预计销售周期会更长，这可能会导致结构性支出增加。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;最后，盈利门槛似乎已被推迟。规模较小，年轻的公司没有达到盈利水平，而这些公司的年龄较大，年龄较大的同行正在大量涌现。快速比较分析供应商在增加收入里程碑时的利润率表明，较大的，已建立的分析供应商（如Adobe）已经能够实现盈利，而较小的供应商（如Workday）的盈利能力则低于负20％。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;数据隐私和安全挑战&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;由于Palantir与解决欺诈和犯罪的政府机构合作，Palantir的产品与大量敏感信息（公共和私人）相互作用。因此，Palantir还有责任更加透明地使用公共数据并保护公共信息。最近，有关企业信息泄露和黑客行为的报道更加关注Palantir等公司。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;垄断特征&quot;&gt;垄断特征&lt;/h2&gt;
-
-&lt;h3 id=&quot;专有技术&quot;&gt;专有技术&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir能够整合所有形式的数据，包括实时日志，电子邮件，聊天对话，社交媒体内容，甚至图像和视频内容。工程师在帮助安装平台时，汇集来自所有来源的数据，将其摄取到Palantir平台并创建可在调查期间引用的对象。与其他主要分析平台不同，Palantir平台可以在几周内安装并完全运行，而不是数月或数年。多年来，Palantir基于其在国防和金融领域的学习，在其两个产品平台上增加了几项新技术，并将其扩展到其他行业领域。Palantir在客户中非常受欢迎，主要是因为其用户友好的应用程序，有助于识别不寻常的模式。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir平台融合了基于人类的算法和强大的引擎，可以在极其精细的水平上同时扫描多个数据库。该公司的主要收入来源是其两个大型分析平台：Palantir Gotham和Palantir Metropolis。这两个平台集成了针对不同分析领域的技术解决方案。该系统接受庞大的数据库，并允许用户以看似无数的方式对信息进行切片，并对所有必要的安全需求具有适当的敏感性。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;处理非结构化数据是当今的核心竞争力之一&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在创业社区，我们喜欢谈论快速迭代的重要性，但是在推送代码时很容易做到就像在服务器上点击刷新一样简单。在企业界，计算机通常不与互联网连接，因此推送代码实际意味着工程师必须飞到公司的物理位置并亲自升级软件。尽管存在额外的挑战，但Palantir将快速迭代作为优先事项的方式有助于它在短短几年内开发出经过实战考验的世界级工具。搬运工：客户的讨价还价能力&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;网络效应&quot;&gt;网络效应&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;大量企业和政府机构继续采用该平台&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir介绍了Horizon技术，以推动大量数据的交互式工作流程&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;备受瞩目的客户提供销售和营销杠杆&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;经济舱规模&quot;&gt;经济舱规模&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;我们相信Palantir公司将继续保持其估值，因为它增加了空客和默克等大客户，并通过自动化加快成本削减。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;品牌&quot;&gt;品牌&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;为了使Palantir保持竞争力，它需要不断重塑自身，以便在竞争扩大其产品时保持相关性。这种重新发明可能需要大量投资，只有规模才具有成本效益。随着分析领域的众多供应商，Palantir在研发和销售方面的投资预计将增加，从而导致其长期利润率的不确定性。此外，Palantir可能会发现很难与具有更大口袋和更广泛品牌认知度的公司竞争，因为这些大公司可以大量折扣新兴产品以获得牵引力或留住客户。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;7个商业问题&quot;&gt;7个商业问题&lt;/h2&gt;
-
-&lt;h3 id=&quot;工程&quot;&gt;工程&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir开发数据分析软件，以解决欺诈预防，反恐和其他商业情报任务。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;如今，Palantir的软件无缝地工作，将大量结构化数据（如电子表格）和非结构化数据（如图像和社交媒体帖子）导入一个集中式数据库，可以对所有信息进行可视化和分析。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir平台融合了基于人类的算法和强大的引擎，可以在极其精细的水平上同时扫描多个数据库。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;问题：SQL有一个令人沮丧的学习曲线。只有分析师知道今天如何使用它，这已经足够困难了。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;解决方案：Palantir的数据分析运行在自然语言查询上，因此普通人可以轻松使用它，这为更多关注重要数据提供了巨大的机会。BOS：减少。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;问题：数据分散在各处。例如，如果联邦调查局有人的案件档案，那么中央情报局很可能甚至都不知道。同样，洛杉矶警察局的官员必须在一个数据库中搜查抢劫案件，但要进行不同的搜查以检查是否有谋杀案。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;解决方案：通过与潜在用户交谈，Palantir意识到大多数数据都是碎片化的，而且大部分数据都是非结构化的。因此，他们构建了工具来组合多个非结构化源。BOS：减少。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;问题：查询很慢。即使计算行业与摩尔定律保持同步，速度仍然是分析数据繁重任务的一个问题。如果你有一个10k行的小型数据库，你可以很快地运行一个查询，但是一旦你处理了几千兆字节的信息，你可能很容易等待半小时的结果…如果结果没有超时或命中内存问题。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;解决方案：Palantir在运行时和迭代中针对速度进行了优化。BOS：减少。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;https://www.bobinsun.cn/assets/images/palantir-09-4.png&quot; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;在Palantir Gotham（政府产品）投入多年的思考和编程后，Palantir意识到许多相同的核心竞争力 - 处理非结构化数据，结合多个数据集，查询速度 - 可以在商业世界中发挥巨大作用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir的技术是其竞争优势。没有其他系统允许用户在不同的数据集之间绘制关联，并且可以轻松或快速地可视化连接。在后端，Palantir的基础设施使用尖端数据处理算法以闪电般的速度搜索大量数据集。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;时机&quot;&gt;时机&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;我们的投资理念受到以下需求的推动：先进且最终用户友好的数据分析，将知识产权追溯到其政府关系，更高的大数据分析和网络安全支出。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;垄断&quot;&gt;垄断&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;例如，Palantir只在数据可视化，预测分析和地理情报空间中发挥作用，但却是这些领域的领域专家。虽然Palantir一直在扩展其产品组合以提供其他分析功能，但它受到来自业内其他参与者的激烈竞争的挑战。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;总体而言，我们认为Palantir的市场规模在400亿至500亿美元之间，主要在数据可视化，预测分析和欺诈分析领域。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;虽然Palantir的大规模数据集成方法听起来类似于IBM等知名技术公司的工作，但它在实际工作中采用了截然不同的方法。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;在一个新项目中，公司通常会派出一个不超过三名工程师的小团队，其任务是在几天内提出可能的解决方案。Palantir工程师喜欢他们作为技术世界的局外人的角色：他们没有站在仪式上，而且往往非常不受内部IT专家的欢迎，他们的工作是他们的第二猜测。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;与此同时，竞争对手的人工智能公司认为，Palantir已经进行了巧妙的自我推销交易，其数据集成技术远非业内独一无二。他们还说，它的方法有时比纯AI公司更慢，更昂贵，因为它使用工程师团队设计即时响应问题而不是简单地应用现有算法。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;但随着该公司的估值上升至200亿美元，它成功围绕其数据分析方法创造的神秘感已证明是非常有价值的。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;人&quot;&gt;人&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;由前PayPal执行官Peter Thiel，以及来自斯坦福大学的Alex Karp，Joe Lonsdale和Stephen Cohen于2004年创立。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir Technologies是一家数据分析软件供应商，由前PayPal执行官Peter Thiel和Alex Karp，Joe Lonsdale以及斯坦福大学的Stephen Cohen于2004年创立。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;CNN任命Shyam Shankar为世界十大思想家之一。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;招聘过程是人才和文化的平等部分。特别是在工程方面，人才是一个很好的理性衡量标准（“你能用C++写一个程序来做x吗？”），但评估某人的文化契合度总是有点试探性。在Palantir的案例中，他们选择了一个能够考虑所有文化因素的单一措施：“这是一个你想与之合作的人吗？”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;分配&quot;&gt;分配&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;当时美国副总统乔·拜登（Joe Biden）承认该公司的防欺诈能力。此次荣誉之后还有其他几项认可，例如被“商业周刊”，CNBC和大通创新奖评选为最佳50家科技创业公司名单。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;虽然2016年5月的BuzzFeed文章揭示了Palantir与其所服务的政府机构之间的紧张关系，但由于其在非政府部门的多元化客户群，该公司的预计在2015年继续稳步增长，超过17亿美元。Palantir参与社会事业 - 例如与圣克拉拉县共同努力解决无家可归问题 - 使公司能够展示其平台的广泛能力，并通过口口相传获得宣传。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;持久&quot;&gt;持久&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;对大数据分析，数据可视化和商业智能软件的需求预计将从2017年的1500亿美元增长到2020年的2100亿美元，转化为强劲的12％增长（三年复合年增长率）。尽管Palantir的可用市场机会仍有争议，但我们对主要市场趋势和Palantir产品发展的分析表明，该公司可能的目标是每年花费400至500亿美元，主要用于数据可视化，预测分析和欺诈分析领域，这意味着相当强劲和可持续的增长。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir的高接触安装也有助于建立长期动力，因为一旦部署成为客户的新标准并且多年来一直用于构建部署，就很难移除部署。这种粘性使Palantir在如此短的时间内迅速增长到了5亿美元的收入，没有放缓的迹象。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;匿名是正确的。Palantir不在AI领域，仅使用机器学习来支持其主要的数据分析重点。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;模式匹配。在银行业，Palantir通过向分析师提供详细信息来帮助分析师调查欺诈行为，以便他们进行交互式调查。当分析师识别出欺诈性交易时，Palantir会训练模型来表示和识别这种欺诈形式，然后将其用于优先处理类似案例以进行分析师调查。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;预测分析：例如，给定时间序列数据，关于工业零件在其整个生命周期中的表现以及它在开始破坏之前的样子，Palantir将尝试在它们破裂之前识别零件*，以便在它们可以维修或更换期间一个预定的维护窗口，而不是需要紧急停机，可能节省大量的资金。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;所以，Palantir使用机器学习来增强其分析平台的有效性。但同样，他们并没有参与任何人工智能。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;秘密&quot;&gt;秘密&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;独特，用户友好的客户主张。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir的关键区别在于其将大量结构化数据（数据库表，电子表格等）和非结构化数据（图像，视频，报告等）集成到用户友好的分析平台中的独特能力。任何处理大量数据搜索和排序的人都知道使用数据库查询语言会令人沮丧。通常，只有专门的分析师才能有效地使用这些查询语言 Palantir通过使用自然语言查询，将这个问题颠倒过来，因此任何人 - 甚至是不懂编程语言的人 - 都可以轻松地通过大量数据进行深入的搜索。因此，Palantir的平台已经被多个政府组织的各种用户广泛接受。由于该软件易于使用。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Palantir拥有三个关键特性，使其成为独特的数据分析产品：Palantir Graph，Palantir Map和Palantir的移动应用程序。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 26 Jul 2019 08:34:00 +0800</pubDate>
-        <link>http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/</link>
-        <guid isPermaLink="true">http://localhost:5000/palantir/2019/07/26/Palantir-Analysis-09/</guid>
-        
-        <category>Palantir分析</category>
-        
-        <category>商业模式画布</category>
-        
-        <category>SWOT</category>
-        
-        <category>垄断特征</category>
-        
-        <category>7个商业模式</category>
-        
-        
-        <category>Palantir</category>
         
       </item>
     
