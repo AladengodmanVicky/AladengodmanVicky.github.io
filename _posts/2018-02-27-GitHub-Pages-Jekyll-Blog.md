@@ -48,7 +48,47 @@ git add --all                             #添加到暂存区
 git commit -m "提交jekyll默认页面"          #提交到本地仓库
 git push origin master                    #线上的站点是部署在master下面的
 ```
-### 等待几分钟，Github有一定的时间缓存...
+**等待几分钟，Github有一定的时间缓存...**
+
+## MWeb添加GitHub为图床
+
+### 为什么需要使用PicBed4MWeb
+
+Github需要用**PUT**方法提交文件，而MWeb只能使用**POST**方法，所以就需要本地启动一个服务（[PicBed4MWeb](https://github.com/gaop-0561/PicBed4MWeb)），接受请求，转换后转发给github。
+
+### 安装PicBed4MWeb项目
+* 下载PicBed4MWeb至本地: `git clone https://github.com/gaopeng-hz/PicBed4MWeb.git`
+* 安装依赖: `npm install`
+* 修改配置文件config.json:
+  ![config.json](https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214103000.jpg)
+修改配置参考: 
+```
+"repo": "gaopeng-hz/images",  // 仓库名称
+"token": "xxxx",  // token，不能公开，获取方式参考上面那篇文章
+"port": 8081,  // node服务器监听端口，默认8080
+"url": "/upload"  // 服务上传url，默认/upload
+```
+* 手动启动项目目录下`node index.js`启动服务，**终端窗口不能关闭**。
+### MWeb配置
+* 打开 MWeb 设置界面 - 发布服务 - 图床 - 自定义
+![MWeb配置](https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214103550.jpg)
+* 点击验证，上传图片，若出现以下提示则成功:
+![验证成功](https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214103709.jpg)
+### 设置开机启动服务
+* 设置后台运行服务: `nohup node index.js &`
+* 配置后台启动服务: 项目根目录下新建run.sh文件，并添加以下内容
+```
+ #!/usr/bin/env bash
+ # 修改成自己的目录
+ nohup node /你的路径/PicBed4MWeb/index.js &
+```
+* 给run.sh赋权限: `sudo chmod 777 run.sh`
+* 将run.sh文件打开方式修改为**终端.app**
+* 添加开机启动: 系统偏好设置-用户与群组-登录项-添加run.sh文件即可
+### 扩展内容
+* 查询端口: `lsof -i :8100`
+* 关闭进程，PID 替换为查询的: `kill -9 PID`
+* 查询服务 PID: `ps | grep index.js`
 
 ## 问题集锦
 
@@ -168,3 +208,6 @@ Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/
 ## 更新日志
 * 创建时间：2018-2-27
 * 更新时间：2020-12-13
+
+
+
