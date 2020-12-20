@@ -463,6 +463,14 @@ changyan:
 #  admin: AladengodmanVicky
 #  distractionFreeMode: true
 
+## 配置 utteranc评论,教程参考 https://utteranc.es/
+utteranc
+  enable = true
+  repo = "AladengodmanVicky/BlogTalk-Utterances" ##换成自己得
+  issueTerm = "pathname"
+  theme = "github-light"
+
+
 # Baidu Share
 # Available value:
 #    button | slide
