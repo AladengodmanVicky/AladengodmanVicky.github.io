@@ -5,9 +5,144 @@
     <description>「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。</description>
     <link>http://localhost:5000/</link>
     <atom:link href="http://localhost:5000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Dec 2020 11:13:32 +0800</pubDate>
-    <lastBuildDate>Mon, 14 Dec 2020 11:13:32 +0800</lastBuildDate>
+    <pubDate>Sun, 20 Dec 2020 11:43:37 +0800</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2020 11:43:37 +0800</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>知识图谱之图解图算法</title>
+        <description>&lt;p&gt;最近在做知识图谱平台，构建好图谱后，要在图谱上利用图算法进行分析，所以平台中需要嵌入不同的图算法，以满足不同场景下的图分析需求，本文主要分类介绍各种图算法。&lt;/p&gt;
+
+&lt;h2 id=&quot;为什么要用图算法&quot;&gt;为什么要用图算法&lt;/h2&gt;
+
+&lt;p&gt;图算法有助于我们理解关联数据。理解网络及其内部联系可以为洞察和创新提供不可思议的潜力。&lt;/p&gt;
+
+&lt;p&gt;图算法特别适用于理解结构和揭示高度关联的数据集中模式。目前，大数据汇集、混合和动态更新的需求非常强烈，图算法有助于体现数据的关联性和交互性，针对关系进行更复杂的分析，并可以为AI提供丰富的上下文信息。&lt;/p&gt;
+
+&lt;p&gt;随着数据间的联系越来越紧密，理解数据之间的依赖关系也就越来越重要。&lt;/p&gt;
+
+&lt;h2 id=&quot;路径查找算法&quot;&gt;路径查找算法&lt;/h2&gt;
+
+&lt;p&gt;路径是图算法和图分析的基础，如：查找最短路径是使用图算法执行非常频繁的任务，最短路径是跳数最少或权重最小的遍历路径。如果图是有向的，它就是指两个节点之间关系方向所允许的最短路径。&lt;/p&gt;
+
+&lt;h3 id=&quot;广度优先搜索算法&quot;&gt;广度优先搜索算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203301.jpg&quot; alt=&quot;-c100&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;首先访问最邻近的节点&lt;/p&gt;
+&lt;h3 id=&quot;深度优先搜索算法&quot;&gt;深度优先搜索算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203415.jpg&quot; alt=&quot;&quot; /&gt;
+先沿着各分支进行搜索&lt;/p&gt;
+&lt;h3 id=&quot;最短路径算法&quot;&gt;最短路径算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193031.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;所有点对最短路径算法&quot;&gt;所有点对最短路径算法&lt;/h3&gt;
+
+&lt;h3 id=&quot;单源最短路径算法&quot;&gt;单源最短路径算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193138.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;最小生成树算法&quot;&gt;最小生成树算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193207.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;随机游走算法&quot;&gt;随机游走算法&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193237.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;中心性算法&quot;&gt;中心性算法&lt;/h2&gt;
+
+&lt;p&gt;中心性的要点就是了解网络中哪个节点更重要，什么是“重要”，因此我们需要创建不同类型的中心性算法来满足不同场景下的需求。&lt;/p&gt;
+
+&lt;h3 id=&quot;度中心性算法&quot;&gt;度中心性算法&lt;/h3&gt;
+&lt;p&gt;度中心性算法计算节点的输入关系数和输出关系数，查找图中受欢迎的节点。节点的度是节点拥有的直接关系数，可按入度和出度两种指标计算。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214205129.jpg&quot; alt=&quot;&quot; /&gt;
+度中心性的可视化&lt;/p&gt;
+
+&lt;h3 id=&quot;接近中心性算法&quot;&gt;接近中心性算法&lt;/h3&gt;
+&lt;h3 id=&quot;中间中心性算法&quot;&gt;中间中心性算法&lt;/h3&gt;
+
+&lt;p&gt;中间中心性算法检测&lt;strong&gt;节点&lt;/strong&gt;对图中信息流或资源的影响程度，通常用于查找将图的一部分与另一部分桥接的节点。&lt;/p&gt;
+
+&lt;p&gt;中间中心性算法计算连通图中每对节点之间的最短（加权）路径。每个节点的分值根据通过该点的最短路径数量确定。通过节点的最短路径数量越多，其得分就越高。&lt;/p&gt;
+
+&lt;p&gt;在某些场景下，最关键的要素并不是拥有绝对权威的或最高地位的要素。而某些中间人将各个群体联系起来，或者说&lt;strong&gt;中间人对资源或信息流的控制权最大&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214232027.jpg&quot; alt=&quot;&quot; /&gt;
+中枢节点位于两个节点之间的每条最短路径上。创建更多最短路径可以减少中心节点的数量，可用于降低风险等场景。&lt;/p&gt;
+
+&lt;h3 id=&quot;pagerank算法&quot;&gt;PageRank算法&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;PageRank&lt;/strong&gt;算法可能是最著名的中心性算法，用来度量节点的传递性（或方向性）影响。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;PageRank算法是以Google联合创始人Larry Page的姓氏命名的，Larry Page创建PageRank算法的初衷是在谷歌搜索结果中对网站进行评级。其基本假设是：
+一个网页如果有更多或更有影响力的输入链接，就更有可能是可信来源。PageRank算法度量节点输入关系的数量和质量，以此估计该节点的重要性。
+在网络中，如果节点拥有的来自其他有影响力的节点的输入关系越多，那么它就越有可能在网络中占据主导地位。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;前面几种中心性算法都是&lt;strong&gt;度量节点的直接影响&lt;/strong&gt;，PageRank算法则&lt;strong&gt;考虑节点的邻近点影响，及其临节点的邻节点的影响&lt;/strong&gt;。例如：&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;与拥有一大堆影响力小的朋友相比，拥有几个很有影响力的朋友能让人更有影响力。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;PageRank算法的计算方法有两种：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;将一个节点的等级迭代分散到其邻节点。&lt;/li&gt;
+  &lt;li&gt;随机遍历图并计算每个节点在遍历过程中被名中的频率。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214211605.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;社团发现算法&quot;&gt;社团发现算法&lt;/h2&gt;
+
+&lt;p&gt;连通性是图论的核心概念之一，它支持复杂网络分析，如：社团发现。现实世界中的大多数网络或多或少呈现出独立子图这样的子结构。识别社团对于评价群体行为和突发现象有不可或缺的作用。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;识别社团的一般原则:&lt;/strong&gt; 社团成员在群组内部的关系要多于其与群组外部节点的关系。识别这些有关联关系的集合可以揭示节点簇、孤立群组和网络结构。&lt;/p&gt;
+
+&lt;p&gt;连通度用于发现社团并量化分组的质量。评估图中不同类型的社团有助于揭示图的结构，如：中心结构和层级结构，也有助于了解某个群组和吸引和排斥其他群组的倾向。&lt;/p&gt;
+&lt;h3 id=&quot;度量算法面向整体关系稠密度用于衡量图的结构特性&quot;&gt;度量算法（面向整体关系稠密度，用于衡量图的结构特性）&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193603.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;三角形计数算法&quot;&gt;三角形计数算法&lt;/h4&gt;
+&lt;p&gt;三角计数算法（Triangle Count）统计图中三角形个数。三角形越多，代表图中节点关联程度越高，组织关系越严密。&lt;/p&gt;
+&lt;h4 id=&quot;聚类系数分量&quot;&gt;聚类系数分量&lt;/h4&gt;
+&lt;p&gt;聚类系数表示一个图中节点聚集程度的系数。在现实的网络中，尤其是在特定的网络中，由于相对高密度连接点的关系，节点总是趋向于建立一组严密的组织关系。聚类系数算法（Cluster Coeffcient）用于计算图中节点的聚集程度。&lt;/p&gt;
+&lt;h3 id=&quot;分量算法用于发现连通簇&quot;&gt;分量算法（用于发现连通簇）&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193645.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;强连通分量算法&quot;&gt;强连通分量算法&lt;/h4&gt;
+&lt;p&gt;在如上有向图中，如果两个顶点A、B间，有一条从B到A的有向路径，同时还有一条从A到B的有向路径，则称A、B两个顶点&lt;strong&gt;强连通&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果有向图中的每两个顶点都强连通，称该有向图是一个&lt;strong&gt;强连通图&lt;/strong&gt;。&lt;strong&gt;有向非强连通图&lt;/strong&gt;的&lt;strong&gt;极大强连通子图&lt;/strong&gt;，称为&lt;strong&gt;强连通分量&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h4 id=&quot;连通分量算法&quot;&gt;连通分量算法&lt;/h4&gt;
+
+&lt;h3 id=&quot;标签传播算法可基于节点标签快速推断群组&quot;&gt;标签传播算法（可基于节点标签快速推断群组）&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193726.jpg&quot; alt=&quot;&quot; /&gt;
+标签传播算发是一种基于图的半监督学习方法，基本思路是&lt;strong&gt;用已标记节点的标签信息去预测未标记节点的标签信息&lt;/strong&gt;。基本过程如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;为每个节点随机的指定一个自己特有的标签；&lt;/li&gt;
+  &lt;li&gt;逐轮刷新所有节点的标签，直到所有节点的标签不再发生变化为止。对于每一轮刷新，节点标签的刷新规则如下：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对于某一个节点，考察其所有邻居节点的标签，并进行统计，将出现个数最多的那个标签赋值给当前节点。当个数最多的标签不唯一时，随机选择一个标签赋值给当前节点。&lt;/p&gt;
+
+&lt;p&gt;在标签传播算法中，节点的标签更新通常有同步更新和异步更新两种方法。同步更新是指，节点x在t时刻的更新是基于邻接节点在t-1时刻的标签。异步更新是指，节点x在t时刻更新时，其部分邻接节点是t时刻更新的标签，还有部分的邻接节点是t-1时刻更新的标签。LPA算法在标签传播过程中采用的是同步更新，研究者们发现同步更新应用在二分结构网络中，容易出现标签震荡的现象。因此，之后的研究者大多采用异步更新策略来避免这种现象的出现。&lt;/p&gt;
+
+&lt;h3 id=&quot;louvain模块度算法用于研究分组的质量和层级结构&quot;&gt;Louvain模块度算法（用于研究分组的质量和层级结构）&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193750.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 14 Dec 2020 20:14:45 +0800</pubDate>
+        <link>http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/</link>
+        <guid isPermaLink="true">http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/</guid>
+        
+        <category>图算法的作用</category>
+        
+        <category>路径查找算法</category>
+        
+        <category>中心性算法</category>
+        
+        <category>社团发现算法</category>
+        
+        
+        <category>KG</category>
+        
+      </item>
     
       <item>
         <title>反欺诈在全流程信贷中的关键指标</title>
@@ -1406,59 +1541,6 @@ eyJoaXN0b3J5IjpbMTk4NTMwNzExM119
         
         
         <category>Thinking</category>
-        
-      </item>
-    
-      <item>
-        <title>数据与信息</title>
-        <description>&lt;h2 id=&quot;数据&quot;&gt;数据&lt;/h2&gt;
-
-&lt;p&gt;数据是可以由机器高速处理的原始事实。&lt;/p&gt;
-
-&lt;h2 id=&quot;信息&quot;&gt;信息&lt;/h2&gt;
-
-&lt;p&gt;信息是为人类消费而处理和组织的数据。&lt;/p&gt;
-
-&lt;h2 id=&quot;差异&quot;&gt;差异&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;「数据」&lt;/strong&gt; 意味着文件、数据库、数据结构中由机器组织的原始事实。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「信息」&lt;/strong&gt; 意味着由机器处理的数据以供人们理解。人类为人类创造的信息通常被称为「知识」。&lt;/p&gt;
-
-&lt;h2 id=&quot;案例&quot;&gt;案例&lt;/h2&gt;
-
-&lt;p&gt;假如市场数据包含大型公司股票在过去十年期间发生的十几亿笔交易的细节，这些数据汇聚总结在一个图表中，显示了一段时间内的价格，人们可以在图表中立即了解股票的历史价格信息与走势，用于创建此类图形的原始数据量非常大，并且对人们判断未来走势极其有用。&lt;/p&gt;
-
-&lt;h2 id=&quot;数据与信息&quot;&gt;数据与信息&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;/&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;数据&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;信息&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;定义&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;事实是对机器有用的格式&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;已经处理和结构化以供人们使用的数据&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;例如&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;一个天气数据库，每天从气象站和卫星捕获数百万的大气观测数据&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;天气预报&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Sun, 04 Aug 2019 08:00:00 +0800</pubDate>
-        <link>http://localhost:5000/ai/2019/08/04/Data-&-Information/</link>
-        <guid isPermaLink="true">http://localhost:5000/ai/2019/08/04/Data-&-Information/</guid>
-        
-        
-        <category>AI</category>
         
       </item>
     

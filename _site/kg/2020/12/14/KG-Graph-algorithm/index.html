@@ -1,0 +1,1187 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <!-- <link href="//fonts.googleapis.com/css?family=Microsoft YaHei:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
+    <link href="https://www.bobinsun.cn/assets/images/fonts-googleapis.css" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="图算法的作用,路径查找算法,中心性算法,社团发现算法," />
+
+
+
+
+
+  <link rel="alternate" href="/sitemap.xml" title="阿拉灯神丁Vicky侃AI" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.bobinsun.cn/assets/images/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近在做知识图谱平台，构建好图谱后，要在图谱上利用图算法进行分析，所以平台中需要嵌入不同的图算法，以满足不同场景下的分析需求，本文主要分类介绍各种图算法。">
+<meta name="keywords" content="图算法的作用, 路径查找算法, 中心性算法, 社团发现算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="知识图谱之图解图算法">
+<meta property="og:url" content="http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/">
+<meta property="og:site_name" content="阿拉灯神丁Vicky侃AI">
+<meta property="og:description" content="最近在做知识图谱平台，构建好图谱后，要在图谱上利用图算法进行分析，所以平台中需要嵌入不同的图算法，以满足不同场景下的分析需求，本文主要分类介绍各种图算法。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203301.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203415.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193031.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193138.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193207.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193237.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214205129.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214232027.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214211605.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193603.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193645.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193726.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193750.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="知识图谱之图解图算法">
+<meta name="twitter:description" content="最近在做知识图谱平台，构建好图谱后，要在图谱上利用图算法进行分析，所以平台中需要嵌入不同的图算法，以满足不同场景下的分析需求，本文主要分类介绍各种图算法。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203301.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+
+  <link rel="canonical" href="http://localhost:5000/"/>
+
+
+
+
+
+  <title>知识图谱之图解图算法 | 阿拉灯神丁Vicky侃AI</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+<!-- <script async src="https://www.bobinsun.cn/assets/images/busuanzi.pure.mini.js"></script> -->
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">阿拉灯神丁Vicky侃AI</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">AI产品经理</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-wechat">
+          <a href="/wechat/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            KG&amp;NLP
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-group">
+          <a href="/group/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            百宝箱
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3828096221540362",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿拉灯神丁Vicky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://www.bobinsun.cn/assets/images/blog-logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿拉灯神丁Vicky侃AI">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            知识图谱之图解图算法
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-12-14T20:14:45+08:00">
+                2020-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/KG" itemprop="url" rel="index">
+                    <span itemprop="name">KG</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          <!--  -->
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+<!--/google广告-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+        
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <p>最近在做知识图谱平台，构建好图谱后，要在图谱上利用图算法进行分析，所以平台中需要嵌入不同的图算法，以满足不同场景下的图分析需求，本文主要分类介绍各种图算法。</p>
+
+<h2 id="为什么要用图算法">为什么要用图算法</h2>
+
+<p>图算法有助于我们理解关联数据。理解网络及其内部联系可以为洞察和创新提供不可思议的潜力。</p>
+
+<p>图算法特别适用于理解结构和揭示高度关联的数据集中模式。目前，大数据汇集、混合和动态更新的需求非常强烈，图算法有助于体现数据的关联性和交互性，针对关系进行更复杂的分析，并可以为AI提供丰富的上下文信息。</p>
+
+<p>随着数据间的联系越来越紧密，理解数据之间的依赖关系也就越来越重要。</p>
+
+<h2 id="路径查找算法">路径查找算法</h2>
+
+<p>路径是图算法和图分析的基础，如：查找最短路径是使用图算法执行非常频繁的任务，最短路径是跳数最少或权重最小的遍历路径。如果图是有向的，它就是指两个节点之间关系方向所允许的最短路径。</p>
+
+<h3 id="广度优先搜索算法">广度优先搜索算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203301.jpg" alt="-c100"></p>
+
+<p>首先访问最邻近的节点</p>
+<h3 id="深度优先搜索算法">深度优先搜索算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214203415.jpg" alt="">
+先沿着各分支进行搜索</p>
+<h3 id="最短路径算法">最短路径算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193031.jpg" alt=""></p>
+<h3 id="所有点对最短路径算法">所有点对最短路径算法</h3>
+
+<h3 id="单源最短路径算法">单源最短路径算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193138.jpg" alt=""></p>
+
+<h3 id="最小生成树算法">最小生成树算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193207.jpg" alt=""></p>
+
+<h3 id="随机游走算法">随机游走算法</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193237.jpg" alt=""></p>
+
+<h2 id="中心性算法">中心性算法</h2>
+
+<p>中心性的要点就是了解网络中哪个节点更重要，什么是“重要”，因此我们需要创建不同类型的中心性算法来满足不同场景下的需求。</p>
+
+<h3 id="度中心性算法">度中心性算法</h3>
+<p>度中心性算法计算节点的输入关系数和输出关系数，查找图中受欢迎的节点。节点的度是节点拥有的直接关系数，可按入度和出度两种指标计算。</p>
+
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214205129.jpg" alt="">
+度中心性的可视化</p>
+
+<h3 id="接近中心性算法">接近中心性算法</h3>
+<h3 id="中间中心性算法">中间中心性算法</h3>
+
+<p>中间中心性算法检测<strong>节点</strong>对图中信息流或资源的影响程度，通常用于查找将图的一部分与另一部分桥接的节点。</p>
+
+<p>中间中心性算法计算连通图中每对节点之间的最短（加权）路径。每个节点的分值根据通过该点的最短路径数量确定。通过节点的最短路径数量越多，其得分就越高。</p>
+
+<p>在某些场景下，最关键的要素并不是拥有绝对权威的或最高地位的要素。而某些中间人将各个群体联系起来，或者说<strong>中间人对资源或信息流的控制权最大</strong>。</p>
+
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214232027.jpg" alt="">
+中枢节点位于两个节点之间的每条最短路径上。创建更多最短路径可以减少中心节点的数量，可用于降低风险等场景。</p>
+
+<h3 id="pagerank算法">PageRank算法</h3>
+
+<p><strong>PageRank</strong>算法可能是最著名的中心性算法，用来度量节点的传递性（或方向性）影响。</p>
+
+<blockquote>
+  <p>PageRank算法是以Google联合创始人Larry Page的姓氏命名的，Larry Page创建PageRank算法的初衷是在谷歌搜索结果中对网站进行评级。其基本假设是：
+一个网页如果有更多或更有影响力的输入链接，就更有可能是可信来源。PageRank算法度量节点输入关系的数量和质量，以此估计该节点的重要性。
+在网络中，如果节点拥有的来自其他有影响力的节点的输入关系越多，那么它就越有可能在网络中占据主导地位。</p>
+</blockquote>
+
+<p>前面几种中心性算法都是<strong>度量节点的直接影响</strong>，PageRank算法则<strong>考虑节点的邻近点影响，及其临节点的邻节点的影响</strong>。例如：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr>
+<td class="gutter"><pre>1</pre></td>
+<td class="code"><pre class="highlight"><code>与拥有一大堆影响力小的朋友相比，拥有几个很有影响力的朋友能让人更有影响力。
+</code></pre></td>
+</tr></tbody></table></div></div>
+<p><strong>PageRank算法的计算方法有两种：</strong></p>
+<ol>
+  <li>将一个节点的等级迭代分散到其邻节点。</li>
+  <li>随机遍历图并计算每个节点在遍历过程中被名中的频率。</li>
+</ol>
+
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201214211605.jpg" alt=""></p>
+
+<h2 id="社团发现算法">社团发现算法</h2>
+
+<p>连通性是图论的核心概念之一，它支持复杂网络分析，如：社团发现。现实世界中的大多数网络或多或少呈现出独立子图这样的子结构。识别社团对于评价群体行为和突发现象有不可或缺的作用。</p>
+
+<p><strong>识别社团的一般原则:</strong> 社团成员在群组内部的关系要多于其与群组外部节点的关系。识别这些有关联关系的集合可以揭示节点簇、孤立群组和网络结构。</p>
+
+<p>连通度用于发现社团并量化分组的质量。评估图中不同类型的社团有助于揭示图的结构，如：中心结构和层级结构，也有助于了解某个群组和吸引和排斥其他群组的倾向。</p>
+<h3 id="度量算法面向整体关系稠密度用于衡量图的结构特性">度量算法（面向整体关系稠密度，用于衡量图的结构特性）</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193603.jpg" alt=""></p>
+<h4 id="三角形计数算法">三角形计数算法</h4>
+<p>三角计数算法（Triangle Count）统计图中三角形个数。三角形越多，代表图中节点关联程度越高，组织关系越严密。</p>
+<h4 id="聚类系数分量">聚类系数分量</h4>
+<p>聚类系数表示一个图中节点聚集程度的系数。在现实的网络中，尤其是在特定的网络中，由于相对高密度连接点的关系，节点总是趋向于建立一组严密的组织关系。聚类系数算法（Cluster Coeffcient）用于计算图中节点的聚集程度。</p>
+<h3 id="分量算法用于发现连通簇">分量算法（用于发现连通簇）</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193645.jpg" alt=""></p>
+<h4 id="强连通分量算法">强连通分量算法</h4>
+<p>在如上有向图中，如果两个顶点A、B间，有一条从B到A的有向路径，同时还有一条从A到B的有向路径，则称A、B两个顶点<strong>强连通</strong>。</p>
+
+<p>如果有向图中的每两个顶点都强连通，称该有向图是一个<strong>强连通图</strong>。<strong>有向非强连通图</strong>的<strong>极大强连通子图</strong>，称为<strong>强连通分量</strong>。</p>
+
+<h4 id="连通分量算法">连通分量算法</h4>
+
+<h3 id="标签传播算法可基于节点标签快速推断群组">标签传播算法（可基于节点标签快速推断群组）</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193726.jpg" alt="">
+标签传播算发是一种基于图的半监督学习方法，基本思路是<strong>用已标记节点的标签信息去预测未标记节点的标签信息</strong>。基本过程如下：</p>
+
+<ol>
+  <li>为每个节点随机的指定一个自己特有的标签；</li>
+  <li>逐轮刷新所有节点的标签，直到所有节点的标签不再发生变化为止。对于每一轮刷新，节点标签的刷新规则如下：</li>
+</ol>
+
+<p>对于某一个节点，考察其所有邻居节点的标签，并进行统计，将出现个数最多的那个标签赋值给当前节点。当个数最多的标签不唯一时，随机选择一个标签赋值给当前节点。</p>
+
+<p>在标签传播算法中，节点的标签更新通常有同步更新和异步更新两种方法。同步更新是指，节点x在t时刻的更新是基于邻接节点在t-1时刻的标签。异步更新是指，节点x在t时刻更新时，其部分邻接节点是t时刻更新的标签，还有部分的邻接节点是t-1时刻更新的标签。LPA算法在标签传播过程中采用的是同步更新，研究者们发现同步更新应用在二分结构网络中，容易出现标签震荡的现象。因此，之后的研究者大多采用异步更新策略来避免这种现象的出现。</p>
+
+<h3 id="louvain模块度算法用于研究分组的质量和层级结构">Louvain模块度算法（用于研究分组的质量和层级结构）</h3>
+<p><img src="https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/20201215193750.jpg" alt=""></p>
+
+
+
+        
+<br>
+<!--
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3828096221540362"
+     data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+-->
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>放个收款码，万一有大佬想请我喝瓶苏打水呢？</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png" alt="阿拉灯神丁Vicky WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      阿拉灯神丁Vicky
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/" title="知识图谱之图解图算法">http://localhost:5000/kg/2020/12/14/KG-Graph-algorithm/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/%E5%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84%E4%BD%9C%E7%94%A8" rel="tag"># 图算法的作用</a>
+          
+            
+            <a href="/tag/#/%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95" rel="tag"># 路径查找算法</a>
+          
+            
+            <a href="/tag/#/%E4%B8%AD%E5%BF%83%E6%80%A7%E7%AE%97%E6%B3%95" rel="tag"># 中心性算法</a>
+          
+            
+            <a href="/tag/#/%E7%A4%BE%E5%9B%A2%E5%8F%91%E7%8E%B0%E7%AE%97%E6%B3%95" rel="tag"># 社团发现算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/fintech/2020/11/23/Anti-fraud-indicators/" rel="prev" title="反欺诈在全流程信贷中的关键指标">
+                反欺诈在全流程信贷中的关键指标 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+ <!--  <div  style="text-align: center;">
+  <b><span id="busuanzi_container_page_pv">(｡◕ˇ∀ˇ◕)本文访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+  </div></b> -->
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+    
+  </div>
+
+
+          
+<br>
+<!-- 评论下边广告 -->          
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3828096221540362" data-ad-slot="4243777471"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://www.bobinsun.cn/assets/images/blog-logo.jpg" alt="阿拉灯神丁Vicky">
+          <p class="site-author-name" itemprop="name">阿拉灯神丁Vicky</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">104</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/sitemap.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/AladengodmanVicky/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/u/d35797a7d500" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+        
+
+      
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class="nav">
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E5%9B%BE%E7%AE%97%E6%B3%95"> <span class="nav-number">1</span> <span class="nav-text">为什么要用图算法</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E8%B7%AF%E5%BE%84%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95"> <span class="nav-number">2</span> <span class="nav-text">路径查找算法</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95"> <span class="nav-number">2.1</span> <span class="nav-text">广度优先搜索算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95"> <span class="nav-number">2.2</span> <span class="nav-text">深度优先搜索算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95"> <span class="nav-number">2.3</span> <span class="nav-text">最短路径算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%89%80%E6%9C%89%E7%82%B9%E5%AF%B9%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95"> <span class="nav-number">2.4</span> <span class="nav-text">所有点对最短路径算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E7%AE%97%E6%B3%95"> <span class="nav-number">2.5</span> <span class="nav-text">单源最短路径算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%E7%AE%97%E6%B3%95"> <span class="nav-number">2.6</span> <span class="nav-text">最小生成树算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E6%B8%B8%E8%B5%B0%E7%AE%97%E6%B3%95"> <span class="nav-number">2.7</span> <span class="nav-text">随机游走算法</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E4%B8%AD%E5%BF%83%E6%80%A7%E7%AE%97%E6%B3%95"> <span class="nav-number">3</span> <span class="nav-text">中心性算法</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%BA%A6%E4%B8%AD%E5%BF%83%E6%80%A7%E7%AE%97%E6%B3%95"> <span class="nav-number">3.1</span> <span class="nav-text">度中心性算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%8E%A5%E8%BF%91%E4%B8%AD%E5%BF%83%E6%80%A7%E7%AE%97%E6%B3%95"> <span class="nav-number">3.2</span> <span class="nav-text">接近中心性算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E4%B8%AD%E9%97%B4%E4%B8%AD%E5%BF%83%E6%80%A7%E7%AE%97%E6%B3%95"> <span class="nav-number">3.3</span> <span class="nav-text">中间中心性算法</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#pagerank%E7%AE%97%E6%B3%95"> <span class="nav-number">3.4</span> <span class="nav-text">PageRank算法</span> </a> </li> </ol> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#%E7%A4%BE%E5%9B%A2%E5%8F%91%E7%8E%B0%E7%AE%97%E6%B3%95"> <span class="nav-number">4</span> <span class="nav-text">社团发现算法</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%BA%A6%E9%87%8F%E7%AE%97%E6%B3%95%E9%9D%A2%E5%90%91%E6%95%B4%E4%BD%93%E5%85%B3%E7%B3%BB%E7%A8%A0%E5%AF%86%E5%BA%A6%E7%94%A8%E4%BA%8E%E8%A1%A1%E9%87%8F%E5%9B%BE%E7%9A%84%E7%BB%93%E6%9E%84%E7%89%B9%E6%80%A7"> <span class="nav-number">4.1</span> <span class="nav-text">度量算法（面向整体关系稠密度，用于衡量图的结构特性）</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E8%AE%A1%E6%95%B0%E7%AE%97%E6%B3%95"> <span class="nav-number">4.1.1</span> <span class="nav-text">三角形计数算法</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E8%81%9A%E7%B1%BB%E7%B3%BB%E6%95%B0%E5%88%86%E9%87%8F"> <span class="nav-number">4.1.2</span> <span class="nav-text">聚类系数分量</span> </a> </li> </ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E5%88%86%E9%87%8F%E7%AE%97%E6%B3%95%E7%94%A8%E4%BA%8E%E5%8F%91%E7%8E%B0%E8%BF%9E%E9%80%9A%E7%B0%87"> <span class="nav-number">4.2</span> <span class="nav-text">分量算法（用于发现连通簇）</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E7%AE%97%E6%B3%95"> <span class="nav-number">4.2.1</span> <span class="nav-text">强连通分量算法</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E7%AE%97%E6%B3%95"> <span class="nav-number">4.2.2</span> <span class="nav-text">连通分量算法</span> </a> </li> </ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95%E5%8F%AF%E5%9F%BA%E4%BA%8E%E8%8A%82%E7%82%B9%E6%A0%87%E7%AD%BE%E5%BF%AB%E9%80%9F%E6%8E%A8%E6%96%AD%E7%BE%A4%E7%BB%84"> <span class="nav-number">4.3</span> <span class="nav-text">标签传播算法（可基于节点标签快速推断群组）</span> </a> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#louvain%E6%A8%A1%E5%9D%97%E5%BA%A6%E7%AE%97%E6%B3%95%E7%94%A8%E4%BA%8E%E7%A0%94%E7%A9%B6%E5%88%86%E7%BB%84%E7%9A%84%E8%B4%A8%E9%87%8F%E5%92%8C%E5%B1%82%E7%BA%A7%E7%BB%93%E6%9E%84"> <span class="nav-number">4.4</span> <span class="nav-text">Louvain模块度算法（用于研究分组的质量和层级结构）</span> </a> </li> </ol> </li>
+    </ol>
+  </div>
+            
+          </div>
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 250*250目录sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-3828096221540362" data-ad-slot="3224610785"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  
+  ©  2018 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <b><span class="author" itemprop="copyrightHolder">阿拉灯神丁Vicky</span></b>    |   <b>RSS</b>订阅本站  
+  <span>
+	<a href="/feed.xml" title="使用RSS订阅本站">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+     |   
+  <span>
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=bobinsun&amp;amp&amp;loc=zh_CN" target="_blank">邮件订阅本站	 </a>
+  </span>
+    |   给我发<b>邮件</b>  
+  <span>
+    <a href="mailto:bobindandan@gmail.com" title="给我发邮件">
+		<span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+  </span>
+  <!-- <span id="busuanzi_container_site_pv">(✪ω✪)本站总访问量(*^▽^*)：<span id="busuanzi_value_site_pv"></span>次</span> -->
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.bobinsun.cn/assets/images/gitalk.css">
+<script src="https://www.bobinsun.cn/assets/images/gitalk.min.js"></script>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: '5b2a2486ac80b2c5256e',
+        clientSecret: 'e14e40378b56481a8a1e2421ddb0cca931f7c3c0',
+        repo: 'AladengodmanVicky.github.io',
+        owner: 'AladengodmanVicky',
+        admin: ['AladengodmanVicky'],
+        id: '/kg/2020/12/14/KG-Graph-algorithm/',
+        labels: ['gitalk'],
+        perPage: 50,
+        distractionFreeMode: true
+      });
+      gitalk.render('gitalk-container');
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -4,10 +4,9 @@ layout: page
 type: about
 published: true
 ---
-```
+
 以下内容版权©️归原作者，罗列以供个人学习使用，如有侵权请联系，立删。
 如需友链，请微信/邮件联系，或文章评论留言。
-```
 
 ## 友情链接
 
@@ -24,6 +23,7 @@ published: true
 * [embed.ly URL卡片式嵌入生成器](https://embed.ly/code)
 * [微信Markdown编辑器](https://doocs.github.io/md/)：支持 Markdown 所有基础语法、色盘取色、一键复制并粘贴到公众号后台、多图上传、一键下载文档、自定义 CSS 样式、一键重置等特性。
 * [PUSH TO KINDLE!](https://tokindle.top/)：PUSH TO KINDLE! 是一个开源工具，可以往你的 Kindle 上推送文档。
+* [旁门左道-PowerPoint应用合集](https://mp.weixin.qq.com/s/Mm3Sao9BGVzHo_19DqJMuA)
 
 ---
 
@@ -38,6 +38,7 @@ published: true
 * [pixabay可商用免费图片库](https://pixabay.com/)
 * [精品Mac应用分享推荐](https://wangchujiang.com/awesome-mac/index.zh.html)
 * [GitHub全球排名](https://wangchujiang.com/github-rank/index.html)
+* [颜色对照表](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
 
 ---
 
