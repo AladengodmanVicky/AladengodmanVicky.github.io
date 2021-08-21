@@ -32,5 +32,5 @@ published: true
 
 * 如果您喜欢😍本站或本站的内容对您有帮助，恰好您囊中尚不羞涩，那么欢迎👏小额赞赏。
 
-## 如有帮助，欢迎赞赏
+## 我手写我心，你赏表你心
 <div align="center"><img width="200" height="auto" src="https://www.bobinsun.cn/assets/images/Wechat-pay.png"/></div>
