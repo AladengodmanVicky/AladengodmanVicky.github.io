@@ -4,17 +4,17 @@
 # ---------------------------------------------------------------
 
 # Site
-title: 阿拉灯神丁Vicky侃AI
-subtitle: AI产品经理
-description: 「智能 · 见证 · 未来」，AI产品经理视角不定期推送一些个人思考、想法、分析或总结。
-author: 阿拉灯神丁Vicky
+title: BobinSun.蛋蛋
+subtitle: 智能·见证·未来
+description: 「智能 · 见证 · 未来」，产品视角不定期推送一些个人思考、想法、分析或总结。
+author: BobinSun.蛋蛋
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
 port: 5000
 
 # 开启打赏
-reward_comment: 放个收款码，万一有大佬想请我喝瓶苏打水呢？
+reward_comment: 我手写我心，你赏表你心。
 wechatpay: https://www.bobinsun.cn/assets/images/Wechat-pay.png
 
 # URL
