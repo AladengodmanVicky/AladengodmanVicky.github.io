@@ -6,7 +6,7 @@ date: '2021-09-04 11:33:45 +0800'
 categories: Life
 tags:
   - 冥想正念
-  - Headspac
+  - Headspace
   - 禅定
 ---
 
