@@ -1,3 +1,14 @@
+---
+published: true
+layout: post
+title: 冥想正念指南--如何开始
+date: '2021-09-05 11:33:45 +0800'
+categories: Life
+tags:
+  - 冥想正念
+  - Headspace-Guide-to-Meditation
+  - 禅定
+---
 
 # 冥想正念指南 - 如何开始
 
