@@ -368,12 +368,12 @@ title: Palantir分析：「商业模式画布」、「SWOT」、「垄断特征�
 
 ## Palantir系列文章
 
-1.[硅谷最神秘的独角兽Palantir-01](https://www.bobinsun.cn/palantir/2019/07/14/palantir-01/)
-2.[什么是Palantir-02](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-02/)
-3.[Palantir本体(Ontology)-03](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-03/)
-4.[Palantir数据集成-04](https://www.bobinsun.cn/palantir/2019/07/14/palantir-04/)
-5.[Palantir应用程序-05](https://www.bobinsun.cn/palantir/2019/07/14/palantir-05/)
-6.[Palantir浏览器应用-06](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-06/)
-7.[Palantir图分析应用-07](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-07/)
-8.[Palantir SWOT分析-08](https://www.bobinsun.cn/palantir/2019/07/22/Palantir-08/)
-9.[Palantir分析：商业模式画布、SWOT、垄断特征、以及7个商业模式](https://www.bobinsun.cn/palantir/2019/07/26/Palantir-Analysis-09/)
+1. [硅谷最神秘的独角兽Palantir-01](https://www.bobinsun.cn/palantir/2019/07/14/palantir-01/)
+2. [什么是Palantir-02](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-02/)
+3. [Palantir本体(Ontology)-03](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-03/)
+4. [Palantir数据集成-04](https://www.bobinsun.cn/palantir/2019/07/14/palantir-04/)
+5. [Palantir应用程序-05](https://www.bobinsun.cn/palantir/2019/07/14/palantir-05/)
+6. [Palantir浏览器应用-06](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-06/)
+7. [Palantir图分析应用-07](https://www.bobinsun.cn/palantir/2019/07/14/Palantir-07/)
+8. [Palantir SWOT分析-08](https://www.bobinsun.cn/palantir/2019/07/22/Palantir-08/)
+9. [Palantir分析：商业模式画布、SWOT、垄断特征、以及7个商业模式](https://www.bobinsun.cn/palantir/2019/07/26/Palantir-Analysis-09/)
