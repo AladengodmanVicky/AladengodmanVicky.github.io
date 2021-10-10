@@ -9,15 +9,17 @@ tags:
   - Headspace-Guide-to-Meditation
   - 禅定
 ---
-# 冥想正念指南 - 如何放下
-
-Headspace Guide to Meditation - How To Get Started
-
 本文来自 **奈飞(Netflix)** 2021年原创动画短片《Headspace 冥想正念指南》，每集时长20分钟，共8集，展示了一种不同的正念技巧，有助于练习冥想-专注于压力、睡眠和放手等主题-并在每一章的最后以指导冥想结束。
 
 作者**安迪·普迪迪科姆(Andy Puddicombe)** 曾是一名佛教僧侣，也是广受全球喜爱的Headspace冥想应用的联合创始人。本短片中由他带领观众了解冥想背后的好处和科学。
 
 将本视频文稿化是为了多次观看不断学习，以将冥想正念融入到生活中，发布出来以飨想要学习冥想正念的同学，**本文为该视频第2集**。
+
+---
+
+# 冥想正念指南 - 如何放下
+
+Headspace Guide to Meditation - How To Get Started
 
 ---
 
