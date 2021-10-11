@@ -462,6 +462,14 @@ gitalk:
  owner: AladengodmanVicky
  admin: AladengodmanVicky
  distractionFreeMode: true
+ 
+ 
+# Support for valine comments system.
+valine_comment:
+ enable: true
+ leancloud_appid: wvJaElSL4SDTfKQMPtbsFf0j-gzGzoHsz
+ leancloud_appkey: RrKMIL2Em4RmbLP6lKOP4NBI
+ placeholder: "Just go go"
 
 # Baidu Share
 # Available value:
