@@ -455,13 +455,13 @@ changyan:
 
 # Support for gitalk comments system.
 # gitalk:
- enable: true
- clientID: 5b2a2486ac80b2c5256e
- clientSecret: e14e40378b56481a8a1e2421ddb0cca931f7c3c0
- repo: AladengodmanVicky.github.io
- owner: AladengodmanVicky
- admin: AladengodmanVicky
- distractionFreeMode: true
+# enable: true
+# clientID: 5b2a2486ac80b2c5256e
+# clientSecret: e14e40378b56481a8a1e2421ddb0cca931f7c3c0
+# repo: AladengodmanVicky.github.io
+# owner: AladengodmanVicky
+# admin: AladengodmanVicky
+# distractionFreeMode: true
 
 # Baidu Share
 # Available value:
