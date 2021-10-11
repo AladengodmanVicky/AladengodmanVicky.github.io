@@ -34,6 +34,19 @@
       <div id="SOHUCS"></div>
     {% elsif site.wildfire.enable %}
       <div class="wildfire_thread"></div>
+    {% elsif site.valine_comment.enable %}
+      <div id="comments"></div>
+		<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+		<script>
+    		new Valine({
+        		el: '#comments',
+        		app_id: '{{ site.valine_comment.leadcloud_appid }}',
+        		app_key: '{{ site.valine_comment.leadcloud_appkey }}',
+        		placeholder:'{{ site.valine_comment.placeholder }}',
+        		visitor: true
+    		});
+		</script>
     {% endif %}
   </div>
 {% endif %}
