@@ -469,7 +469,7 @@ valine_comment:
  enable: true
  leancloud_appid: wvJaElSL4SDTfKQMPtbsFf0j-gzGzoHsz
  leancloud_appkey: RrKMIL2Em4RmbLP6lKOP4NBI
- placeholder: "我要发表看法、观点或问题"
+ placeholder: "来，说说你的心里话..."
 
 # Baidu Share
 # Available value:
