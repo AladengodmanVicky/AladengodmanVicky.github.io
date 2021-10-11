@@ -205,9 +205,21 @@ Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/
 
 升级完，运行`bundle exec jekyll serve`
 
+### 更换评论系统
+
+奈何基于github的gitalk评论系统经常报错404/403等，极其不稳定，故考虑将其换掉。新的评论系统需要满足以下几点：
+
+1.对国内用户友好，不需要科学上网。
+
+2.不需要跳转至第三方登录，满足方便，如果基于github，那么想评论就必须要有github账户。
+
+3.色彩简单与博客主题相适配，简单优雅。
+
+经过一番查找，最终选择了[Valine](https://valine.js.org)，该评论系统基于[LeanCloud](https://leancloud.cn)，并且支持Jekyll。参考了[这篇文章](https://www.codepeople.cn/2019/01/03/Jkeyll-Valine/)，经过约10分钟操作，大功告成。来吧，展示：
+
+![评论功能图片](https://raw.githubusercontent.com/AladengodmanVicky/Figurebed/master/jekyll_blog_comment.png)
+
+
 ## 更新日志
 * 创建时间：2018-2-27
 * 更新时间：2020-12-13
-
-
-
