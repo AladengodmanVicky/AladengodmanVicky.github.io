@@ -207,13 +207,13 @@ Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/
 
 ### 更换评论系统
 
-奈何基于github的gitalk评论系统经常报错404/403等，极其不稳定，故考虑将其换掉。新的评论系统需要满足以下几点：
+奈何基于github的gitalk评论插件经常报错404/403，极其不稳定，故一直想将其换掉。新的评论系统需要满足以下几点：
 
-1. 对国内用户友好，不需要科学上网。
+1. 对国内朋友友好，不需要科学上网。
 
-2. 不需要跳转至第三方登录，满足方便，如果基于github，那么想评论就必须要有github账户。
+2. 不需要跳转至第三方登录，满足即时评论。如果评论插件基于github，那么要评论就必须有github账户，注册又比较繁琐。
 
-3. 色彩简单与博客主题相适配，简单优雅。
+3. 色彩简单与当前Jekyll博客主题适配，简单优雅。
 
 经过一番查找，最终选择了[Valine](https://valine.js.org)，该评论系统基于[LeanCloud](https://leancloud.cn)，并且支持Jekyll。参考了[这篇文章](https://www.codepeople.cn/2019/01/03/Jkeyll-Valine/)，经过约10分钟操作，大功告成。来吧，展示：
 
