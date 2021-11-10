@@ -10,7 +10,8 @@ published: true
 
 ## 目录
 
-* [工具](#工具)
+* [常用工具](#常用工具)
+* [产品之路](#产品之路)
 * [快捷键](#快捷键)
 * [资源](#资源)
 * [行业资讯](#行业资讯)
@@ -22,7 +23,7 @@ published: true
 * [友情链接](#友情链接)
 
 
-## 工具
+## 常用工具
 
 * [在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
 * [postimages免费图床](https://postimages.org/)
@@ -32,6 +33,10 @@ published: true
 * [微信Markdown编辑器](https://doocs.github.io/md/)：支持 Markdown 所有基础语法、色盘取色、一键复制并粘贴到公众号后台、多图上传、一键下载文档、自定义 CSS 样式、一键重置等特性。
 * [PUSH TO KINDLE!](https://tokindle.top/)：PUSH TO KINDLE! 是一个开源工具，可以往你的 Kindle 上推送文档。
 * [旁门左道-PowerPoint应用合集](https://mp.weixin.qq.com/s/Mm3Sao9BGVzHo_19DqJMuA)
+
+## 产品之路
+
+* [产品沉思录（精选） ProductThinking](https://index.pmthinking.com/)
 
 
 ## 快捷键
