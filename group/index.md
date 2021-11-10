@@ -63,20 +63,20 @@ published: true
 * [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
 
 
-### 心理学与认知科学
+## 心理学与认知科学
 
 * [Mind Hacks - 心灵黑客](https://mindhacks.com/)
 
 
-### 写作
+## 写作
 
 * [文学 - 中国社会科学网](http://www.cssn.cn/wx/)
 
-### 电子书📚
+## 电子书📚
 
 * [机器学习训练秘籍 - Andrew Ng](https://deeplearning-ai.github.io/machine-learning-yearning-cn/docs/home/) ：教你如何使机器学习算法发挥作用。
 
-### 爱情
+## 爱情
 
 * [梁老师的爱情课](https://www.yixi.tv/wx/h5/?from=timeline&isappinstalled=0#/course_detail/2)：梁永安，复旦大学中文系文学写作专业硕士导师。
 * [单身的黄金年代如何面对爱情](https://www.yixi.tv/wx/h5/ifram?url=https://www.yixi.tv/wx/h5/#/speech_detail/338)：同上。
