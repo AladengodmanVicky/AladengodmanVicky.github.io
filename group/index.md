@@ -33,14 +33,12 @@ published: true
 * [PUSH TO KINDLE!](https://tokindle.top/)：PUSH TO KINDLE! 是一个开源工具，可以往你的 Kindle 上推送文档。
 * [旁门左道-PowerPoint应用合集](https://mp.weixin.qq.com/s/Mm3Sao9BGVzHo_19DqJMuA)
 
----
 
 ## 快捷键
 * [Chrome 键盘快捷键](https://support.google.com/chrome/answer/157179?hl=zh-Hans)
 * [Mac 多点触控手势](https://support.apple.com/zh-cn/HT204895)
 * [Mac 键盘快捷键](https://support.apple.com/zh-cn/HT201236)
 
----
 
 ## 资源
 * [pixabay可商用免费图片库](https://pixabay.com/)
@@ -48,7 +46,6 @@ published: true
 * [GitHub全球排名](https://wangchujiang.com/github-rank/index.html)
 * [颜色对照表](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
 
----
 
 ## 行业资讯
 
@@ -60,19 +57,16 @@ published: true
 * [Mckinsey & Company](https://www.mckinsey.com.cn/)
 * [每日易讯](https://www.eznewstoday.com/)
 
----
 
 ## AI前沿资源
 
 * [数据科学周刊 - 每周时事通讯，内容包括与数据科学相关的策划新闻，文章，指南和工作。](https://www.datascienceweekly.org/newsletters)
 
----
 
 ### 心理学与认知科学
 
 * [Mind Hacks - 心灵黑客](https://mindhacks.com/)
 
----
 
 ### 写作
 
