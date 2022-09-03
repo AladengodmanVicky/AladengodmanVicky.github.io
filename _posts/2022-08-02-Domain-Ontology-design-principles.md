@@ -1,5 +1,6 @@
 ---
 layout: post
+published: true
 date: '2022-08-02 11:10:45 +0800'
 title: 图构建:领域本体设计原则与动态本体
 categories: Blog
