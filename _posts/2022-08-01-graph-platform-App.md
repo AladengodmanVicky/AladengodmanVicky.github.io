@@ -1,8 +1,8 @@
 ---
 layout: post
-date: '2022-08-02 11:30:45 +0800'
+date: '2022-08-01 11:30:45 +0800'
 published: true
-title: 思考总结:领域知识图谱平台构建与业务应用
+title: 思考总结：领域知识图谱平台构建与业务应用
 categories: Blog
 tags:
   - 图谱平台
