@@ -1,15 +1,15 @@
 ---
 published: true
 layout: post
-date: '2024-01-14 12:34:00 +0800'
+date: '2024-01-13 12:34:00 +0800'
 categories: Blog
 tags:
   - LLMs
   - ToB
   - prompt
   - Agent
-excerpt: 在《LLMs应用方案升级见闻与思考》的基础上，聊聊**针对ToB-LLMs的应用场景发展、技术路径展示和平台工具设计思路**。。
-title: ToB-LLMs：应用发展、技术路径、平台工具
+excerpt: 在《LLMs应用方案升级见闻与思考》的基础上，聊聊针对ToB-LLMs的应用场景发展、技术路径展示和平台工具设计思路。
+title: 'ToB-LLMs：应用发展、技术路径、平台工具'
 ---
 # ToB-LLMs：应用发展、技术路径、平台工具
 
