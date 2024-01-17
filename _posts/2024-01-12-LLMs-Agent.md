@@ -1,4 +1,4 @@
-![image](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/assets/45462906/575796ec-4bad-4aeb-b6f1-cb90133a1f5a)---
+---
 published: true
 layout: post
 date: '2024-01-11 12:34:00 +0800'
