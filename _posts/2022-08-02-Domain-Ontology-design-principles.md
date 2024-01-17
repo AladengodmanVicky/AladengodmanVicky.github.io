@@ -67,7 +67,7 @@ excerpt: 前文《思考总结：领域知识图谱平台构建与业务应用�
 4. **业务满足度与性能兼容度皆需考虑，在业务与性能之间取得平衡，并且考虑可视化分析与图计算、图挖掘。Neo4j希望用户能够尊重业务领域实体的关系进行设计，Nebula Graph的共识是面向性能设计。**
 
 设计好本体的初始版本后，可以通过实际应用、解决问题、与领域业务专家讨论对本体进行评估和优化。一般情况下，初始版本设计的本体，都需要不断调优修改。迭代本体的动作需要在业务应用的整个生命周期中持续进行。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/218044423c984287b6e2d7b84ed27e85.png#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/218044423c984287b6e2d7b84ed27e85.png)
 
 
 ## 本体版本管理
@@ -82,7 +82,7 @@ excerpt: 前文《思考总结：领域知识图谱平台构建与业务应用�
 ## Palantir 动态本体
 
 由于本体总是需要不断的演进和变化，业界领先的领域知识图谱公司Palantir提出了动态本体论。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5603a66966ec4f84a4dfe3695850ea9b.gif#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5603a66966ec4f84a4dfe3695850ea9b.gif)
 
 
 Palantir的设计哲学与核心是动态本体。Palantir动态本体的灵活定义是**基于对象的数据模型**，动态本体是将众多来源的数据从原始存储格式转换、集成到数据对象和相关属性中的方式，这些属性代表了世界上的人物、地点、事件以及它们之间的联系。
@@ -94,7 +94,7 @@ Palantir的设计哲学与核心是动态本体。Palantir动态本体的灵活�
 1. **对象**：对象指的是任何被建模的事物，对象包含文档、实体和事件。文档是基于文本的，实体是概念和分类的实例，比如人、地点；事件是以时间出现的事物。
 2. **属性**：属性指是对象的特征，如：人的性别、人的年龄、户籍地等。
 3. **关系**：关系指的是概念之间的关联，如：人物之间的雇佣关系，人与人之间的朋友关系、夫妻关系。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f48d0d685fa1465097529294e899f949.png#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f48d0d685fa1465097529294e899f949.png)
 
 
 在Palantir中，可以基于对象、属性和关系设计各种灵活的本体和数据模型。而这里的对象又被分为文档、实体和事件。
@@ -111,9 +111,9 @@ Palantir的设计哲学与核心是动态本体。Palantir动态本体的灵活�
 
 《动态本体 palantir》文章中介绍了Palanti动态本体的方案流程图，可作为参考：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/08511207dc374344ac40f5bb67228f67.png#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/875eb886afde4d52ad5fd268cfca625c.png#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/634a254f21ca45bfa42a3c2d3c45ce2e.png#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/08511207dc374344ac40f5bb67228f67.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/875eb886afde4d52ad5fd268cfca625c.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/634a254f21ca45bfa42a3c2d3c45ce2e.png)
 
 
 目前大多数图数据库也是支持入图后的本体的二次修改，不过都有较大的限制，一般只支持新增和删除点类型、边类型、点边类型属性，但是不支持点、边类型的修改和属性修改。
