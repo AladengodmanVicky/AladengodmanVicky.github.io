@@ -111,7 +111,7 @@ Palantir的设计哲学与核心是动态本体。Palantir动态本体的灵活�
 
 《动态本体 palantir》文章中介绍了Palanti动态本体的方案流程图，可作为参考：
 
-![在这里插入图片描述](https://www.bobinsun.cn/assets/images/benti-01.png)
+![在这里插入图片描述](https://www.bobinsun.cn/assets/images/benit-01.png)
 ![在这里插入图片描述](https://www.bobinsun.cn/assets/images/benti-02.png)
 ![在这里插入图片描述](https://www.bobinsun.cn/assets/images/benti-03.png)
 
