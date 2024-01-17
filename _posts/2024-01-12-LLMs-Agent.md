@@ -1,4 +1,4 @@
----
+![image](https://github.com/AladengodmanVicky/AladengodmanVicky.github.io/assets/45462906/575796ec-4bad-4aeb-b6f1-cb90133a1f5a)---
 published: true
 layout: post
 date: '2024-01-11 12:34:00 +0800'
@@ -9,9 +9,9 @@ tags:
   - prompt
   - RAG
 excerpt: 结合之前做的一些产品应用，以及近期在大模型解决方案、产品形式、技术发展上的见闻，谈谈看法和想法，涉及到大模型的应用方案迭代升级，必须知道每种方案的所能与所不能。
-title: LLMs应用方案升级见闻与思考
+title: 大模型应用方案升级实践与思考
 ---
-# LLMs应用方案升级见闻与思考
+# 大模型应用方案升级实践与思考
 
 结合之前做的一些产品应用，以及近期在大模型解决方案、产品形式、技术发展上的一些见闻，谈谈看法和想法，涉及到大模型的应用方案迭代升级，必须知道每种方案的所能与所不能。
 
