@@ -190,7 +190,8 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Microsoft YaHei
+    # family: Microsoft YaHei
+   family: PingFang SC
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
