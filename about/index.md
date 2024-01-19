@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: 关于
 layout: page
 type: about
 published: true
