@@ -1,6 +1,6 @@
 ---
 title: 关于
-layout: page
+layout: post
 type: about
 published: true
 ---
