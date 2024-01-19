@@ -4,10 +4,10 @@
 # ---------------------------------------------------------------
 
 # Site
-title: BobinSun.蛋蛋
+title: BobinSun.蛋总
 subtitle: 智能·见证·未来
 description: 「智能 · 见证 · 未来」，产品视角不定期推送一些个人思考、想法、分析或总结。
-author: BobinSun.蛋蛋
+author: BobinSun.蛋总
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
@@ -134,7 +134,7 @@ menu:
   archives: /archives/
   tags: /tags/
   about: /about/
-  wechat: /wechat/
+  # wechat: /wechat/
   group: /group/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
@@ -236,7 +236,7 @@ font:
 social:
   #LinkLabel: Link
   知乎: https://www.zhihu.com/people/AladengodmanVicky/activities
-  简书: https://www.jianshu.com/u/d35797a7d500
+  # 简书: https://www.jianshu.com/u/d35797a7d500
 
 
 # Social Links Icons
